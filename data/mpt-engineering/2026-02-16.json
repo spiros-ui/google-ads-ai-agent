@@ -1,0 +1,265 @@
+{
+  "account": "MPT Engineering",
+  "customerId": "438-541-1329",
+  "date": "2026-02-16",
+  "industry": "B2B (Engineering services)",
+  "healthScore": 62,
+  "grade": "C",
+  "verdict": "Strong conversion efficiency ($45 CPA) for B2B; well-targeted campaign needs structural expansion for growth",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 1208,
+    "impressions30d": 3004,
+    "clicks30d": 148,
+    "ctr": 4.93,
+    "avgCpc": 8.16,
+    "conversions30d": 27,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 44.74,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 40.27
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "27 conversions tracked \u2014 healthy volume for B2B with $1,208 spend"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "18.2% conversion rate seems high for B2B \u2014 verify that only qualified leads (calls + forms) are Primary, not page views or downloads"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No conversion values \u2014 B2B engineering contracts vary widely. Even estimated values would help prioritize leads"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 70.0,
+      "grade": "B-",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "High-intent keyword campaign \u2014 search terms likely well-targeted given 18.2% CVR"
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists exist",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Not verified \u2014 engineering terms can attract academic/research traffic"
+        },
+        {
+          "id": "G16",
+          "name": "Wasted spend assessment",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "$45 CPA for B2B engineering leads is excellent. 18.2% CVR indicates minimal waste"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix with intent level \u2014 clear naming"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single campaign \u2014 appropriate for budget but limits growth"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. If competitors bid on brand terms, they'd steal traffic"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "No PMax \u2014 could help with B2B Display/YouTube visibility but data volume (27 conv) is borderline"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 70.0,
+      "grade": "B-",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4.93% CTR is good for B2B engineering queries"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword targeting",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "'High intent keywords' focus is paying off with 18.2% conversion rate \u2014 strong keyword selection"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search volume opportunity",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "3,004 impressions \u2014 may be near market saturation for niche B2B or could expand into adjacent terms"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4.93% CTR vs ~2.5% B2B benchmark \u2014 nearly double the average"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Ad freshness",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Ad creative testing not verified \u2014 recommend A/B testing ad copy"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Bidding strategy not verified \u2014 with 27 conv/month, Max Conversions would be appropriate"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "B2B service area targeting not verified"
+        },
+        {
+          "id": "G56",
+          "name": "Audience segments applied",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No remarketing or in-market B2B audiences applied \u2014 missing re-engagement opportunity for long B2B sales cycle"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Verify conversion tracking \u2014 18.2% CVR is high for B2B; confirm only qualified leads are counted as Primary",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G47"
+    },
+    {
+      "action": "Add estimated conversion values based on average contract sizes to enable value-based bidding",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G49"
+    },
+    {
+      "action": "Review search terms \u2014 add negatives for academic, research, jobs, salary queries",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G14"
+    },
+    {
+      "action": "Launch brand Search campaign for brand protection",
+      "impact": "Medium",
+      "time": "30 min",
+      "check": "G05"
+    },
+    {
+      "action": "Add remarketing audiences for site visitors \u2014 B2B has long consideration cycles",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G56"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Verify & Optimize (Week 1)",
+      "items": [
+        "Audit conversion tracking \u2014 verify 18.2% CVR is real (not inflated by page views or micro conversions)",
+        "Add conversion values for different service types/contract sizes",
+        "Review and expand negative keywords for academic/non-commercial intent",
+        "Add remarketing audiences for long B2B consideration cycle"
+      ]
+    },
+    {
+      "phase": "Phase 2: Expand (Weeks 2-3)",
+      "items": [
+        "Launch brand Search campaign",
+        "Expand keyword coverage into adjacent high-intent engineering service terms",
+        "Test phrase match and broad match with Max Conversions bidding",
+        "Improve ad extensions with specific engineering capabilities, certifications, case studies"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase budget to capture more of the 3,004 impression opportunity",
+        "Test PMax with B2B-focused creative for broader visibility",
+        "Build Customer Match lists from CRM data for similar audience targeting",
+        "Implement offline conversion import to feed actual deal values back to Google Ads"
+      ]
+    }
+  ]
+}

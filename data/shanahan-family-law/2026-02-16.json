@@ -1,0 +1,258 @@
+{
+  "account": "Shanahan Family Law",
+  "customerId": "771-856-2182",
+  "date": "2026-02-16",
+  "industry": "Local Service (Family Law)",
+  "healthScore": 44,
+  "grade": "D",
+  "verdict": "High CPA for legal lead gen; PMax dominates spend but Search would give better control for legal queries",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 3,
+    "activeCampaignsWithSpend": 3,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 5479,
+    "impressions30d": 28168,
+    "clicks30d": 848,
+    "ctr": 3.01,
+    "avgCpc": 6.46,
+    "conversions30d": 24,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 228.29,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 182.63
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Conversions tracking (24 total) but specific Primary/Secondary setup needs verification"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Conversion action types not fully verified \u2014 need to check for form fills vs calls vs page views"
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "PMax and Search may track overlapping conversion actions \u2014 needs verification"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Brand search: $276 for 1 conv ($276 CPA) \u2014 low volume brand. PMax: $3,914 for 17 conv ($230 CPA). Incremental Search: $1,289 for 6 conv ($215 CPA)"
+        },
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Legal keywords are expensive \u2014 must ensure search terms match high-intent legal queries, not informational"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 52.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 campaigns is lean and appropriate for the budget level"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Brand search separated from non-brand incremental search \u2014 good structure"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "PMax for legal services is risky \u2014 Display/YouTube placements may waste spend for high-intent legal queries"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "PMax gets 71% of spend ($3,914) despite legal being a high-intent vertical where Search typically outperforms"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search campaign performance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Incremental Search: 1,787 impr, 88 clicks (4.9% CTR). Brand: 235 impr, 74 clicks (31.5% CTR). Low non-brand volume"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword coverage",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "Only 1 non-brand search campaign with limited impression volume. Over-reliance on PMax for non-brand coverage"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Incremental Search SIS unclear \u2014 likely low given limited budget allocation"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Brand CTR 31.5% is excellent. Incremental Search 4.9% is acceptable for legal"
+        },
+        {
+          "id": "G-PM3",
+          "name": "PMax brand cannibalization",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "PMax may be serving on brand terms alongside brand search campaign \u2014 verify with asset group reports"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Bidding strategies not fully verified from available data"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Sunshine Coast targeting \u2014 verify radius/location targeting is accurate for service area"
+        },
+        {
+          "id": "G10",
+          "name": "Ad schedule configured",
+          "severity": "Low",
+          "result": "WARNING",
+          "finding": "Legal clients search outside business hours \u2014 verify if campaigns run 24/7 and if after-hours tracking is set up"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Shift budget from PMax to Incremental Search \u2014 legal is a high-intent vertical where Search outperforms PMax",
+      "impact": "High",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Add negative keywords to Search campaign for free legal advice, DIY divorce, legal definitions",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G13"
+    },
+    {
+      "action": "Add brand exclusion to PMax to prevent brand term cannibalization",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G-PM3"
+    },
+    {
+      "action": "Verify conversion tracking \u2014 ensure only legitimate leads (calls + form fills) are Primary",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G47"
+    },
+    {
+      "action": "Review PMax placement reports \u2014 exclude low-quality Display/YouTube placements",
+      "impact": "Medium",
+      "time": "15 min",
+      "check": "G06"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Audit conversion tracking \u2014 ensure only calls and form submissions are Primary",
+        "Shift 50%+ of PMax budget to Search for better control over legal queries",
+        "Add comprehensive negative keywords for informational legal queries",
+        "Add brand exclusion to PMax"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize (Weeks 2-3)",
+      "items": [
+        "Expand Incremental Search keywords \u2014 add family law practice areas (custody, divorce, property settlement)",
+        "Test call-only ads for mobile searchers",
+        "Improve ad copy with Sunshine Coast location specifics and practice area callouts",
+        "Set up call tracking with minimum duration (e.g., 60 seconds) to filter junk calls"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "If Search CPA drops below $200, increase budget",
+        "Consider LSA for family law \u2014 often more cost-effective than Search for legal",
+        "Build remarketing audiences for people who visited but didn't convert",
+        "Test specific practice area campaigns (divorce, custody, property) separately"
+      ]
+    }
+  ]
+}

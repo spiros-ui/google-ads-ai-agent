@@ -1,0 +1,292 @@
+{
+  "account": "The Om Spa",
+  "customerId": "663-837-6999",
+  "date": "2026-02-16",
+  "industry": "Local Service (Spa - Naples, FL)",
+  "healthScore": 42,
+  "grade": "D",
+  "verdict": "Conversion tracking issues and duplicate PMax campaigns diluting performance; fundamentals show promise",
+  "snapshot": {
+    "totalCampaigns": 8,
+    "enabledCampaigns": 4,
+    "activeCampaignsWithSpend": 3,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 19404,
+    "impressions30d": 107839,
+    "clicks30d": 4588,
+    "ctr": 4.25,
+    "avgCpc": 4.23,
+    "conversions30d": 197,
+    "conversionValue30d": 26290,
+    "roas": 1.35,
+    "cpa": 98.5,
+    "searchImpressionShare": 48.1,
+    "dailyBudget": null,
+    "avgDailySpend": 646.8
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 30.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "6 conversion actions configured"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Local actions - Menu views set as Primary \u2014 micro action inflating conversion count"
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "3 overlapping call tracking actions: Calls from ads + Click to call website OLD + Clicks to call Google-hosted. Triple-counting phone interactions"
+        },
+        {
+          "id": "G-CT3",
+          "name": "Legacy actions cleanup",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "'Click to call website OLD' still active as Primary \u2014 stale conversion action should be removed or set to Secondary"
+        },
+        {
+          "id": "G-CT4",
+          "name": "Store visits tracking",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Store visits tracked as Primary \u2014 appropriate for a local spa business"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Desktop-only PMax: $5,635 for 32.5 conv ($173 CPA) vs main PMax: $12,625 for 142 conv ($89 CPA). Desktop-only variant is 2x more expensive per conversion"
+        },
+        {
+          "id": "G-WS1",
+          "name": "Duplicate PMax waste",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Two PMax campaigns targeting same service area \u2014 Desktop Only version dilutes data and increases costs"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Mix of naming styles: 'Performance Max - OmSpa' vs 'Theomspanaples - Search V2'"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "8 campaigns is reasonable but 2 duplicate PMax is inefficient"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No dedicated brand search campaign. Search V2 appears to target both brand and non-brand"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax active and the primary spend driver"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "94% of budget in PMax. Search V2 only $1,144 \u2014 limited search insights"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search campaign Quality Score",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Search V2 CTR 7.4% is decent for spa queries. SIS 33.1% means missing 2/3 of searches"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword coverage",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "Only 1 search campaign active. Search clicks campaign enabled but $0 spend \u2014 broken or limited keywords"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "SIS 33-48% across campaigns \u2014 significant opportunity being missed"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Main PMax 4.9% CTR is above average. Search 7.4% CTR is solid"
+        },
+        {
+          "id": "G-PM1",
+          "name": "PMax audience signals",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Two PMax campaigns \u2014 unclear how audience signals differ between them"
+        },
+        {
+          "id": "G-PM3",
+          "name": "PMax brand cannibalization",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No brand campaign exists, so PMax is likely serving on brand terms at higher cost"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "PMax uses Max Conv Value. Search V2 uses Max Conversions. Search clicks uses Target Spend (suboptimal)"
+        },
+        {
+          "id": "G39",
+          "name": "Budget constrained campaigns",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "PMax SIS 48.1% \u2014 missing half of available impressions"
+        },
+        {
+          "id": "G40",
+          "name": "Target Spend campaign",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "Search clicks campaign uses Target Spend with $0 spend \u2014 either broken or should be paused"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Set Menu views to Secondary \u2014 micro conversion inflating count",
+      "impact": "Critical",
+      "time": "2 min",
+      "check": "G47"
+    },
+    {
+      "action": "Remove 'Click to call website OLD' \u2014 stale duplicate call tracking",
+      "impact": "Critical",
+      "time": "5 min",
+      "check": "G-CT3"
+    },
+    {
+      "action": "Consolidate to 1 call tracking action \u2014 keep Calls from ads as Primary, set others to Secondary",
+      "impact": "High",
+      "time": "5 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Pause Desktop Only PMax \u2014 consolidate into main PMax for better data aggregation and lower CPA",
+      "impact": "High",
+      "time": "2 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Pause or fix Search clicks campaign ($0 spend, Target Spend bidding)",
+      "impact": "Medium",
+      "time": "2 min",
+      "check": "G40"
+    },
+    {
+      "action": "Launch a brand Search campaign to capture brand terms cheaply before PMax",
+      "impact": "High",
+      "time": "30 min",
+      "check": "G05"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Clean conversion tracking: GA4 Purchase + Calls from ads + Store visits as Primary only",
+        "Remove OLD click to call and Menu views from Primary",
+        "Consolidate to single PMax campaign (pause Desktop Only variant)",
+        "Pause Search clicks campaign (Target Spend, $0 activity)"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize (Weeks 2-3)",
+      "items": [
+        "Launch dedicated brand Search campaign to capture brand terms at lower cost",
+        "Expand Search V2 keywords and increase budget to improve 33.1% SIS",
+        "After PMax consolidation, monitor CPA improvement with unified data",
+        "Add remarketing audiences as signals to PMax"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase PMax SIS from 48% toward 65%+ as conversion tracking improves",
+        "Launch non-brand Search campaigns for treatment-specific queries",
+        "Build Customer Match list from booking system",
+        "Test seasonal promotions via Demand Gen"
+      ]
+    }
+  ]
+}

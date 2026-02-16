@@ -1,0 +1,293 @@
+{
+  "account": "Skin Spa New York",
+  "customerId": "163-311-1847",
+  "date": "2026-02-16",
+  "industry": "Local Service (Spa/Beauty - NYC, Boston, Miami)",
+  "healthScore": 36,
+  "grade": "F",
+  "verdict": "Conversion tracking severely polluted with 4 irrelevant Smart campaign actions as Primary; ROAS misleading",
+  "snapshot": {
+    "totalCampaigns": 88,
+    "enabledCampaigns": 4,
+    "activeCampaignsWithSpend": 4,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 19082,
+    "impressions30d": 56393,
+    "clicks30d": 3588,
+    "ctr": 6.36,
+    "avgCpc": 5.32,
+    "conversions30d": 105,
+    "conversionValue30d": 20586,
+    "roas": 1.08,
+    "cpa": 181.73,
+    "searchImpressionShare": 91.2,
+    "dailyBudget": null,
+    "avgDailySpend": 636.07
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 18.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "8 conversion actions configured"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Cart completed set as Primary (micro). 4 Smart campaign actions set as Primary: Smart campaign calls, directions, ad clicks to call, map clicks to call. These are irrelevant legacy actions inflating conversions"
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Multiple overlapping call actions: Calls from ads + Website Click To Call + Smart campaign calls + Smart campaign ad clicks to call \u2014 quadruple counting phone interactions"
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked and flowing",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 purchase is Primary and tracking revenue"
+        },
+        {
+          "id": "G-CT3",
+          "name": "Smart campaign cleanup",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "4 Smart campaign conversion actions still set as Primary despite no Smart campaigns running. These ghost actions pollute all campaign bidding"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Branded search campaigns active \u2014 search term review cadence unknown"
+        },
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "PMax spends $13,441 (70% of total) with 56.4 conv at $238 CPA. Miami branded search: $377 for 1 conversion ($377 CPA). Significant waste potential"
+        },
+        {
+          "id": "G-WS1",
+          "name": "Budget allocation waste",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "PMax gets 70% of budget but ROAS is poor. Branded search campaigns for NY and Boston are far more efficient but get only 28% of spend"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Consistent CTM prefix with location identifiers"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "88 total campaigns with 84 paused \u2014 extreme bloat from multiple agency handoffs"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Brand campaigns exist by location but no non-brand search present. PMax handles all non-brand but with no visibility"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax - All Stations campaign active covering all locations"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Miami branded search gets only $377 (1 conv) \u2014 market may not be ready. NY and Boston brand get roughly equal budget despite different market sizes"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 65.0,
+      "grade": "C",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Brand keyword Quality Score",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "NY branded 21.1% CTR and Boston branded 20.4% CTR \u2014 excellent brand QS"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword coverage",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "Only branded terms in Search. No non-brand search campaigns for spa services, treatments, or location-based queries"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Match type distribution",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Unable to assess match type details from available data"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Brand CTR 20-21% is excellent. PMax CTR 5.1% is above average for PMax"
+        },
+        {
+          "id": "G-PM1",
+          "name": "PMax audience signals",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single PMax for all 3 cities \u2014 audience signals may not be granular enough per market"
+        },
+        {
+          "id": "G-PM3",
+          "name": "PMax brand cannibalization",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "PMax 'All Stations' likely capturing brand searches alongside brand campaigns \u2014 no brand exclusion visible"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "All campaigns use smart bidding (Max Conv Value or Max Conversions)"
+        },
+        {
+          "id": "G39",
+          "name": "Budget constrained campaigns",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Brand SIS 91-93% is excellent. PMax SIS 10% suggests very broad targeting or limited budget relative to market"
+        },
+        {
+          "id": "G40",
+          "name": "Miami campaign viability",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "Miami brand search: 243 impr, $377 spend, 1 conv. Market may need different approach or more budget to reach critical mass"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Set all 4 Smart campaign conversion actions to Secondary immediately \u2014 they inflate conversions and corrupt bidding",
+      "impact": "Critical",
+      "time": "5 min",
+      "check": "G47"
+    },
+    {
+      "action": "Set Cart completed to Secondary \u2014 micro conversion inflating count",
+      "impact": "Critical",
+      "time": "2 min",
+      "check": "G47"
+    },
+    {
+      "action": "Remove duplicate call tracking \u2014 keep only Calls from ads + Website Click To Call as Primary",
+      "impact": "Critical",
+      "time": "10 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Evaluate Miami branded search \u2014 consider pausing if market not yet viable ($377 for 1 conv)",
+      "impact": "High",
+      "time": "5 min",
+      "check": "G40"
+    },
+    {
+      "action": "Add brand exclusion to PMax All Stations to prevent cannibalization of cheaper branded clicks",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G-PM3"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Clean conversion tracking: Only GA4 Purchase + Calls from ads + Website Click To Call as Primary",
+        "Remove all Smart campaign conversion actions from Primary",
+        "Remove Cart completed from Primary",
+        "Archive 84 paused campaigns"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize (Weeks 2-3)",
+      "items": [
+        "After conversion cleanup, let bidding recalibrate for 2 weeks",
+        "Split PMax by location \u2014 separate asset groups for NYC, Boston, Miami with location-specific creative",
+        "Launch non-brand Search campaigns for high-intent spa services (e.g., 'facial near me', 'spa NYC')",
+        "Re-evaluate Miami market \u2014 build dedicated non-brand strategy or pause until brand awareness grows"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Shift budget from PMax to non-brand Search once launched and performing",
+        "Build Customer Match lists from booking system data",
+        "Test Demand Gen for seasonal promotions and gift card pushes",
+        "Implement server-side tracking for more accurate booking attribution"
+      ]
+    }
+  ]
+}

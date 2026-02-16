@@ -1,0 +1,265 @@
+{
+  "account": "Costa Rica Waterfall Tours",
+  "customerId": "355-592-1105",
+  "date": "2026-02-16",
+  "industry": "Travel/Tourism",
+  "healthScore": 50,
+  "grade": "D+",
+  "verdict": "Single campaign structure limits growth; $111 CPA acceptable for tours but needs expansion and diversification",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 3452,
+    "impressions30d": 11015,
+    "clicks30d": 979,
+    "ctr": 8.89,
+    "avgCpc": 3.53,
+    "conversions30d": 31,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 111.35,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 115.07
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "31 conversions tracked but specific actions not verified \u2014 needs manual review"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Conversion action types not verified \u2014 need to confirm bookings vs inquiries vs page views"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No conversion value reported \u2014 tour booking values should be tracked for ROAS optimization"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Exact match campaign limits waste but search terms should still be reviewed for close variant leakage"
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists exist",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Not verified \u2014 exact match provides some protection but negatives still needed for close variants"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix present"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Only 1 campaign \u2014 very limited. No brand protection, no PMax, no expansion campaigns"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Single exact match campaign likely mixes brand and non-brand"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No PMax campaign \u2014 tourism is highly visual and well-suited for PMax with video/image assets"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "All eggs in one basket \u2014 single campaign failure means zero visibility"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "8.89% CTR is excellent \u2014 indicates strong keyword-to-ad relevance"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword match types",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Exact match only \u2014 very controlled but may be missing high-intent variations"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword expansion opportunity",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Only exact match in 1 campaign \u2014 significant opportunity to expand with phrase/broad match + smart bidding"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "8.89% CTR vs ~4-6% travel benchmark \u2014 well above average"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Ad freshness",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Ad creative testing not verified \u2014 single campaign may have limited ad rotation"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Bidding strategy not verified from available data"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Tourism targeting should include key source markets (US, Canada, Europe) \u2014 verify location settings"
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match lists",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Customer Match or remarketing audiences visible \u2014 past tourists are high-value retargeting prospects"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Add conversion value tracking \u2014 assign tour booking values to enable ROAS-based bidding",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G49"
+    },
+    {
+      "action": "Launch a brand Search campaign to protect brand terms from competitor bidding",
+      "impact": "High",
+      "time": "30 min",
+      "check": "G05"
+    },
+    {
+      "action": "Add phrase match and broad match variations of top-performing exact keywords in a new campaign",
+      "impact": "High",
+      "time": "30 min",
+      "check": "G-KW2"
+    },
+    {
+      "action": "Upload customer email list for Customer Match remarketing",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G57"
+    },
+    {
+      "action": "Verify conversion tracking \u2014 ensure bookings are the only Primary conversion action",
+      "impact": "Critical",
+      "time": "10 min",
+      "check": "G47"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Verify and clean conversion tracking \u2014 ensure only bookings/qualified inquiries are Primary",
+        "Add dynamic conversion values for tour bookings",
+        "Launch brand Search campaign",
+        "Review and expand negative keywords even with exact match (close variants)"
+      ]
+    },
+    {
+      "phase": "Phase 2: Expand (Weeks 2-3)",
+      "items": [
+        "Launch phrase match campaign for high-intent tour queries",
+        "Launch PMax campaign with Costa Rica waterfall imagery and video assets",
+        "Test broad match + Max Conversions for keyword discovery",
+        "Build remarketing audiences from site visitors and past bookers"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Test Demand Gen for upper-funnel tourism discovery (YouTube, Discover)",
+        "Expand geographic targeting to additional source markets",
+        "Seasonal bid adjustments for peak Costa Rica tourism season",
+        "Test competitor targeting for other Costa Rica tour operators"
+      ]
+    }
+  ]
+}

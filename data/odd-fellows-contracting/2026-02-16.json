@@ -1,0 +1,251 @@
+{
+  "account": "Odd Fellows Contracting",
+  "customerId": "537-651-5807",
+  "date": "2026-02-16",
+  "industry": "Local Service (Kitchen Remodeling/Contracting)",
+  "healthScore": 48,
+  "grade": "D+",
+  "verdict": "Reasonable structure but high CPA for lead gen; LSA + Search combo is solid but needs optimization",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 2,
+    "activeCampaignsWithSpend": 2,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 5457,
+    "impressions30d": 4703,
+    "clicks30d": 398,
+    "ctr": 8.46,
+    "avgCpc": 13.71,
+    "conversions30d": 25,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 218.28,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 181.9
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Conversion actions present (25 total conversions tracked) but specific setup not fully verified"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Cannot verify Primary vs Secondary classification from available data \u2014 needs manual review"
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "LSA has its own conversion tracking separate from Search \u2014 ensure no double-counting of leads"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "$218 CPA is high for kitchen remodeling leads. Need to verify search term quality and wasted spend"
+        },
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "BOFU campaign targeting kitchen remodeling \u2014 search terms should be reviewed for commercial intent match"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix with BOFU funnel stage identifier \u2014 good naming"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "2 campaigns (LSA + Search) is lean and appropriate"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand search campaign. Competitors could be bidding on brand terms"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "LSA: $616 for 16 conv ($38.50 CPA) vs Search: $4,841 for 9 conv ($538 CPA). LSA is dramatically more efficient but gets only 11% of budget"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search campaign CTR",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Search campaign: 3,256 impr, 167 clicks (5.1% CTR). Acceptable but room for improvement"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword intent alignment",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "BOFU targeting implies bottom-funnel keywords but $538 CPA suggests targeting may be too broad"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "LSA CTR 16% is excellent. Search CTR 5.1% is acceptable for home services"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Ad freshness",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Ad creative freshness not verified \u2014 recommend RSA testing"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Search bidding strategy not verified from available data"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Service area targeting not verified \u2014 critical for local contractor"
+        },
+        {
+          "id": "G08",
+          "name": "LSA vs Search budget",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "LSA generates leads at $38.50 vs Search at $538. Budget should be rebalanced heavily toward LSA"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Shift budget from Search to LSA \u2014 LSA CPA is $38.50 vs Search CPA $538. Double or triple LSA budget immediately",
+      "impact": "Critical",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Review Search campaign keywords \u2014 $538 CPA indicates likely wasted spend on broad or irrelevant terms",
+      "impact": "High",
+      "time": "30 min",
+      "check": "G16"
+    },
+    {
+      "action": "Add negative keywords to Search campaign for DIY, free, cheap, how-to queries",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G14"
+    },
+    {
+      "action": "Launch a brand Search campaign to protect against competitor bidding",
+      "impact": "Medium",
+      "time": "30 min",
+      "check": "G05"
+    },
+    {
+      "action": "Verify conversion tracking setup \u2014 ensure no double-counting between LSA and Search",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G-CT1"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Rebalance budget: increase LSA to 50%+ of total spend given 14x better CPA",
+        "Audit Search campaign keywords \u2014 remove broad/irrelevant terms driving $538 CPA",
+        "Verify conversion tracking setup across LSA and Search",
+        "Add comprehensive negative keyword list to Search campaign"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize (Weeks 2-3)",
+      "items": [
+        "Refine Search campaign to only high-intent kitchen remodeling terms",
+        "Launch brand Search campaign for brand protection",
+        "Test bid strategies on Search (Max Conversions or Target CPA)",
+        "Improve ad copy with specific services, pricing indicators, and social proof"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "If Search CPA drops to <$150, increase Search budget",
+        "Maximize LSA impression share",
+        "Test PMax for local services with before/after project photos",
+        "Build remarketing audiences from site visitors"
+      ]
+    }
+  ]
+}

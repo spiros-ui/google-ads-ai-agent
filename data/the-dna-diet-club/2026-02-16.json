@@ -1,0 +1,258 @@
+{
+  "account": "The DNA Diet Club",
+  "customerId": "185-185-5764",
+  "date": "2026-02-16",
+  "industry": "Health/Wellness (DNA-based diet program)",
+  "healthScore": 28,
+  "grade": "F",
+  "verdict": "Extremely high CPA ($316) with only 4 conversions \u2014 insufficient data for optimization; fundamental rethink needed",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 1264,
+    "impressions30d": 3202,
+    "clicks30d": 141,
+    "ctr": 4.4,
+    "avgCpc": 8.96,
+    "conversions30d": 4,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 316.0,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 42.13
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Only 4 conversions in 30 days \u2014 extremely low volume. Conversion tracking may be functional but needs verification"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "With only 4 conversions, any micro-as-Primary issue would be catastrophic for bidding signals"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No conversion value reported \u2014 DNA diet programs likely have specific price points that should be tracked"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 25.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "2.8% conversion rate with $316 CPA. 137 of 141 clicks did not convert \u2014 search term quality needs urgent review"
+        },
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "BOFU campaign implies bottom-funnel targeting but $316 CPA and 2.8% CVR suggest targeting is too broad or wrong intent"
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists exist",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Not verified \u2014 DNA/diet queries attract heavy informational traffic that must be excluded"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix with funnel stage (BOFU) \u2014 good naming convention"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single campaign \u2014 limits testing ability but appropriate for low budget"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. BOFU may be capturing some brand traffic at non-brand CPCs"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No PMax \u2014 but with only 4 conversions/month, PMax wouldn't have enough data anyway"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 30.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "4.4% CTR is mediocre for a niche health product \u2014 ads may not be compelling enough or keywords too broad"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword intent alignment",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "DNA diet is a niche market. 'Bottom of funnel' implies purchase-ready keywords but 2.8% CVR says otherwise"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search volume viability",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "3,202 impressions in 30 days \u2014 very low volume. May be a market size issue, not just targeting"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "4.4% CTR is below health/wellness benchmark of ~6%. Ad messaging may not resonate"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Landing page effectiveness",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "2.8% conversion rate on BOFU traffic is poor \u2014 landing page likely needs improvement: clearer value proposition, social proof, pricing"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 25.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "With only 4 conversions/month, smart bidding cannot optimize effectively. Manual CPC or Max Clicks may be more appropriate for data gathering"
+        },
+        {
+          "id": "G40",
+          "name": "Data volume for optimization",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "4 conversions/month is far below the 15-30 needed for smart bidding to function. Bidding strategy needs rethinking"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Review search terms immediately \u2014 with $316 CPA, likely significant irrelevant traffic from DNA/diet informational queries",
+      "impact": "Critical",
+      "time": "20 min",
+      "check": "G13"
+    },
+    {
+      "action": "Add extensive negative keywords: free, what is, how does, reviews, reddit, DIY, test, ancestry, genetics (informational)",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G14"
+    },
+    {
+      "action": "Verify conversion tracking \u2014 confirm purchases/sign-ups are being tracked, not just page views",
+      "impact": "Critical",
+      "time": "10 min",
+      "check": "G42"
+    },
+    {
+      "action": "Review landing page \u2014 2.8% CVR on BOFU traffic needs immediate improvement (pricing clarity, testimonials, CTA)",
+      "impact": "High",
+      "time": "Varies",
+      "check": "G-AD1"
+    },
+    {
+      "action": "Add conversion values to enable ROI-based decisions",
+      "impact": "Medium",
+      "time": "10 min",
+      "check": "G49"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Diagnose & Fix (Week 1)",
+      "items": [
+        "Audit search terms \u2014 identify and exclude all informational DNA/diet queries",
+        "Verify conversion tracking is properly installed and firing",
+        "Improve landing page: clear pricing, testimonials, simple sign-up flow",
+        "Consider pausing while landing page is improved if CPA remains above $200"
+      ]
+    },
+    {
+      "phase": "Phase 2: Test & Learn (Weeks 2-4)",
+      "items": [
+        "Test different keyword angles: DNA diet plan, personalized nutrition, genetic diet",
+        "Test ad copy variations emphasizing unique DNA-based approach",
+        "Switch to Max Clicks to gather more data before using conversion-based bidding",
+        "Launch a brand campaign if there's any brand search volume"
+      ]
+    },
+    {
+      "phase": "Phase 3: Evaluate & Scale (Month 2+)",
+      "items": [
+        "If CPA drops below $150, gradually increase budget",
+        "Test YouTube/Display for awareness if search volume is limited",
+        "Build email nurture sequence for clicks that don't immediately convert",
+        "Consider if Google Ads is the right channel \u2014 evaluate Meta Ads for interest-based targeting"
+      ]
+    }
+  ]
+}

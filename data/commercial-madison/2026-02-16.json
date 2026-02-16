@@ -1,0 +1,258 @@
+{
+  "account": "Commercial - Madison",
+  "customerId": "787-726-7211",
+  "date": "2026-02-16",
+  "industry": "Local Service (Commercial Real Estate/Services)",
+  "healthScore": 12,
+  "grade": "F",
+  "verdict": "EMERGENCY: $2,819 spent with ZERO conversions \u2014 entire budget is being wasted",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 2819,
+    "impressions30d": 6631,
+    "clicks30d": 483,
+    "ctr": 7.28,
+    "avgCpc": 5.84,
+    "conversions30d": 0,
+    "conversionValue30d": 0,
+    "roas": 0,
+    "cpa": null,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 93.97
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 5.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "ZERO conversions in 30 days despite 483 clicks and $2,819 spend. Either conversion tracking is broken or landing page is failing completely"
+        },
+        {
+          "id": "G43",
+          "name": "Conversion tracking functional",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "0 conversions is a red flag \u2014 likely no conversion tracking installed, or tracking is broken. Must verify immediately"
+        },
+        {
+          "id": "G-CT2",
+          "name": "Tag firing verification",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No conversions recorded \u2014 tags likely not firing. Campaign is burning money blind"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 0.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "100% of $2,819 spend is waste \u2014 ZERO conversions. Every dollar spent this month generated nothing"
+        },
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "With 0 conversions, search terms are likely poorly targeted. Urgent review needed"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 20.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Complex naming: '1090 | Search No Partners | Rel 8 | CPC #2' \u2014 suggests multiple iterations without success"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single campaign but it references '#2' and 'Rel 8' suggesting many failed previous attempts"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Single non-brand campaign with 0 conversions"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No PMax campaign \u2014 though fixing conversions must come first"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 30.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "7.28% CTR is decent \u2014 ads are getting clicks, the problem is post-click (landing page or tracking)"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword intent alignment",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "0 conversions with 483 clicks suggests keywords may attract wrong intent, or landing page fails to convert"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search term quality",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Partners set (good) but still 0 conversions \u2014 search terms need urgent review"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 25.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "7.28% CTR is above average \u2014 the ad copy is working, the conversion funnel is not"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Landing page experience",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "483 clicks, 0 conversions = 0% conversion rate. Landing page is either broken, irrelevant, or has no clear CTA"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 15.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Campaign name references 'CPC' \u2014 likely Manual CPC with no conversion-based optimization (which makes sense given 0 conversions)"
+        },
+        {
+          "id": "G39",
+          "name": "Budget efficiency",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "$93.97/day being burned with zero return. Campaign should be paused until fundamentals are fixed"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Madison targeting \u2014 verify service area alignment"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "PAUSE THE CAMPAIGN IMMEDIATELY \u2014 $2,819 wasted with 0 conversions. Stop the bleeding while diagnosis happens",
+      "impact": "Critical",
+      "time": "1 min",
+      "check": "G16"
+    },
+    {
+      "action": "Check if conversion tracking tags are installed on the website \u2014 likely broken or missing",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G42"
+    },
+    {
+      "action": "Test the landing page \u2014 verify it loads, has clear CTA, and matches ad messaging",
+      "impact": "Critical",
+      "time": "10 min",
+      "check": "G-AD1"
+    },
+    {
+      "action": "Review search terms report \u2014 verify queries match commercial real estate intent",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G-KW1"
+    },
+    {
+      "action": "Set up proper conversion tracking (phone calls + form submissions) before restarting",
+      "impact": "Critical",
+      "time": "30 min",
+      "check": "G43"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: STOP THE BLEEDING (Immediate)",
+      "items": [
+        "Pause the campaign immediately \u2014 every day running is ~$94 wasted",
+        "Verify conversion tracking installation \u2014 check Google Tag Assistant, GTM, or direct tag",
+        "Test landing page: load speed, mobile compatibility, clear CTA, form functionality",
+        "Review search terms for the last 30 days \u2014 identify if traffic is relevant"
+      ]
+    },
+    {
+      "phase": "Phase 2: Rebuild (Week 1-2)",
+      "items": [
+        "Install and verify conversion tracking (phone calls + form fills)",
+        "Ensure landing page has clear CTA, contact form, phone number, and matches ad messaging",
+        "Rebuild keyword list with verified commercial intent terms",
+        "Re-launch with Max Conversions bidding once tracking is confirmed working"
+      ]
+    },
+    {
+      "phase": "Phase 3: Grow (Month 2+)",
+      "items": [
+        "Only increase spend once CPA is established and acceptable",
+        "Consider LSA for local commercial services",
+        "Test PMax only after Search proves concept",
+        "Build remarketing for return visitors"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "account": "Kyle_Dynamic Tree Solutions",
+  "customerId": "925-454-6290",
+  "date": "2026-02-16",
+  "industry": "Local Service (Tree Services)",
+  "healthScore": 45,
+  "grade": "D",
+  "verdict": "Very early-stage account with minimal spend; $27 CPA is promising but needs more data and structural improvements",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 2,
+    "activeCampaignsWithSpend": 2,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 81.78,
+    "impressions30d": 580,
+    "clicks30d": 13,
+    "ctr": 2.24,
+    "avgCpc": 6.29,
+    "conversions30d": 3,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 27.26,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 6.29
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "3 conversions from 13 clicks (23.1% CVR) \u2014 tracking appears functional but very small sample"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "23.1% CVR is suspiciously high even for tree services \u2014 verify only calls/form fills are Primary"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No conversion values \u2014 tree service jobs range from $200 to $5,000+. Values would help prioritize"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Very low volume (13 clicks) \u2014 sample too small to identify waste patterns"
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists exist",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Tree service queries attract DIY and informational traffic \u2014 negatives needed even at low volume"
+        },
+        {
+          "id": "G16",
+          "name": "Wasted spend assessment",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "$27 CPA is very efficient for tree services. 23.1% CVR (if real) indicates strong targeting"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Date-based naming with clear identifiers: [February 3] [Search] [Search Partners] [AI MAX]"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "2 campaigns with $81.78 total spend \u2014 fragmentation risk at very low budget"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Both campaigns target tree removal non-brand"
+        },
+        {
+          "id": "G07",
+          "name": "Search Partners test",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Testing Search Partners vs No Partners \u2014 good practice to measure incremental value"
+        },
+        {
+          "id": "G12",
+          "name": "AI MAX feature",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "AI MAX enabled on one campaign \u2014 automatically expands keywords, which at $81 spend may cause waste"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "2.24% combined CTR is low \u2014 AI MAX campaign: 2.08% CTR, No AI campaign: 33.3% CTR (1/3 but tiny sample)"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword volume",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "580 total impressions in 30 days \u2014 extremely low. Budget or targeting too restrictive"
+        },
+        {
+          "id": "G-KW2",
+          "name": "AI MAX impact",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "AI MAX campaign drives 99.6% of spend ($81.47 vs $0.31) \u2014 No AI campaign essentially starved of budget"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "2.24% CTR vs ~5% tree service benchmark \u2014 below average. Ad copy may need improvement"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Ad freshness",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Campaign started February 3 \u2014 very new. Need more time to assess performance"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "With only 3 conversions, smart bidding cannot optimize. Max Clicks may be more appropriate at this stage"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Tree services are hyperlocal \u2014 verify service area radius is appropriate"
+        },
+        {
+          "id": "G39",
+          "name": "Budget adequacy",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "$6.29/day average spend is very low for tree services. Need minimum $20-30/day to gather meaningful data"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Increase daily budget to at least $20-30/day \u2014 $6.29/day is insufficient to gather optimization data",
+      "impact": "Critical",
+      "time": "2 min",
+      "check": "G39"
+    },
+    {
+      "action": "Consolidate to 1 campaign \u2014 at $81.78 total spend, splitting into 2 campaigns fragments data",
+      "impact": "High",
+      "time": "5 min",
+      "check": "G04"
+    },
+    {
+      "action": "Verify conversion tracking \u2014 23.1% CVR is high; confirm only legitimate leads are Primary",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G47"
+    },
+    {
+      "action": "Improve ad copy \u2014 2.24% CTR is below benchmark. Add specific services, response time, free estimates",
+      "impact": "High",
+      "time": "20 min",
+      "check": "G-AD2"
+    },
+    {
+      "action": "Add negative keywords for DIY, rental, cost/price informational queries",
+      "impact": "Medium",
+      "time": "10 min",
+      "check": "G14"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Build Foundation (Week 1-2)",
+      "items": [
+        "Consolidate to single campaign to aggregate all data",
+        "Increase budget to $20-30/day minimum",
+        "Verify conversion tracking accuracy",
+        "Improve ad copy with specific service callouts and unique selling propositions"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 3-4)",
+      "items": [
+        "Expand keywords beyond just tree removal \u2014 add tree trimming, stump grinding, emergency tree service",
+        "Use Max Clicks bidding until reaching 15+ conversions/month threshold",
+        "Add comprehensive negative keywords",
+        "Consider LSA for tree services \u2014 often cost-effective for home services"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Once at 15+ conversions/month, switch to Max Conversions bidding",
+        "Test geographic expansion if initial service area is performing",
+        "Add brand campaign if business develops brand search volume",
+        "Build remarketing audiences for seasonal re-engagement (storm season, spring cleanup)"
+      ]
+    }
+  ]
+}

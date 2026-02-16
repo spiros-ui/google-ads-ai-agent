@@ -1,0 +1,258 @@
+{
+  "account": "Yandina Station",
+  "customerId": "170-549-2043",
+  "date": "2026-02-16",
+  "industry": "Travel/Hospitality (Wedding Venues)",
+  "healthScore": 60,
+  "grade": "C",
+  "verdict": "Efficient lead generation ($36 CPA) for wedding venue; needs structural expansion and conversion value tracking",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 865,
+    "impressions30d": 2566,
+    "clicks30d": 290,
+    "ctr": 11.3,
+    "avgCpc": 2.98,
+    "conversions30d": 24,
+    "conversionValue30d": null,
+    "roas": null,
+    "cpa": 36.04,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 28.83
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "24 conversions tracked \u2014 good volume for an $865 spend"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "8.3% CVR and $36 CPA \u2014 needs verification that only venue inquiries/calls are Primary"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No conversion values \u2014 wedding venues have high AOV ($5K-$30K+). Even estimated values would transform bidding strategy"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 72.0,
+      "grade": "B-",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Wedding venue queries are seasonal \u2014 terms should be reviewed quarterly"
+        },
+        {
+          "id": "G16",
+          "name": "Wasted spend assessment",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "$36 CPA and 8.3% CVR is excellent \u2014 minimal waste apparent"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 48.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix with service type \u2014 clear naming"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single campaign \u2014 appropriate for small budget but limits testing"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Wedding couples search by venue name during research \u2014 brand terms likely going to PMax or competitors"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No PMax \u2014 wedding venues are highly visual; PMax with venue photos/video tours would be very effective"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 75.0,
+      "grade": "B",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Search CTR performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "11.3% CTR is exceptional \u2014 strong keyword-to-ad-to-search intent alignment"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword targeting quality",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Wedding venue keywords are well-targeted given the high CTR and CVR"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Search volume opportunity",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "2,566 impressions \u2014 may be seasonal. Verify if budget is limiting or market is small"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 60.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "11.3% CTR is outstanding for wedding venue queries (benchmark ~5-7%)"
+        },
+        {
+          "id": "G-AD1",
+          "name": "Ad freshness",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Ad creative testing not verified \u2014 seasonal messaging updates recommended for wedding trends"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 55.0,
+      "grade": "C-",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Bidding strategy not verified \u2014 with 24 conv/month, Max Conversions would be effective"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Yandina Station is location-specific \u2014 verify targeting covers relevant source markets for destination weddings"
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match lists",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No remarketing audiences \u2014 couples research venues over weeks/months before deciding"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Add estimated conversion values \u2014 wedding venue inquiries lead to $5K-$30K+ bookings. Even $10K average value transforms optimization",
+      "impact": "Critical",
+      "time": "10 min",
+      "check": "G49"
+    },
+    {
+      "action": "Build remarketing audiences \u2014 wedding couples research for weeks before booking",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G57"
+    },
+    {
+      "action": "Launch brand Search campaign \u2014 couples search by venue name during shortlisting phase",
+      "impact": "High",
+      "time": "30 min",
+      "check": "G05"
+    },
+    {
+      "action": "Verify conversion tracking \u2014 confirm inquiries and calls are Primary, not page views",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G47"
+    },
+    {
+      "action": "Review search terms for seasonal wedding planning queries to capture",
+      "impact": "Medium",
+      "time": "15 min",
+      "check": "G13"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Optimize Current (Week 1)",
+      "items": [
+        "Add conversion values \u2014 even estimated values based on average wedding booking",
+        "Verify conversion tracking \u2014 ensure qualified inquiries only",
+        "Build remarketing audiences from site visitors (long consideration cycle for weddings)",
+        "Launch brand Search campaign"
+      ]
+    },
+    {
+      "phase": "Phase 2: Expand (Weeks 2-3)",
+      "items": [
+        "Launch PMax campaign with stunning venue photography and video tours",
+        "Expand keyword coverage: reception venues, outdoor weddings, destination weddings in the area",
+        "Add seasonal ad copy for peak engagement/wedding planning seasons",
+        "Increase budget if SIS is below 70% \u2014 currently well under $30/day"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Test Demand Gen for reaching couples in early planning stages",
+        "Partner with wedding planners for Customer Match audience building",
+        "Seasonal budget increases during peak engagement season (Dec-Feb, Jun-Jul)",
+        "Implement offline conversion tracking when inquiry leads to booking"
+      ]
+    }
+  ]
+}

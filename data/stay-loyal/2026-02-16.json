@@ -1,0 +1,348 @@
+{
+  "account": "Stay Loyal",
+  "customerId": "680-904-5675",
+  "date": "2026-02-16",
+  "industry": "E-commerce (Pet Food, Dog Food - Australia)",
+  "healthScore": 38,
+  "grade": "F",
+  "verdict": "Conversion tracking pollution is undermining smart bidding and inflating reported performance",
+  "snapshot": {
+    "totalCampaigns": 83,
+    "enabledCampaigns": 5,
+    "activeCampaignsWithSpend": 5,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 20068,
+    "impressions30d": 323712,
+    "clicks30d": 3858,
+    "ctr": 1.19,
+    "avgCpc": 5.2,
+    "conversions30d": 278,
+    "conversionValue30d": 34021,
+    "roas": 1.7,
+    "cpa": 72.19,
+    "searchImpressionShare": 89.6,
+    "dailyBudget": null,
+    "avgDailySpend": 668.93
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 20.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "5 conversion actions configured"
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions enabled",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Cannot confirm enhanced conversions status from available data"
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Add to basket set as Primary (micro conversion). YouTube subscriptions and YouTube follow-on views set as Primary (completely irrelevant to e-commerce). This pollutes smart bidding with non-purchase signals"
+        },
+        {
+          "id": "G49",
+          "name": "Conversion value assignment",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "GA4 purchase has dynamic values, but micro conversions as Primary inflate conversion counts without real revenue"
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "YouTube subs and follow-on views counted as Primary conversions alongside purchases \u2014 massively inflates conversion count"
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked and flowing",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 purchase action is Primary and tracking revenue"
+        },
+        {
+          "id": "G-CT3",
+          "name": "Call tracking setup",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Calls from ads is NOT set as Primary \u2014 should be Primary for a D2C brand with phone orders. YouTube actions ARE Primary but shouldn't be"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 40.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term audit recency",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Brand search campaign active but search term review cadence unknown"
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists exist",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Unable to verify negative keyword list coverage from available data"
+        },
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "PMax Remarketing campaign: $1,642 spend for only $702 value (0.43x ROAS). Non-brand Shopping campaigns combined: $1,063 spend for $1,482 value (1.39x ROAS) \u2014 below target"
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion products",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Non-brand Shopping campaigns have very low conversion volume (14.2 conv total) relative to spend ($1,063)"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 35.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Consistent CTM prefix across all active campaigns"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "83 total campaigns with 78 paused \u2014 extreme campaign bloat indicating multiple strategy changes and agency handoffs"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Brand Search campaign separated from Non-Brand Shopping campaigns"
+        },
+        {
+          "id": "G06",
+          "name": "PMax present for eligible accounts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax campaign active with brand terms"
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Brand Search and PMax +Brand running simultaneously \u2014 potential cannibalization"
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation matches priority",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "60% of budget ($11,968) goes to PMax +Brand which has 1.47x ROAS. Non-brand Shopping has better unit economics but gets only $1,063"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": 70.0,
+      "grade": "B-",
+      "checks": [
+        {
+          "id": "G20",
+          "name": "Brand keyword Quality Score",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Brand search achieving 21.5% CTR \u2014 indicates strong QS on brand terms"
+        },
+        {
+          "id": "G-KW1",
+          "name": "Keyword coverage",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "Only brand terms actively targeted in Search. No non-brand search expansion"
+        },
+        {
+          "id": "G-KW2",
+          "name": "Match type distribution",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Unable to assess match types from available data \u2014 recommend reviewing brand campaign for close variant leakage"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 50.0,
+      "grade": "D+",
+      "checks": [
+        {
+          "id": "G26",
+          "name": "RSA ad count per ad group",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Brand search RSA setup not verified from available data"
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Brand CTR 21.5% is excellent. PMax CTR 0.9% is typical for PMax"
+        },
+        {
+          "id": "G-PM1",
+          "name": "PMax audience signals",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Separate Remarketing PMax exists but underperforming at 0.43x ROAS \u2014 audience signals may need refinement"
+        },
+        {
+          "id": "G-PM3",
+          "name": "PMax brand cannibalization",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "PMax +Brand campaign running alongside Brand Search \u2014 PMax likely cannibalizing cheaper brand clicks"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 45.0,
+      "grade": "D",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "All campaigns use smart bidding (Max Conv Value or Max Conversions)"
+        },
+        {
+          "id": "G37",
+          "name": "Target ROAS set appropriately",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Non-brand Shopping uses Target ROAS but main PMax uses uncapped Max Conv Value \u2014 no floor on efficiency"
+        },
+        {
+          "id": "G39",
+          "name": "Budget constrained campaigns",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Brand SIS 89.6% is strong. PMax SIS 44.2% suggests room to grow if ROAS improves. Shopping SIS ~40% limited by budget"
+        },
+        {
+          "id": "G50",
+          "name": "Sitelink extensions",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Extension setup not verified from available data"
+        },
+        {
+          "id": "G56",
+          "name": "Audience segments applied",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Remarketing PMax exists suggesting audiences are built, but performance is poor"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Set YouTube subscriptions and YouTube follow-on views to Secondary immediately \u2014 these are inflating conversion counts and misleading smart bidding",
+      "impact": "Critical",
+      "time": "5 min",
+      "check": "G47"
+    },
+    {
+      "action": "Set Add to basket to Secondary \u2014 micro conversion should not be Primary",
+      "impact": "Critical",
+      "time": "2 min",
+      "check": "G47"
+    },
+    {
+      "action": "Set Calls from ads to Primary \u2014 legitimate macro conversion being ignored",
+      "impact": "High",
+      "time": "2 min",
+      "check": "G-CT3"
+    },
+    {
+      "action": "Pause PMax Remarketing Aim campaign \u2014 $1,642 spend at 0.43x ROAS is destroying value",
+      "impact": "High",
+      "time": "1 min",
+      "check": "G16"
+    },
+    {
+      "action": "Add brand exclusion to PMax +Brand campaign or consolidate with Brand Search to stop cannibalization",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G-PM3"
+    },
+    {
+      "action": "Set Target ROAS floor on PMax +Brand (start at 1.5x) to establish efficiency baseline",
+      "impact": "High",
+      "time": "5 min",
+      "check": "G37"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "Clean conversion tracking: Only GA4 Purchase + Calls from ads as Primary. Everything else Secondary",
+        "Pause PMax Remarketing Aim campaign (0.43x ROAS)",
+        "Evaluate PMax +Brand vs Brand Search overlap \u2014 consider brand exclusion on PMax",
+        "Archive or delete the 78 paused campaigns to clean up account"
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize (Weeks 2-3)",
+      "items": [
+        "After conversion cleanup, let smart bidding recalibrate for 2 weeks with clean data",
+        "Set Target ROAS on PMax +Brand (start at 1.5x, increase incrementally)",
+        "Expand non-brand Shopping \u2014 increase budgets on chicken & lamb and salmon campaigns that show positive ROAS",
+        "Test non-brand Search campaign for high-intent terms (e.g., 'buy dog food online australia')"
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase non-brand Shopping SIS from ~40% toward 60%+ on profitable products",
+        "Launch single consolidated PMax campaign with proper product segmentation",
+        "Build Customer Match list from existing customer database for better audience targeting",
+        "Test Demand Gen for upper-funnel pet owner targeting"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "account": "Service d'agent Agustine",
+  "customerId": "442-188-9978",
+  "date": "2026-02-16",
+  "industry": "Local Service (Austin area)",
+  "healthScore": 15,
+  "grade": "F",
+  "verdict": "EMERGENCY: $340 spent with ZERO conversions on PMax \u2014 campaign is burning money with no tracking or wrong channel",
+  "snapshot": {
+    "totalCampaigns": null,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": null,
+    "totalKeywords": null,
+    "spend30d": 340,
+    "impressions30d": 5264,
+    "clicks30d": 125,
+    "ctr": 2.38,
+    "avgCpc": 2.72,
+    "conversions30d": 0,
+    "conversionValue30d": 0,
+    "roas": 0,
+    "cpa": null,
+    "searchImpressionShare": null,
+    "dailyBudget": null,
+    "avgDailySpend": 11.33
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 5.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "ZERO conversions from 125 clicks and $340 spend. Conversion tracking is likely broken or not installed"
+        },
+        {
+          "id": "G43",
+          "name": "Conversion tracking functional",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "0 conversions strongly suggests no tracking installed. PMax requires conversions to optimize \u2014 running blind"
+        },
+        {
+          "id": "G-CT2",
+          "name": "Tag firing verification",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No conversions recorded \u2014 must verify tag installation immediately"
+        }
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 0.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G16",
+          "name": "Wasted spend on irrelevant terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "100% of $340 spend is waste \u2014 zero conversions. Every dollar generated nothing"
+        },
+        {
+          "id": "G13",
+          "name": "PMax search terms",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "PMax search terms not reviewed \u2014 with 0 conversions, PMax has no signal to target relevant queries"
+        }
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 15.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming convention",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "CTM prefix with location \u2014 clear naming"
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count per objective",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Single PMax campaign \u2014 but PMax is wrong choice with 0 conversion data"
+        },
+        {
+          "id": "G05",
+          "name": "Brand vs Non-Brand separation",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. No search campaign. Only PMax which cannot optimize without conversions"
+        },
+        {
+          "id": "G06",
+          "name": "PMax as only campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "PMax requires conversion data to optimize. With 0 conversions, it has no signal and is essentially running random ads"
+        }
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": null,
+      "grade": "N/A",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score checks",
+          "severity": "High",
+          "result": "N/A",
+          "finding": "PMax only \u2014 no keyword-level Quality Score available"
+        }
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 20.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G-AD2",
+          "name": "CTR vs industry benchmark",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "2.38% CTR on PMax is below average \u2014 ad assets may not be compelling"
+        },
+        {
+          "id": "G-PM1",
+          "name": "PMax audience signals",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "With 0 conversions, any audience signals are useless \u2014 PMax cannot learn without conversion data"
+        },
+        {
+          "id": "G-PM2",
+          "name": "PMax Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Asset quality not verified \u2014 but irrelevant until conversion tracking is fixed"
+        }
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 10.0,
+      "grade": "F",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding strategy active",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "PMax uses automated bidding but with 0 conversions it has nothing to optimize toward"
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting accuracy",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Austin area targeting \u2014 verify service area coverage"
+        },
+        {
+          "id": "G39",
+          "name": "Budget efficiency",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Even at $11.33/day, this is 100% waste with no conversions"
+        }
+      ]
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "PAUSE PMax IMMEDIATELY \u2014 $340 wasted with 0 conversions. PMax cannot function without conversion data",
+      "impact": "Critical",
+      "time": "1 min",
+      "check": "G16"
+    },
+    {
+      "action": "Install conversion tracking \u2014 verify tags on website for calls and form submissions",
+      "impact": "Critical",
+      "time": "30 min",
+      "check": "G42"
+    },
+    {
+      "action": "When tracking is fixed, START with Search campaign (not PMax) \u2014 Search works with low/no conversion data",
+      "impact": "Critical",
+      "time": "30 min",
+      "check": "G06"
+    },
+    {
+      "action": "Verify landing page loads correctly and has clear CTA",
+      "impact": "High",
+      "time": "10 min",
+      "check": "G-AD2"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: STOP THE BLEEDING (Immediate)",
+      "items": [
+        "Pause PMax campaign immediately \u2014 it cannot optimize with zero conversions",
+        "Install and verify conversion tracking (phone calls + form submissions)",
+        "Test landing page: load speed, CTA visibility, contact form functionality",
+        "Determine exact service offering and target keywords"
+      ]
+    },
+    {
+      "phase": "Phase 2: Rebuild with Search (Week 1-2)",
+      "items": [
+        "Launch a Search campaign (not PMax) with manually chosen high-intent keywords",
+        "Use Max Clicks bidding initially to gather conversion data",
+        "Set up proper geographic targeting for Austin service area",
+        "Build comprehensive negative keyword list"
+      ]
+    },
+    {
+      "phase": "Phase 3: Evaluate (Month 2+)",
+      "items": [
+        "Once Search generates 15+ conversions/month, consider adding PMax",
+        "Test LSA if eligible for the service category",
+        "Only increase budget once CPA is established and acceptable",
+        "Build remarketing audiences from site visitors"
+      ]
+    }
+  ]
+}
