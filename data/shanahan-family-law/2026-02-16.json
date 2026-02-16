@@ -3,15 +3,15 @@
   "customerId": 7718562182,
   "date": "2026-02-16",
   "industry": "E-commerce",
-  "healthScore": 61,
+  "healthScore": 65,
   "grade": "C",
   "verdict": "Needs attention — notable issues",
   "snapshot": {
-    "totalCampaigns": 51,
+    "totalCampaigns": 5,
     "enabledCampaigns": 5,
     "activeCampaignsWithSpend": 3,
-    "totalAdGroups": 218,
-    "totalKeywords": 7165,
+    "totalAdGroups": 5,
+    "totalKeywords": 6130,
     "spend30d": 5479.03,
     "impressions30d": 28168,
     "clicks30d": 848,
@@ -35,7 +35,7 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "73 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "14 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
         },
         {
           "id": "G43",
@@ -63,7 +63,7 @@
           "name": "Conversion window appropriate",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "10 conversion categories detected (16x PHONE_CALL_LEAD, 7x PAGE_VIEW, 3x ENGAGEMENT, 1x GET_DIRECTIONS, 23x CONTACT, 6x PURCHASE, 13x SUBMIT_LEAD_FORM, 1x OUTBOUND_CLICK, 2x DEFAULT, 1x UNKNOWN). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "6 conversion categories detected (6x PHONE_CALL_LEAD, 1x PAGE_VIEW, 2x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 2x CONTACT, 1x UNKNOWN). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
         },
         {
           "id": "G47",
@@ -91,14 +91,14 @@
           "name": "No duplicate counting",
           "severity": "Critical",
           "result": "FAIL",
-          "finding": "Potential duplicates found: 4x \"purchase\" actions; 9x \"phone\" actions; 18x \"call\" actions; 11x \"lead\" actions; 16x \"form\" actions; 7x \"submit\" actions; 12x \"contact\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
+          "finding": "Potential duplicates found: 2x \"phone\" actions; 6x \"call\" actions; 2x \"lead\" actions; 2x \"form\" actions; 2x \"submit\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
         },
         {
           "id": "G-CT2",
           "name": "GA4 linked and flowing",
           "severity": "High",
-          "result": "PASS",
-          "finding": "GA4 conversion actions detected and linked. GA4 provides cross-device tracking, better attribution modeling, and audience data that improves targeting across campaigns."
+          "result": "WARNING",
+          "finding": "No GA4 conversion actions found. Linking GA4 to Google Ads enables cross-device conversion tracking, richer audience insights, and data-driven attribution. Go to GA4 Admin > Google Ads Links to connect."
         },
         {
           "id": "G-CT3",
@@ -108,7 +108,7 @@
           "finding": "14 active actions recording 24 conversions in 30d. Tags are firing and data is flowing."
         }
       ],
-      "score": 54.9,
+      "score": 50,
       "grade": "D"
     },
     {
@@ -183,15 +183,15 @@
           "id": "G01",
           "name": "Campaign naming convention",
           "severity": "Medium",
-          "result": "FAIL",
-          "finding": "35 naming prefix(es) across 51 campaigns. Inconsistent naming suggests multiple managers over time. Adopt a standard like \"[Type] - [Goal] - [Targeting]\" (e.g., \"Search - Brand - US\") for easier management and reporting."
+          "result": "PASS",
+          "finding": "3 naming prefix(es) across 5 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
         },
         {
           "id": "G02",
           "name": "Ad group naming convention",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "218 total ad groups. High ad group count increases management overhead and may indicate over-segmentation. Consolidate where possible — Google's AI performs better with more data per ad group."
+          "result": "PASS",
+          "finding": "5 total ad groups. Manageable ad group count."
         },
         {
           "id": "G03",
@@ -204,8 +204,8 @@
           "id": "G04",
           "name": "Campaign count per objective",
           "severity": "High",
-          "result": "FAIL",
-          "finding": "51 campaigns: 45 SEARCH, 2 DISPLAY, 3 PERFORMANCE_MAX, 1 DEMAND_GEN. Excessive campaign fragmentation dilutes budget and data across too many campaigns, preventing Smart Bidding from accumulating enough conversion signals. Consolidate to 5-10 focused campaigns for better algorithmic performance."
+          "result": "PASS",
+          "finding": "5 campaigns: 4 SEARCH, 1 PERFORMANCE_MAX. Healthy campaign count — sufficient data per campaign for optimization."
         },
         {
           "id": "G05",
@@ -264,8 +264,8 @@
           "finding": "Network settings properly configured — Search campaigns are not leaking budget to Display Network."
         }
       ],
-      "score": 63.8,
-      "grade": "C"
+      "score": 81.9,
+      "grade": "B"
     },
     {
       "name": "Keywords & Quality Score",
@@ -275,26 +275,26 @@
           "id": "G20-G25",
           "name": "Quality Score checks",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "Average QS: 6.5/10 across 12 scored keywords (6 scoring 7+, 6 below 5). Room for improvement — focus on keywords below 5 to reduce CPC. Each QS point improvement typically reduces CPC by 16%."
+          "result": "PASS",
+          "finding": "Average QS: 7.3/10 across 9 scored keywords (6 scoring 7+, 3 below 5). Strong QS — your keywords, ads, and landing pages are well-aligned, resulting in lower CPCs and better ad positions."
         },
         {
           "id": "G-KW1",
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "7165 keywords configured: 1456 BROAD, 1062 PHRASE, 4647 EXACT. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "6130 keywords configured: 604 PHRASE, 1148 BROAD, 4378 EXACT. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
         },
         {
           "id": "G-KW2",
           "name": "Keyword-to-ad relevance",
           "severity": "High",
           "result": "PASS",
-          "finding": "Average QS of 6.5 indicates good keyword-to-ad relevance. Keywords and ads are well-matched — this contributes to higher CTR, lower CPC, and better ad positions."
+          "finding": "Average QS of 7.3 indicates good keyword-to-ad relevance. Keywords and ads are well-matched — this contributes to higher CTR, lower CPC, and better ad positions."
         }
       ],
-      "score": 70,
-      "grade": "C"
+      "score": 90,
+      "grade": "A"
     },
     {
       "name": "Ads & Assets",
@@ -305,7 +305,7 @@
           "name": "RSA checks",
           "severity": "High",
           "result": "WARNING",
-          "finding": "344 Responsive Search Ads found, 145 with Good/Excellent Ad Strength. Over half of RSAs have Poor/Average Ad Strength. Add more unique headlines (use different angles: features, benefits, urgency, social proof) and ensure each headline brings a different message. Pin sparingly — excessive pinning reduces Google's ability to optimize."
+          "finding": "27 Responsive Search Ads found, 10 with Good/Excellent Ad Strength. Over half of RSAs have Poor/Average Ad Strength. Add more unique headlines (use different angles: features, benefits, urgency, social proof) and ensure each headline brings a different message. Pin sparingly — excessive pinning reduces Google's ability to optimize."
         },
         {
           "id": "G31-G34",
@@ -326,7 +326,7 @@
           "name": "Ad freshness",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "613 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
+          "finding": "28 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
         },
         {
           "id": "G-AD2",
@@ -439,7 +439,7 @@
           "name": "Audience segments applied",
           "severity": "High",
           "result": "PASS",
-          "finding": "11 remarketing/audience list(s) configured. Remarketing audiences convert 3-5x higher than cold traffic because they've already shown interest in your business. Ensure these lists are applied to campaigns as observation layers (for bid adjustments) or targeting layers (for RLSA campaigns)."
+          "finding": "7 remarketing/audience list(s) configured. Remarketing audiences convert 3-5x higher than cold traffic because they've already shown interest in your business. Ensure these lists are applied to campaigns as observation layers (for bid adjustments) or targeting layers (for RLSA campaigns)."
         },
         {
           "id": "G57",
@@ -471,12 +471,6 @@
       "impact": "Critical",
       "time": "10 min",
       "check": "G-CT1"
-    },
-    {
-      "action": "Consolidate fragmented campaigns to give Smart Bidding more conversion data per campaign. Merge campaigns with similar objectives and targeting into 5-10 focused campaigns.",
-      "impact": "High",
-      "time": "1 hr",
-      "check": "G04"
     },
     {
       "action": "Search Impression Share is 22%. You're only showing for 22% of eligible searches — missing 78% of potential customers. This is the single biggest growth opportunity: increasing budget or improving Quality Score would put your ads in front of significantly more qualified searchers.",

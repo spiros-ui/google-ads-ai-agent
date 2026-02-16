@@ -7,11 +7,11 @@
   "grade": "C",
   "verdict": "Needs attention — notable issues",
   "snapshot": {
-    "totalCampaigns": 10,
+    "totalCampaigns": 4,
     "enabledCampaigns": 4,
     "activeCampaignsWithSpend": 3,
-    "totalAdGroups": 19,
-    "totalKeywords": 1630,
+    "totalAdGroups": 3,
+    "totalKeywords": 1031,
     "spend30d": 19403.64,
     "impressions30d": 107839,
     "clicks30d": 4588,
@@ -35,7 +35,7 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "21 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "6 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
         },
         {
           "id": "G43",
@@ -63,7 +63,7 @@
           "name": "Conversion window appropriate",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "11 conversion categories detected (1x SUBMIT_LEAD_FORM, 4x DEFAULT, 6x PHONE_CALL_LEAD, 2x PURCHASE, 1x BOOK_APPOINTMENT, 1x ENGAGEMENT, 2x PAGE_VIEW, 1x GET_DIRECTIONS, 1x CONTACT, 1x OUTBOUND_CLICK, 1x STORE_VISIT). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "6 conversion categories detected (1x PHONE_CALL_LEAD, 1x PURCHASE, 1x DEFAULT, 1x CONTACT, 1x PAGE_VIEW, 1x STORE_VISIT). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
         },
         {
           "id": "G47",
@@ -90,8 +90,8 @@
           "id": "G-CT1",
           "name": "No duplicate counting",
           "severity": "Critical",
-          "result": "FAIL",
-          "finding": "Potential duplicates found: 2x \"purchase\" actions; 8x \"call\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
+          "result": "WARNING",
+          "finding": "Potential duplicates found: 3x \"call\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
         },
         {
           "id": "G-CT2",
@@ -108,7 +108,7 @@
           "finding": "6 active actions recording 197 conversions in 30d. Tags are firing and data is flowing."
         }
       ],
-      "score": 63.1,
+      "score": 71.3,
       "grade": "C"
     },
     {
@@ -183,15 +183,15 @@
           "id": "G01",
           "name": "Campaign naming convention",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "4 naming prefix(es) across 10 campaigns. Inconsistent naming suggests multiple managers over time. Adopt a standard like \"[Type] - [Goal] - [Targeting]\" (e.g., \"Search - Brand - US\") for easier management and reporting."
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 4 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
         },
         {
           "id": "G02",
           "name": "Ad group naming convention",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "19 total ad groups. Manageable ad group count."
+          "finding": "3 total ad groups. Manageable ad group count."
         },
         {
           "id": "G03",
@@ -205,14 +205,14 @@
           "name": "Campaign count per objective",
           "severity": "High",
           "result": "PASS",
-          "finding": "10 campaigns: 8 SEARCH, 2 PERFORMANCE_MAX. Healthy campaign count — sufficient data per campaign for optimization."
+          "finding": "4 campaigns: 2 SEARCH, 2 PERFORMANCE_MAX. Healthy campaign count — sufficient data per campaign for optimization."
         },
         {
           "id": "G05",
           "name": "Brand vs Non-Brand separation",
           "severity": "Critical",
-          "result": "PASS",
-          "finding": "Brand campaign exists — this protects branded search terms from competitors and typically achieves 30-50x ROAS. Ensure brand terms are excluded from non-brand campaigns to prevent cannibalization."
+          "result": "FAIL",
+          "finding": "CRITICAL: No brand campaign exists. Competitors can bid on your brand name and steal clicks at a low cost. Brand campaigns typically have 30-50x ROAS with $0.50-$1.50 CPCs. Create a dedicated brand Search campaign immediately with exact and phrase match brand keywords."
         },
         {
           "id": "G06",
@@ -264,8 +264,8 @@
           "finding": "Network settings properly configured — Search campaigns are not leaking budget to Display Network."
         }
       ],
-      "score": 81.9,
-      "grade": "B"
+      "score": 67.2,
+      "grade": "C"
     },
     {
       "name": "Keywords & Quality Score",
@@ -283,7 +283,7 @@
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "1630 keywords configured: 897 BROAD, 733 EXACT. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "1031 keywords configured: 327 BROAD, 704 EXACT. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
         },
         {
           "id": "G-KW2",
@@ -305,7 +305,7 @@
           "name": "RSA checks",
           "severity": "High",
           "result": "WARNING",
-          "finding": "54 Responsive Search Ads found, 10 with Good/Excellent Ad Strength. Over half of RSAs have Poor/Average Ad Strength. Add more unique headlines (use different angles: features, benefits, urgency, social proof) and ensure each headline brings a different message. Pin sparingly — excessive pinning reduces Google's ability to optimize."
+          "finding": "10 Responsive Search Ads found, 1 with Good/Excellent Ad Strength. Over half of RSAs have Poor/Average Ad Strength. Add more unique headlines (use different angles: features, benefits, urgency, social proof) and ensure each headline brings a different message. Pin sparingly — excessive pinning reduces Google's ability to optimize."
         },
         {
           "id": "G31-G34",
@@ -326,7 +326,7 @@
           "name": "Ad freshness",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "86 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
+          "finding": "10 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
         },
         {
           "id": "G-AD2",
@@ -439,7 +439,7 @@
           "name": "Audience segments applied",
           "severity": "High",
           "result": "PASS",
-          "finding": "4 remarketing/audience list(s) configured. Remarketing audiences convert 3-5x higher than cold traffic because they've already shown interest in your business. Ensure these lists are applied to campaigns as observation layers (for bid adjustments) or targeting layers (for RLSA campaigns)."
+          "finding": "1 remarketing/audience list(s) configured. Remarketing audiences convert 3-5x higher than cold traffic because they've already shown interest in your business. Ensure these lists are applied to campaigns as observation layers (for bid adjustments) or targeting layers (for RLSA campaigns)."
         },
         {
           "id": "G57",
@@ -461,10 +461,10 @@
       "check": "G44"
     },
     {
-      "action": "Remove duplicate conversion actions: Go to Goals > Conversions and identify actions tracking the same event (e.g., GA4 Purchase + Shopify Purchase). Keep one source per conversion type and set duplicates to Secondary.",
+      "action": "Create a brand Search campaign: Add exact and phrase match keywords for your brand name. Set budget to capture 95%+ impression share. Brand campaigns typically achieve 30-50x ROAS with $0.50-$1.50 CPCs.",
       "impact": "Critical",
-      "time": "10 min",
-      "check": "G-CT1"
+      "time": "30 min",
+      "check": "G05"
     },
     {
       "action": "Upload Customer Match list: Export customer emails/phones from your CRM and upload via Tools > Audience Manager > Customer Match. This enables lookalike targeting and existing customer exclusion.",
@@ -477,7 +477,7 @@
     {
       "phase": "Phase 1: Fix the Foundation (Week 1)",
       "items": [
-        "Clean up conversion tracking — audit all conversion actions, set only true business outcomes (Purchase, Lead Form, Phone Call) as Primary, and set all micro-actions (page views, add-to-cart, engagements) to Secondary. This is the single most impactful change because it fixes the data that drives all optimization decisions."
+        "Launch a brand Search campaign immediately to protect your branded search terms. Competitors can bid on your brand name at low cost. Create exact + phrase match keywords for your brand name, set a sufficient budget to capture 95%+ impression share. Brand campaigns typically deliver 30-50x ROAS."
       ]
     },
     {

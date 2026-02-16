@@ -2,7 +2,7 @@
   "account": "Yandina Station",
   "customerId": 1705492043,
   "date": "2026-02-16",
-  "industry": "E-commerce",
+  "industry": "Travel",
   "healthScore": 51,
   "grade": "D",
   "verdict": "Poor — significant problems present",
@@ -10,8 +10,8 @@
     "totalCampaigns": 1,
     "enabledCampaigns": 1,
     "activeCampaignsWithSpend": 1,
-    "totalAdGroups": 2,
-    "totalKeywords": 451,
+    "totalAdGroups": 1,
+    "totalKeywords": 448,
     "spend30d": 864.74,
     "impressions30d": 2566,
     "clicks30d": 290,
@@ -35,7 +35,7 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "8 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "3 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
         },
         {
           "id": "G43",
@@ -63,7 +63,7 @@
           "name": "Conversion window appropriate",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "5 conversion categories detected (1x PURCHASE, 1x CONTACT, 2x PHONE_CALL_LEAD, 2x SUBMIT_LEAD_FORM, 2x BOOK_APPOINTMENT). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "2 conversion categories detected (2x PHONE_CALL_LEAD, 1x SUBMIT_LEAD_FORM). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
         },
         {
           "id": "G47",
@@ -191,7 +191,7 @@
           "name": "Ad group naming convention",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "2 total ad groups. Manageable ad group count."
+          "finding": "1 total ad groups. Manageable ad group count."
         },
         {
           "id": "G03",
@@ -219,7 +219,7 @@
           "name": "PMax present for eligible accounts",
           "severity": "Medium",
           "result": "FAIL",
-          "finding": "No PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G07",
@@ -283,7 +283,7 @@
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "451 keywords configured: 383 EXACT, 53 BROAD, 15 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "448 keywords configured: 380 EXACT, 53 BROAD, 15 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
         },
         {
           "id": "G-KW2",
@@ -312,7 +312,7 @@
           "name": "PMax asset checks",
           "severity": "Critical",
           "result": "N/A",
-          "finding": "No PMax campaigns configured."
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G35",

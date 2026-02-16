@@ -3,15 +3,15 @@
   "customerId": 3555921105,
   "date": "2026-02-16",
   "industry": "E-commerce",
-  "healthScore": 66,
+  "healthScore": 69,
   "grade": "C",
   "verdict": "Needs attention — notable issues",
   "snapshot": {
-    "totalCampaigns": 7,
+    "totalCampaigns": 1,
     "enabledCampaigns": 1,
     "activeCampaignsWithSpend": 1,
-    "totalAdGroups": 34,
-    "totalKeywords": 584,
+    "totalAdGroups": 1,
+    "totalKeywords": 466,
     "spend30d": 3451.68,
     "impressions30d": 11015,
     "clicks30d": 979,
@@ -35,7 +35,7 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "11 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "7 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
         },
         {
           "id": "G43",
@@ -63,7 +63,7 @@
           "name": "Conversion window appropriate",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "6 conversion categories detected (2x PAGE_VIEW, 3x PURCHASE, 2x BOOK_APPOINTMENT, 2x CONTACT, 1x SUBSCRIBE_PAID, 1x PHONE_CALL_LEAD). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "5 conversion categories detected (1x PAGE_VIEW, 2x PURCHASE, 2x BOOK_APPOINTMENT, 1x CONTACT, 1x PHONE_CALL_LEAD). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
         },
         {
           "id": "G47",
@@ -90,8 +90,8 @@
           "id": "G-CT1",
           "name": "No duplicate counting",
           "severity": "Critical",
-          "result": "WARNING",
-          "finding": "Potential duplicates found: 2x \"purchase\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
+          "result": "PASS",
+          "finding": "No obvious duplicate conversion actions. Each conversion type is tracked once, ensuring accurate reporting and Smart Bidding optimization."
         },
         {
           "id": "G-CT2",
@@ -108,8 +108,8 @@
           "finding": "7 active actions recording 31 conversions in 30d. Tags are firing and data is flowing."
         }
       ],
-      "score": 71.3,
-      "grade": "C"
+      "score": 79.5,
+      "grade": "B"
     },
     {
       "name": "Wasted Spend / Negatives",
@@ -184,14 +184,14 @@
           "name": "Campaign naming convention",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "2 naming prefix(es) across 7 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
+          "finding": "1 naming prefix(es) across 1 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
         },
         {
           "id": "G02",
           "name": "Ad group naming convention",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "34 total ad groups. Manageable ad group count."
+          "finding": "1 total ad groups. Manageable ad group count."
         },
         {
           "id": "G03",
@@ -205,7 +205,7 @@
           "name": "Campaign count per objective",
           "severity": "High",
           "result": "PASS",
-          "finding": "7 campaigns: 4 SEARCH, 2 TRAVEL, 1 PERFORMANCE_MAX. Healthy campaign count — sufficient data per campaign for optimization."
+          "finding": "1 campaigns: 1 SEARCH. Healthy campaign count — sufficient data per campaign for optimization."
         },
         {
           "id": "G05",
@@ -218,8 +218,8 @@
           "id": "G06",
           "name": "PMax present for eligible accounts",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "PMax campaigns exist but all paused. PMax uses Google's full ad inventory and AI-driven optimization. If paused due to poor performance, review asset groups and audience signals before relaunching."
+          "result": "FAIL",
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G07",
@@ -264,8 +264,8 @@
           "finding": "Network settings properly configured — Search campaigns are not leaking budget to Display Network."
         }
       ],
-      "score": 60.6,
-      "grade": "C"
+      "score": 57.7,
+      "grade": "D"
     },
     {
       "name": "Keywords & Quality Score",
@@ -275,26 +275,26 @@
           "id": "G20-G25",
           "name": "Quality Score checks",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "Average QS: 6.1/10 across 7 scored keywords (5 scoring 7+, 1 below 5). Room for improvement — focus on keywords below 5 to reduce CPC. Each QS point improvement typically reduces CPC by 16%."
+          "result": "PASS",
+          "finding": "Average QS: 7.0/10 across 4 scored keywords (3 scoring 7+, 0 below 5). Strong QS — your keywords, ads, and landing pages are well-aligned, resulting in lower CPCs and better ad positions."
         },
         {
           "id": "G-KW1",
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "584 keywords configured: 71 BROAD, 492 EXACT, 21 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "466 keywords configured: 69 BROAD, 391 EXACT, 6 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
         },
         {
           "id": "G-KW2",
           "name": "Keyword-to-ad relevance",
           "severity": "High",
           "result": "PASS",
-          "finding": "Average QS of 6.1 indicates good keyword-to-ad relevance. Keywords and ads are well-matched — this contributes to higher CTR, lower CPC, and better ad positions."
+          "finding": "Average QS of 7.0 indicates good keyword-to-ad relevance. Keywords and ads are well-matched — this contributes to higher CTR, lower CPC, and better ad positions."
         }
       ],
-      "score": 70,
-      "grade": "C"
+      "score": 90,
+      "grade": "A"
     },
     {
       "name": "Ads & Assets",
@@ -305,14 +305,14 @@
           "name": "RSA checks",
           "severity": "High",
           "result": "PASS",
-          "finding": "68 Responsive Search Ads found, 49 with Good/Excellent Ad Strength. Good Ad Strength across RSAs — Google has enough headline/description variations to optimize effectively."
+          "finding": "1 Responsive Search Ads found, 1 with Good/Excellent Ad Strength. Good Ad Strength across RSAs — Google has enough headline/description variations to optimize effectively."
         },
         {
           "id": "G31-G34",
           "name": "PMax asset checks",
           "severity": "Critical",
           "result": "N/A",
-          "finding": "PMax campaigns exist but all paused. Before relaunching, ensure asset groups are complete — PMax needs diverse, high-quality assets to perform well across Search, Display, YouTube, Gmail, Maps, and Discover."
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G35",
@@ -325,8 +325,8 @@
           "id": "G-AD1",
           "name": "Ad freshness",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "71 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
+          "result": "FAIL",
+          "finding": "1 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
         },
         {
           "id": "G-AD2",
@@ -371,8 +371,8 @@
           "finding": "No active PMax."
         }
       ],
-      "score": 78.6,
-      "grade": "B"
+      "score": 71.4,
+      "grade": "C"
     },
     {
       "name": "Settings & Targeting + Bidding",

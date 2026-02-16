@@ -2,16 +2,16 @@
   "account": "Kyle_Dynamic Tree Solutions",
   "customerId": 9254546290,
   "date": "2026-02-16",
-  "industry": "E-commerce",
-  "healthScore": 55,
+  "industry": "Local Services",
+  "healthScore": 49,
   "grade": "D",
   "verdict": "Poor — significant problems present",
   "snapshot": {
-    "totalCampaigns": 37,
+    "totalCampaigns": 2,
     "enabledCampaigns": 2,
     "activeCampaignsWithSpend": 2,
-    "totalAdGroups": 932,
-    "totalKeywords": 4460,
+    "totalAdGroups": 2,
+    "totalKeywords": 3376,
     "spend30d": 81.78,
     "impressions30d": 580,
     "clicks30d": 13,
@@ -35,7 +35,7 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "42 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "23 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
         },
         {
           "id": "G43",
@@ -63,7 +63,7 @@
           "name": "Conversion window appropriate",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "9 conversion categories detected (10x PHONE_CALL_LEAD, 20x CONTACT, 2x GET_DIRECTIONS, 1x PAGE_VIEW, 1x ENGAGEMENT, 4x SUBMIT_LEAD_FORM, 1x DEFAULT, 2x PURCHASE, 1x ADD_TO_CART). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "7 conversion categories detected (7x PHONE_CALL_LEAD, 9x CONTACT, 2x GET_DIRECTIONS, 1x PAGE_VIEW, 1x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 1x DEFAULT). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
         },
         {
           "id": "G47",
@@ -91,7 +91,7 @@
           "name": "No duplicate counting",
           "severity": "Critical",
           "result": "FAIL",
-          "finding": "Potential duplicates found: 2x \"purchase\" actions; 2x \"phone\" actions; 13x \"call\" actions; 7x \"form\" actions; 2x \"submit\" actions; 2x \"contact\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
+          "finding": "Potential duplicates found: 9x \"call\" actions; 3x \"form\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
         },
         {
           "id": "G-CT2",
@@ -183,15 +183,15 @@
           "id": "G01",
           "name": "Campaign naming convention",
           "severity": "Medium",
-          "result": "FAIL",
-          "finding": "35 naming prefix(es) across 37 campaigns. Inconsistent naming suggests multiple managers over time. Adopt a standard like \"[Type] - [Goal] - [Targeting]\" (e.g., \"Search - Brand - US\") for easier management and reporting."
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 2 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
         },
         {
           "id": "G02",
           "name": "Ad group naming convention",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "932 total ad groups. High ad group count increases management overhead and may indicate over-segmentation. Consolidate where possible — Google's AI performs better with more data per ad group."
+          "result": "PASS",
+          "finding": "2 total ad groups. Manageable ad group count."
         },
         {
           "id": "G03",
@@ -204,22 +204,22 @@
           "id": "G04",
           "name": "Campaign count per objective",
           "severity": "High",
-          "result": "FAIL",
-          "finding": "37 campaigns: 2 SMART, 33 SEARCH, 2 DISPLAY. Excessive campaign fragmentation dilutes budget and data across too many campaigns, preventing Smart Bidding from accumulating enough conversion signals. Consolidate to 5-10 focused campaigns for better algorithmic performance."
+          "result": "PASS",
+          "finding": "2 campaigns: 2 SEARCH. Healthy campaign count — sufficient data per campaign for optimization."
         },
         {
           "id": "G05",
           "name": "Brand vs Non-Brand separation",
           "severity": "Critical",
-          "result": "PASS",
-          "finding": "Brand campaign exists — this protects branded search terms from competitors and typically achieves 30-50x ROAS. Ensure brand terms are excluded from non-brand campaigns to prevent cannibalization."
+          "result": "FAIL",
+          "finding": "CRITICAL: No brand campaign exists. Competitors can bid on your brand name and steal clicks at a low cost. Brand campaigns typically have 30-50x ROAS with $0.50-$1.50 CPCs. Create a dedicated brand Search campaign immediately with exact and phrase match brand keywords."
         },
         {
           "id": "G06",
           "name": "PMax present for eligible accounts",
           "severity": "Medium",
           "result": "FAIL",
-          "finding": "No PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G07",
@@ -264,7 +264,7 @@
           "finding": "Network settings properly configured — Search campaigns are not leaking budget to Display Network."
         }
       ],
-      "score": 48.1,
+      "score": 49,
       "grade": "D"
     },
     {
@@ -276,21 +276,21 @@
           "name": "Quality Score checks",
           "severity": "High",
           "result": "FAIL",
-          "finding": "Average QS: 3.2/10 across 14 scored keywords (0 scoring 7+, 10 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types."
+          "finding": "Average QS: 2.8/10 across 6 scored keywords (0 scoring 7+, 5 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types."
         },
         {
           "id": "G-KW1",
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "4460 keywords configured: 2797 BROAD, 1073 EXACT, 590 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "3376 keywords configured: 1964 BROAD, 948 EXACT, 464 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
         },
         {
           "id": "G-KW2",
           "name": "Keyword-to-ad relevance",
           "severity": "High",
           "result": "WARNING",
-          "finding": "Average QS of 3.2 indicates poor keyword-to-ad relevance. Low relevance means your ads don't closely match user intent — restructure ad groups around single themes, include keywords in headlines, and ensure landing pages address the specific search intent."
+          "finding": "Average QS of 2.8 indicates poor keyword-to-ad relevance. Low relevance means your ads don't closely match user intent — restructure ad groups around single themes, include keywords in headlines, and ensure landing pages address the specific search intent."
         }
       ],
       "score": 30,
@@ -304,29 +304,29 @@
           "id": "G26-G30",
           "name": "RSA checks",
           "severity": "High",
-          "result": "PASS",
-          "finding": "102 Responsive Search Ads found, 54 with Good/Excellent Ad Strength. Good Ad Strength across RSAs — Google has enough headline/description variations to optimize effectively."
+          "result": "FAIL",
+          "finding": "0 Responsive Search Ads found, 0 with Good/Excellent Ad Strength. Every active ad group needs at least 1 RSA with 15 headlines and 4 descriptions. RSAs allow Google to test 32,760+ combinations to find the best-performing message for each search."
         },
         {
           "id": "G31-G34",
           "name": "PMax asset checks",
           "severity": "Critical",
           "result": "N/A",
-          "finding": "No PMax campaigns configured."
+          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G35",
           "name": "Ad copy relevance to keywords",
           "severity": "High",
-          "result": "WARNING",
+          "result": "N/A",
           "finding": "Verify ad headlines include primary keywords. Keyword insertion in headlines improves CTR by 10-15% on average because ads appear more relevant to the searcher's query. Use dynamic keyword insertion (DKI) or manually include top keywords in at least 3 headlines."
         },
         {
           "id": "G-AD1",
           "name": "Ad freshness",
           "severity": "Medium",
-          "result": "WARNING",
-          "finding": "1201 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
+          "result": "FAIL",
+          "finding": "2 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
         },
         {
           "id": "G-AD2",
@@ -371,8 +371,8 @@
           "finding": "No active PMax."
         }
       ],
-      "score": 78.6,
-      "grade": "B"
+      "score": 40,
+      "grade": "D"
     },
     {
       "name": "Settings & Targeting + Bidding",
@@ -473,10 +473,10 @@
       "check": "G-CT1"
     },
     {
-      "action": "Consolidate fragmented campaigns to give Smart Bidding more conversion data per campaign. Merge campaigns with similar objectives and targeting into 5-10 focused campaigns.",
-      "impact": "High",
-      "time": "1 hr",
-      "check": "G04"
+      "action": "Create a brand Search campaign: Add exact and phrase match keywords for your brand name. Set budget to capture 95%+ impression share. Brand campaigns typically achieve 30-50x ROAS with $0.50-$1.50 CPCs.",
+      "impact": "Critical",
+      "time": "30 min",
+      "check": "G05"
     },
     {
       "action": "Fix geo targeting: In each campaign, go to Settings > Locations > Location options. Change from \"Presence or Interest\" to \"Presence: People in or regularly in your targeted locations.\" This stops ads from showing to out-of-area users.",
@@ -485,16 +485,16 @@
       "check": "G11"
     },
     {
-      "action": "Average QS: 3.2/10 across 14 scored keywords (0 scoring 7+, 10 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types.",
+      "action": "Average QS: 2.8/10 across 6 scored keywords (0 scoring 7+, 5 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types.",
       "impact": "High",
       "time": "15 min",
       "check": "G20-G25"
     },
     {
-      "action": "Search Impression Share is 10%. You're only showing for 10% of eligible searches — missing 90% of potential customers. This is the single biggest growth opportunity: increasing budget or improving Quality Score would put your ads in front of significantly more qualified searchers.",
+      "action": "0 Responsive Search Ads found, 0 with Good/Excellent Ad Strength. Every active ad group needs at least 1 RSA with 15 headlines and 4 descriptions. RSAs allow Google to test 32,760+ combinations to find the best-performing message for each search.",
       "impact": "High",
       "time": "15 min",
-      "check": "G39"
+      "check": "G26-G30"
     }
   ],
   "recommendations": [
@@ -502,7 +502,8 @@
       "phase": "Phase 1: Fix the Foundation (Week 1)",
       "items": [
         "Clean up conversion tracking — audit all conversion actions, set only true business outcomes (Purchase, Lead Form, Phone Call) as Primary, and set all micro-actions (page views, add-to-cart, engagements) to Secondary. This is the single most impactful change because it fixes the data that drives all optimization decisions.",
-        "Enable Enhanced Conversions for the primary conversion action. Navigate to Goals > Conversions > Settings and turn on Enhanced Conversions. This uses hashed first-party data to recover 5-15% of conversions lost to cookie restrictions — directly improving Smart Bidding accuracy."
+        "Enable Enhanced Conversions for the primary conversion action. Navigate to Goals > Conversions > Settings and turn on Enhanced Conversions. This uses hashed first-party data to recover 5-15% of conversions lost to cookie restrictions — directly improving Smart Bidding accuracy.",
+        "Launch a brand Search campaign immediately to protect your branded search terms. Competitors can bid on your brand name at low cost. Create exact + phrase match keywords for your brand name, set a sufficient budget to capture 95%+ impression share. Brand campaigns typically deliver 30-50x ROAS."
       ]
     },
     {
