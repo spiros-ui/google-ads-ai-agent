@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads AI Agent — Daily Audit Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #232734;
+    --border: #2e3345;
+    --text: #e4e6ef;
+    --text-dim: #8b8fa3;
+    --accent: #6c5ce7;
+    --accent-light: #a29bfe;
+    --green: #00b894;
+    --yellow: #fdcb6e;
+    --orange: #e17055;
+    --red: #d63031;
+    --red-bg: rgba(214,48,49,0.12);
+    --orange-bg: rgba(225,112,85,0.12);
+    --yellow-bg: rgba(253,203,110,0.12);
+    --green-bg: rgba(0,184,148,0.12);
+    --blue-bg: rgba(108,92,231,0.12);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  .header { background:var(--surface); border-bottom:1px solid var(--border); padding:16px 32px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+  .header h1 { font-size:18px; font-weight:600; }
+  .header h1 span { color:var(--accent-light); }
+  .header .updated { font-size:12px; color:var(--text-dim); }
+  .tabs { display:flex; background:var(--surface); border-bottom:1px solid var(--border); padding:0 32px; overflow-x:auto; position:sticky; top:57px; z-index:99; }
+  .tab { padding:12px 24px; font-size:14px; font-weight:500; color:var(--text-dim); cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; white-space:nowrap; }
+  .tab:hover { color:var(--text); background:var(--surface2); }
+  .tab.active { color:var(--accent-light); border-bottom-color:var(--accent); }
+  .content { max-width:1400px; margin:0 auto; padding:24px 32px; }
+  .date-nav { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  .date-nav label { font-size:13px; color:var(--text-dim); font-weight:500; }
+  .date-select { background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:8px 12px; color:var(--text); font-size:14px; cursor:pointer; }
+  .date-select:focus { outline:none; border-color:var(--accent); }
+  .score-hero { display:flex; gap:24px; margin-bottom:24px; flex-wrap:wrap; }
+  .score-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px; flex:1; min-width:200px; }
+  .score-card.main { min-width:300px; text-align:center; }
+  .score-ring { width:140px; height:140px; margin:0 auto 16px; position:relative; }
+  .score-ring svg { transform:rotate(-90deg); }
+  .score-ring .value { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:36px; font-weight:700; }
+  .score-ring .grade { position:absolute; top:50%; left:50%; transform:translate(-50%, 12px); font-size:14px; font-weight:600; color:var(--text-dim); }
+  .score-card h3 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); margin-bottom:8px; }
+  .score-card .metric { font-size:28px; font-weight:700; }
+  .score-card .sub { font-size:12px; color:var(--text-dim); margin-top:4px; }
+  .category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:24px; }
+  .cat-card { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:16px; }
+  .cat-card .cat-name { font-size:12px; color:var(--text-dim); font-weight:500; margin-bottom:4px; }
+  .cat-card .cat-score { font-size:24px; font-weight:700; }
+  .cat-card .cat-bar { height:4px; background:var(--surface2); border-radius:2px; margin-top:8px; overflow:hidden; }
+  .cat-card .cat-fill { height:100%; border-radius:2px; transition:width .5s; }
+  .section { margin-bottom:32px; }
+  .section-title { font-size:16px; font-weight:600; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+  .section-title .badge { font-size:11px; padding:2px 8px; border-radius:10px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:8px; overflow:hidden; }
+  thead th { background:var(--surface2); padding:10px 16px; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); font-weight:600; border-bottom:1px solid var(--border); }
+  tbody td { padding:10px 16px; font-size:13px; border-bottom:1px solid var(--border); vertical-align:top; }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:hover { background:var(--surface2); }
+  .pill { display:inline-block; padding:2px 10px; border-radius:10px; font-size:11px; font-weight:600; }
+  .pill-pass { background:var(--green-bg); color:var(--green); }
+  .pill-warning { background:var(--yellow-bg); color:var(--yellow); }
+  .pill-fail { background:var(--red-bg); color:var(--red); }
+  .pill-na { background:var(--surface2); color:var(--text-dim); }
+  .pill-critical { background:var(--red-bg); color:var(--red); }
+  .pill-high { background:var(--orange-bg); color:var(--orange); }
+  .pill-medium { background:var(--yellow-bg); color:var(--yellow); }
+  .pill-low { background:var(--blue-bg); color:var(--accent-light); }
+  .quick-wins { display:grid; gap:8px; }
+  .qw-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:14px 18px; display:flex; align-items:flex-start; gap:12px; }
+  .qw-num { width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
+  .qw-body { flex:1; }
+  .qw-body .qw-action { font-size:14px; font-weight:500; }
+  .qw-body .qw-meta { font-size:12px; color:var(--text-dim); margin-top:4px; }
+  .rec-phase { margin-bottom:16px; }
+  .rec-phase h4 { font-size:14px; font-weight:600; margin-bottom:8px; color:var(--accent-light); }
+  .rec-phase ul { list-style:none; padding:0; }
+  .rec-phase li { padding:6px 0 6px 20px; position:relative; font-size:13px; }
+  .rec-phase li::before { content:''; position:absolute; left:0; top:13px; width:8px; height:8px; border-radius:50%; background:var(--accent); }
+  .product-table .wasted { color:var(--red); }
+  .product-table .star { color:var(--green); }
+  .empty-state { text-align:center; padding:80px 40px; color:var(--text-dim); }
+  .empty-state h2 { font-size:20px; margin-bottom:8px; color:var(--text); }
+  .tab-content { display:none; }
+  .tab-content.active { display:block; }
+  @media (max-width:768px) {
+    .header { padding:12px 16px; }
+    .tabs { padding:0 16px; }
+    .content { padding:16px; }
+    .score-hero { flex-direction:column; }
+    .category-grid { grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Google Ads <span>AI Agent</span> — Daily Audit Dashboard</h1>
+  <div class="updated" id="lastUpdated"></div>
+</div>
+
+<div class="tabs" id="tabsContainer"></div>
+
+<div id="contentContainer"></div>
+
+<script>
+const DATA_BASE = 'data';
+let manifest = null;
+let accountData = {};
+
+function getScoreColor(score) {
+  if (score === null || score === undefined) return 'var(--text-dim)';
+  if (score >= 90) return 'var(--green)';
+  if (score >= 75) return '#55efc4';
+  if (score >= 60) return 'var(--yellow)';
+  if (score >= 40) return 'var(--orange)';
+  return 'var(--red)';
+}
+
+function getGrade(score) {
+  if (score === null || score === undefined) return 'N/A';
+  if (score >= 90) return 'A';
+  if (score >= 75) return 'B';
+  if (score >= 60) return 'C';
+  if (score >= 40) return 'D';
+  return 'F';
+}
+
+function createScoreRing(score, size=140) {
+  const color = getScoreColor(score);
+  const grade = getGrade(score);
+  const r = (size/2) - 10;
+  const circumference = 2 * Math.PI * r;
+  const offset = circumference - (score/100) * circumference;
+  return `
+    <div class="score-ring" style="width:${size}px;height:${size}px">
+      <svg width="${size}" height="${size}">
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--surface2)" stroke-width="8"/>
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="8"
+          stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" stroke-linecap="round"/>
+      </svg>
+      <div class="value" style="color:${color}">${score}</div>
+      <div class="grade">Grade ${grade}</div>
+    </div>`;
+}
+
+function pillResult(result) {
+  const cls = result === 'PASS' ? 'pill-pass' : result === 'WARNING' ? 'pill-warning' : result === 'FAIL' ? 'pill-fail' : 'pill-na';
+  return `<span class="pill ${cls}">${result}</span>`;
+}
+
+function pillSeverity(sev) {
+  const cls = sev === 'Critical' ? 'pill-critical' : sev === 'High' ? 'pill-high' : sev === 'Medium' ? 'pill-medium' : 'pill-low';
+  return `<span class="pill ${cls}">${sev}</span>`;
+}
+
+function renderAccount(data) {
+  const s = data.snapshot;
+  let html = '';
+
+  // Date nav
+  const acc = manifest.accounts.find(a => a.name === data.account);
+  const dates = acc ? acc.dates : [data.date];
+  html += `<div class="date-nav">
+    <label>Audit Date:</label>
+    <select class="date-select" onchange="loadDate('${acc ? acc.id : ''}', this.value)">
+      ${dates.map(d => `<option value="${d}" ${d === data.date ? 'selected' : ''}>${d}</option>`).join('')}
+    </select>
+  </div>`;
+
+  // Score hero
+  html += `<div class="score-hero">
+    <div class="score-card main">
+      <h3>Ads Health Score</h3>
+      ${createScoreRing(data.healthScore)}
+      <div class="sub">${data.verdict}</div>
+    </div>
+    <div class="score-card">
+      <h3>30-Day Spend</h3>
+      <div class="metric">$${s.spend30d.toLocaleString()}</div>
+      <div class="sub">Budget: $${s.dailyBudget}/day | Avg: $${s.avgDailySpend.toFixed(0)}/day</div>
+    </div>
+    <div class="score-card">
+      <h3>ROAS</h3>
+      <div class="metric" style="color:${s.roas >= 3.68 ? 'var(--green)' : 'var(--red)'}">${s.roas}x</div>
+      <div class="sub">Benchmark: 3.68x (e-commerce)</div>
+    </div>
+    <div class="score-card">
+      <h3>Conversions</h3>
+      <div class="metric">${s.conversions30d}</div>
+      <div class="sub">CPA: $${s.cpa.toFixed(0)} | Value: $${s.conversionValue30d.toLocaleString()}</div>
+    </div>
+    <div class="score-card">
+      <h3>Impression Share</h3>
+      <div class="metric" style="color:${s.searchImpressionShare >= 50 ? 'var(--green)' : 'var(--red)'}">${s.searchImpressionShare}%</div>
+      <div class="sub">${(100 - s.searchImpressionShare).toFixed(0)}% opportunity lost</div>
+    </div>
+  </div>`;
+
+  // Category scores
+  html += `<div class="section"><div class="section-title">Category Breakdown</div><div class="category-grid">`;
+  data.categories.forEach(cat => {
+    const score = cat.score;
+    const color = getScoreColor(score);
+    const pct = score !== null ? score : 0;
+    html += `<div class="cat-card">
+      <div class="cat-name">${cat.name} (${cat.weight})</div>
+      <div class="cat-score" style="color:${color}">${score !== null ? score.toFixed(1) + '%' : 'N/A'}</div>
+      <div class="cat-bar"><div class="cat-fill" style="width:${pct}%;background:${color}"></div></div>
+    </div>`;
+  });
+  html += `</div></div>`;
+
+  // Quick Wins
+  if (data.quickWins && data.quickWins.length) {
+    html += `<div class="section"><div class="section-title">Quick Wins <span class="badge" style="background:var(--green-bg);color:var(--green);">${data.quickWins.length} actions</span></div><div class="quick-wins">`;
+    data.quickWins.forEach((qw, i) => {
+      html += `<div class="qw-item">
+        <div class="qw-num">${i+1}</div>
+        <div class="qw-body">
+          <div class="qw-action">${qw.action}</div>
+          <div class="qw-meta">${pillSeverity(qw.impact)} &nbsp; ${qw.time} &nbsp; Check: ${qw.check}</div>
+        </div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  }
+
+  // Detailed checks per category
+  data.categories.forEach(cat => {
+    html += `<div class="section">
+      <div class="section-title">${cat.name} <span class="badge" style="background:${getScoreColor(cat.score) === 'var(--text-dim)' ? 'var(--surface2)' : getScoreColor(cat.score).replace(')', ',0.15)').replace('var(', '')}; color:${getScoreColor(cat.score)}">${cat.score !== null ? cat.score.toFixed(1) + '%' : 'N/A'}</span></div>
+      <table>
+        <thead><tr><th>ID</th><th>Check</th><th>Severity</th><th>Result</th><th>Finding</th></tr></thead>
+        <tbody>`;
+    cat.checks.forEach(c => {
+      html += `<tr>
+        <td style="white-space:nowrap;font-weight:600;color:var(--text-dim)">${c.id}</td>
+        <td style="font-weight:500">${c.name}</td>
+        <td>${pillSeverity(c.severity)}</td>
+        <td>${pillResult(c.result)}</td>
+        <td style="color:var(--text-dim);max-width:500px">${c.finding}</td>
+      </tr>`;
+    });
+    html += `</tbody></table></div>`;
+  });
+
+  // Wasted spend products
+  if (data.topWastedProducts && data.topWastedProducts.length) {
+    html += `<div class="section"><div class="section-title">Top Wasted Spend — Zero-Conversion Products</div>
+      <table class="product-table"><thead><tr><th>Product</th><th>Spend</th><th>Conversions</th><th>Status</th></tr></thead><tbody>`;
+    data.topWastedProducts.forEach(p => {
+      html += `<tr><td>${p.product}</td><td class="wasted">$${p.spend.toFixed(2)}</td><td>0</td><td><span class="pill pill-fail">WASTED</span></td></tr>`;
+    });
+    html += `</tbody></table></div>`;
+  }
+
+  // Top performers
+  if (data.topPerformingProducts && data.topPerformingProducts.length) {
+    html += `<div class="section"><div class="section-title">Top Performing Products</div>
+      <table class="product-table"><thead><tr><th>Product</th><th>Spend</th><th>Conv</th><th>Value</th><th>ROAS</th></tr></thead><tbody>`;
+    data.topPerformingProducts.forEach(p => {
+      html += `<tr><td>${p.product}</td><td>$${p.spend.toFixed(2)}</td><td class="star">${p.conversions}</td><td class="star">$${p.value.toLocaleString()}</td><td class="star">${p.roas}x</td></tr>`;
+    });
+    html += `</tbody></table></div>`;
+  }
+
+  // Recommendations
+  if (data.recommendations && data.recommendations.length) {
+    html += `<div class="section"><div class="section-title">Strategic Recommendations</div>`;
+    data.recommendations.forEach(r => {
+      html += `<div class="rec-phase"><h4>${r.phase}</h4><ul>${r.items.map(i => `<li>${i}</li>`).join('')}</ul></div>`;
+    });
+    html += `</div>`;
+  }
+
+  return html;
+}
+
+async function loadDate(accountId, date) {
+  try {
+    const resp = await fetch(`${DATA_BASE}/${accountId}/${date}.json`);
+    const data = await resp.json();
+    accountData[accountId] = data;
+    document.getElementById(`content-${accountId}`).innerHTML = renderAccount(data);
+  } catch(e) {
+    console.error('Failed to load', accountId, date, e);
+  }
+}
+
+function switchTab(accountId) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.querySelector(`[data-tab="${accountId}"]`).classList.add('active');
+  document.getElementById(`content-${accountId}`).classList.add('active');
+}
+
+async function init() {
+  try {
+    const resp = await fetch(`${DATA_BASE}/manifest.json`);
+    manifest = await resp.json();
+  } catch(e) {
+    document.getElementById('contentContainer').innerHTML = '<div class="empty-state"><h2>No data available</h2><p>Manifest file not found. Run the audit script first.</p></div>';
+    return;
+  }
+
+  document.getElementById('lastUpdated').textContent = `Last updated: ${manifest.lastUpdated}`;
+
+  const tabsHtml = manifest.accounts.map((a, i) =>
+    `<div class="tab ${i === 0 ? 'active' : ''}" data-tab="${a.id}" onclick="switchTab('${a.id}')">${a.name}</div>`
+  ).join('');
+  document.getElementById('tabsContainer').innerHTML = tabsHtml;
+
+  let contentHtml = '';
+  for (const acc of manifest.accounts) {
+    contentHtml += `<div class="tab-content ${manifest.accounts.indexOf(acc) === 0 ? 'active' : ''}" id="content-${acc.id}"><div class="content"><div class="empty-state"><h2>Loading...</h2></div></div></div>`;
+  }
+  document.getElementById('contentContainer').innerHTML = contentHtml;
+
+  for (const acc of manifest.accounts) {
+    const latestDate = acc.dates[acc.dates.length - 1];
+    try {
+      const resp = await fetch(`${DATA_BASE}/${acc.id}/${latestDate}.json`);
+      const data = await resp.json();
+      accountData[acc.id] = data;
+      document.getElementById(`content-${acc.id}`).innerHTML = `<div class="content">${renderAccount(data)}</div>`;
+    } catch(e) {
+      document.getElementById(`content-${acc.id}`).innerHTML = `<div class="content"><div class="empty-state"><h2>Error loading data</h2><p>${e.message}</p></div></div>`;
+    }
+  }
+}
+
+init();
+</script>
+</body>
+</html>

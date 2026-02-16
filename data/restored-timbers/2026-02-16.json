@@ -1,0 +1,163 @@
+{
+  "account": "Restored Timbers",
+  "customerId": "297-444-7695",
+  "date": "2026-02-16",
+  "industry": "E-commerce (Reclaimed Wood Furniture)",
+  "healthScore": 35,
+  "grade": "F",
+  "verdict": "Urgent intervention required",
+  "snapshot": {
+    "totalCampaigns": 32,
+    "enabledCampaigns": 3,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": 2057,
+    "totalKeywords": 8710,
+    "spend30d": 3050.87,
+    "impressions30d": 62490,
+    "clicks30d": 588,
+    "ctr": 0.94,
+    "avgCpc": 5.19,
+    "conversions30d": 12,
+    "conversionValue30d": 8226,
+    "roas": 2.70,
+    "cpa": 254.24,
+    "searchImpressionShare": 27.08,
+    "dailyBudget": 136,
+    "avgDailySpend": 101.70
+  },
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "score": 33.6,
+      "grade": "F",
+      "checks": [
+        {"id": "G42", "name": "Conversion actions defined", "severity": "Critical", "result": "PASS", "finding": "32 conversion actions configured"},
+        {"id": "G43", "name": "Enhanced conversions enabled", "severity": "Critical", "result": "FAIL", "finding": "Not enabled — critical for recovering lost signal with only 12 conv/month"},
+        {"id": "G44", "name": "Server-side tracking", "severity": "High", "result": "FAIL", "finding": "No server-side GTM or API-based conversion import active"},
+        {"id": "G45", "name": "Consent Mode v2 (EU/EEA)", "severity": "Critical", "result": "N/A", "finding": "EU targeting unclear from available data"},
+        {"id": "G46", "name": "Conversion window appropriate", "severity": "Medium", "result": "WARNING", "finding": "Mixed windows (30d-90d). High-ticket furniture ($300-$1,300) may need longer consideration window"},
+        {"id": "G47", "name": "Micro vs macro separation", "severity": "High", "result": "FAIL", "finding": "13+ micro/irrelevant actions set as Primary: Add to Cart, Checkout, Page View (/cart), Directions, Engagements, YouTube subs, Smart campaign actions"},
+        {"id": "G48", "name": "Attribution model", "severity": "Medium", "result": "N/A", "finding": "Cannot verify attribution model via API"},
+        {"id": "G49", "name": "Conversion value assignment", "severity": "High", "result": "WARNING", "finding": "Some dynamic values (GA4 purchase), but many primary actions use static $1 default values"},
+        {"id": "G-CT1", "name": "No duplicate counting", "severity": "Critical", "result": "FAIL", "finding": "Duplicate purchase tracking: GA4 Purchase + Shopify Purchase. Multiple phone call actions (4 different ones)"},
+        {"id": "G-CT2", "name": "GA4 linked and flowing", "severity": "High", "result": "WARNING", "finding": "GA4 linked but purchase action NOT set as Primary — Shopify purchase IS Primary"},
+        {"id": "G-CT3", "name": "Google Tag firing", "severity": "Critical", "result": "WARNING", "finding": "Conversions happening but setup inconsistent — 32 actions is excessive"}
+      ]
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "score": 36.1,
+      "grade": "F",
+      "checks": [
+        {"id": "G13", "name": "Search term audit recency", "severity": "Critical", "result": "FAIL", "finding": "No active search campaigns; Shopping search terms not recently reviewed"},
+        {"id": "G14", "name": "Negative keyword lists exist", "severity": "Critical", "result": "WARNING", "finding": "2 lists exist (General: 139 kw, Search Terms: 8 kw) but need 3+ themed lists"},
+        {"id": "G15", "name": "Account-level negatives applied", "severity": "High", "result": "WARNING", "finding": "Lists exist but unclear if applied to the active Shopping campaign"},
+        {"id": "G16", "name": "Wasted spend on irrelevant terms", "severity": "Critical", "result": "WARNING", "finding": "~42% of top product spend ($1,289) goes to zero-conversion products"},
+        {"id": "G17", "name": "Broad match + smart bidding pairing", "severity": "Critical", "result": "N/A", "finding": "No active search campaigns"},
+        {"id": "G18", "name": "Close variant pollution", "severity": "High", "result": "N/A", "finding": "No active search campaigns"},
+        {"id": "G19", "name": "Search term visibility", "severity": "Medium", "result": "N/A", "finding": "No search activity in last 30 days"},
+        {"id": "G-WS1", "name": "Zero-conversion keywords", "severity": "High", "result": "N/A", "finding": "Shopping campaign — keyword check not applicable"}
+      ]
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "score": 26.0,
+      "grade": "F",
+      "checks": [
+        {"id": "G01", "name": "Campaign naming convention", "severity": "Medium", "result": "FAIL", "finding": "5+ naming prefixes: CTM-, MK-, RIG-, PMax|, no prefix. Evidence of 3+ managers"},
+        {"id": "G02", "name": "Ad group naming convention", "severity": "Medium", "result": "FAIL", "finding": "Inconsistent across 2,057 ad groups"},
+        {"id": "G03", "name": "Single theme ad groups", "severity": "High", "result": "WARNING", "finding": "Active Shopping uses 'Catch All - Winners' — implies no product segmentation"},
+        {"id": "G04", "name": "Campaign count per objective", "severity": "High", "result": "FAIL", "finding": "32 campaigns for single-brand ecom store — massive fragmentation. 6 Shopping, 8 PMax, 6 Search campaigns"},
+        {"id": "G05", "name": "Brand vs Non-Brand separation", "severity": "Critical", "result": "FAIL", "finding": "No brand campaign exists to protect branded search terms"},
+        {"id": "G06", "name": "PMax present for eligible accounts", "severity": "Medium", "result": "FAIL", "finding": "All 8 PMax campaigns paused. 2 reference suspended Merchant Center"},
+        {"id": "G07", "name": "Search + PMax overlap", "severity": "High", "result": "N/A", "finding": "No concurrent Search + PMax running"},
+        {"id": "G08", "name": "Budget allocation matches priority", "severity": "High", "result": "FAIL", "finding": "Only 1 campaign running. $136/day budget but averaging $102/day. SIS only 27%"},
+        {"id": "G09", "name": "Campaign daily budget vs spend", "severity": "Medium", "result": "WARNING", "finding": "$136 daily budget, ~$102 actual daily spend — under-delivering"},
+        {"id": "G10", "name": "Ad schedule configured", "severity": "Low", "result": "N/A", "finding": "Shopping campaign — schedule not critical"},
+        {"id": "G11", "name": "Geographic targeting accuracy", "severity": "High", "result": "PASS", "finding": "Active Shopping campaign uses 'Presence' (correct)"},
+        {"id": "G12", "name": "Network settings", "severity": "High", "result": "WARNING", "finding": "Shopping OK (Search Partners OFF, Display OFF). But enabled Search campaign has Display Network ON"}
+      ]
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "score": null,
+      "grade": "N/A",
+      "checks": [
+        {"id": "G20-G25", "name": "Quality Score checks", "severity": "High", "result": "N/A", "finding": "All search campaigns paused — QS not tracked. 8,710 keywords exist (3,925 Broad, 3,828 Phrase, 957 Exact) but none serving"},
+        {"id": "G-KW1", "name": "Zero-impression keywords", "severity": "Medium", "result": "N/A", "finding": "All keywords inactive — search campaigns paused"},
+        {"id": "G-KW2", "name": "Keyword-to-ad relevance", "severity": "High", "result": "N/A", "finding": "Cannot assess — no active search campaigns"}
+      ]
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "score": 66.7,
+      "grade": "C",
+      "checks": [
+        {"id": "G26-G30", "name": "RSA checks", "severity": "High", "result": "N/A", "finding": "No active Search campaigns — RSA checks not applicable"},
+        {"id": "G31-G34", "name": "PMax asset checks", "severity": "Critical", "result": "N/A", "finding": "All 8 PMax campaigns paused"},
+        {"id": "G35", "name": "Ad copy relevance to keywords", "severity": "High", "result": "N/A", "finding": "Shopping campaign — no ad copy to assess"},
+        {"id": "G-AD1", "name": "Ad freshness", "severity": "Medium", "result": "FAIL", "finding": "No new ad creative tested — only 1 Shopping Product Ad running"},
+        {"id": "G-AD2", "name": "CTR vs industry benchmark", "severity": "High", "result": "PASS", "finding": "Shopping CTR 0.94% vs ~0.86% industry avg — slightly above benchmark"},
+        {"id": "G-PM1", "name": "PMax audience signals", "severity": "High", "result": "N/A", "finding": "All PMax paused"},
+        {"id": "G-PM2", "name": "PMax Ad Strength", "severity": "High", "result": "N/A", "finding": "All PMax paused"},
+        {"id": "G-PM3", "name": "PMax brand cannibalization", "severity": "High", "result": "N/A", "finding": "All PMax paused"},
+        {"id": "G-PM4", "name": "PMax search themes", "severity": "Medium", "result": "N/A", "finding": "All PMax paused"},
+        {"id": "G-PM5", "name": "PMax negative keywords", "severity": "High", "result": "N/A", "finding": "All PMax paused"}
+      ]
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "score": 43.3,
+      "grade": "D",
+      "checks": [
+        {"id": "G36", "name": "Smart bidding strategy active", "severity": "High", "result": "FAIL", "finding": "Active Shopping campaign uses Manual CPC — no automated bidding"},
+        {"id": "G39", "name": "Budget constrained campaigns", "severity": "High", "result": "WARNING", "finding": "SIS only 27% — losing 73% of available impressions"},
+        {"id": "G40", "name": "Manual CPC justification", "severity": "Medium", "result": "WARNING", "finding": "12 conv/month is borderline for Smart Bidding (needs 15+) — Manual CPC partially justified"},
+        {"id": "G50", "name": "Sitelink extensions", "severity": "High", "result": "PASS", "finding": "10 sitelinks at campaign level + 6 at account level"},
+        {"id": "G51", "name": "Callout extensions", "severity": "Medium", "result": "PASS", "finding": "14+ active callouts at account level"},
+        {"id": "G52", "name": "Structured snippets", "severity": "Medium", "result": "PASS", "finding": "1 structured snippet set enabled"},
+        {"id": "G53", "name": "Image extensions", "severity": "Medium", "result": "FAIL", "finding": "No image extensions — critical for furniture e-commerce"},
+        {"id": "G54", "name": "Call extensions", "severity": "Medium", "result": "PASS", "finding": "Call extensions active (3 at campaign level, 1 at account level)"},
+        {"id": "G56", "name": "Audience segments applied", "severity": "High", "result": "FAIL", "finding": "No remarketing or in-market audiences applied to active campaign"},
+        {"id": "G57", "name": "Customer Match lists", "severity": "High", "result": "FAIL", "finding": "No Customer Match lists uploaded — missing past purchaser data"}
+      ]
+    }
+  ],
+  "topWastedProducts": [
+    {"product": "3 Drawer 6 Doors Kitchen Island", "spend": 267.17, "conversions": 0, "value": 0},
+    {"product": "Large Buffet/Hutch", "spend": 179.39, "conversions": 0, "value": 0},
+    {"product": "3 Drawer, 2 Doors Kitchen Island", "spend": 158.51, "conversions": 0, "value": 0},
+    {"product": "CLEARANCE - 4 Door Console", "spend": 90.17, "conversions": 0, "value": 0},
+    {"product": "4 Doors Console", "spend": 89.32, "conversions": 0, "value": 0},
+    {"product": "Large Buffet/Hutch (variant)", "spend": 82.22, "conversions": 0, "value": 0},
+    {"product": "CLEARANCE - 6 Drawer Dresser", "spend": 72.10, "conversions": 0, "value": 0},
+    {"product": "4 Door Wooden Bar", "spend": 58.61, "conversions": 0, "value": 0}
+  ],
+  "topPerformingProducts": [
+    {"product": "CLEARANCE! 4 Door Console", "spend": 66.22, "conversions": 5, "value": 2970, "roas": 44.8},
+    {"product": "4 Door Console", "spend": 52.50, "conversions": 2, "value": 1430, "roas": 27.2},
+    {"product": "4 Doors Console (variant)", "spend": 70.98, "conversions": 1, "value": 1344, "roas": 18.9},
+    {"product": "3 Drawer 6 Doors Kitchen Island (var)", "spend": 144.47, "conversions": 1, "value": 1032, "roas": 7.1},
+    {"product": "CLEARANCE - 5 Drawer Chest", "spend": 136.76, "conversions": 1, "value": 678, "roas": 5.0}
+  ],
+  "quickWins": [
+    {"action": "Set only Purchase + Phone Call as Primary conversions; set everything else to Secondary", "impact": "Critical", "time": "15 min", "check": "G47"},
+    {"action": "Remove duplicate conversion actions (keep 1 purchase, 1 phone)", "impact": "Critical", "time": "10 min", "check": "G-CT1"},
+    {"action": "Enable Enhanced Conversions for Purchase", "impact": "Critical", "time": "5 min", "check": "G43"},
+    {"action": "Pause or delete Display - Labor Day campaign", "impact": "High", "time": "1 min", "check": "G04"},
+    {"action": "Fix RIG Search campaign: either activate properly or pause", "impact": "High", "time": "5 min", "check": "G08"},
+    {"action": "Add negative product groups for zero-converting products with >$100 spend", "impact": "High", "time": "10 min", "check": "G16"},
+    {"action": "Upload Customer Match list from Shopify customer export", "impact": "High", "time": "10 min", "check": "G57"}
+  ],
+  "recommendations": [
+    {"phase": "Phase 1: Fix the Foundation (Week 1)", "items": ["Clean up conversion tracking — reduce to 3-4 Primary actions: Purchase, Phone Call, Form Submit", "Enable Enhanced Conversions for the purchase action", "Segment the Shopping campaign — create product groups for top performers vs non-converters vs clearance", "Resolve Merchant Center suspension — 2 PMax campaigns reference a suspended merchant"]},
+    {"phase": "Phase 2: Reactivate & Optimize (Weeks 2-3)", "items": ["Test Smart Bidding — switch Shopping to Target ROAS (start at 2.0x, current is 2.7x)", "Re-launch 1 PMax campaign with proper asset groups: Tables, Consoles, Kitchen Islands, Clearance", "Launch a brand Search campaign to protect brand terms", "Build remarketing audiences from site visitors, cart abandoners, past purchasers"]},
+    {"phase": "Phase 3: Scale (Month 2+)", "items": ["Increase impression share from 27% toward 50%+ on converting products", "Test Demand Gen for upper-funnel furniture discovery", "Clean up account — archive/delete the 29 paused campaigns", "Implement server-side tracking via server-side GTM"]}
+  ]
+}

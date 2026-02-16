@@ -1,0 +1,11 @@
+{
+  "accounts": [
+    {
+      "id": "restored-timbers",
+      "name": "Restored Timbers",
+      "customerId": "297-444-7695",
+      "dates": ["2026-02-16"]
+    }
+  ],
+  "lastUpdated": "2026-02-16T08:00:00+02:00"
+}
