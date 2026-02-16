@@ -21,10 +21,51 @@
     "conversionValue30d": 606,
     "roas": 0.11,
     "cpa": 218.28,
-    "searchImpressionShare": 58.29,
-    "dailyBudget": 453,
+    "searchImpressionShare": 57.82,
+    "dailyBudget": 341,
     "avgDailySpend": 181.9
   },
+  "campaignPerformance": [
+    {
+      "name": "CTM - O.F - BOFU - Kitchen Remodeling",
+      "type": "SEARCH",
+      "spend": 4841,
+      "roas": 0.12,
+      "cpa": 537.89,
+      "ctr": 5.13,
+      "conversions": 9,
+      "value": 590,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "LocalServicesCampaign:SystemGenerated:0005eb544d960f70",
+      "type": "LOCAL_SERVICES",
+      "spend": 616,
+      "roas": 0.03,
+      "cpa": 38.49,
+      "ctr": 15.96,
+      "conversions": 16,
+      "value": 16,
+      "verdict": "Losing money — restructure or reduce spend"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "2 campaign(s) losing ~$4,858/month: CTM - O.F - BOFU - Kitchen Remodeling (0.12x ROAS on $4,841), LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS on $616).",
+      "impact": "Critical",
+      "dollarImpact": 4857.6
+    },
+    {
+      "insight": "$1,604 spent on 61 zero-conversion search terms (100% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 1604
+    },
+    {
+      "insight": "2 low-QS keywords costing ~$561/month in CPC premiums.",
+      "impact": "High",
+      "dollarImpact": 561
+    }
+  ],
   "categories": [
     {
       "name": "Conversion Tracking",
@@ -35,77 +76,56 @@
           "name": "Conversion actions defined",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "15 conversion actions configured. Without conversion tracking, Google cannot optimize bids, and all campaign data becomes unreliable for decision-making."
+          "finding": "15 conversion actions (2x GET_DIRECTIONS, 4x CONTACT, 2x PHONE_CALL_LEAD, 3x PAGE_VIEW, 1x SUBMIT_LEAD_FORM, 1x REQUEST_QUOTE, 2x DEFAULT). Recording 25 conversions in 30d."
         },
         {
           "id": "G43",
-          "name": "Enhanced conversions enabled",
+          "name": "Enhanced conversions",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "Enhanced conversions or offline import detected — this recovers conversion data lost due to cookie restrictions and privacy changes, improving Smart Bidding accuracy by 5-15%."
+          "finding": "Enhanced conversions or offline import detected — recovers 5-15% of conversions lost to cookie restrictions."
         },
         {
           "id": "G44",
           "name": "Server-side tracking",
           "severity": "High",
           "result": "PASS",
-          "finding": "Server-side or offline conversion import active — this provides more reliable data than client-side tracking alone, as it bypasses ad blockers and browser restrictions."
-        },
-        {
-          "id": "G45",
-          "name": "Consent Mode v2 (EU/EEA)",
-          "severity": "Critical",
-          "result": "N/A",
-          "finding": "EU targeting unclear from available data. If targeting EU/EEA users, Consent Mode v2 is legally required since March 2024 and enables conversion modeling for consenting users."
+          "finding": "Server-side or offline conversion import active — bypasses ad blockers and browser restrictions."
         },
         {
           "id": "G46",
-          "name": "Conversion window appropriate",
+          "name": "Conversion categories",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "7 conversion categories detected (2x GET_DIRECTIONS, 4x CONTACT, 2x PHONE_CALL_LEAD, 3x PAGE_VIEW, 1x SUBMIT_LEAD_FORM, 1x REQUEST_QUOTE, 2x DEFAULT). Verify the conversion window matches your sales cycle — high-ticket items need 60-90 day windows, while impulse purchases only need 7-30 days."
+          "finding": "7 conversion categories: 2x GET_DIRECTIONS, 4x CONTACT, 2x PHONE_CALL_LEAD, 3x PAGE_VIEW, 1x SUBMIT_LEAD_FORM, 1x REQUEST_QUOTE, 2x DEFAULT."
         },
         {
           "id": "G47",
           "name": "Micro vs macro separation",
           "severity": "High",
           "result": "PASS",
-          "finding": "Good separation — only macro conversions (purchases, leads, calls) are set as Primary. This ensures Smart Bidding optimizes for real business outcomes, not inflated micro-actions."
-        },
-        {
-          "id": "G48",
-          "name": "Attribution model",
-          "severity": "Medium",
-          "result": "N/A",
-          "finding": "Cannot verify attribution model via API. Google now defaults to data-driven attribution which uses machine learning to distribute credit. Verify in Settings > Conversions that data-driven is selected for primary actions."
-        },
-        {
-          "id": "G49",
-          "name": "Conversion value assignment",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No primary actions to assess."
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
         },
         {
           "id": "G-CT1",
           "name": "No duplicate counting",
           "severity": "Critical",
           "result": "FAIL",
-          "finding": "Potential duplicates found: 7x \"call\" actions; 4x \"form\" actions. Duplicate tracking inflates conversion counts by 2-3x, making CPA appear artificially low and causing Smart Bidding to overbid. Remove duplicates and keep only one source per conversion type (prefer GA4 over tag-based tracking)."
+          "finding": "Potential duplicates: 7x \"call\" actions; 4x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
         },
         {
           "id": "G-CT2",
-          "name": "GA4 linked and flowing",
+          "name": "GA4 linked",
           "severity": "High",
           "result": "PASS",
-          "finding": "GA4 conversion actions detected and linked. GA4 provides cross-device tracking, better attribution modeling, and audience data that improves targeting across campaigns."
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
         },
         {
           "id": "G-CT3",
-          "name": "Google Tag firing",
+          "name": "Tags firing",
           "severity": "Critical",
           "result": "PASS",
-          "finding": "15 active actions recording 25 conversions in 30d. Tags are firing and data is flowing."
+          "finding": "15 actions recording 25 conversions in 30d. Data is flowing."
         }
       ],
       "score": 81.1,
@@ -117,62 +137,41 @@
       "checks": [
         {
           "id": "G13",
-          "name": "Search term audit recency",
+          "name": "Search term waste",
           "severity": "Critical",
-          "result": "WARNING",
-          "finding": "Active search campaigns detected — search terms should be reviewed weekly. Google matches queries broadly, and without regular reviews, 20-40% of spend typically goes to irrelevant searches. Check Insights > Search Terms for the last 7 days and add negatives for any non-converting, irrelevant terms."
+          "result": "FAIL",
+          "finding": "$1,604 spent on 61 zero-conversion search terms (100% of $1,604 visible search spend). Top waste: \"cabinet door shop near me\" $116, \"home addition contractors near me\" $94, \"brookwood cabinet company\" $73, \"kitchen remodels on a budget\" $73, \"contractor for remodeling house\" $73."
         },
         {
           "id": "G14",
-          "name": "Negative keyword lists exist",
+          "name": "Negative keyword lists",
           "severity": "Critical",
           "result": "WARNING",
-          "finding": "2 list(s) with 336 total keywords. Need at least 3 themed lists (e.g., Competitors, Job Seekers, Irrelevant Services) to properly filter traffic. A well-maintained negative list typically saves 15-20% of wasted spend."
+          "finding": "2 list(s) with 336 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
         },
         {
           "id": "G15",
-          "name": "Account-level negatives applied",
+          "name": "Account-level negatives",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "Negative keyword lists exist — verify they are applied to ALL active campaigns including Shopping and PMax. Unattached lists provide zero protection. Check Tools > Shared Library > Negative Keyword Lists."
-        },
-        {
-          "id": "G16",
-          "name": "Wasted spend on irrelevant terms",
-          "severity": "Critical",
-          "result": "WARNING",
-          "finding": "Search active — review the Search Terms report for irrelevant queries consuming budget. Sort by cost descending and look for zero-conversion terms with significant spend."
+          "result": "PASS",
+          "finding": "336 negative keywords across 2 lists. Ensure lists are attached to all active campaigns."
         },
         {
           "id": "G17",
-          "name": "Broad match + smart bidding pairing",
-          "severity": "Critical",
-          "result": "WARNING",
-          "finding": "Verify broad match keywords are paired with Smart Bidding (tROAS or tCPA). Broad match without Smart Bidding causes uncontrolled query expansion and wasted spend. Google's AI needs Smart Bidding to constrain broad match effectively."
-        },
-        {
-          "id": "G18",
-          "name": "Close variant pollution",
+          "name": "Broad match performance",
           "severity": "High",
-          "result": "N/A",
-          "finding": "Requires search term report analysis. Close variants can cause exact/phrase match keywords to match unintended queries — review Search Terms for unexpected matches."
-        },
-        {
-          "id": "G19",
-          "name": "Search term visibility",
-          "severity": "Medium",
-          "result": "WARNING",
-          "finding": "Google only shows ~30-40% of actual search terms. Review the visible terms regularly and use scripts or third-party tools to maximize visibility into what queries are triggering your ads."
+          "result": "PASS",
+          "finding": "Broad match: $4,841 spend, 9 conv, $538 CPA. Exact: $0 spend, 0 conv."
         },
         {
           "id": "G-WS1",
           "name": "Zero-conversion keywords",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "Review keywords that have spent more than 2x your target CPA without converting. These should be paused or moved to exact match with lower bids. Zero-conversion keywords are the #1 source of wasted search spend."
+          "result": "FAIL",
+          "finding": "1 keywords spent $479 with 0 conversions in 30d. Top waste: \"kitchen remodeling contractors\" $479."
         }
       ],
-      "score": 50,
+      "score": 44.7,
       "grade": "D"
     },
     {
@@ -181,87 +180,80 @@
       "checks": [
         {
           "id": "G01",
-          "name": "Campaign naming convention",
+          "name": "Campaign naming",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "2 naming prefix(es) across 4 campaigns. Consistent naming convention in place — makes filtering, reporting, and management significantly easier."
+          "finding": "2 naming prefix(es) across 4 campaigns. Consistent naming convention."
         },
         {
           "id": "G02",
-          "name": "Ad group naming convention",
+          "name": "Ad group structure",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "5 total ad groups. Manageable ad group count."
+          "finding": "5 ad groups across 4 campaigns (avg 1/campaign)."
         },
         {
           "id": "G03",
           "name": "Single theme ad groups",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "Verify each ad group contains tightly themed keywords (STAGs). Mixed themes reduce Quality Score because ad copy cannot match all keywords equally, increasing CPC by 50-400%. Each ad group should target one core intent."
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
         },
         {
           "id": "G04",
-          "name": "Campaign count per objective",
+          "name": "Campaign count",
           "severity": "High",
           "result": "PASS",
-          "finding": "4 campaigns: 1 LOCAL_SERVICES, 3 SEARCH. Healthy campaign count — sufficient data per campaign for optimization."
+          "finding": "4 campaigns: 1 LOCAL_SERVICES, 3 SEARCH."
         },
         {
           "id": "G05",
-          "name": "Brand vs Non-Brand separation",
+          "name": "Brand campaign",
           "severity": "Critical",
           "result": "FAIL",
-          "finding": "CRITICAL: No brand campaign exists. Competitors can bid on your brand name and steal clicks at a low cost. Brand campaigns typically have 30-50x ROAS with $0.50-$1.50 CPCs. Create a dedicated brand Search campaign immediately with exact and phrase match brand keywords."
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
         },
         {
           "id": "G06",
-          "name": "PMax present for eligible accounts",
+          "name": "PMax campaign",
           "severity": "Medium",
           "result": "FAIL",
-          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
+          "finding": "No active PMax. Consider launching with strong asset groups and audience signals."
         },
         {
           "id": "G07",
           "name": "Search + PMax overlap",
           "severity": "High",
           "result": "N/A",
-          "finding": "No concurrent Search + PMax running."
+          "finding": "No concurrent Search + PMax."
         },
         {
           "id": "G08",
-          "name": "Budget allocation matches priority",
+          "name": "Budget allocation",
           "severity": "High",
-          "result": "WARNING",
-          "finding": "4 active campaign(s), $453/day budget, Search Impression Share 58%. Review budget allocation to ensure top-performing campaigns receive the most budget."
+          "result": "FAIL",
+          "finding": "4 campaigns, $341/day budget, 58% Search Impression Share. Worst: LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS, $616). $5,457/month on below-1x-ROAS or zero-conversion campaigns."
         },
         {
           "id": "G09",
-          "name": "Campaign daily budget vs spend",
+          "name": "Budget utilization",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "$453 daily budget, ~$182 actual daily spend. Under-delivery indicates targeting is too narrow, bids too low, or Quality Score issues are limiting ad eligibility. Check keyword status, ad approval, and bid competitiveness."
-        },
-        {
-          "id": "G10",
-          "name": "Ad schedule configured",
-          "severity": "Low",
-          "result": "N/A",
-          "finding": "Ad schedule review requires campaign-level schedule data. Consider dayparting if conversion rates vary significantly by hour — analyze hourly performance in the Time report."
+          "finding": "$341/day budget, ~$182/day actual spend (53% utilization). Under-delivery — check targeting, bids, or Quality Score."
         },
         {
           "id": "G11",
-          "name": "Geographic targeting accuracy",
+          "name": "Geographic targeting",
           "severity": "High",
           "result": "FAIL",
-          "finding": "CRITICAL: Using \"Presence or Interest\" geo targeting, which shows ads to people merely interested in your location — not physically there. For local businesses, this wastes 10-30% of budget on users who will never convert. Switch to \"Presence: People in or regularly in your targeted locations\" in campaign Settings > Locations > Location options."
+          "finding": "\"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Settings > Locations."
         },
         {
           "id": "G12",
           "name": "Network settings",
           "severity": "High",
           "result": "PASS",
-          "finding": "Network settings properly configured — Search campaigns are not leaking budget to Display Network."
+          "finding": "Search campaigns properly isolated from Display Network."
         }
       ],
       "score": 49,
@@ -273,24 +265,24 @@
       "checks": [
         {
           "id": "G20-G25",
-          "name": "Quality Score checks",
+          "name": "Quality Score",
           "severity": "High",
           "result": "FAIL",
-          "finding": "Average QS: 4.0/10 across 2 scored keywords (0 scoring 7+, 1 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types."
+          "finding": "Avg QS: 4.0/10 across 2 scored keywords (0 at 7+, 1 below 5). Est. CPC premium from low-QS keywords: ~$561/month. Top offenders: \"kitchen remodel lansing mi\" QS 3 ($1,753 spend, ~$561 premium)."
         },
         {
           "id": "G-KW1",
           "name": "Zero-impression keywords",
           "severity": "Medium",
           "result": "WARNING",
-          "finding": "1402 keywords configured: 171 BROAD, 1229 EXACT, 2 PHRASE. Review keywords with zero impressions in the last 30 days — they may be too restrictive, have low search volume, or be outranked by other keywords in the same ad group. Pause or restructure these to reduce clutter."
+          "finding": "645 of 1402 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
         },
         {
           "id": "G-KW2",
           "name": "Keyword-to-ad relevance",
           "severity": "High",
           "result": "WARNING",
-          "finding": "Average QS of 4.0 indicates poor keyword-to-ad relevance. Low relevance means your ads don't closely match user intent — restructure ad groups around single themes, include keywords in headlines, and ensure landing pages address the specific search intent."
+          "finding": "Avg QS 4.0 indicates poor keyword-to-ad relevance. Tighten ad group themes and include keywords in headlines."
         }
       ],
       "score": 30,
@@ -302,77 +294,28 @@
       "checks": [
         {
           "id": "G26-G30",
-          "name": "RSA checks",
+          "name": "RSA Ad Strength",
           "severity": "High",
           "result": "WARNING",
-          "finding": "12 Responsive Search Ads found, 1 with Good/Excellent Ad Strength. Over half of RSAs have Poor/Average Ad Strength. Add more unique headlines (use different angles: features, benefits, urgency, social proof) and ensure each headline brings a different message. Pin sparingly — excessive pinning reduces Google's ability to optimize."
+          "finding": "12 RSAs: 1 Good/Excellent, 11 need improvement (9 POOR, 2 AVERAGE, 1 GOOD)."
         },
         {
-          "id": "G31-G34",
-          "name": "PMax asset checks",
+          "id": "G-PM",
+          "name": "PMax performance",
           "severity": "Critical",
           "result": "N/A",
-          "finding": "No active PMax campaigns. For e-commerce and lead gen, PMax often outperforms standard campaigns by leveraging Google's full inventory. Consider launching with strong asset groups and audience signals."
-        },
-        {
-          "id": "G35",
-          "name": "Ad copy relevance to keywords",
-          "severity": "High",
-          "result": "WARNING",
-          "finding": "Verify ad headlines include primary keywords. Keyword insertion in headlines improves CTR by 10-15% on average because ads appear more relevant to the searcher's query. Use dynamic keyword insertion (DKI) or manually include top keywords in at least 3 headlines."
-        },
-        {
-          "id": "G-AD1",
-          "name": "Ad freshness",
-          "severity": "Medium",
-          "result": "WARNING",
-          "finding": "12 total ads across all campaigns. Creative fatigue reduces CTR by 20-40% over time. Test new ad variations every 4-6 weeks — try different value propositions, CTAs, and emotional angles. Always keep a control ad running alongside tests."
+          "finding": "No active PMax campaigns."
         },
         {
           "id": "G-AD2",
-          "name": "CTR vs industry benchmark",
+          "name": "CTR vs benchmark",
           "severity": "High",
           "result": "PASS",
-          "finding": "Account CTR is 8.46%. Excellent — well above the industry average of 6.66% for Search. Strong ad relevance and targeting."
-        },
-        {
-          "id": "G-PM1",
-          "name": "PMax audience signals",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No active PMax."
-        },
-        {
-          "id": "G-PM2",
-          "name": "PMax Ad Strength",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No active PMax."
-        },
-        {
-          "id": "G-PM3",
-          "name": "PMax brand cannibalization",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No active PMax."
-        },
-        {
-          "id": "G-PM4",
-          "name": "PMax search themes",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No active PMax."
-        },
-        {
-          "id": "G-PM5",
-          "name": "PMax negative keywords",
-          "severity": "High",
-          "result": "N/A",
-          "finding": "No active PMax."
+          "finding": "Account CTR: 8.46%. Strong CTR."
         }
       ],
-      "score": 64.3,
-      "grade": "C"
+      "score": 75,
+      "grade": "B"
     },
     {
       "name": "Settings & Targeting + Bidding",
@@ -380,73 +323,73 @@
       "checks": [
         {
           "id": "G36",
-          "name": "Smart bidding strategy active",
+          "name": "Smart bidding",
           "severity": "High",
           "result": "PASS",
-          "finding": "Smart bidding active (MAXIMIZE_CONVERSIONS, MAXIMIZE_CONVERSIONS, TARGET_CPA, TARGET_CPA). Google's AI adjusts bids in real-time based on 70+ signals including device, location, time, audience, and query intent — something impossible to replicate manually."
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS, TARGET_CPA."
         },
         {
           "id": "G39",
-          "name": "Budget constrained campaigns",
+          "name": "Search impression share",
           "severity": "High",
           "result": "WARNING",
-          "finding": "Search Impression Share is 58%. Moderate coverage — there's room to capture more impressions by increasing budget on top-performing campaigns or improving Quality Score."
+          "finding": "58% Search Impression Share — moderate coverage, room to grow."
         },
         {
           "id": "G40",
           "name": "Manual CPC justification",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "Using automated bidding — this leverages Google's real-time auction signals for optimal bid management."
+          "finding": "Using automated bidding."
         },
         {
           "id": "G50",
-          "name": "Sitelink extensions",
+          "name": "Sitelinks",
           "severity": "High",
           "result": "PASS",
-          "finding": "81 sitelink asset(s) configured. Sitelinks increase CTR by 10-20% by providing additional links to key pages (pricing, reviews, specific products). They also increase ad real estate, pushing competitors further down the page."
+          "finding": "81 sitelink asset(s) configured."
         },
         {
           "id": "G51",
-          "name": "Callout extensions",
+          "name": "Callouts",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "13 callout asset(s) configured. Callouts highlight key benefits (Free Shipping, 24/7 Support, Price Match) and increase CTR by 5-10%. They require no additional landing pages."
+          "finding": "13 callout asset(s) configured."
         },
         {
           "id": "G52",
           "name": "Structured snippets",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "3 structured_snippet asset(s) configured. Structured snippets showcase product categories, services, or features under standardized headers. They pre-qualify clicks by setting expectations before the user clicks."
+          "finding": "3 structured_snippet asset(s) configured."
         },
         {
           "id": "G53",
           "name": "Image extensions",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "447 image asset(s) configured. Image extensions make ads 2-3x more visually prominent on mobile, increasing CTR significantly. Critical for product-based businesses where visual appeal drives clicks."
+          "finding": "447 image asset(s) configured."
         },
         {
           "id": "G54",
           "name": "Call extensions",
           "severity": "Medium",
           "result": "PASS",
-          "finding": "2 call asset(s) configured. Call extensions add a clickable phone number to ads, essential for businesses where phone calls are a primary conversion action. Phone leads typically convert 30-50% higher than form fills."
+          "finding": "2 call asset(s) configured."
         },
         {
           "id": "G56",
-          "name": "Audience segments applied",
+          "name": "Remarketing audiences",
           "severity": "High",
           "result": "PASS",
-          "finding": "10 remarketing/audience list(s) configured. Remarketing audiences convert 3-5x higher than cold traffic because they've already shown interest in your business. Ensure these lists are applied to campaigns as observation layers (for bid adjustments) or targeting layers (for RLSA campaigns)."
+          "finding": "10 remarketing/audience list(s) configured."
         },
         {
           "id": "G57",
-          "name": "Customer Match lists",
+          "name": "Customer Match",
           "severity": "High",
           "result": "FAIL",
-          "finding": "No Customer Match lists uploaded. Upload your CRM customer email/phone list to: (1) Exclude existing customers from acquisition campaigns (saving 10-15% of budget), (2) Create lookalike audiences for prospecting, (3) Target past buyers with cross-sell offers. Upload via Tools > Shared Library > Audience Manager."
+          "finding": "No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion."
         }
       ],
       "score": 80,
@@ -455,59 +398,69 @@
   ],
   "quickWins": [
     {
-      "action": "Remove duplicate conversion actions: Go to Goals > Conversions and identify actions tracking the same event (e.g., GA4 Purchase + Shopify Purchase). Keep one source per conversion type and set duplicates to Secondary.",
-      "impact": "Critical",
+      "action": "Pause or restructure \"CTM - O.F - BOFU - Kitchen Remodeling\" — 0.12x ROAS on $4,841, losing ~$4,260/month.",
+      "impact": "$4,260/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"cabinet door shop near me\", \"home addition contractors near me\", \"brookwood cabinet company\"... — $1,604 wasted.",
+      "impact": "$1,604/month",
       "time": "10 min",
-      "check": "G-CT1"
+      "check": "G13"
     },
     {
-      "action": "Create a brand Search campaign: Add exact and phrase match keywords for your brand name. Set budget to capture 95%+ impression share. Brand campaigns typically achieve 30-50x ROAS with $0.50-$1.50 CPCs.",
-      "impact": "Critical",
+      "action": "Pause or restructure \"LocalServicesCampaign:SystemGenerated:0005eb544d960f70\" — 0.03x ROAS on $616, losing ~$598/month.",
+      "impact": "$598/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Improve 2 keywords with QS below 5 — est. $561/month CPC premium. Worst: \"kitchen remodel lansing mi\" QS 3.",
+      "impact": "$561/month",
       "time": "30 min",
-      "check": "G05"
-    },
-    {
-      "action": "Fix geo targeting: In each campaign, go to Settings > Locations > Location options. Change from \"Presence or Interest\" to \"Presence: People in or regularly in your targeted locations.\" This stops ads from showing to out-of-area users.",
-      "impact": "High",
-      "time": "2 min",
-      "check": "G11"
-    },
-    {
-      "action": "Average QS: 4.0/10 across 2 scored keywords (0 scoring 7+, 1 below 5). Low QS means you pay significantly more per click — improve ad relevance by tightening keyword-to-ad alignment, improving landing page experience, and using more specific match types.",
-      "impact": "High",
-      "time": "15 min",
       "check": "G20-G25"
     },
     {
-      "action": "Upload Customer Match list: Export customer emails/phones from your CRM and upload via Tools > Audience Manager > Customer Match. This enables lookalike targeting and existing customer exclusion.",
-      "impact": "High",
+      "action": "Pause 1 zero-conversion keywords: \"kitchen remodeling contractors\" — $479 wasted.",
+      "impact": "$479/month",
       "time": "10 min",
-      "check": "G57"
+      "check": "G-WS1"
+    },
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 7x \"call\" actions; 4x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Fix: Brand campaign — No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G05"
     }
   ],
   "recommendations": [
     {
       "phase": "Phase 1: Fix the Foundation (Week 1)",
       "items": [
-        "Clean up conversion tracking — audit all conversion actions, set only true business outcomes (Purchase, Lead Form, Phone Call) as Primary, and set all micro-actions (page views, add-to-cart, engagements) to Secondary. This is the single most impactful change because it fixes the data that drives all optimization decisions.",
-        "Launch a brand Search campaign immediately to protect your branded search terms. Competitors can bid on your brand name at low cost. Create exact + phrase match keywords for your brand name, set a sufficient budget to capture 95%+ impression share. Brand campaigns typically deliver 30-50x ROAS."
+        "2 campaign(s) are losing money ($4,858/month): CTM - O.F - BOFU - Kitchen Remodeling (0.12x ROAS, $4,841), LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS, $616). Restructure keywords/targeting or reduce budget.",
+        "$1,604 wasted on 61 zero-conversion search terms. Add top wasters as negatives: \"cabinet door shop near me\", \"home addition contractors near me\", \"brookwood cabinet company\", \"kitchen remodels on a budget\", \"contractor for remodeling house\".",
+        "2 keywords with QS below 5 are costing ~$561 extra/month in CPC premiums. Improve ad relevance and landing page alignment for these keywords.",
+        "Create a brand Search campaign to protect branded terms from competitors."
       ]
     },
     {
       "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
       "items": [
-        "Build your audience infrastructure: (1) Create remarketing audiences in GA4 — all visitors (30d), cart abandoners, past converters, high-value page visitors. (2) Upload Customer Match lists from your CRM for lookalike expansion and existing customer exclusion. Remarketing audiences convert 3-5x higher than cold traffic.",
-        "Launch a PMax campaign with proper setup: Create asset groups by product category or service type, each with 20 images (various aspect ratios), 5 videos, 5 headlines, 5 descriptions, and audience signals (customer lists + website visitors + in-market segments). Start with a daily budget of 3x your target CPA.",
-        "Refresh ad creative: Test new headline angles (features vs benefits vs urgency vs social proof), update ad descriptions with current offers, and add all available extensions (sitelinks, callouts, structured snippets, images). Creative testing every 4-6 weeks prevents fatigue-driven CTR decline."
+        "Build remarketing audiences (all visitors 30d, cart abandoners, converters) and upload Customer Match lists from CRM.",
+        "Pause or restructure 1 zero-conversion keywords to recover $479/month."
       ]
     },
     {
       "phase": "Phase 3: Scale (Month 2+)",
       "items": [
-        "Increase impression share on your highest-ROAS campaigns by raising budgets incrementally (10-15% per week) and monitoring for CPA/ROAS stability.",
-        "With 25 conversions/month, you have enough data to scale. Increase budget by 10-15% weekly on campaigns meeting your ROAS/CPA targets. Monitor for 1 week between each increase to ensure stability.",
-        "Test Demand Gen campaigns for upper-funnel awareness — these reach users across YouTube, Gmail, and Discover with visually engaging ads, driving new-to-brand traffic at lower CPMs than Search.",
-        "Implement server-side tracking via server-side GTM or direct API conversion imports to improve data quality by 10-25%. This ensures Smart Bidding has the most accurate conversion signals possible."
+        "Build conversion volume and data before scaling."
       ]
     }
   ]
