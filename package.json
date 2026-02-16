@@ -1,0 +1,11 @@
+{
+  "name": "google-ads-daily-audit",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "audit": "node scripts/daily-audit.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}
