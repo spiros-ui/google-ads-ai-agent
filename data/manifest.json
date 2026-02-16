@@ -111,7 +111,15 @@
       "dates": [
         "2026-02-16"
       ]
+    },
+    {
+      "id": "p-the-om-spa-account-01-usd-own",
+      "name": "P / The Om Spa | Account-01 / USD [OWN]",
+      "customerId": "6638376999",
+      "dates": [
+        "2026-02-16"
+      ]
     }
   ],
-  "lastUpdated": "2026-02-16T08:00:00+02:00"
+  "lastUpdated": "2026-02-16T11:38:19.489Z"
 }
