@@ -1,0 +1,460 @@
+{
+  "account": "Commercial - Madison",
+  "customerId": 7877267211,
+  "date": "2026-02-18",
+  "industry": "E-commerce",
+  "healthScore": 65,
+  "grade": "C",
+  "verdict": "Needs attention — notable issues",
+  "snapshot": {
+    "totalCampaigns": 3,
+    "enabledCampaigns": 3,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": 8,
+    "totalKeywords": 800,
+    "spend30d": 8300.36,
+    "impressions30d": 13733,
+    "clicks30d": 927,
+    "ctr": 6.75,
+    "avgCpc": 8.95,
+    "conversions30d": 16,
+    "conversionValue30d": 390,
+    "roas": 0.05,
+    "cpa": 518.77,
+    "searchImpressionShare": 10.66,
+    "dailyBudget": 18200,
+    "avgDailySpend": 276.68
+  },
+  "campaignPerformance": [
+    {
+      "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+      "type": "SEARCH",
+      "spend": 3861,
+      "roas": 0,
+      "cpa": null,
+      "ctr": 7.08,
+      "conversions": 0,
+      "value": 0,
+      "verdict": "Zero conversions — evaluate or pause"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "1 campaign(s) spent $3,861 with 0 conversions: 1090 | Search No Partners  | Rel 8 | CPC #2.",
+      "impact": "Critical",
+      "dollarImpact": 3861
+    },
+    {
+      "insight": "$3,031 spent on 190 zero-conversion search terms (85% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 3031
+    },
+    {
+      "insight": "94 low-QS keywords costing ~$1,942/month in CPC premiums.",
+      "impact": "High",
+      "dollarImpact": 1942
+    },
+    {
+      "insight": "Only 11% Search Impression Share — missing 89% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "12 conversion actions (2x SUBMIT_LEAD_FORM, 1x DEFAULT, 1x ADD_TO_CART, 1x PAGE_VIEW, 1x CONVERTED_LEAD, 1x ENGAGEMENT, 1x UNKNOWN, 2x QUALIFIED_LEAD, 2x OUTBOUND_CLICK). Recording 16 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Enhanced conversions or offline import detected — recovers 5-15% of conversions lost to cookie restrictions."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Server-side or offline conversion import active — bypasses ad blockers and browser restrictions."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "9 conversion categories: 2x SUBMIT_LEAD_FORM, 1x DEFAULT, 1x ADD_TO_CART, 1x PAGE_VIEW, 1x CONVERTED_LEAD, 1x ENGAGEMENT, 1x UNKNOWN, 2x QUALIFIED_LEAD, 2x OUTBOUND_CLICK."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 3x \"lead\" actions; 2x \"form\" actions; 2x \"submit\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No GA4 conversion actions found. Link GA4 for cross-device tracking and audience insights."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "12 actions recording 16 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 76.2,
+      "grade": "B"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$3,031 spent on 190 zero-conversion search terms (85% of $3,559 visible search spend). Top waste: \"bobtail insurance\" $125, \"ooida trucking insurance\" $88, \"non trucking liability insurance\" $70, \"commercial truck insurance\" $53, \"insurance for box truck\" $51."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "4 list(s) with 11656 total negatives. Good coverage with themed lists."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "11656 negative keywords across 4 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G17",
+          "name": "Match type performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "No broad match keywords active. PHRASE: $4,475, 9 conv. EXACT: $3,826, 7 conv. BROAD: $0, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "15 keywords spent $2,819 with 0 conversions in 30d. Top waste: \"how much does it cost to insure a semi truck\" $294, \"commercial insurance for hotshot trucking\" $277, \"tractor trailer insurance\" $239, \"box truck insurance cost\" $226, \"commercial box truck insurance\" $210."
+        }
+      ],
+      "score": 57.9,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 3 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "8 ad groups across 3 campaigns (avg 3/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 campaigns: 1 DISPLAY, 2 SEARCH."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No active PMax. Consider launching with strong asset groups and audience signals."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "N/A",
+          "finding": "No concurrent Search + PMax."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "3 campaigns, $18,200/day budget, 11% Search Impression Share. Worst: 1090 | Search No Partners  | Rel 8 | CPC #2 (0x ROAS, $3,861). $3,861/month on below-1x-ROAS or zero-conversion campaigns."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$18,200/day budget, ~$277/day actual spend (2% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Correctly using \"Presence\" targeting."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 60.6,
+      "grade": "C"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Avg QS: 3.0/10 across 121 scored keywords (7 at 7+, 93 below 5). Est. CPC premium from low-QS keywords: ~$1,942/month. Top offenders: \"box truck insurance cost\" QS 3 ($830 spend, ~$266 premium), \"commercial trucking insurance companies\" QS 1 ($392 spend, ~$251 premium), \"how much does it cost to insure a semi truck\" QS 1 ($294 spend, ~$188 premium)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 of 800 enabled keywords had 0 impressions in 30d."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS 3.0 indicates poor keyword-to-ad relevance. Tighten ad group themes and include keywords in headlines."
+        }
+      ],
+      "score": 40,
+      "grade": "D"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "12 RSAs: 4 Good/Excellent, 8 need improvement (3 AVERAGE, 4 GOOD, 5 PENDING)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "N/A",
+          "finding": "No active PMax campaigns."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Account CTR: 6.75%. Strong CTR."
+        }
+      ],
+      "score": 75,
+      "grade": "B"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS, TARGET_SPEND."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "11% Search Impression Share — missing 89% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Using automated bidding."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "22 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "11 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "1 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "172 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No call extensions configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "2 Customer Match list(s) uploaded."
+        }
+      ],
+      "score": 80,
+      "grade": "B"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Pause or restructure \"1090 | Search No Partners  | Rel 8 | CPC #2\" — 0x ROAS on $3,861, losing ~$3,861/month.",
+      "impact": "$3,861/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Evaluate \"1090 | Search No Partners  | Rel 8 | CPC #2\" — $3,861 spent with 0 conversions in 30d.",
+      "impact": "$3,861/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"bobtail insurance\", \"ooida trucking insurance\", \"non trucking liability insurance\"... — $3,031 wasted.",
+      "impact": "$3,031/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Pause 15 zero-conversion keywords: \"how much does it cost to insure a semi truck\", \"commercial insurance for hotshot trucking\", \"tractor trailer insurance\"... — $2,819 wasted.",
+      "impact": "$2,819/month",
+      "time": "10 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Improve 94 keywords with QS below 5 — est. $1,942/month CPC premium. Worst: \"box truck insurance cost\" QS 3.",
+      "impact": "$1,942/month",
+      "time": "30 min",
+      "check": "G20-G25"
+    },
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 3x \"lead\" actions; 2x \"form\" actions; 2x \"submit\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Fix: Brand campaign — No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G05"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "1 campaign(s) spent $3,861 with 0 conversions: 1090 | Search No Partners  | Rel 8 | CPC #2. Evaluate conversion tracking, landing pages, and targeting.",
+        "$3,031 wasted on 190 zero-conversion search terms. Add top wasters as negatives: \"bobtail insurance\", \"ooida trucking insurance\", \"non trucking liability insurance\", \"commercial truck insurance\", \"insurance for box truck\".",
+        "94 keywords with QS below 5 are costing ~$1,942 extra/month in CPC premiums. Improve ad relevance and landing page alignment for these keywords.",
+        "Create a brand Search campaign to protect branded terms from competitors."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Pause or restructure 15 zero-conversion keywords to recover $2,819/month."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 11% — you're missing 89% of potential customers."
+      ]
+    }
+  ]
+}
