@@ -1,0 +1,467 @@
+{
+  "account": "Odd Fellows Contracting",
+  "customerId": 5376515807,
+  "date": "2026-02-22",
+  "industry": "Local Services",
+  "healthScore": 60,
+  "grade": "C",
+  "verdict": "Needs attention — notable issues",
+  "snapshot": {
+    "totalCampaigns": 4,
+    "enabledCampaigns": 4,
+    "activeCampaignsWithSpend": 2,
+    "totalAdGroups": 5,
+    "totalKeywords": 1410,
+    "spend30d": 5154.31,
+    "impressions30d": 4577,
+    "clicks30d": 415,
+    "ctr": 9.07,
+    "avgCpc": 12.42,
+    "conversions30d": 26,
+    "conversionValue30d": 756,
+    "roas": 0.15,
+    "cpa": 198.24,
+    "searchImpressionShare": 54.93,
+    "dailyBudget": 453,
+    "avgDailySpend": 171.81
+  },
+  "campaignPerformance": [
+    {
+      "name": "CTM - O.F - BOFU - Kitchen Remodeling",
+      "type": "SEARCH",
+      "spend": 4684,
+      "roas": 0.16,
+      "cpa": 468.35,
+      "ctr": 4.89,
+      "conversions": 10,
+      "value": 740,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "LocalServicesCampaign:SystemGenerated:0005eb544d960f70",
+      "type": "LOCAL_SERVICES",
+      "spend": 471,
+      "roas": 0.03,
+      "cpa": 29.42,
+      "ctr": 16.93,
+      "conversions": 16,
+      "value": 16,
+      "verdict": "Losing money — restructure or reduce spend"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "2 campaign(s) losing ~$4,391/month: CTM - O.F - BOFU - Kitchen Remodeling (0.16x ROAS on $4,684), LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS on $471).",
+      "impact": "Critical",
+      "dollarImpact": 4391.43
+    },
+    {
+      "insight": "$1,553 spent on 59 zero-conversion search terms (100% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 1553
+    },
+    {
+      "insight": "2 low-QS keywords costing ~$482/month in CPC premiums.",
+      "impact": "High",
+      "dollarImpact": 482
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "15 conversion actions (2x GET_DIRECTIONS, 4x CONTACT, 2x PHONE_CALL_LEAD, 3x PAGE_VIEW, 1x SUBMIT_LEAD_FORM, 1x REQUEST_QUOTE, 2x DEFAULT). Recording 26 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Enhanced conversions or offline import detected — recovers 5-15% of conversions lost to cookie restrictions."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Server-side or offline conversion import active — bypasses ad blockers and browser restrictions."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "7 conversion categories: 2x GET_DIRECTIONS, 4x CONTACT, 2x PHONE_CALL_LEAD, 3x PAGE_VIEW, 1x SUBMIT_LEAD_FORM, 1x REQUEST_QUOTE, 2x DEFAULT."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 7x \"call\" actions; 4x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "15 actions recording 26 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 81.1,
+      "grade": "B"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$1,553 spent on 59 zero-conversion search terms (100% of $1,553 visible search spend). Top waste: \"cabinet door shop near me\" $116, \"home addition contractors near me\" $94, \"brookwood cabinet company\" $73, \"kitchen remodels on a budget\" $73, \"contractor for remodeling house\" $73."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "2 list(s) with 348 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "348 negative keywords across 2 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G17",
+          "name": "Broad match performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Broad match: $4,684 spend, 10 conv, $468 CPA. Exact: $0 spend, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "1 keywords spent $579 with 0 conversions in 30d. Top waste: \"kitchen remodeling contractors\" $579."
+        }
+      ],
+      "score": 44.7,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 4 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "5 ad groups across 4 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4 campaigns: 1 LOCAL_SERVICES, 3 SEARCH."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No active PMax. Consider launching with strong asset groups and audience signals."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "N/A",
+          "finding": "No concurrent Search + PMax."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "4 campaigns, $453/day budget, 55% Search Impression Share. Worst: LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS, $471). $5,155/month on below-1x-ROAS or zero-conversion campaigns."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$453/day budget, ~$172/day actual spend (38% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "\"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Settings > Locations."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 49,
+      "grade": "D"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Avg QS: 4.0/10 across 2 scored keywords (0 at 7+, 1 below 5). Est. CPC premium from low-QS keywords: ~$482/month. Top offenders: \"kitchen remodel lansing mi\" QS 3 ($1,508 spend, ~$482 premium)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "654 of 1410 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS 4.0 indicates poor keyword-to-ad relevance. Tighten ad group themes and include keywords in headlines."
+        }
+      ],
+      "score": 30,
+      "grade": "F"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "12 RSAs: 1 Good/Excellent, 11 need improvement (9 POOR, 2 AVERAGE, 1 GOOD)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "N/A",
+          "finding": "No active PMax campaigns."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Account CTR: 9.07%. Strong CTR."
+        }
+      ],
+      "score": 75,
+      "grade": "B"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS, TARGET_CPA."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "55% Search Impression Share — moderate coverage, room to grow."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Using automated bidding."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "81 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "13 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "447 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "10 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion."
+        }
+      ],
+      "score": 80,
+      "grade": "B"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Pause or restructure \"CTM - O.F - BOFU - Kitchen Remodeling\" — 0.16x ROAS on $4,684, losing ~$3,935/month.",
+      "impact": "$3,935/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"cabinet door shop near me\", \"home addition contractors near me\", \"brookwood cabinet company\"... — $1,553 wasted.",
+      "impact": "$1,553/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Pause 1 zero-conversion keywords: \"kitchen remodeling contractors\" — $579 wasted.",
+      "impact": "$579/month",
+      "time": "10 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Improve 2 keywords with QS below 5 — est. $482/month CPC premium. Worst: \"kitchen remodel lansing mi\" QS 3.",
+      "impact": "$482/month",
+      "time": "30 min",
+      "check": "G20-G25"
+    },
+    {
+      "action": "Pause or restructure \"LocalServicesCampaign:SystemGenerated:0005eb544d960f70\" — 0.03x ROAS on $471, losing ~$457/month.",
+      "impact": "$457/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 7x \"call\" actions; 4x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Fix: Brand campaign — No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G05"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "2 campaign(s) are losing money ($4,391/month): CTM - O.F - BOFU - Kitchen Remodeling (0.16x ROAS, $4,684), LocalServicesCampaign:SystemGenerated:0005eb544d960f70 (0.03x ROAS, $471). Restructure keywords/targeting or reduce budget.",
+        "$1,553 wasted on 59 zero-conversion search terms. Add top wasters as negatives: \"cabinet door shop near me\", \"home addition contractors near me\", \"brookwood cabinet company\", \"kitchen remodels on a budget\", \"contractor for remodeling house\".",
+        "2 keywords with QS below 5 are costing ~$482 extra/month in CPC premiums. Improve ad relevance and landing page alignment for these keywords.",
+        "Create a brand Search campaign to protect branded terms from competitors."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Build remarketing audiences (all visitors 30d, cart abandoners, converters) and upload Customer Match lists from CRM.",
+        "Pause or restructure 1 zero-conversion keywords to recover $579/month."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Build conversion volume and data before scaling."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "account": "Restored Timbers",
+  "customerId": 2974447695,
+  "date": "2026-02-22",
+  "industry": "E-commerce",
+  "healthScore": 59,
+  "grade": "D",
+  "verdict": "Poor — significant problems present",
+  "snapshot": {
+    "totalCampaigns": 3,
+    "enabledCampaigns": 3,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": 1,
+    "totalKeywords": 8180,
+    "spend30d": 3498.96,
+    "impressions30d": 82286,
+    "clicks30d": 1255,
+    "ctr": 1.53,
+    "avgCpc": 2.79,
+    "conversions30d": 38,
+    "conversionValue30d": 49990,
+    "roas": 14.29,
+    "cpa": 92.08,
+    "searchImpressionShare": 18.5,
+    "dailyBudget": 268,
+    "avgDailySpend": 116.63
+  },
+  "campaignPerformance": [
+    {
+      "name": "CTM - Collection - Asset groups",
+      "type": "PERFORMANCE_MAX",
+      "spend": 462,
+      "roas": 96.84,
+      "cpa": 14.9,
+      "ctr": 3.42,
+      "conversions": 31,
+      "value": 44734,
+      "verdict": "Strong performer"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "$1,790 spent on 197 zero-conversion search terms (97% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 1790
+    },
+    {
+      "insight": "Only 19% Search Impression Share — missing 82% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    },
+    {
+      "insight": "Top performer: \"CTM - Collection - Asset groups\" at 96.84x ROAS ($462 spend, $44,734 revenue).",
+      "impact": "Positive",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "32 conversion actions (2x GET_DIRECTIONS, 2x ENGAGEMENT, 12x PAGE_VIEW, 4x PHONE_CALL_LEAD, 2x PURCHASE, 2x BEGIN_CHECKOUT, 2x ADD_TO_CART, 3x CONTACT, 1x UNKNOWN, 2x DEFAULT). Recording 38 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Enhanced conversions or offline import detected — recovers 5-15% of conversions lost to cookie restrictions."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Server-side or offline conversion import active — bypasses ad blockers and browser restrictions."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "10 conversion categories: 2x GET_DIRECTIONS, 2x ENGAGEMENT, 12x PAGE_VIEW, 4x PHONE_CALL_LEAD, 2x PURCHASE, 2x BEGIN_CHECKOUT, 2x ADD_TO_CART, 3x CONTACT, 1x UNKNOWN, 2x DEFAULT."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 2x \"purchase\" actions; 2x \"phone\" actions; 6x \"call\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "32 actions recording 38 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 81.1,
+      "grade": "B"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$1,790 spent on 197 zero-conversion search terms (97% of $1,838 visible search spend). Top waste: \"kitchen island\" $100, \"credenza\" $58, \"tv stand\" $38, \"dresser\" $35, \"raymour and flanigan\" $30."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "2 list(s) with 147 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "147 negative keywords across 2 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G16",
+          "name": "Product spend waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "71.92% of top-50 product spend ($1,895 of $2,636) goes to 43 zero-conversion products. Exclude or lower bids on non-performers."
+        },
+        {
+          "id": "G17",
+          "name": "Match type performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "No broad match keywords active. BROAD: $0, 0 conv. PHRASE: $0, 0 conv. EXACT: $0, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "No significant zero-conversion keyword spend detected."
+        }
+      ],
+      "score": 47.9,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 naming prefix(es) across 3 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "1 ad groups across 3 campaigns (avg 0/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 campaigns: 1 SEARCH, 1 DISPLAY, 1 PERFORMANCE_MAX."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax active — cross-channel reach across Search, Display, YouTube, Gmail, Maps, Discover."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Both Search and PMax active — PMax takes priority for exact match queries. Use brand exclusions in PMax and monitor cannibalization."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 campaigns, $268/day budget, 19% Search Impression Share. Top: CTM - Collection - Asset groups (96.84x ROAS, $462)."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$268/day budget, ~$117/day actual spend (44% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "\"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Settings > Locations."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 64.7,
+      "grade": "C"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No QS data — keywords need impression history."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "7902 of 8180 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No QS data to assess relevance."
+        }
+      ],
+      "score": 30,
+      "grade": "F"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No RSAs found. Every search ad group needs at least 1 RSA."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "1 PMax campaign(s). CTM - Collection - Asset groups: $462 spend, 96.84x ROAS, $15 CPA, 31 conv."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Account CTR: 1.53%. Below minimum threshold — review ad copy relevance and keyword targeting."
+        }
+      ],
+      "score": 45.5,
+      "grade": "D"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: TARGET_SPEND, MAXIMIZE_CONVERSIONS."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "19% Search Impression Share — missing 81% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "38 conversions/month with Manual CPC. Sufficient for Smart Bidding — test Target ROAS or Target CPA."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "56 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "102 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "4 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "603 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "6 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "25 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 Customer Match list(s) uploaded."
+        }
+      ],
+      "score": 80,
+      "grade": "B"
+    }
+  ],
+  "topWastedProducts": [
+    {
+      "product": "3 Drawer 6 Doors Kitchen Island",
+      "spend": 304.21,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "3 Drawer, 2 Doors Kitchen Island",
+      "spend": 184.34,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "CLEARANCE - 4 Door Console",
+      "spend": 108.2,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "4 Doors Console",
+      "spend": 98.33,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "CLEARANCE - 6 Drawer Dresser",
+      "spend": 88.64,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "4 Door Wooden Bar",
+      "spend": 73.82,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "CLEARANCE! 3 Drawer Chest",
+      "spend": 55.35,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "CLEARANCE! 2 Door Tv Chest",
+      "spend": 48.34,
+      "conversions": 0,
+      "value": 0
+    }
+  ],
+  "topPerformingProducts": [
+    {
+      "product": "Buffet w/2 Doors and 3 Drawers",
+      "spend": 58.29,
+      "conversions": 2,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "4 Door Console",
+      "spend": 52.5,
+      "conversions": 2,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "4 Doors Console",
+      "spend": 77.87,
+      "conversions": 1,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "Large Buffet/Hutch",
+      "spend": 205.41,
+      "conversions": 2,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "3 Drawer 6 Doors Kitchen Island",
+      "spend": 144.47,
+      "conversions": 1,
+      "value": 0,
+      "roas": 0
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"kitchen island\", \"credenza\", \"tv stand\"... — $1,790 wasted.",
+      "impact": "$1,790/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 2x \"purchase\" actions; 2x \"phone\" actions; 6x \"call\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Fix: Product spend waste — 71.92% of top-50 product spend ($1,895 of $2,636) goes to 43 zero-conversion products. Exclude or lower bids on non-performers.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G16"
+    },
+    {
+      "action": "Fix: Brand campaign — No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G05"
+    },
+    {
+      "action": "Fix: Geographic targeting — \"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Se",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G11"
+    },
+    {
+      "action": "Fix: Quality Score — No QS data — keywords need impression history.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G20-G25"
+    },
+    {
+      "action": "Fix: RSA Ad Strength — No RSAs found. Every search ad group needs at least 1 RSA.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G26-G30"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "$1,790 wasted on 197 zero-conversion search terms. Add top wasters as negatives: \"kitchen island\", \"credenza\", \"tv stand\", \"dresser\", \"raymour and flanigan\".",
+        "Create a brand Search campaign to protect branded terms from competitors."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "1 campaign(s) are above target ROAS: CTM - Collection - Asset groups (96.84x). Increase budget by 15% to capture more of the 82% missed impressions."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 19% — you're missing 82% of potential customers.",
+        "Scale top performer \"CTM - Collection - Asset groups\" (96.84x ROAS) — increase budget 10-15% weekly while monitoring CPA stability.",
+        "With 38 conversions/month, test Demand Gen or Display remarketing for upper-funnel growth."
+      ]
+    }
+  ]
+}
