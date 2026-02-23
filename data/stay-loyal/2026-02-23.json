@@ -1,0 +1,555 @@
+{
+  "account": "Stay Loyal",
+  "customerId": 6809045675,
+  "date": "2026-02-23",
+  "industry": "E-commerce",
+  "healthScore": 80,
+  "grade": "B",
+  "verdict": "Good with improvement opportunities",
+  "snapshot": {
+    "totalCampaigns": 8,
+    "enabledCampaigns": 8,
+    "activeCampaignsWithSpend": 5,
+    "totalAdGroups": 4,
+    "totalKeywords": 4080,
+    "spend30d": 20494.95,
+    "impressions30d": 343875,
+    "clicks30d": 3855,
+    "ctr": 1.12,
+    "avgCpc": 5.32,
+    "conversions30d": 267.1,
+    "conversionValue30d": 31686,
+    "roas": 1.55,
+    "cpa": 76.73,
+    "searchImpressionShare": 23.23,
+    "dailyBudget": 1402,
+    "avgDailySpend": 683.16
+  },
+  "campaignPerformance": [
+    {
+      "name": "CTM - Performance Max  +Brand Stay Loyal",
+      "type": "PERFORMANCE_MAX",
+      "spend": 12428,
+      "roas": 1.24,
+      "cpa": 105.3,
+      "ctr": 0.88,
+      "conversions": 118,
+      "value": 15353,
+      "verdict": "Profitable but below target"
+    },
+    {
+      "name": "CTM - Brand Terms - Search - Stay Loyal",
+      "type": "SEARCH",
+      "spend": 5040,
+      "roas": 2.83,
+      "cpa": 39.62,
+      "ctr": 20.93,
+      "conversions": 127.2,
+      "value": 14288,
+      "verdict": "Profitable but below target"
+    },
+    {
+      "name": "CTM - Pmax - Remarketing Aim",
+      "type": "PERFORMANCE_MAX",
+      "spend": 1809,
+      "roas": 0.23,
+      "cpa": 291.74,
+      "ctr": 1.22,
+      "conversions": 6.2,
+      "value": 417,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+      "type": "SHOPPING",
+      "spend": 804,
+      "roas": 1.39,
+      "cpa": 76.39,
+      "ctr": 0.4,
+      "conversions": 10.5,
+      "value": 1116,
+      "verdict": "Profitable but below target"
+    },
+    {
+      "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+      "type": "SHOPPING",
+      "spend": 413,
+      "roas": 1.24,
+      "cpa": 80.34,
+      "ctr": 0.5,
+      "conversions": 5.1,
+      "value": 513,
+      "verdict": "Profitable but below target"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "$2,331 spent on 142 zero-conversion search terms (53% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 2331
+    },
+    {
+      "insight": "1 campaign(s) losing ~$1,393/month: CTM - Pmax - Remarketing Aim (0.23x ROAS on $1,809).",
+      "impact": "Critical",
+      "dollarImpact": 1392.93
+    },
+    {
+      "insight": "Only 23% Search Impression Share — missing 77% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    },
+    {
+      "insight": "Top performer: \"CTM - Brand Terms - Search - Stay Loyal\" at 2.83x ROAS ($5,040 spend, $14,288 revenue).",
+      "impact": "Positive",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "5 conversion actions (1x PHONE_CALL_LEAD, 1x ENGAGEMENT, 1x PURCHASE, 1x ADD_TO_CART, 1x UNKNOWN). Recording 267 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Not enabled. With 267 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "5 conversion categories: 1x PHONE_CALL_LEAD, 1x ENGAGEMENT, 1x PURCHASE, 1x ADD_TO_CART, 1x UNKNOWN."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "No obvious duplicate conversion actions detected."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "5 actions recording 267 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 79.5,
+      "grade": "B"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$2,331 spent on 142 zero-conversion search terms (53% of $4,361 visible search spend). Top waste: \"stay loyal dog food reviews\" $511, \"sniffspace\" $241, \"fergusons treatos\" $147, \"dog boutique\" $123, \"forcyte\" $109."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "16 list(s) with 2075 total negatives. Good coverage with themed lists."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "2075 negative keywords across 16 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G16",
+          "name": "Product spend waste",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "0.36% of top-50 product spend ($48 of $13,081) goes to 10 zero-conversion products."
+        },
+        {
+          "id": "G17",
+          "name": "Broad match performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Broad match: $5,040 spend, 127.2 conv, $40 CPA. Exact: $0 spend, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "No significant zero-conversion keyword spend detected."
+        }
+      ],
+      "score": 79.2,
+      "grade": "B"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 8 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "4 ad groups across 8 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "8 campaigns: 4 SEARCH, 2 PERFORMANCE_MAX, 2 SHOPPING."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Brand campaign exists — protects branded terms from competitors."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax active — cross-channel reach across Search, Display, YouTube, Gmail, Maps, Discover."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Both Search and PMax active — PMax takes priority for exact match queries. Use brand exclusions in PMax and monitor cannibalization."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "8 campaigns, $1,402/day budget, 23% Search Impression Share. Top: CTM - Performance Max  +Brand Stay Loyal (1.24x ROAS, $12,428). Worst: CTM - Pmax - Remarketing Aim (0.23x ROAS, $1,809). $1,809/month on below-1x-ROAS or zero-conversion campaigns."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$1,402/day budget, ~$683/day actual spend (49% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "\"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Settings > Locations."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 76.7,
+      "grade": "B"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Avg QS: 8.3/10 across 3 scored keywords (3 at 7+, 0 below 5)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "3251 of 4080 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Avg QS 8.3 indicates good keyword-to-ad relevance."
+        }
+      ],
+      "score": 90,
+      "grade": "A"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 RSAs: 3 Good/Excellent, 0 need improvement (2 GOOD, 1 EXCELLENT)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "2 PMax campaign(s). CTM - Performance Max  +Brand Stay Loyal: $12,428 spend, 1.24x ROAS, $105 CPA, 118 conv. CTM - Pmax - Remarketing Aim: $1,809 spend, 0.23x ROAS, $292 CPA, 6.2 conv."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Account CTR: 1.12%. Below minimum threshold — review ad copy relevance and keyword targeting."
+        }
+      ],
+      "score": 72.7,
+      "grade": "C"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS, MAXIMIZE_CONVERSION_VALUE, TARGET_ROAS."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "23% Search Impression Share — missing 77% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Using automated bidding."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "98 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "11 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "178 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "6 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "24 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 Customer Match list(s) uploaded."
+        }
+      ],
+      "score": 86.7,
+      "grade": "B"
+    }
+  ],
+  "topWastedProducts": [
+    {
+      "product": "Carob Chip & Yoghurt Drop Cookies Bundle 600g - Carob Chip & Yoghurt Drop Cookies Bundle 600g",
+      "spend": 27.31,
+      "conversions": 0,
+      "value": 0
+    },
+    {
+      "product": "Yoghurt Drop & Carob Chip Cookies Bundle - 600g",
+      "spend": 20.39,
+      "conversions": 0,
+      "value": 0
+    }
+  ],
+  "topPerformingProducts": [
+    {
+      "product": "Stay Loyal Chicken, Lamb & Fish - Super Premium Grain-Free Dog Food",
+      "spend": 2311.4,
+      "conversions": 55.50897,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "Carob Chip Cookies - 300g",
+      "spend": 50.76,
+      "conversions": 1,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "Stay Loyal Salmon, Turkey & Pork - Super Premium Grain-Free Dog Food.",
+      "spend": 3123,
+      "conversions": 47.608613,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "Carob Chip & Yoghurt Drop Cookies Bundle 600g - Carob Chip Cookies 300g",
+      "spend": 40.32,
+      "conversions": 0.5,
+      "value": 0,
+      "roas": 0
+    },
+    {
+      "product": "Shampoo & Conditioner 500ml - Conditioner",
+      "spend": 281.96,
+      "conversions": 1.50344,
+      "value": 0,
+      "roas": 0
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"stay loyal dog food reviews\", \"sniffspace\", \"fergusons treatos\"... — $2,331 wasted.",
+      "impact": "$2,331/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Pause or restructure \"CTM - Pmax - Remarketing Aim\" — 0.23x ROAS on $1,809, losing ~$1,393/month.",
+      "impact": "$1,393/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Fix: Server-side tracking — No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G44"
+    },
+    {
+      "action": "Fix: Geographic targeting — \"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Se",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G11"
+    },
+    {
+      "action": "Fix: CTR vs benchmark — Account CTR: 1.12%. Below minimum threshold — review ad copy relevance and keyword targeting.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G-AD2"
+    },
+    {
+      "action": "Fix: Search impression share — 23% Search Impression Share — missing 77% of eligible searches. Increase budget on profitable campaigns or improve QS.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G39"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "1 campaign(s) are losing money ($1,393/month): CTM - Pmax - Remarketing Aim (0.23x ROAS, $1,809). Restructure keywords/targeting or reduce budget.",
+        "$2,331 wasted on 142 zero-conversion search terms. Add top wasters as negatives: \"stay loyal dog food reviews\", \"sniffspace\", \"fergusons treatos\", \"dog boutique\", \"forcyte\"."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Account is well-optimized. Test new ad variations and expand audience targeting."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 23% — you're missing 77% of potential customers.",
+        "With 267 conversions/month, test Demand Gen or Display remarketing for upper-funnel growth."
+      ]
+    }
+  ]
+}
