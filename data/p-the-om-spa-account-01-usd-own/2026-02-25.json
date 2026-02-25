@@ -1,0 +1,460 @@
+{
+  "account": "P / The Om Spa | Account-01 / USD [OWN]",
+  "customerId": 6638376999,
+  "date": "2026-02-25",
+  "industry": "E-commerce",
+  "healthScore": 68,
+  "grade": "C",
+  "verdict": "Needs attention — notable issues",
+  "snapshot": {
+    "totalCampaigns": 4,
+    "enabledCampaigns": 4,
+    "activeCampaignsWithSpend": 3,
+    "totalAdGroups": 3,
+    "totalKeywords": 1032,
+    "spend30d": 19402.68,
+    "impressions30d": 101284,
+    "clicks30d": 4664,
+    "ctr": 4.6,
+    "avgCpc": 4.16,
+    "conversions30d": 197.9,
+    "conversionValue30d": 26465,
+    "roas": 1.36,
+    "cpa": 98.05,
+    "searchImpressionShare": 43.82,
+    "dailyBudget": 611,
+    "avgDailySpend": 646.76
+  },
+  "campaignPerformance": [
+    {
+      "name": "Performance Max - OmSpa",
+      "type": "PERFORMANCE_MAX",
+      "spend": 12995,
+      "roas": 1.45,
+      "cpa": 91.1,
+      "ctr": 5.07,
+      "conversions": 142.6,
+      "value": 18905,
+      "verdict": "Profitable but below target"
+    },
+    {
+      "name": "Performance Max - OmSpa - Desktop Only",
+      "type": "PERFORMANCE_MAX",
+      "spend": 4998,
+      "roas": 1.11,
+      "cpa": 158.68,
+      "ctr": 2.84,
+      "conversions": 31.5,
+      "value": 5559,
+      "verdict": "Profitable but below target"
+    },
+    {
+      "name": "Theomspanaples - Search V2 - Omspa",
+      "type": "SEARCH",
+      "spend": 1410,
+      "roas": 1.42,
+      "cpa": 59.37,
+      "ctr": 7.44,
+      "conversions": 23.7,
+      "value": 2001,
+      "verdict": "Profitable but below target"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "$698 spent on 157 zero-conversion search terms (71% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 698
+    },
+    {
+      "insight": "Only 44% Search Impression Share — missing 56% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "6 conversion actions (1x PHONE_CALL_LEAD, 1x PURCHASE, 1x DEFAULT, 1x CONTACT, 1x PAGE_VIEW, 1x STORE_VISIT). Recording 198 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Not enabled. With 198 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "6 conversion categories: 1x PHONE_CALL_LEAD, 1x PURCHASE, 1x DEFAULT, 1x CONTACT, 1x PAGE_VIEW, 1x STORE_VISIT."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "Potential duplicates: 3x \"call\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "6 actions recording 198 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 71.3,
+      "grade": "C"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$698 spent on 157 zero-conversion search terms (71% of $986 visible search spend). Top waste: \"prenatal massage\" $70, \"massage naples fl\" $43, \"acupuncture naples fl\" $31, \"lymphatic drainage massage\" $26, \"stretch zone park shore\" $20."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "2 list(s) with 269 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "269 negative keywords across 2 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G17",
+          "name": "Broad match performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Broad match: $1,410 spend, 23.7 conv, $59 CPA. Exact: $0 spend, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "4 keywords spent $133 with 0 conversions in 30d. Top waste: \"pregnancy massage near me\" $81, \"hydrafacial near me\" $36, \"head massage near me\" $10, \"reiki near me\" $6."
+        }
+      ],
+      "score": 52.6,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 4 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 ad groups across 4 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4 campaigns: 2 SEARCH, 2 PERFORMANCE_MAX."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax active — cross-channel reach across Search, Display, YouTube, Gmail, Maps, Discover."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Both Search and PMax active — PMax takes priority for exact match queries. Use brand exclusions in PMax and monitor cannibalization."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "4 campaigns, $611/day budget, 44% Search Impression Share. Top: Performance Max - OmSpa (1.45x ROAS, $12,995)."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "$611/day budget, ~$647/day actual spend (106% utilization)."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Correctly using \"Presence\" targeting."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 77.6,
+      "grade": "B"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS: 5.1/10 across 11 scored keywords (2 at 7+, 3 below 5). Est. CPC premium from low-QS keywords: ~$7/month. Top offenders: \"naples day spa\" QS 3 ($23 spend, ~$7 premium)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "636 of 1032 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS 5.1 indicates poor keyword-to-ad relevance. Tighten ad group themes and include keywords in headlines."
+        }
+      ],
+      "score": 50,
+      "grade": "D"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "10 RSAs: 1 Good/Excellent, 9 need improvement (1 GOOD, 3 AVERAGE, 6 POOR)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "2 PMax campaign(s). Performance Max - OmSpa: $12,995 spend, 1.45x ROAS, $91 CPA, 142.6 conv. Performance Max - OmSpa - Desktop Only: $4,998 spend, 1.11x ROAS, $159 CPA, 31.5 conv."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Account CTR: 4.60%. Strong CTR."
+        }
+      ],
+      "score": 86.4,
+      "grade": "B"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: TARGET_SPEND, MAXIMIZE_CONVERSION_VALUE, MAXIMIZE_CONVERSIONS."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "44% Search Impression Share — missing 56% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Using automated bidding."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "43 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "12 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "116 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "1 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion."
+        }
+      ],
+      "score": 80,
+      "grade": "B"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"prenatal massage\", \"massage naples fl\", \"acupuncture naples fl\"... — $698 wasted.",
+      "impact": "$698/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Pause 4 zero-conversion keywords: \"pregnancy massage near me\", \"hydrafacial near me\", \"head massage near me\"... — $133 wasted.",
+      "impact": "$133/month",
+      "time": "10 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Fix: Server-side tracking — No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G44"
+    },
+    {
+      "action": "Fix: Brand campaign — No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G05"
+    },
+    {
+      "action": "Fix: Customer Match — No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G57"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "$698 wasted on 157 zero-conversion search terms. Add top wasters as negatives: \"prenatal massage\", \"massage naples fl\", \"acupuncture naples fl\", \"lymphatic drainage massage\", \"stretch zone park shore\".",
+        "Create a brand Search campaign to protect branded terms from competitors."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Build remarketing audiences (all visitors 30d, cart abandoners, converters) and upload Customer Match lists from CRM.",
+        "Pause or restructure 4 zero-conversion keywords to recover $133/month."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 44% — you're missing 56% of potential customers.",
+        "With 198 conversions/month, test Demand Gen or Display remarketing for upper-funnel growth."
+      ]
+    }
+  ]
+}

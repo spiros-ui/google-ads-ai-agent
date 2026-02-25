@@ -1,0 +1,482 @@
+{
+  "account": "Shanahan Family Law",
+  "customerId": 7718562182,
+  "date": "2026-02-25",
+  "industry": "E-commerce",
+  "healthScore": 64,
+  "grade": "C",
+  "verdict": "Needs attention — notable issues",
+  "snapshot": {
+    "totalCampaigns": 5,
+    "enabledCampaigns": 5,
+    "activeCampaignsWithSpend": 3,
+    "totalAdGroups": 5,
+    "totalKeywords": 6134,
+    "spend30d": 5591.62,
+    "impressions30d": 27370,
+    "clicks30d": 890,
+    "ctr": 3.25,
+    "avgCpc": 6.28,
+    "conversions30d": 26,
+    "conversionValue30d": 2877,
+    "roas": 0.51,
+    "cpa": 215.06,
+    "searchImpressionShare": 21.81,
+    "dailyBudget": 285,
+    "avgDailySpend": 186.39
+  },
+  "campaignPerformance": [
+    {
+      "name": "Sunshine Coast PMAX  | LS",
+      "type": "PERFORMANCE_MAX",
+      "spend": 3899,
+      "roas": 0.42,
+      "cpa": 229.34,
+      "ctr": 2.89,
+      "conversions": 17,
+      "value": 1652,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "Sunshine Coast - Incremental Search | LS",
+      "type": "SEARCH",
+      "spend": 1437,
+      "roas": 0.64,
+      "cpa": 205.34,
+      "ctr": 4.69,
+      "conversions": 7,
+      "value": 925,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "Search Brand | LS",
+      "type": "SEARCH",
+      "spend": 255,
+      "roas": 1.17,
+      "cpa": 127.72,
+      "ctr": 33.48,
+      "conversions": 2,
+      "value": 300,
+      "verdict": "Profitable but below target"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "2 campaign(s) losing ~$2,779/month: Sunshine Coast PMAX  | LS (0.42x ROAS on $3,899), Sunshine Coast - Incremental Search | LS (0.64x ROAS on $1,437).",
+      "impact": "Critical",
+      "dollarImpact": 2778.74
+    },
+    {
+      "insight": "$763 spent on 33 zero-conversion search terms (75% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 763
+    },
+    {
+      "insight": "2 low-QS keywords costing ~$135/month in CPC premiums.",
+      "impact": "High",
+      "dollarImpact": 135
+    },
+    {
+      "insight": "Only 22% Search Impression Share — missing 78% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "14 conversion actions (6x PHONE_CALL_LEAD, 1x PAGE_VIEW, 2x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 2x CONTACT, 1x UNKNOWN). Recording 26 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Not enabled. With 26 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "6 conversion categories: 6x PHONE_CALL_LEAD, 1x PAGE_VIEW, 2x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 2x CONTACT, 1x UNKNOWN."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 2x \"phone\" actions; 6x \"call\" actions; 2x \"lead\" actions; 2x \"form\" actions; 2x \"submit\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "No GA4 conversion actions found. Link GA4 for cross-device tracking and audience insights."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "14 actions recording 26 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 50,
+      "grade": "D"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$763 spent on 33 zero-conversion search terms (75% of $1,022 visible search spend). Top waste: \"family lawyers sunshine coast\" $116, \"separation lawyers near me\" $60, \"estate solicitor near me\" $57, \"bayside lawyers\" $49, \"lawyer maroochydore\" $45."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "8 list(s) with 14291 total negatives. Good coverage with themed lists."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "14291 negative keywords across 8 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G17",
+          "name": "Broad match performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Broad match: $1,328 spend, 7 conv, $190 CPA. Exact: $255 spend, 2 conv, $128 CPA."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "6 keywords spent $329 with 0 conversions in 30d. Top waste: \"child custody dispute\" $125, \"Family Lawyers near me\" $109, \"luke shanahan lawyer\" $36, \"shanahan lawyers\" $34, \"shanahan family law maroochydore\" $15."
+        }
+      ],
+      "score": 57.9,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 naming prefix(es) across 5 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "5 ad groups across 5 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "5 campaigns: 4 SEARCH, 1 PERFORMANCE_MAX."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Brand campaign exists — protects branded terms from competitors."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "PMax active — cross-channel reach across Search, Display, YouTube, Gmail, Maps, Discover."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Both Search and PMax active — PMax takes priority for exact match queries. Use brand exclusions in PMax and monitor cannibalization."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "5 campaigns, $285/day budget, 22% Search Impression Share. Top: Search Brand | LS (1.17x ROAS, $255). Worst: Sunshine Coast - Incremental Search | LS (0.64x ROAS, $1,437). $5,336/month on below-1x-ROAS or zero-conversion campaigns."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$285/day budget, ~$186/day actual spend (65% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Correctly using \"Presence\" targeting."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 81.9,
+      "grade": "B"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Avg QS: 7.1/10 across 9 scored keywords (6 at 7+, 3 below 5). Est. CPC premium from low-QS keywords: ~$135/month. Top offenders: \"family lawyers sunshine coast\" QS 4 ($735 spend, ~$118 premium), \"Family Lawyers near me\" QS 4 ($109 spend, ~$17 premium)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "5271 of 6134 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Avg QS 7.1 indicates good keyword-to-ad relevance."
+        }
+      ],
+      "score": 90,
+      "grade": "A"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "27 RSAs: 10 Good/Excellent, 17 need improvement (3 GOOD, 7 EXCELLENT, 6 PENDING, 8 POOR, 3 AVERAGE)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "1 PMax campaign(s). Sunshine Coast PMAX  | LS: $3,899 spend, 0.42x ROAS, $229 CPA, 17 conv. Below 1x ROAS — review asset groups and audience signals."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Account CTR: 3.25%. Room for improvement — industry average is 4-7% for Search."
+        }
+      ],
+      "score": 50,
+      "grade": "D"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS, MAXIMIZE_CONVERSION_VALUE, TARGET_IMPRESSION_SHARE."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "22% Search Impression Share — missing 78% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "26 conversions/month with Manual CPC. Sufficient for Smart Bidding — test Target ROAS or Target CPA."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "71 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "16 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "224 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "5 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "7 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion."
+        }
+      ],
+      "score": 66.7,
+      "grade": "C"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Pause or restructure \"Sunshine Coast PMAX  | LS\" — 0.42x ROAS on $3,899, losing ~$2,261/month.",
+      "impact": "$2,261/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"family lawyers sunshine coast\", \"separation lawyers near me\", \"estate solicitor near me\"... — $763 wasted.",
+      "impact": "$763/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Pause or restructure \"Sunshine Coast - Incremental Search | LS\" — 0.64x ROAS on $1,437, losing ~$517/month.",
+      "impact": "$517/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Pause 6 zero-conversion keywords: \"child custody dispute\", \"Family Lawyers near me\", \"luke shanahan lawyer\"... — $329 wasted.",
+      "impact": "$329/month",
+      "time": "10 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Improve 2 keywords with QS below 5 — est. $135/month CPC premium. Worst: \"family lawyers sunshine coast\" QS 4.",
+      "impact": "$135/month",
+      "time": "30 min",
+      "check": "G20-G25"
+    },
+    {
+      "action": "Fix: Enhanced conversions — Not enabled. With 26 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G43"
+    },
+    {
+      "action": "Fix: Server-side tracking — No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G44"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "2 campaign(s) are losing money ($2,779/month): Sunshine Coast PMAX  | LS (0.42x ROAS, $3,899), Sunshine Coast - Incremental Search | LS (0.64x ROAS, $1,437). Restructure keywords/targeting or reduce budget.",
+        "$763 wasted on 33 zero-conversion search terms. Add top wasters as negatives: \"family lawyers sunshine coast\", \"separation lawyers near me\", \"estate solicitor near me\", \"bayside lawyers\", \"lawyer maroochydore\".",
+        "2 keywords with QS below 5 are costing ~$135 extra/month in CPC premiums. Improve ad relevance and landing page alignment for these keywords."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Build remarketing audiences (all visitors 30d, cart abandoners, converters) and upload Customer Match lists from CRM.",
+        "Pause or restructure 6 zero-conversion keywords to recover $329/month."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 22% — you're missing 78% of potential customers."
+      ]
+    }
+  ]
+}
