@@ -1,0 +1,471 @@
+{
+  "account": "Kyle_Dynamic Tree Solutions",
+  "customerId": 9254546290,
+  "date": "2026-02-26",
+  "industry": "Local Services",
+  "healthScore": 42,
+  "grade": "D",
+  "verdict": "Poor — significant problems present",
+  "snapshot": {
+    "totalCampaigns": 2,
+    "enabledCampaigns": 2,
+    "activeCampaignsWithSpend": 2,
+    "totalAdGroups": 2,
+    "totalKeywords": 3381,
+    "spend30d": 433.23,
+    "impressions30d": 2575,
+    "clicks30d": 48,
+    "ctr": 1.86,
+    "avgCpc": 9.03,
+    "conversions30d": 4,
+    "conversionValue30d": 120,
+    "roas": 0.28,
+    "cpa": 108.31,
+    "searchImpressionShare": 15.74,
+    "dailyBudget": 55,
+    "avgDailySpend": 14.44
+  },
+  "campaignPerformance": [
+    {
+      "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+      "type": "SEARCH",
+      "spend": 408,
+      "roas": 0.29,
+      "cpa": 102.02,
+      "ctr": 1.67,
+      "conversions": 4,
+      "value": 120,
+      "verdict": "Losing money — restructure or reduce spend"
+    },
+    {
+      "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+      "type": "SEARCH",
+      "spend": 25,
+      "roas": 0,
+      "cpa": null,
+      "ctr": 4.55,
+      "conversions": 0,
+      "value": 0,
+      "verdict": "Zero conversions — evaluate or pause"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "1 campaign(s) losing ~$290/month: [February 3] [Search] [Search Partners] [AI MAX] Tree Removal (0.29x ROAS on $408).",
+      "impact": "Critical",
+      "dollarImpact": 289.68
+    },
+    {
+      "insight": "$157 spent on 17 zero-conversion search terms (79% of visible spend).",
+      "impact": "High",
+      "dollarImpact": 157
+    },
+    {
+      "insight": "3 low-QS keywords costing ~$86/month in CPC premiums.",
+      "impact": "High",
+      "dollarImpact": 86
+    },
+    {
+      "insight": "Only 16% Search Impression Share — missing 84% of eligible searches.",
+      "impact": "Medium",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "23 conversion actions (7x PHONE_CALL_LEAD, 9x CONTACT, 2x GET_DIRECTIONS, 1x PAGE_VIEW, 1x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 1x DEFAULT). Recording 4 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Not enabled. With 4 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "7 conversion categories: 7x PHONE_CALL_LEAD, 9x CONTACT, 2x GET_DIRECTIONS, 1x PAGE_VIEW, 1x ENGAGEMENT, 2x SUBMIT_LEAD_FORM, 1x DEFAULT."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 9x \"call\" actions; 3x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "23 actions recording 4 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 54.9,
+      "grade": "D"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$157 spent on 17 zero-conversion search terms (79% of $200 visible search spend). Top waste: \"arborist\" $30, \"smiley tree services\" $23, \"shane's trees\" $17, \"treeline\" $14, \"tree removal springfield lakes\" $11."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "1 list(s) with 95 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "95 negative keywords across 1 lists. Ensure lists are attached to all active campaigns."
+        },
+        {
+          "id": "G17",
+          "name": "Broad match performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Broad match: $433 spend, 4 conv, $108 CPA. Exact: $0 spend, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "3 keywords spent $229 with 0 conversions in 30d. Top waste: \"tree removal brisbane\" $199, \"tree services\" $22, \"tree fellas\" $8."
+        }
+      ],
+      "score": 44.7,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 naming prefix(es) across 2 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "2 ad groups across 2 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "2 campaigns: 2 SEARCH."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "No brand campaign. Competitors can bid on your brand name. Create one immediately — brand campaigns typically achieve 30-50x ROAS."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No active PMax. Consider launching with strong asset groups and audience signals."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "N/A",
+          "finding": "No concurrent Search + PMax."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "2 campaigns, $55/day budget, 16% Search Impression Share. Worst: [February 3] [Search] [Search Partners] [AI MAX] Tree Removal (0.29x ROAS, $408). $433/month on below-1x-ROAS or zero-conversion campaigns."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$55/day budget, ~$14/day actual spend (26% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "\"Presence or Interest\" geo targeting active — shows ads to people merely interested in your location, not physically there. Switch to \"Presence\" in Settings > Locations."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 49,
+      "grade": "D"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Avg QS: 3.1/10 across 9 scored keywords (0 at 7+, 8 below 5). Est. CPC premium from low-QS keywords: ~$86/month. Top offenders: \"tree services near me\" QS 2 ($111 spend, ~$53 premium), \"tree removal brisbane\" QS 4 ($199 spend, ~$32 premium)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "2873 of 3381 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS 3.1 indicates poor keyword-to-ad relevance. Tighten ad group themes and include keywords in headlines."
+        }
+      ],
+      "score": 30,
+      "grade": "F"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No RSAs found. Every search ad group needs at least 1 RSA."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "N/A",
+          "finding": "No active PMax campaigns."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "Account CTR: 1.86%. Below minimum threshold — review ad copy relevance and keyword targeting."
+        }
+      ],
+      "score": 0,
+      "grade": "F"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Smart bidding active: MAXIMIZE_CONVERSIONS."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "16% Search Impression Share — missing 84% of eligible searches. Increase budget on profitable campaigns or improve QS."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "Using automated bidding."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "143 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "16 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "8 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "228 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "11 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "6 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "FAIL",
+          "finding": "No Customer Match lists. Upload CRM emails/phones for lookalike targeting and customer exclusion."
+        }
+      ],
+      "score": 73.3,
+      "grade": "C"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Pause or restructure \"[February 3] [Search] [Search Partners] [AI MAX] Tree Removal\" — 0.29x ROAS on $408, losing ~$290/month.",
+      "impact": "$290/month",
+      "time": "5 min",
+      "check": "G08"
+    },
+    {
+      "action": "Pause 3 zero-conversion keywords: \"tree removal brisbane\", \"tree services\", \"tree fellas\" — $229 wasted.",
+      "impact": "$229/month",
+      "time": "10 min",
+      "check": "G-WS1"
+    },
+    {
+      "action": "Add negatives for 10 zero-conversion search terms: \"arborist\", \"smiley tree services\", \"shane's trees\"... — $157 wasted.",
+      "impact": "$157/month",
+      "time": "10 min",
+      "check": "G13"
+    },
+    {
+      "action": "Improve 3 keywords with QS below 5 — est. $86/month CPC premium. Worst: \"tree services near me\" QS 2.",
+      "impact": "$86/month",
+      "time": "30 min",
+      "check": "G20-G25"
+    },
+    {
+      "action": "Fix: Enhanced conversions — Not enabled. With 4 conversions/month, every lost signal degrades bidding. Enable in Goals > Conversions > Settings.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G43"
+    },
+    {
+      "action": "Fix: Server-side tracking — No server-side tracking. Browser-based tracking misses 10-25% of conversions. Implement server-side GTM or API conversion imports.",
+      "impact": "High",
+      "time": "15 min",
+      "check": "G44"
+    },
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 9x \"call\" actions; 3x \"form\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "1 campaign(s) are losing money ($290/month): [February 3] [Search] [Search Partners] [AI MAX] Tree Removal (0.29x ROAS, $408). Restructure keywords/targeting or reduce budget.",
+        "$157 wasted on 17 zero-conversion search terms. Add top wasters as negatives: \"arborist\", \"smiley tree services\", \"shane's trees\", \"treeline\", \"tree removal springfield lakes\".",
+        "Create a brand Search campaign to protect branded terms from competitors."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Build remarketing audiences (all visitors 30d, cart abandoners, converters) and upload Customer Match lists from CRM.",
+        "Pause or restructure 3 zero-conversion keywords to recover $229/month."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Increase Search Impression Share from 16% — you're missing 84% of potential customers."
+      ]
+    }
+  ]
+}

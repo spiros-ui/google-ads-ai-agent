@@ -1,0 +1,412 @@
+{
+  "account": "Explore Grand Canyon",
+  "customerId": 2504946986,
+  "date": "2026-02-26",
+  "industry": "E-commerce",
+  "healthScore": 75,
+  "grade": "B",
+  "verdict": "Good with improvement opportunities",
+  "snapshot": {
+    "totalCampaigns": 1,
+    "enabledCampaigns": 1,
+    "activeCampaignsWithSpend": 1,
+    "totalAdGroups": 1,
+    "totalKeywords": 6883,
+    "spend30d": 61.63,
+    "impressions30d": 115,
+    "clicks30d": 34,
+    "ctr": 29.57,
+    "avgCpc": 1.81,
+    "conversions30d": 2,
+    "conversionValue30d": 136,
+    "roas": 2.21,
+    "cpa": 30.81,
+    "searchImpressionShare": 61.06,
+    "dailyBudget": 30,
+    "avgDailySpend": 2.05
+  },
+  "campaignPerformance": [
+    {
+      "name": "CTM - Grand Canyon (Branded)",
+      "type": "SEARCH",
+      "spend": 62,
+      "roas": 2.21,
+      "cpa": 30.81,
+      "ctr": 29.57,
+      "conversions": 2,
+      "value": 136,
+      "verdict": "Profitable but below target"
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "Top performer: \"CTM - Grand Canyon (Branded)\" at 2.21x ROAS ($62 spend, $136 revenue).",
+      "impact": "Positive",
+      "dollarImpact": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "Conversion Tracking",
+      "weight": "25%",
+      "checks": [
+        {
+          "id": "G42",
+          "name": "Conversion actions defined",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "13 conversion actions (2x PURCHASE, 2x PHONE_CALL_LEAD, 1x GET_DIRECTIONS, 2x CONTACT, 1x ENGAGEMENT, 1x BEGIN_CHECKOUT, 1x DEFAULT, 1x CONVERTED_LEAD, 1x PAGE_VIEW, 1x SIGNUP). Recording 2 conversions in 30d."
+        },
+        {
+          "id": "G43",
+          "name": "Enhanced conversions",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Enhanced conversions or offline import detected — recovers 5-15% of conversions lost to cookie restrictions."
+        },
+        {
+          "id": "G44",
+          "name": "Server-side tracking",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Server-side or offline conversion import active — bypasses ad blockers and browser restrictions."
+        },
+        {
+          "id": "G46",
+          "name": "Conversion categories",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "10 conversion categories: 2x PURCHASE, 2x PHONE_CALL_LEAD, 1x GET_DIRECTIONS, 2x CONTACT, 1x ENGAGEMENT, 1x BEGIN_CHECKOUT, 1x DEFAULT, 1x CONVERTED_LEAD, 1x PAGE_VIEW, 1x SIGNUP."
+        },
+        {
+          "id": "G47",
+          "name": "Micro vs macro separation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "0 primary actions, all macro conversions. Smart Bidding is optimizing for real business outcomes."
+        },
+        {
+          "id": "G-CT1",
+          "name": "No duplicate counting",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "Potential duplicates: 3x \"purchase\" actions; 3x \"call\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid."
+        },
+        {
+          "id": "G-CT2",
+          "name": "GA4 linked",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "GA4 conversion actions linked — enables cross-device tracking and richer audience data."
+        },
+        {
+          "id": "G-CT3",
+          "name": "Tags firing",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "13 actions recording 2 conversions in 30d. Data is flowing."
+        }
+      ],
+      "score": 81.1,
+      "grade": "B"
+    },
+    {
+      "name": "Wasted Spend / Negatives",
+      "weight": "20%",
+      "checks": [
+        {
+          "id": "G13",
+          "name": "Search term waste",
+          "severity": "Critical",
+          "result": "FAIL",
+          "finding": "$32 spent on 7 zero-conversion search terms (62% of $52 visible search spend). Top waste: \"grand canyon imax theater\" $10, \"imax tusayan\" $9, \"imax theater tusayan\" $6, \"imax grand canyon prices\" $2, \"imax theater grand canyon\" $2."
+        },
+        {
+          "id": "G14",
+          "name": "Negative keyword lists",
+          "severity": "Critical",
+          "result": "WARNING",
+          "finding": "1 list(s) with 1 total negatives. Add themed lists (Competitors, Job Seekers, Irrelevant) — minimum 3 for proper filtering."
+        },
+        {
+          "id": "G15",
+          "name": "Account-level negatives",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "1 negative keywords across 1 lists. Low count — most accounts need 50-200+ negatives for proper coverage."
+        },
+        {
+          "id": "G17",
+          "name": "Match type performance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "No broad match keywords active. PHRASE: $62, 2 conv. BROAD: $0, 0 conv."
+        },
+        {
+          "id": "G-WS1",
+          "name": "Zero-conversion keywords",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "3 keywords spent $22 with 0 conversions in 30d. Top waste: \"imax tusayan\" $9, \"imax movie grand canyon\" $7, \"imax theater tusayan\" $6."
+        }
+      ],
+      "score": 52.6,
+      "grade": "D"
+    },
+    {
+      "name": "Account Structure",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G01",
+          "name": "Campaign naming",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "1 naming prefix(es) across 1 campaigns. Consistent naming convention."
+        },
+        {
+          "id": "G02",
+          "name": "Ad group structure",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "1 ad groups across 1 campaigns (avg 1/campaign)."
+        },
+        {
+          "id": "G03",
+          "name": "Single theme ad groups",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 ad groups per campaign on average. Manageable structure."
+        },
+        {
+          "id": "G04",
+          "name": "Campaign count",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 campaigns: 1 SEARCH."
+        },
+        {
+          "id": "G05",
+          "name": "Brand campaign",
+          "severity": "Critical",
+          "result": "PASS",
+          "finding": "Brand campaign exists — protects branded terms from competitors."
+        },
+        {
+          "id": "G06",
+          "name": "PMax campaign",
+          "severity": "Medium",
+          "result": "FAIL",
+          "finding": "No active PMax. Consider launching with strong asset groups and audience signals."
+        },
+        {
+          "id": "G07",
+          "name": "Search + PMax overlap",
+          "severity": "High",
+          "result": "N/A",
+          "finding": "No concurrent Search + PMax."
+        },
+        {
+          "id": "G08",
+          "name": "Budget allocation",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 campaigns, $30/day budget, 61% Search Impression Share. Top: CTM - Grand Canyon (Branded) (2.21x ROAS, $62)."
+        },
+        {
+          "id": "G09",
+          "name": "Budget utilization",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "$30/day budget, ~$2/day actual spend (7% utilization). Under-delivery — check targeting, bids, or Quality Score."
+        },
+        {
+          "id": "G11",
+          "name": "Geographic targeting",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Correctly using \"Presence\" targeting."
+        },
+        {
+          "id": "G12",
+          "name": "Network settings",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Search campaigns properly isolated from Display Network."
+        }
+      ],
+      "score": 91.3,
+      "grade": "A"
+    },
+    {
+      "name": "Keywords & Quality Score",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G20-G25",
+          "name": "Quality Score",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Avg QS: 6.9/10 across 39 scored keywords (31 at 7+, 3 below 5)."
+        },
+        {
+          "id": "G-KW1",
+          "name": "Zero-impression keywords",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "6341 of 6883 enabled keywords had 0 impressions in 30d. These are too restrictive, low-volume, or outranked — review and pause dead keywords."
+        },
+        {
+          "id": "G-KW2",
+          "name": "Keyword-to-ad relevance",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Avg QS 6.9 indicates good keyword-to-ad relevance."
+        }
+      ],
+      "score": 70,
+      "grade": "C"
+    },
+    {
+      "name": "Ads & Assets",
+      "weight": "15%",
+      "checks": [
+        {
+          "id": "G26-G30",
+          "name": "RSA Ad Strength",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "1 RSAs: 0 Good/Excellent, 1 need improvement (1 AVERAGE)."
+        },
+        {
+          "id": "G-PM",
+          "name": "PMax performance",
+          "severity": "Critical",
+          "result": "N/A",
+          "finding": "No active PMax campaigns."
+        },
+        {
+          "id": "G-AD2",
+          "name": "CTR vs benchmark",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "Account CTR: 29.57%. Strong CTR."
+        }
+      ],
+      "score": 75,
+      "grade": "B"
+    },
+    {
+      "name": "Settings & Targeting + Bidding",
+      "weight": "10%",
+      "checks": [
+        {
+          "id": "G36",
+          "name": "Smart bidding",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "Manual CPC with 2 conversions/month. Below 15-conv threshold for Smart Bidding — use Maximize Clicks to build volume first."
+        },
+        {
+          "id": "G39",
+          "name": "Search impression share",
+          "severity": "High",
+          "result": "WARNING",
+          "finding": "61% Search Impression Share — moderate coverage, room to grow."
+        },
+        {
+          "id": "G40",
+          "name": "Manual CPC justification",
+          "severity": "Medium",
+          "result": "WARNING",
+          "finding": "2 conversions/month with Manual CPC. Below threshold — focus on building conversion volume."
+        },
+        {
+          "id": "G50",
+          "name": "Sitelinks",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "111 sitelink asset(s) configured."
+        },
+        {
+          "id": "G51",
+          "name": "Callouts",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "18 callout asset(s) configured."
+        },
+        {
+          "id": "G52",
+          "name": "Structured snippets",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "10 structured_snippet asset(s) configured."
+        },
+        {
+          "id": "G53",
+          "name": "Image extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "118 image asset(s) configured."
+        },
+        {
+          "id": "G54",
+          "name": "Call extensions",
+          "severity": "Medium",
+          "result": "PASS",
+          "finding": "3 call asset(s) configured."
+        },
+        {
+          "id": "G56",
+          "name": "Remarketing audiences",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "14 remarketing/audience list(s) configured."
+        },
+        {
+          "id": "G57",
+          "name": "Customer Match",
+          "severity": "High",
+          "result": "PASS",
+          "finding": "1 Customer Match list(s) uploaded."
+        }
+      ],
+      "score": 83.3,
+      "grade": "B"
+    }
+  ],
+  "quickWins": [
+    {
+      "action": "Fix: No duplicate counting — Potential duplicates: 3x \"purchase\" actions; 3x \"call\" actions. Duplicates inflate counts 2-3x and cause Smart Bidding to overbid.",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G-CT1"
+    },
+    {
+      "action": "Fix: Search term waste — $32 spent on 7 zero-conversion search terms (62% of $52 visible search spend). Top waste: \"grand canyon imax theater\" $10, \"imax tusayan\" $9, \"imax th",
+      "impact": "Critical",
+      "time": "15 min",
+      "check": "G13"
+    }
+  ],
+  "recommendations": [
+    {
+      "phase": "Phase 1: Fix the Foundation (Week 1)",
+      "items": [
+        "No critical issues found. Focus on optimization opportunities below."
+      ]
+    },
+    {
+      "phase": "Phase 2: Optimize & Expand (Weeks 2-3)",
+      "items": [
+        "Test Smart Bidding — 2 conversions/month is low. Use Maximize Clicks to build volume first."
+      ]
+    },
+    {
+      "phase": "Phase 3: Scale (Month 2+)",
+      "items": [
+        "Build conversion volume and data before scaling."
+      ]
+    }
+  ]
+}
