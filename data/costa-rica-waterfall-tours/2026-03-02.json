@@ -1,0 +1,183 @@
+{
+  "account": "Costa Rica Waterfall tours",
+  "customerId": "3555921105",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 4021.41,
+      "totalConversions": 41,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - exact match",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 160,
+        "metrics": {
+          "spend": 4021.41,
+          "impressions": 20396,
+          "clicks": 1534,
+          "conversions": 41,
+          "conversionValue": 5987.76,
+          "cpa": 98.08,
+          "roas": 1.49,
+          "ctr": 7.52,
+          "avgCpc": 2.62,
+          "searchIS": 30,
+          "budgetLostIS": 51.68,
+          "rankLostIS": 18.32
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "adjust_budget",
+            "title": "Losing 51.68% impression share to budget",
+            "reasoning": "You're losing 51.68% of impressions due to budget. $160/day isn't enough — ads stop showing partway through the day.",
+            "action": "Increase budget from $160 to $240, or narrow keywords.",
+            "estimatedImpact": "Recovering 51.68% lost impressions could proportionally increase conversions"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$395.26 on keywords exceeding CPA threshold",
+            "reasoning": "1 keywords spent >1.5x CPA ($98.08) with 0 conversions: 'things to do in jaco costa rica' — $395.26.",
+            "action": "Pause: 'things to do in jaco costa rica'.",
+            "estimatedImpact": "Save ~$395.26/month and reduce CPA"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "7.52% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'canyoning jaco' (2.833333 conv, $31.99), 'jaco waterfall tour' (6 conv, $389), 'waterfall tour costa rica' (30.583333 conv, $2671.83)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'best zipline near me' (2 conv, CPA $1.73), 'waterfall hikes near me' (1 conv, CPA $2.31), 'waterfalls in jaco' (1 conv, CPA $2.42)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 325,
+          "withImpressions": 8,
+          "zeroImpressions": 317,
+          "avgQualityScore": 6.5,
+          "topWasters": [
+            {
+              "keyword": "things to do in jaco costa rica",
+              "matchType": "EXACT",
+              "spend": 395.26,
+              "conversions": 0
+            },
+            {
+              "keyword": "adventure tours jaco costa rica",
+              "matchType": "EXACT",
+              "spend": 9.15,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "things to do in jaco costa rica",
+              "spend": 91.97,
+              "clicks": 23,
+              "conversions": 0
+            },
+            {
+              "term": "canyoning costa rica",
+              "spend": 64.14,
+              "clicks": 17,
+              "conversions": 0
+            },
+            {
+              "term": "things to do near jaco costa rica",
+              "spend": 33.1,
+              "clicks": 11,
+              "conversions": 0
+            },
+            {
+              "term": "jaco waterfall tour",
+              "spend": 31.17,
+              "clicks": 8,
+              "conversions": 0
+            },
+            {
+              "term": "jaco beach excursions",
+              "spend": 23.04,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "best zipline near me",
+              "spend": 3.45,
+              "conversions": 2,
+              "cpa": 1.73
+            },
+            {
+              "term": "waterfall hikes near me",
+              "spend": 2.31,
+              "conversions": 1,
+              "cpa": 2.31
+            },
+            {
+              "term": "waterfalls in jaco",
+              "spend": 2.42,
+              "conversions": 1,
+              "cpa": 2.42
+            },
+            {
+              "term": "atv jaco costa rica",
+              "spend": 2.66,
+              "conversions": 1,
+              "cpa": 2.66
+            },
+            {
+              "term": "pura aventura costa rica",
+              "spend": 3.09,
+              "conversions": 1,
+              "cpa": 3.09
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-exact-match-2026-03-02-1",
+        "account": "Costa Rica Waterfall tours",
+        "date": "2026-03-02",
+        "type": "adjust_budget",
+        "severity": "High",
+        "title": "Losing 51.68% impression share to budget",
+        "description": "You're losing 51.68% of impressions due to budget. $160/day isn't enough — ads stop showing partway through the day.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - exact match",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-exact-match-2026-03-02-2",
+        "account": "Costa Rica Waterfall tours",
+        "date": "2026-03-02",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$395.26 on keywords exceeding CPA threshold",
+        "description": "1 keywords spent >1.5x CPA ($98.08) with 0 conversions: 'things to do in jaco costa rica' — $395.26.",
+        "estimatedSaving": 395.26,
+        "campaign": "CTM - exact match",
+        "status": "pending"
+      }
+    ]
+  }
+}

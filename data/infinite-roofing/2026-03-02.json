@@ -1,0 +1,163 @@
+{
+  "account": "Infinite Roofing",
+  "customerId": "2773583029",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 2788.43,
+      "totalConversions": 29,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM- New roof",
+        "type": "SEARCH",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 133,
+        "metrics": {
+          "spend": 2788.43,
+          "impressions": 4134,
+          "clicks": 253,
+          "conversions": 29,
+          "conversionValue": 2190,
+          "cpa": 96.15,
+          "roas": 0.79,
+          "ctr": 6.12,
+          "avgCpc": 11.02,
+          "searchIS": 38.23,
+          "budgetLostIS": 18.73,
+          "rankLostIS": 43.04
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 43.04% impression share to ad rank",
+            "reasoning": "Losing 43.04% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 43.04% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "6.12% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'metal roofing installation companies near me' (1 conv, $31.73), 'roofers near me' (4 conv, $231.58), 'roofers brisbane' (16.000963 conv, $1306.32)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'roof price per m2' (2 conv, CPA $6.03), 'metal roofing near me' (1 conv, CPA $10.26), 'able roofing brisbane' (1 conv, CPA $11.15)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 180,
+          "withImpressions": 10,
+          "zeroImpressions": 170,
+          "avgQualityScore": 3.25,
+          "topWasters": [
+            {
+              "keyword": "how much does it cost to put a roof on",
+              "matchType": "PHRASE",
+              "spend": 41.75,
+              "conversions": 0
+            },
+            {
+              "keyword": "how much does a new roof cost",
+              "matchType": "PHRASE",
+              "spend": 20.17,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "roof painting brisbane",
+              "spend": 63.51,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "roofing near me",
+              "spend": 29.95,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "roof restoration near me",
+              "spend": 29.45,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "roofers brisbane",
+              "spend": 25.82,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "roof restoration brisbane cost",
+              "spend": 25.57,
+              "clicks": 2,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "roof price per m2",
+              "spend": 12.06,
+              "conversions": 2,
+              "cpa": 6.03
+            },
+            {
+              "term": "metal roofing near me",
+              "spend": 10.26,
+              "conversions": 1,
+              "cpa": 10.26
+            },
+            {
+              "term": "able roofing brisbane",
+              "spend": 11.15,
+              "conversions": 1,
+              "cpa": 11.15
+            },
+            {
+              "term": "new colorbond roof",
+              "spend": 12.57,
+              "conversions": 1,
+              "cpa": 12.57
+            },
+            {
+              "term": "metal roofing companies brisbane",
+              "spend": 12.61,
+              "conversions": 1,
+              "cpa": 12.61
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-new-roof-2026-03-02-1",
+        "account": "Infinite Roofing",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 43.04% impression share to ad rank",
+        "description": "Losing 43.04% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "CTM- New roof",
+        "status": "pending"
+      }
+    ]
+  }
+}

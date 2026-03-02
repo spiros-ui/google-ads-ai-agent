@@ -1,0 +1,647 @@
+{
+  "account": "Commercial - Madison",
+  "customerId": "7877267211",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 11634.1,
+      "totalConversions": 0,
+      "totalCampaigns": 4,
+      "criticalIssues": 1,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Leads-Display - Narrowed",
+        "type": "DISPLAY",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 100,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 49 keywords have 0 impressions over 30 days despite a $100/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $3000/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'free' (broad match) blocks positive 'free', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'free', or change to exact match to stop blocking 'free'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'jobs' (broad match) blocks positive 'jobs', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'jobs', or change to exact match to stop blocking 'jobs'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'rental' (broad match) blocks positive 'rental', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'rental', or change to exact match to stop blocking 'rental'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $100/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $3000/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 49,
+          "withImpressions": 0,
+          "zeroImpressions": 49,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 21600,
+        "metrics": {
+          "spend": 9448.09,
+          "impressions": 22751,
+          "clicks": 1681,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 7.39,
+          "avgCpc": 5.62,
+          "searchIS": 28.41,
+          "budgetLostIS": 0,
+          "rankLostIS": 71.59
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 71.59% impression share to ad rank",
+            "reasoning": "Losing 71.59% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.82/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 71.59% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$754.21 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'bobtail insurance' ($226.52, 40 clicks), 'non trucking liability insurance' ($193.12, 34 clicks), 'ooida trucking insurance' ($142.95, 25 clicks), 'fleet insurance' ($112.41, 20 clicks), 'non cdl hotshot insurance cost' ($79.22, 14 clicks).",
+            "action": "Add as negatives: 'bobtail insurance', 'non trucking liability insurance', 'ooida trucking insurance', 'fleet insurance', 'non cdl hotshot insurance cost'.",
+            "estimatedImpact": "Save ~$754.21/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$3209.69 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'tractor trailer insurance' ($1008.13, 181 clicks), 'CDL insurance quotes' ($650.1, 117 clicks), 'hot shot trucking insurance' ($643.64, 116 clicks), 'commercial box truck insurance' ($464.28, 82 clicks), 'box truck insurance cost' ($443.55, 79 clicks).",
+            "action": "Pause: 'tractor trailer insurance', 'CDL insurance quotes', 'hot shot trucking insurance', 'commercial box truck insurance', 'box truck insurance cost'.",
+            "estimatedImpact": "Save ~$3209.69/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "7.39% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 131,
+          "withImpressions": 72,
+          "zeroImpressions": 59,
+          "avgQualityScore": 2.82,
+          "topWasters": [
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 1008.13,
+              "conversions": 0
+            },
+            {
+              "keyword": "CDL insurance quotes",
+              "matchType": "PHRASE",
+              "spend": 650.1,
+              "conversions": 0
+            },
+            {
+              "keyword": "hot shot trucking insurance",
+              "matchType": "EXACT",
+              "spend": 643.64,
+              "conversions": 0
+            },
+            {
+              "keyword": "commercial box truck insurance",
+              "matchType": "PHRASE",
+              "spend": 464.28,
+              "conversions": 0
+            },
+            {
+              "keyword": "box truck insurance cost",
+              "matchType": "PHRASE",
+              "spend": 443.55,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "bobtail insurance",
+              "spend": 226.52,
+              "clicks": 40,
+              "conversions": 0
+            },
+            {
+              "term": "non trucking liability insurance",
+              "spend": 193.12,
+              "clicks": 34,
+              "conversions": 0
+            },
+            {
+              "term": "ooida trucking insurance",
+              "spend": 142.95,
+              "clicks": 25,
+              "conversions": 0
+            },
+            {
+              "term": "fleet insurance",
+              "spend": 112.41,
+              "clicks": 20,
+              "conversions": 0
+            },
+            {
+              "term": "non cdl hotshot insurance cost",
+              "spend": 79.22,
+              "clicks": 14,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 1200,
+        "metrics": {
+          "spend": 1469.46,
+          "impressions": 2937,
+          "clicks": 256,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 8.72,
+          "avgCpc": 5.74,
+          "searchIS": 26.03,
+          "budgetLostIS": 0.1,
+          "rankLostIS": 73.87
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 73.87% impression share to ad rank",
+            "reasoning": "Losing 73.87% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.08/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 73.87% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$253.85 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'bobtail insurance' ($102.77, 19 clicks), 'bobtail insurance cost' ($46.5, 8 clicks), 'temporary bobtail insurance' ($39.28, 7 clicks), 'semi truck insurance' ($36.31, 6 clicks), 'short term bobtail insurance' ($28.99, 5 clicks).",
+            "action": "Add as negatives: 'bobtail insurance', 'bobtail insurance cost', 'temporary bobtail insurance', 'semi truck insurance', 'short term bobtail insurance'.",
+            "estimatedImpact": "Save ~$253.85/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$976.68 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'semi truck insurance quotes' ($316.06, 55 clicks), 'bobtail insurance' ($295.89, 52 clicks), 'tractor trailer insurance' ($184.24, 33 clicks), 'bobtail insurance' ($108.13, 20 clicks), 'semi insurance cost' ($72.36, 12 clicks).",
+            "action": "Pause: 'semi truck insurance quotes', 'bobtail insurance', 'tractor trailer insurance', 'bobtail insurance', 'semi insurance cost'.",
+            "estimatedImpact": "Save ~$976.68/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "8.72% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 178,
+          "withImpressions": 59,
+          "zeroImpressions": 119,
+          "avgQualityScore": 3.08,
+          "topWasters": [
+            {
+              "keyword": "semi truck insurance quotes",
+              "matchType": "PHRASE",
+              "spend": 316.06,
+              "conversions": 0
+            },
+            {
+              "keyword": "bobtail insurance",
+              "matchType": "PHRASE",
+              "spend": 295.89,
+              "conversions": 0
+            },
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 184.24,
+              "conversions": 0
+            },
+            {
+              "keyword": "bobtail insurance",
+              "matchType": "EXACT",
+              "spend": 108.13,
+              "conversions": 0
+            },
+            {
+              "keyword": "semi insurance cost",
+              "matchType": "EXACT",
+              "spend": 72.36,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "bobtail insurance",
+              "spend": 102.77,
+              "clicks": 19,
+              "conversions": 0
+            },
+            {
+              "term": "bobtail insurance cost",
+              "spend": 46.5,
+              "clicks": 8,
+              "conversions": 0
+            },
+            {
+              "term": "temporary bobtail insurance",
+              "spend": 39.28,
+              "clicks": 7,
+              "conversions": 0
+            },
+            {
+              "term": "semi truck insurance",
+              "spend": 36.31,
+              "clicks": 6,
+              "conversions": 0
+            },
+            {
+              "term": "short term bobtail insurance",
+              "spend": 28.99,
+              "clicks": 5,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 400,
+        "metrics": {
+          "spend": 716.55,
+          "impressions": 2413,
+          "clicks": 140,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 5.8,
+          "avgCpc": 5.12,
+          "searchIS": 21.05,
+          "budgetLostIS": 8.84,
+          "rankLostIS": 70.11
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 70.11% impression share to ad rank",
+            "reasoning": "Losing 70.11% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.11/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 70.11% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$62.99 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'rig cover insurance' ($20.64, 4 clicks), 'risk retention group trucking insurance' ($11, 2 clicks), 'my affordable truckers insurance' ($10.78, 2 clicks), 'tractor trailer insurance cost' ($10.45, 2 clicks), 'how much is tow truck insurance' ($10.12, 2 clicks).",
+            "action": "Add as negatives: 'rig cover insurance', 'risk retention group trucking insurance', 'my affordable truckers insurance', 'tractor trailer insurance cost', 'how much is tow truck insurance'.",
+            "estimatedImpact": "Save ~$62.99/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$618.79 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'commercial truck insurance quote' ($345.63, 68 clicks), 'big rig insurance' ($93.79, 18 clicks), 'tractor trailer insurance' ($77.14, 15 clicks), 'semi truck insurance' ($65.19, 13 clicks), 'commercial trucking insurance companies' ($37.04, 7 clicks).",
+            "action": "Pause: 'commercial truck insurance quote', 'big rig insurance', 'tractor trailer insurance', 'semi truck insurance', 'commercial trucking insurance companies'.",
+            "estimatedImpact": "Save ~$618.79/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "5.8% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 54,
+          "withImpressions": 33,
+          "zeroImpressions": 21,
+          "avgQualityScore": 2.11,
+          "topWasters": [
+            {
+              "keyword": "commercial truck insurance quote",
+              "matchType": "PHRASE",
+              "spend": 345.63,
+              "conversions": 0
+            },
+            {
+              "keyword": "big rig insurance",
+              "matchType": "PHRASE",
+              "spend": 93.79,
+              "conversions": 0
+            },
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 77.14,
+              "conversions": 0
+            },
+            {
+              "keyword": "semi truck insurance",
+              "matchType": "PHRASE",
+              "spend": 65.19,
+              "conversions": 0
+            },
+            {
+              "keyword": "commercial trucking insurance companies",
+              "matchType": "EXACT",
+              "spend": 37.04,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "rig cover insurance",
+              "spend": 20.64,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "risk retention group trucking insurance",
+              "spend": 11,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "my affordable truckers insurance",
+              "spend": 10.78,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "tractor trailer insurance cost",
+              "spend": 10.45,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "how much is tow truck insurance",
+              "spend": 10.12,
+              "clicks": 2,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-02-1",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 49 keywords have 0 impressions over 30 days despite a $100/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 3000,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-02-2",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'free' (broad match) blocks positive 'free', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-02-3",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'jobs' (broad match) blocks positive 'jobs', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-02-4",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'rental' (broad match) blocks positive 'rental', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-02-5",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $100/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 3000,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-02-6",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 71.59% impression share to ad rank",
+        "description": "Losing 71.59% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.82/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-02-7",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$754.21 wasted on non-converting search terms",
+        "description": "Top wasters: 'bobtail insurance' ($226.52, 40 clicks), 'non trucking liability insurance' ($193.12, 34 clicks), 'ooida trucking insurance' ($142.95, 25 clicks), 'fleet insurance' ($112.41, 20 clicks), 'non cdl hotshot insurance cost' ($79.22, 14 clicks).",
+        "estimatedSaving": 754.21,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-02-8",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$3209.69 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'tractor trailer insurance' ($1008.13, 181 clicks), 'CDL insurance quotes' ($650.1, 117 clicks), 'hot shot trucking insurance' ($643.64, 116 clicks), 'commercial box truck insurance' ($464.28, 82 clicks), 'box truck insurance cost' ($443.55, 79 clicks).",
+        "estimatedSaving": 3209.69,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-02-9",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 73.87% impression share to ad rank",
+        "description": "Losing 73.87% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.08/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-02-10",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$253.85 wasted on non-converting search terms",
+        "description": "Top wasters: 'bobtail insurance' ($102.77, 19 clicks), 'bobtail insurance cost' ($46.5, 8 clicks), 'temporary bobtail insurance' ($39.28, 7 clicks), 'semi truck insurance' ($36.31, 6 clicks), 'short term bobtail insurance' ($28.99, 5 clicks).",
+        "estimatedSaving": 253.85,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-02-11",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$976.68 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'semi truck insurance quotes' ($316.06, 55 clicks), 'bobtail insurance' ($295.89, 52 clicks), 'tractor trailer insurance' ($184.24, 33 clicks), 'bobtail insurance' ($108.13, 20 clicks), 'semi insurance cost' ($72.36, 12 clicks).",
+        "estimatedSaving": 976.68,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-02-12",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 70.11% impression share to ad rank",
+        "description": "Losing 70.11% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.11/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-02-13",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$62.99 wasted on non-converting search terms",
+        "description": "Top wasters: 'rig cover insurance' ($20.64, 4 clicks), 'risk retention group trucking insurance' ($11, 2 clicks), 'my affordable truckers insurance' ($10.78, 2 clicks), 'tractor trailer insurance cost' ($10.45, 2 clicks), 'how much is tow truck insurance' ($10.12, 2 clicks).",
+        "estimatedSaving": 62.99,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-02-14",
+        "account": "Commercial - Madison",
+        "date": "2026-03-02",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$618.79 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'commercial truck insurance quote' ($345.63, 68 clicks), 'big rig insurance' ($93.79, 18 clicks), 'tractor trailer insurance' ($77.14, 15 clicks), 'semi truck insurance' ($65.19, 13 clicks), 'commercial trucking insurance companies' ($37.04, 7 clicks).",
+        "estimatedSaving": 618.79,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      }
+    ]
+  }
+}

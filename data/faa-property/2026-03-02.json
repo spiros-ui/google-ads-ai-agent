@@ -1,0 +1,80 @@
+{
+  "account": "FAA Property",
+  "customerId": "4740564607",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 0,
+      "totalConversions": 0,
+      "totalCampaigns": 1,
+      "criticalIssues": 1,
+      "overallVerdict": "Not Spending"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Broad - Max click",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 112,
+        "metrics": {
+          "spend": 0,
+          "impressions": 7,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 100,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $112/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $3360/month in potential delivery"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Good impression share",
+            "detail": "100% search IS"
+          }
+        ],
+        "keywordSummary": {
+          "total": 14,
+          "withImpressions": 1,
+          "zeroImpressions": 13,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-broad-max-click-2026-03-02-1",
+        "account": "FAA Property",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $112/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 3360,
+        "campaign": "CTM - Broad - Max click",
+        "status": "pending"
+      }
+    ]
+  }
+}

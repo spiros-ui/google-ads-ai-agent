@@ -1,0 +1,218 @@
+{
+  "account": "Restored Timbers",
+  "customerId": "2974447695",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 1458.89,
+      "totalConversions": 128,
+      "totalCampaigns": 3,
+      "criticalIssues": 2,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "RIG – Restored Timbers – Search",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 72,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 31 keywords have 0 impressions over 30 days despite a $72/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $2160/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $72/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $2160/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 31,
+          "withImpressions": 0,
+          "zeroImpressions": 31,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Display - Labor Day",
+        "type": "DISPLAY",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 40,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $40/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $1200/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Collection - Asset groups",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 156,
+        "metrics": {
+          "spend": 1458.89,
+          "impressions": 35367,
+          "clicks": 1426,
+          "conversions": 128,
+          "conversionValue": 60546,
+          "cpa": 11.4,
+          "roas": 41.5,
+          "ctr": 4.03,
+          "avgCpc": 1.02,
+          "searchIS": 9.99,
+          "budgetLostIS": 18.19,
+          "rankLostIS": 72.19
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 72.19% impression share to ad rank",
+            "reasoning": "Losing 72.19% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 72.19% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong ROAS",
+            "detail": "41.5x return"
+          },
+          {
+            "title": "Efficient CPA",
+            "detail": "$11.4/conversion"
+          }
+        ],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "rig-restored-timbers-search-2026-03-02-1",
+        "account": "Restored Timbers",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 31 keywords have 0 impressions over 30 days despite a $72/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 2160,
+        "campaign": "RIG – Restored Timbers – Search",
+        "status": "pending"
+      },
+      {
+        "id": "rig-restored-timbers-search-2026-03-02-2",
+        "account": "Restored Timbers",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $72/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 2160,
+        "campaign": "RIG – Restored Timbers – Search",
+        "status": "pending"
+      },
+      {
+        "id": "display-labor-day-2026-03-02-3",
+        "account": "Restored Timbers",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $40/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 1200,
+        "campaign": "Display - Labor Day",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-collection-asset-groups-2026-03-02-4",
+        "account": "Restored Timbers",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 72.19% impression share to ad rank",
+        "description": "Losing 72.19% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Collection - Asset groups",
+        "status": "pending"
+      }
+    ]
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "account": "Skin Spa New York",
+  "customerId": "1633111847",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 20568.24,
+      "totalConversions": 96.59,
+      "totalCampaigns": 5,
+      "criticalIssues": 3,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Search Boston Branded",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 100,
+        "metrics": {
+          "spend": 2211.16,
+          "impressions": 1840,
+          "clicks": 389,
+          "conversions": 18.31,
+          "conversionValue": 1867.06,
+          "cpa": 120.76,
+          "roas": 0.84,
+          "ctr": 21.14,
+          "avgCpc": 5.68,
+          "searchIS": 92.41,
+          "budgetLostIS": 5.03,
+          "rankLostIS": 2.56
+        },
+        "meetingObjective": false,
+        "status": "critical",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$534.4 on keywords exceeding CPA threshold",
+            "reasoning": "2 keywords spent >1.5x CPA ($120.76) with 0 conversions: 'skin spa nyc reviews' — $296.65; 'skin spa north station' — $237.75.",
+            "action": "Pause: 'skin spa nyc reviews', 'skin spa north station'.",
+            "estimatedImpact": "Save ~$534.4/month and reduce CPA"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_bidding",
+            "title": "ROAS below breakeven: 0.84x",
+            "reasoning": "0.84x ROAS — $2211.16 spend generated only $1867.06 value.",
+            "action": "Pause unprofitable keywords/products, tighten targeting, reduce bids.",
+            "estimatedImpact": "Stop losing money on unprofitable traffic"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "21.14% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "92.41% search IS"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'skin spa north station' (1 conv, $49.47), 'skin spa new york' (7.934062 conv, $476.24), 'skin spa new york locations' (1.770751 conv, $170.58)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'skin spa new' (0.5 conv, CPA $5.38), 'skin spa new york' (4.134062 conv, CPA $16.5), 'ny skin spa back bay' (2.2 conv, CPA $21.04)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 118,
+          "withImpressions": 9,
+          "zeroImpressions": 109,
+          "avgQualityScore": 9,
+          "topWasters": [
+            {
+              "keyword": "skin spa nyc reviews",
+              "matchType": "PHRASE",
+              "spend": 296.65,
+              "conversions": 0
+            },
+            {
+              "keyword": "skin spa north station",
+              "matchType": "PHRASE",
+              "spend": 237.75,
+              "conversions": 0
+            },
+            {
+              "keyword": "skin spa new york chestnut hill",
+              "matchType": "PHRASE",
+              "spend": 10.05,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "sovous reviews",
+              "spend": 190.71,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "skinspa",
+              "spend": 52.28,
+              "clicks": 7,
+              "conversions": 0
+            },
+            {
+              "term": "boston x dorchester",
+              "spend": 49.19,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "skinspany",
+              "spend": 31.32,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "skin new york",
+              "spend": 21.29,
+              "clicks": 3,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "skin spa new",
+              "spend": 2.69,
+              "conversions": 0.5,
+              "cpa": 5.38
+            },
+            {
+              "term": "skin spa new york",
+              "spend": 68.21,
+              "conversions": 4.134062,
+              "cpa": 16.5
+            },
+            {
+              "term": "ny skin spa back bay",
+              "spend": 46.29,
+              "conversions": 2.2,
+              "cpa": 21.04
+            },
+            {
+              "term": "skin spa",
+              "spend": 78.18,
+              "conversions": 2.905161,
+              "cpa": 26.91
+            },
+            {
+              "term": "skin spa new york north station",
+              "spend": 90.77,
+              "conversions": 2.770751,
+              "cpa": 32.76
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - Search - Miami Branded",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 25,
+        "metrics": {
+          "spend": 349.75,
+          "impressions": 211,
+          "clicks": 39,
+          "conversions": 2,
+          "conversionValue": 59.96,
+          "cpa": 174.99,
+          "roas": 0.17,
+          "ctr": 18.48,
+          "avgCpc": 8.97,
+          "searchIS": 100,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "18.48% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "100% search IS"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'skin spa NY' (1 conv, $3.87), 'skin spa new york' (0.998693 conv, $345.88)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'skin spa ny' (1 conv, CPA $3.87)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 70,
+          "withImpressions": 3,
+          "zeroImpressions": 67,
+          "avgQualityScore": 10,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "skin spa new york miami beach",
+              "spend": 48.28,
+              "clicks": 9,
+              "conversions": 0
+            },
+            {
+              "term": "jing jing hair & skin care hair salon head spa new york",
+              "spend": 45.44,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "skin spa uws",
+              "spend": 29.04,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "skin spa new york miami",
+              "spend": 26.41,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "skinspa new york",
+              "spend": 16.33,
+              "clicks": 3,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "skin spa ny",
+              "spend": 3.87,
+              "conversions": 1,
+              "cpa": 3.87
+            }
+          ]
+        }
+      },
+      {
+        "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 30,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 58 keywords have 0 impressions over 30 days despite a $30/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $900/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $30/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $900/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 58,
+          "withImpressions": 0,
+          "zeroImpressions": 58,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Search - New York Branded",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 100,
+        "metrics": {
+          "spend": 2207.22,
+          "impressions": 2475,
+          "clicks": 498,
+          "conversions": 30.94,
+          "conversionValue": 3352.14,
+          "cpa": 71.34,
+          "roas": 1.52,
+          "ctr": 20.12,
+          "avgCpc": 4.43,
+          "searchIS": 90.3,
+          "budgetLostIS": 7.55,
+          "rankLostIS": 2.15
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "20.12% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "90.3% search IS"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'skin spa upper west side' (4.5 conv, $120.25), 'skin spa flatiron' (11.9965 conv, $666.51), 'skin spa midtown' (4 conv, $272.94)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'skin spa new york upper west side' (1.5 conv, CPA $3.77), 'skin spa ny' (1 conv, CPA $21), 'skin spa flatiron nyc' (1 conv, CPA $28.5)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 254,
+          "withImpressions": 5,
+          "zeroImpressions": 249,
+          "avgQualityScore": 7.8,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "skinspa nyc",
+              "spend": 53.93,
+              "clicks": 26,
+              "conversions": 0
+            },
+            {
+              "term": "skinspanyc",
+              "spend": 33.8,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "skin spa of new york",
+              "spend": 23.31,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "new york skin spa",
+              "spend": 15.62,
+              "clicks": 9,
+              "conversions": 0
+            },
+            {
+              "term": "skin spa east 56th",
+              "spend": 10.93,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "skin spa new york upper west side",
+              "spend": 5.65,
+              "conversions": 1.5,
+              "cpa": 3.77
+            },
+            {
+              "term": "skin spa ny",
+              "spend": 21,
+              "conversions": 1,
+              "cpa": 21
+            },
+            {
+              "term": "skin spa flatiron nyc",
+              "spend": 28.5,
+              "conversions": 1,
+              "cpa": 28.5
+            },
+            {
+              "term": "skin spa upper west side",
+              "spend": 91.13,
+              "conversions": 3,
+              "cpa": 30.38
+            },
+            {
+              "term": "skinspa new york",
+              "spend": 159.96,
+              "conversions": 3,
+              "cpa": 53.32
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - PMAX - All Stations",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 375,
+        "metrics": {
+          "spend": 15800.11,
+          "impressions": 60520,
+          "clicks": 2948,
+          "conversions": 45.35,
+          "conversionValue": 12889.73,
+          "cpa": 348.44,
+          "roas": 0.82,
+          "ctr": 4.87,
+          "avgCpc": 5.36,
+          "searchIS": 9.99,
+          "budgetLostIS": 3.52,
+          "rankLostIS": 89.96
+        },
+        "meetingObjective": false,
+        "status": "critical",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 89.96% impression share to ad rank",
+            "reasoning": "Losing 89.96% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 89.96% lost impressions from rank improvements"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_bidding",
+            "title": "ROAS below breakeven: 0.82x",
+            "reasoning": "0.82x ROAS — $15800.11 spend generated only $12889.73 value.",
+            "action": "Pause unprofitable keywords/products, tighten targeting, reduce bids.",
+            "estimatedImpact": "Stop losing money on unprofitable traffic"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-search-boston-branded-2026-03-02-1",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$534.4 on keywords exceeding CPA threshold",
+        "description": "2 keywords spent >1.5x CPA ($120.76) with 0 conversions: 'skin spa nyc reviews' — $296.65; 'skin spa north station' — $237.75.",
+        "estimatedSaving": 534.4,
+        "campaign": "CTM - Search Boston Branded",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-search-boston-branded-2026-03-02-2",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "fix_bidding",
+        "severity": "Critical",
+        "title": "ROAS below breakeven: 0.84x",
+        "description": "0.84x ROAS — $2211.16 spend generated only $1867.06 value.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Search Boston Branded",
+        "status": "pending"
+      },
+      {
+        "id": "bwm-search-ny-brand-hvem-troas-bidding-exp-2026-03-02-3",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 58 keywords have 0 impressions over 30 days despite a $30/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 900,
+        "campaign": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+        "status": "pending"
+      },
+      {
+        "id": "bwm-search-ny-brand-hvem-troas-bidding-exp-2026-03-02-4",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $30/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 900,
+        "campaign": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-all-stations-2026-03-02-5",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 89.96% impression share to ad rank",
+        "description": "Losing 89.96% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - PMAX - All Stations",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-all-stations-2026-03-02-6",
+        "account": "Skin Spa New York",
+        "date": "2026-03-02",
+        "type": "fix_bidding",
+        "severity": "Critical",
+        "title": "ROAS below breakeven: 0.82x",
+        "description": "0.82x ROAS — $15800.11 spend generated only $12889.73 value.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - PMAX - All Stations",
+        "status": "pending"
+      }
+    ]
+  }
+}

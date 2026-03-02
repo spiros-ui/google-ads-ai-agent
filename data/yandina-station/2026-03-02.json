@@ -1,0 +1,169 @@
+{
+  "account": "Yandina Station",
+  "customerId": "1705492043",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 937.37,
+      "totalConversions": 17,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Healthy"
+    },
+    "campaigns": [
+      {
+        "name": "CTM -Wedding Venues",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 45,
+        "metrics": {
+          "spend": 937.37,
+          "impressions": 2053,
+          "clicks": 258,
+          "conversions": 17,
+          "conversionValue": 2550,
+          "cpa": 55.14,
+          "roas": 2.72,
+          "ctr": 12.57,
+          "avgCpc": 3.63,
+          "searchIS": 29.71,
+          "budgetLostIS": 30.86,
+          "rankLostIS": 39.43
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [
+          {
+            "severity": "Medium",
+            "type": "improve_rank",
+            "title": "Losing 39.43% impression share to ad rank",
+            "reasoning": "Losing 39.43% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 39.43% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "12.57% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'wedding venue queensland' (16 conv, $804.24), 'wedding venues near me' (1 conv, $104.87)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'cheap wedding venues sunshine coast' (1 conv, CPA $1.57), 'scenic rim weddings' (1 conv, CPA $2.79), 'affordable wedding venues sunshine coast' (1 conv, CPA $3.15)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 446,
+          "withImpressions": 6,
+          "zeroImpressions": 440,
+          "avgQualityScore": 2.5,
+          "topWasters": [
+            {
+              "keyword": "country wedding venue queensland",
+              "matchType": "PHRASE",
+              "spend": 13.37,
+              "conversions": 0
+            },
+            {
+              "keyword": "wedding reception venues queensland",
+              "matchType": "PHRASE",
+              "spend": 10.71,
+              "conversions": 0
+            },
+            {
+              "keyword": "wedding venues with catering",
+              "matchType": "PHRASE",
+              "spend": 4.18,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "wedding venues",
+              "spend": 15.28,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "golf club weddings near me",
+              "spend": 15.12,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "wedding venues queensland",
+              "spend": 11.39,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "yandina station wedding",
+              "spend": 9.39,
+              "clicks": 6,
+              "conversions": 0
+            },
+            {
+              "term": "sirromet winery weddings",
+              "spend": 9.14,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "cheap wedding venues sunshine coast",
+              "spend": 1.57,
+              "conversions": 1,
+              "cpa": 1.57
+            },
+            {
+              "term": "scenic rim weddings",
+              "spend": 2.79,
+              "conversions": 1,
+              "cpa": 2.79
+            },
+            {
+              "term": "affordable wedding venues sunshine coast",
+              "spend": 3.15,
+              "conversions": 1,
+              "cpa": 3.15
+            },
+            {
+              "term": "wedding packages near me",
+              "spend": 3.15,
+              "conversions": 1,
+              "cpa": 3.15
+            },
+            {
+              "term": "yandina station weddings",
+              "spend": 1.1,
+              "conversions": 0.333333,
+              "cpa": 3.3
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-wedding-venues-2026-03-02-1",
+        "account": "Yandina Station",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "Medium",
+        "title": "Losing 39.43% impression share to ad rank",
+        "description": "Losing 39.43% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "CTM -Wedding Venues",
+        "status": "pending"
+      }
+    ]
+  }
+}

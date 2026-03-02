@@ -1,0 +1,163 @@
+{
+  "account": "Explore Grand Canyon",
+  "customerId": "2504946986",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 182.6,
+      "totalConversions": 2,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Grand Canyon (Branded)",
+        "type": "SEARCH",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 30,
+        "metrics": {
+          "spend": 182.6,
+          "impressions": 251,
+          "clicks": 91,
+          "conversions": 2,
+          "conversionValue": 136.32,
+          "cpa": 91.3,
+          "roas": 0.75,
+          "ctr": 36.25,
+          "avgCpc": 2.01,
+          "searchIS": 39.86,
+          "budgetLostIS": 59.23,
+          "rankLostIS": 0.9
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "adjust_budget",
+            "title": "Losing 59.23% impression share to budget",
+            "reasoning": "You're losing 59.23% of impressions due to budget. $30/day isn't enough — ads stop showing partway through the day.",
+            "action": "Increase budget from $30 to $45, or narrow keywords.",
+            "estimatedImpact": "Recovering 59.23% lost impressions could proportionally increase conversions"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "36.25% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'grand canyon imax' (2 conv, $86.99)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'grand canyon imax' (1 conv, CPA $17.2), 'imax grand canyon' (1 conv, CPA $32.17)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 77,
+          "withImpressions": 8,
+          "zeroImpressions": 69,
+          "avgQualityScore": 9,
+          "topWasters": [
+            {
+              "keyword": "imax movie grand canyon",
+              "matchType": "PHRASE",
+              "spend": 23.32,
+              "conversions": 0
+            },
+            {
+              "keyword": "imax theater tusayan",
+              "matchType": "PHRASE",
+              "spend": 19.44,
+              "conversions": 0
+            },
+            {
+              "keyword": "imax tusayan",
+              "matchType": "PHRASE",
+              "spend": 19.2,
+              "conversions": 0
+            },
+            {
+              "keyword": "Grand Canyon IMAX tickets",
+              "matchType": "PHRASE",
+              "spend": 17,
+              "conversions": 0
+            },
+            {
+              "keyword": "imax grand canyon prices",
+              "matchType": "PHRASE",
+              "spend": 8.71,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "imax theater tusayan",
+              "spend": 18.19,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "grand canyon imax theater",
+              "spend": 15.29,
+              "clicks": 6,
+              "conversions": 0
+            },
+            {
+              "term": "imax tusayan",
+              "spend": 11.57,
+              "clicks": 7,
+              "conversions": 0
+            },
+            {
+              "term": "imax grand canyon prices",
+              "spend": 8.71,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "grand canyon imax address",
+              "spend": 7.35,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "grand canyon imax",
+              "spend": 17.2,
+              "conversions": 1,
+              "cpa": 17.2
+            },
+            {
+              "term": "imax grand canyon",
+              "spend": 32.17,
+              "conversions": 1,
+              "cpa": 32.17
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-grand-canyon-branded-2026-03-02-1",
+        "account": "Explore Grand Canyon",
+        "date": "2026-03-02",
+        "type": "adjust_budget",
+        "severity": "High",
+        "title": "Losing 59.23% impression share to budget",
+        "description": "You're losing 59.23% of impressions due to budget. $30/day isn't enough — ads stop showing partway through the day.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Grand Canyon (Branded)",
+        "status": "pending"
+      }
+    ]
+  }
+}

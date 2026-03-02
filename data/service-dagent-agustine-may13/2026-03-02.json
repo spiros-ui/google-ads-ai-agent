@@ -1,0 +1,95 @@
+{
+  "account": "Service d'agent Agustine MAY13",
+  "customerId": "4421889978",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 1387.96,
+      "totalConversions": 2,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Pmax new - Austin",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 65,
+        "metrics": {
+          "spend": 1387.96,
+          "impressions": 46990,
+          "clicks": 1020,
+          "conversions": 2,
+          "conversionValue": 170,
+          "cpa": 693.98,
+          "roas": 0.12,
+          "ctr": 2.17,
+          "avgCpc": 1.36,
+          "searchIS": 20.34,
+          "budgetLostIS": 8.82,
+          "rankLostIS": 70.84
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 70.84% impression share to ad rank",
+            "reasoning": "Losing 70.84% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 70.84% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "fix_bidding",
+            "title": "Very high CPA: $693.98",
+            "reasoning": "$693.98 CPA from 2 conversions / $1387.96 spend.",
+            "action": "Add negatives for non-converting terms, lower bids, tighten audience targeting.",
+            "estimatedImpact": "Reducing CPA frees budget for more conversions"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-pmax-new-austin-2026-03-02-1",
+        "account": "Service d'agent Agustine MAY13",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 70.84% impression share to ad rank",
+        "description": "Losing 70.84% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax new - Austin",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-new-austin-2026-03-02-2",
+        "account": "Service d'agent Agustine MAY13",
+        "date": "2026-03-02",
+        "type": "fix_bidding",
+        "severity": "High",
+        "title": "Very high CPA: $693.98",
+        "description": "$693.98 CPA from 2 conversions / $1387.96 spend.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax new - Austin",
+        "status": "pending"
+      }
+    ]
+  }
+}

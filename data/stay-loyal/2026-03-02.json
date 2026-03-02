@@ -1,0 +1,810 @@
+{
+  "account": "Stay Loyal",
+  "customerId": "6809045675",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 20309.77,
+      "totalConversions": 269.33,
+      "totalCampaigns": 8,
+      "criticalIssues": 4,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 120,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 63 keywords have 0 impressions over 30 days despite a $120/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $3600/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $120/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $3600/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 63,
+          "withImpressions": 0,
+          "zeroImpressions": 63,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Target CPA Experiment - AMG - Search - Long Tail",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 22,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 47 keywords have 0 impressions over 30 days despite a $22/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $660/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $22/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $660/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 47,
+          "withImpressions": 0,
+          "zeroImpressions": 47,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Pmax - Remarketing Aim",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 65,
+        "metrics": {
+          "spend": 2077.14,
+          "impressions": 40985,
+          "clicks": 520,
+          "conversions": 11.25,
+          "conversionValue": 1020.34,
+          "cpa": 184.63,
+          "roas": 0.49,
+          "ctr": 1.27,
+          "avgCpc": 3.99,
+          "searchIS": 9.99,
+          "budgetLostIS": 8.47,
+          "rankLostIS": 89.51
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 89.51% impression share to ad rank",
+            "reasoning": "Losing 89.51% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 89.51% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Target CPA Experiment - AMG - Search - Itchy",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 25,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 36 keywords have 0 impressions over 30 days despite a $25/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $750/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $25/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $750/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 36,
+          "withImpressions": 0,
+          "zeroImpressions": 36,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "type": "SHOPPING",
+        "objective": "Sales",
+        "bidding": "Target ROAS",
+        "budget": 200,
+        "metrics": {
+          "spend": 718.3,
+          "impressions": 33419,
+          "clicks": 132,
+          "conversions": 12.5,
+          "conversionValue": 1352.2,
+          "cpa": 57.45,
+          "roas": 1.88,
+          "ctr": 0.39,
+          "avgCpc": 5.44,
+          "searchIS": 44.17,
+          "budgetLostIS": 0,
+          "rankLostIS": 55.83
+        },
+        "meetingObjective": false,
+        "status": "critical",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 48 keywords have 0 impressions over 30 days despite a $200/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $6000/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'addiction' (broad match) blocks positive 'addiction', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'addiction', or change to exact match to stop blocking 'addiction'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'bully' (broad match) blocks positive 'bully', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'bully', or change to exact match to stop blocking 'bully'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'acana' (broad match) blocks positive 'acana', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'acana', or change to exact match to stop blocking 'acana'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 55.83% impression share to ad rank",
+            "reasoning": "Losing 55.83% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 55.83% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top search terms",
+            "detail": "'loyal pet food' (1 conv, CPA $0.18), 'premium dry dog food' (2.99019 conv, CPA $3.98), 'best quality dog biscuits' (0.5 conv, CPA $5.3)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 48,
+          "withImpressions": 0,
+          "zeroImpressions": 48,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "border collie dog food",
+              "spend": 42.59,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "pet food australia dog food",
+              "spend": 36.3,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "australian made dog food",
+              "spend": 30.76,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "australian dog food company",
+              "spend": 17.7,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "love pet food",
+              "spend": 14.69,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "loyal pet food",
+              "spend": 0.18,
+              "conversions": 1,
+              "cpa": 0.18
+            },
+            {
+              "term": "premium dry dog food",
+              "spend": 11.91,
+              "conversions": 2.99019,
+              "cpa": 3.98
+            },
+            {
+              "term": "best quality dog biscuits",
+              "spend": 2.65,
+              "conversions": 0.5,
+              "cpa": 5.3
+            },
+            {
+              "term": "loyal dog food brand",
+              "spend": 0.11,
+              "conversions": 0.013679,
+              "cpa": 8.04
+            },
+            {
+              "term": "organic dog food australia",
+              "spend": 13.51,
+              "conversions": 1,
+              "cpa": 13.51
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - Brand Terms - Search - Stay Loyal",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 400,
+        "metrics": {
+          "spend": 5563.63,
+          "impressions": 4993,
+          "clicks": 1034,
+          "conversions": 137.94,
+          "conversionValue": 15430.47,
+          "cpa": 40.33,
+          "roas": 2.77,
+          "ctr": 20.71,
+          "avgCpc": 5.38,
+          "searchIS": 78.14,
+          "budgetLostIS": 0.35,
+          "rankLostIS": 21.51
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "20.71% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "78.14% search IS"
+          },
+          {
+            "title": "Efficient CPA",
+            "detail": "$40.33/conversion"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'stay loyal dog food where to buy' (3 conv, $79.62), 'stay loyal dog food' (134.940181 conv, $5484.01)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'www stayloyal com au' (1 conv, CPA $2.3), 'stay loyal chicken lamb and fish' (1 conv, CPA $2.38), 'stay loy' (1 conv, CPA $2.79)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 6,
+          "withImpressions": 3,
+          "zeroImpressions": 3,
+          "avgQualityScore": 8.33,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "stay loyal dog food reviews",
+              "spend": 511.24,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "sniffspace",
+              "spend": 241.09,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "peto annandale",
+              "spend": 210.39,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "fergusons treatos",
+              "spend": 147.4,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "dog boutique",
+              "spend": 122.59,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "www stayloyal com au",
+              "spend": 2.3,
+              "conversions": 1,
+              "cpa": 2.3
+            },
+            {
+              "term": "stay loyal chicken lamb and fish",
+              "spend": 2.38,
+              "conversions": 1,
+              "cpa": 2.38
+            },
+            {
+              "term": "stay loy",
+              "spend": 2.79,
+              "conversions": 1,
+              "cpa": 2.79
+            },
+            {
+              "term": "stay loyal",
+              "spend": 81.23,
+              "conversions": 26.283419,
+              "cpa": 3.09
+            },
+            {
+              "term": "stayloyal com au",
+              "spend": 2.19,
+              "conversions": 0.527819,
+              "cpa": 4.15
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - Performance Max  +Brand Stay Loyal",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 500,
+        "metrics": {
+          "spend": 11417.09,
+          "impressions": 242342,
+          "clicks": 1990,
+          "conversions": 100.8,
+          "conversionValue": 12992.48,
+          "cpa": 113.27,
+          "roas": 1.14,
+          "ctr": 0.82,
+          "avgCpc": 5.74,
+          "searchIS": 37.89,
+          "budgetLostIS": 0,
+          "rankLostIS": 62.11
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 62.11% impression share to ad rank",
+            "reasoning": "Losing 62.11% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 62.11% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+        "type": "SHOPPING",
+        "objective": "Sales",
+        "bidding": "Target ROAS",
+        "budget": 70,
+        "metrics": {
+          "spend": 533.61,
+          "impressions": 27594,
+          "clicks": 155,
+          "conversions": 6.84,
+          "conversionValue": 777.59,
+          "cpa": 78.06,
+          "roas": 1.46,
+          "ctr": 0.56,
+          "avgCpc": 3.44,
+          "searchIS": 49.01,
+          "budgetLostIS": 0,
+          "rankLostIS": 50.99
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 50.99% impression share to ad rank",
+            "reasoning": "Losing 50.99% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 50.99% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top search terms",
+            "detail": "'best dog food for dry flaky skin' (0.492029 conv, CPA $2.34), 'dog food delivered' (1 conv, CPA $5.15), 'best quality dog biscuits' (0.5 conv, CPA $5.46)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 48,
+          "withImpressions": 0,
+          "zeroImpressions": 48,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "best dog food for hip dysplasia",
+              "spend": 19.44,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "best dog food for weight management",
+              "spend": 15.67,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "best natural dog food australia",
+              "spend": 11.71,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "premium dog food australia",
+              "spend": 10.88,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "best dog food for skin allergies australia",
+              "spend": 9.62,
+              "clicks": 3,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "best dog food for dry flaky skin",
+              "spend": 1.15,
+              "conversions": 0.492029,
+              "cpa": 2.34
+            },
+            {
+              "term": "dog food delivered",
+              "spend": 5.15,
+              "conversions": 1,
+              "cpa": 5.15
+            },
+            {
+              "term": "best quality dog biscuits",
+              "spend": 2.73,
+              "conversions": 0.5,
+              "cpa": 5.46
+            },
+            {
+              "term": "delicate care skin and stomach",
+              "spend": 3.65,
+              "conversions": 0.653441,
+              "cpa": 5.59
+            },
+            {
+              "term": "best dog food older dogs",
+              "spend": 6.55,
+              "conversions": 0.498331,
+              "cpa": 13.14
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "target-cpa-experiment-amg-search-buy-desktop-tablet-2026-03-02-1",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 63 keywords have 0 impressions over 30 days despite a $120/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 3600,
+        "campaign": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-buy-desktop-tablet-2026-03-02-2",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $120/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 3600,
+        "campaign": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-long-tail-2026-03-02-3",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 47 keywords have 0 impressions over 30 days despite a $22/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 660,
+        "campaign": "Target CPA Experiment - AMG - Search - Long Tail",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-long-tail-2026-03-02-4",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $22/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 660,
+        "campaign": "Target CPA Experiment - AMG - Search - Long Tail",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-remarketing-aim-2026-03-02-5",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 89.51% impression share to ad rank",
+        "description": "Losing 89.51% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax - Remarketing Aim",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-itchy-2026-03-02-6",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 36 keywords have 0 impressions over 30 days despite a $25/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 750,
+        "campaign": "Target CPA Experiment - AMG - Search - Itchy",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-itchy-2026-03-02-7",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $25/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 750,
+        "campaign": "Target CPA Experiment - AMG - Search - Itchy",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-02-8",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 48 keywords have 0 impressions over 30 days despite a $200/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 6000,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-02-9",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'addiction' (broad match) blocks positive 'addiction', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-02-10",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'bully' (broad match) blocks positive 'bully', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-02-11",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'acana' (broad match) blocks positive 'acana', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-02-12",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 55.83% impression share to ad rank",
+        "description": "Losing 55.83% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-performance-max-brand-stay-loyal-2026-03-02-13",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 62.11% impression share to ad rank",
+        "description": "Losing 62.11% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Performance Max  +Brand Stay Loyal",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-salmon-only-2026-03-02-14",
+        "account": "Stay Loyal",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 50.99% impression share to ad rank",
+        "description": "Losing 50.99% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+        "status": "pending"
+      }
+    ]
+  }
+}

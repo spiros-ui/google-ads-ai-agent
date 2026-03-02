@@ -1,0 +1,468 @@
+{
+  "account": "Shanahan Family Law",
+  "customerId": "7718562182",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 5587.74,
+      "totalConversions": 26,
+      "totalCampaigns": 5,
+      "criticalIssues": 3,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "Sunshine Coast - Incremental Search | LS",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 50,
+        "metrics": {
+          "spend": 1436.88,
+          "impressions": 1748,
+          "clicks": 83,
+          "conversions": 6,
+          "conversionValue": 650,
+          "cpa": 239.48,
+          "roas": 0.45,
+          "ctr": 4.75,
+          "avgCpc": 17.31,
+          "searchIS": 21.42,
+          "budgetLostIS": 39.71,
+          "rankLostIS": 38.87
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "Medium",
+            "type": "adjust_budget",
+            "title": "Losing 39.71% impression share to budget",
+            "reasoning": "You're losing 39.71% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
+            "action": "Consider a modest budget increase or pause underperforming keywords.",
+            "estimatedImpact": "Recovering 39.71% lost impressions could proportionally increase conversions"
+          },
+          {
+            "severity": "High",
+            "type": "fix_bidding",
+            "title": "Very high CPA: $239.48",
+            "reasoning": "$239.48 CPA from 6 conversions / $1436.88 spend.",
+            "action": "Add negatives for non-converting terms, lower bids, tighten audience targeting.",
+            "estimatedImpact": "Reducing CPA frees budget for more conversions"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top converting keywords",
+            "detail": "'family lawyers sunshine coast' (5 conv, $738.64), 'family law solicitors near me' (1 conv, $320.13)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'family law sunshine coast' (1 conv, CPA $13.75), 'sunshine coast family lawyers' (1 conv, CPA $70.16)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 495,
+          "withImpressions": 5,
+          "zeroImpressions": 490,
+          "avgQualityScore": 4.67,
+          "topWasters": [
+            {
+              "keyword": "Family Lawyers near me",
+              "matchType": "PHRASE",
+              "spend": 172.61,
+              "conversions": 0
+            },
+            {
+              "keyword": "child custody dispute",
+              "matchType": "BROAD",
+              "spend": 141.37,
+              "conversions": 0
+            },
+            {
+              "keyword": "divorce lawyer sunshine coast",
+              "matchType": "BROAD",
+              "spend": 64.14,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "family lawyers sunshine coast",
+              "spend": 156.26,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "family lawyers near me",
+              "spend": 63.39,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "separation lawyers near me",
+              "spend": 59.54,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "estate solicitor near me",
+              "spend": 56.61,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "lawyer sunshine coast",
+              "spend": 47.88,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "family law sunshine coast",
+              "spend": 13.75,
+              "conversions": 1,
+              "cpa": 13.75
+            },
+            {
+              "term": "sunshine coast family lawyers",
+              "spend": 70.16,
+              "conversions": 1,
+              "cpa": 70.16
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sunshine Coast PMAX  | LS",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 120,
+        "metrics": {
+          "spend": 3953.11,
+          "impressions": 31181,
+          "clicks": 877,
+          "conversions": 19,
+          "conversionValue": 1939,
+          "cpa": 208.06,
+          "roas": 0.49,
+          "ctr": 2.81,
+          "avgCpc": 4.51,
+          "searchIS": 22.47,
+          "budgetLostIS": 24.6,
+          "rankLostIS": 52.93
+        },
+        "meetingObjective": false,
+        "status": "critical",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 52.93% impression share to ad rank",
+            "reasoning": "Losing 52.93% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 52.93% lost impressions from rank improvements"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_bidding",
+            "title": "ROAS below breakeven: 0.49x",
+            "reasoning": "0.49x ROAS — $3953.11 spend generated only $1939 value.",
+            "action": "Pause unprofitable keywords/products, tighten targeting, reduce bids.",
+            "estimatedImpact": "Stop losing money on unprofitable traffic"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+        "type": "SEARCH",
+        "objective": "General",
+        "bidding": "TARGET_IMPRESSION_SHARE",
+        "budget": 50,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $50/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $1500/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 50,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $50/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $1500/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Search Brand | LS",
+        "type": "SEARCH",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 15,
+        "metrics": {
+          "spend": 197.75,
+          "impressions": 192,
+          "clicks": 62,
+          "conversions": 1,
+          "conversionValue": 150,
+          "cpa": 197.75,
+          "roas": 0.76,
+          "ctr": 32.29,
+          "avgCpc": 3.19,
+          "searchIS": 84.33,
+          "budgetLostIS": 4.48,
+          "rankLostIS": 11.19
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "32.29% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "84.33% search IS"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'Shanahan Family Law' (1 conv, $141.58)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'shanahan family law' (1 conv, CPA $131.02)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 5,
+          "withImpressions": 5,
+          "zeroImpressions": 0,
+          "avgQualityScore": 8.6,
+          "topWasters": [
+            {
+              "keyword": "luke shanahan lawyer",
+              "matchType": "EXACT",
+              "spend": 29,
+              "conversions": 0
+            },
+            {
+              "keyword": "shanahan family law reviews",
+              "matchType": "EXACT",
+              "spend": 9.65,
+              "conversions": 0
+            },
+            {
+              "keyword": "shanahan lawyers",
+              "matchType": "EXACT",
+              "spend": 9.51,
+              "conversions": 0
+            },
+            {
+              "keyword": "shanahan family law maroochydore",
+              "matchType": "EXACT",
+              "spend": 8.02,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "luke shanahan lawyer",
+              "spend": 29,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "shanahan family law reviews",
+              "spend": 9.65,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "shanahan lawyers",
+              "spend": 9.51,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "shanahan family law maroochydore",
+              "spend": 5.59,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "shanahan family law",
+              "spend": 131.02,
+              "conversions": 1,
+              "cpa": 131.02
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "sunshine-coast-incremental-search-ls-2026-03-02-1",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "adjust_budget",
+        "severity": "Medium",
+        "title": "Losing 39.71% impression share to budget",
+        "description": "You're losing 39.71% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
+        "estimatedSaving": 0,
+        "campaign": "Sunshine Coast - Incremental Search | LS",
+        "status": "pending"
+      },
+      {
+        "id": "sunshine-coast-incremental-search-ls-2026-03-02-2",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "fix_bidding",
+        "severity": "High",
+        "title": "Very high CPA: $239.48",
+        "description": "$239.48 CPA from 6 conversions / $1436.88 spend.",
+        "estimatedSaving": 0,
+        "campaign": "Sunshine Coast - Incremental Search | LS",
+        "status": "pending"
+      },
+      {
+        "id": "sunshine-coast-pmax-ls-2026-03-02-3",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 52.93% impression share to ad rank",
+        "description": "Losing 52.93% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "Sunshine Coast PMAX  | LS",
+        "status": "pending"
+      },
+      {
+        "id": "sunshine-coast-pmax-ls-2026-03-02-4",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "fix_bidding",
+        "severity": "Critical",
+        "title": "ROAS below breakeven: 0.49x",
+        "description": "0.49x ROAS — $3953.11 spend generated only $1939 value.",
+        "estimatedSaving": 0,
+        "campaign": "Sunshine Coast PMAX  | LS",
+        "status": "pending"
+      },
+      {
+        "id": "sunshine-coast-incremental-terms-sd-max-converions-vs-max-impression-share-2026-03-02-5",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $50/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 1500,
+        "campaign": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+        "status": "pending"
+      },
+      {
+        "id": "sunshine-coast-incremental-terms-sd-broad-vs-exact-match-2026-03-02-6",
+        "account": "Shanahan Family Law",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $50/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 1500,
+        "campaign": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+        "status": "pending"
+      }
+    ]
+  }
+}

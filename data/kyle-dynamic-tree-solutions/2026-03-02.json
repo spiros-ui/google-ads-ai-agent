@@ -1,0 +1,282 @@
+{
+  "account": "Kyle_Dynamic Tree Solutions",
+  "customerId": "9254546290",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 676.79,
+      "totalConversions": 8,
+      "totalCampaigns": 2,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 40,
+        "metrics": {
+          "spend": 559.25,
+          "impressions": 3549,
+          "clicks": 58,
+          "conversions": 5,
+          "conversionValue": 150,
+          "cpa": 111.85,
+          "roas": 0.27,
+          "ctr": 1.63,
+          "avgCpc": 9.64,
+          "searchIS": 17.74,
+          "budgetLostIS": 22.66,
+          "rankLostIS": 59.6
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 59.6% impression share to ad rank",
+            "reasoning": "Losing 59.6% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 59.6% lost impressions from rank improvements"
+          },
+          {
+            "severity": "Medium",
+            "type": "improve_ads",
+            "title": "Low CTR: 1.63%",
+            "reasoning": "CTR is 1.63%, below 3% benchmark (58 clicks / 3,549 impressions). 1 ad group(s) have only 1 ad — no A/B testing.",
+            "action": "Add responsive search ad variations, improve headlines, ensure 2+ ads per ad group.",
+            "estimatedImpact": "Raising CTR to 3% could increase clicks by 84%"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top converting keywords",
+            "detail": "'tree services' (2 conv, $120.94), 'tree services near me' (2 conv, $158.42), 'tree removal brisbane' (1 conv, $270.29)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'tree lopping near me' (1 conv, CPA $23.93), 'tree loppers townsville' (1 conv, CPA $42.54)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 65,
+          "withImpressions": 27,
+          "zeroImpressions": 38,
+          "avgQualityScore": 3.44,
+          "topWasters": [
+            {
+              "keyword": "tree fellas",
+              "matchType": "BROAD",
+              "spend": 7.65,
+              "conversions": 0
+            },
+            {
+              "keyword": "tree lopping and removal",
+              "matchType": "BROAD",
+              "spend": 1.95,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "arborist",
+              "spend": 29.5,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "local tree loppers",
+              "spend": 26.82,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "smiley tree services",
+              "spend": 22.84,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "shane's trees",
+              "spend": 16.67,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "treeline",
+              "spend": 13.65,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "tree lopping near me",
+              "spend": 23.93,
+              "conversions": 1,
+              "cpa": 23.93
+            },
+            {
+              "term": "tree loppers townsville",
+              "spend": 42.54,
+              "conversions": 1,
+              "cpa": 42.54
+            }
+          ]
+        }
+      },
+      {
+        "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 15,
+        "metrics": {
+          "spend": 117.54,
+          "impressions": 482,
+          "clicks": 16,
+          "conversions": 3,
+          "conversionValue": 90,
+          "cpa": 39.18,
+          "roas": 0.77,
+          "ctr": 3.32,
+          "avgCpc": 7.35,
+          "searchIS": 16.94,
+          "budgetLostIS": 21.3,
+          "rankLostIS": 61.76
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 61.76% impression share to ad rank",
+            "reasoning": "Losing 61.76% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 61.76% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Efficient CPA",
+            "detail": "$39.18/conversion"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'tree services' (3 conv, $114.15)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'tree removal ipswich' (1 conv, CPA $3.29), 'tree safe australia' (1 conv, CPA $7.58)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 56,
+          "withImpressions": 6,
+          "zeroImpressions": 50,
+          "avgQualityScore": 3,
+          "topWasters": [
+            {
+              "keyword": "professional tree loppers",
+              "matchType": "BROAD",
+              "spend": 3.08,
+              "conversions": 0
+            },
+            {
+              "keyword": "tree fellas",
+              "matchType": "BROAD",
+              "spend": 0.31,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "tree removal toowoomba qld",
+              "spend": 32.71,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "tree removal toowoomba",
+              "spend": 8.24,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "professional tree loppers",
+              "spend": 3.08,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "dynamic tree solutions",
+              "spend": 0.31,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "tree removal ipswich",
+              "spend": 3.29,
+              "conversions": 1,
+              "cpa": 3.29
+            },
+            {
+              "term": "tree safe australia",
+              "spend": 7.58,
+              "conversions": 1,
+              "cpa": 7.58
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "february-3-search-search-partners-ai-max-tree-removal-2026-03-02-1",
+        "account": "Kyle_Dynamic Tree Solutions",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 59.6% impression share to ad rank",
+        "description": "Losing 59.6% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+        "status": "pending"
+      },
+      {
+        "id": "february-3-search-search-partners-ai-max-tree-removal-2026-03-02-2",
+        "account": "Kyle_Dynamic Tree Solutions",
+        "date": "2026-03-02",
+        "type": "improve_ads",
+        "severity": "Medium",
+        "title": "Low CTR: 1.63%",
+        "description": "CTR is 1.63%, below 3% benchmark (58 clicks / 3,549 impressions). 1 ad group(s) have only 1 ad — no A/B testing.",
+        "estimatedSaving": 0,
+        "campaign": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+        "status": "pending"
+      },
+      {
+        "id": "february-3-search-no-sp-no-ai-tree-removal-2026-03-02-3",
+        "account": "Kyle_Dynamic Tree Solutions",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 61.76% impression share to ad rank",
+        "description": "Losing 61.76% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+        "status": "pending"
+      }
+    ]
+  }
+}

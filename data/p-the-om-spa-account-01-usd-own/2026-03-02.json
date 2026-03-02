@@ -1,0 +1,412 @@
+{
+  "account": "P / The Om Spa | Account-01 / USD [OWN]",
+  "customerId": "6638376999",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 19635.07,
+      "totalConversions": 207.15,
+      "totalCampaigns": 4,
+      "criticalIssues": 1,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "Theomspanaples - Search clicks",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 1,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 89 keywords have 0 impressions over 30 days despite a $1/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $30/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'sound' (broad match) blocks positive 'sound bath spa', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'sound', or change to exact match to stop blocking 'sound bath spa'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'miami' (broad match) blocks positive 'miami', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'miami', or change to exact match to stop blocking 'miami'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $1/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $30/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 89,
+          "withImpressions": 0,
+          "zeroImpressions": 89,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Performance Max - OmSpa",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 430,
+        "metrics": {
+          "spend": 13169.62,
+          "impressions": 67032,
+          "clicks": 3334,
+          "conversions": 151.99,
+          "conversionValue": 20508.16,
+          "cpa": 86.65,
+          "roas": 1.56,
+          "ctr": 4.97,
+          "avgCpc": 3.95,
+          "searchIS": 46.6,
+          "budgetLostIS": 11.45,
+          "rankLostIS": 41.95
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 41.95% impression share to ad rank",
+            "reasoning": "Losing 41.95% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 41.95% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Theomspanaples - Search V2 - Omspa",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 60,
+        "metrics": {
+          "spend": 1575.21,
+          "impressions": 6818,
+          "clicks": 499,
+          "conversions": 23.74,
+          "conversionValue": 1636.31,
+          "cpa": 66.34,
+          "roas": 1.04,
+          "ctr": 7.32,
+          "avgCpc": 3.16,
+          "searchIS": 36.26,
+          "budgetLostIS": 57.57,
+          "rankLostIS": 6.16
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "adjust_budget",
+            "title": "Losing 57.57% impression share to budget",
+            "reasoning": "You're losing 57.57% of impressions due to budget. $60/day isn't enough — ads stop showing partway through the day.",
+            "action": "Increase budget from $60 to $90, or narrow keywords.",
+            "estimatedImpact": "Recovering 57.57% lost impressions could proportionally increase conversions"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "7.32% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'naples day spa' (1.5 conv, $31.34), 'body massage therapy near me' (11 conv, $381.66), 'spa day package' (0.833333 conv, $42.62)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'masaje thai cerca de mi' (1 conv, CPA $1.05), 'naples florida day spa' (1 conv, CPA $2.49), 'om soa' (1 conv, CPA $3.05)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 411,
+          "withImpressions": 13,
+          "zeroImpressions": 398,
+          "avgQualityScore": 5.09,
+          "topWasters": [
+            {
+              "keyword": "pregnancy massage near me",
+              "matchType": "BROAD",
+              "spend": 81.34,
+              "conversions": 0
+            },
+            {
+              "keyword": "hydrafacial near me",
+              "matchType": "BROAD",
+              "spend": 36.33,
+              "conversions": 0
+            },
+            {
+              "keyword": "head massage near me",
+              "matchType": "BROAD",
+              "spend": 13.93,
+              "conversions": 0
+            },
+            {
+              "keyword": "reiki near me",
+              "matchType": "BROAD",
+              "spend": 6.09,
+              "conversions": 0
+            },
+            {
+              "keyword": "couple spa near me",
+              "matchType": "BROAD",
+              "spend": 0.98,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "prenatal massage",
+              "spend": 70.3,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "massage naples fl",
+              "spend": 44.66,
+              "clicks": 14,
+              "conversions": 0
+            },
+            {
+              "term": "acupuncture naples fl",
+              "spend": 31.17,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "lymphatic drainage massage",
+              "spend": 24.89,
+              "clicks": 7,
+              "conversions": 0
+            },
+            {
+              "term": "stretch zone park shore",
+              "spend": 20.06,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "masaje thai cerca de mi",
+              "spend": 1.05,
+              "conversions": 1,
+              "cpa": 1.05
+            },
+            {
+              "term": "naples florida day spa",
+              "spend": 2.49,
+              "conversions": 1,
+              "cpa": 2.49
+            },
+            {
+              "term": "om soa",
+              "spend": 3.05,
+              "conversions": 1,
+              "cpa": 3.05
+            },
+            {
+              "term": "couples massage valentines day",
+              "spend": 1.78,
+              "conversions": 0.5,
+              "cpa": 3.56
+            },
+            {
+              "term": "the om spa reviews",
+              "spend": 4.23,
+              "conversions": 1,
+              "cpa": 4.23
+            }
+          ]
+        }
+      },
+      {
+        "name": "Performance Max - OmSpa - Desktop Only",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 120,
+        "metrics": {
+          "spend": 4890.24,
+          "impressions": 27269,
+          "clicks": 772,
+          "conversions": 31.42,
+          "conversionValue": 5795.39,
+          "cpa": 155.65,
+          "roas": 1.19,
+          "ctr": 2.83,
+          "avgCpc": 6.33,
+          "searchIS": 37.93,
+          "budgetLostIS": 18,
+          "rankLostIS": 44.07
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 44.07% impression share to ad rank",
+            "reasoning": "Losing 44.07% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 44.07% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "theomspanaples-search-clicks-2026-03-02-1",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 89 keywords have 0 impressions over 30 days despite a $1/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 30,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-02-2",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'sound' (broad match) blocks positive 'sound bath spa', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-02-3",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'miami' (broad match) blocks positive 'miami', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-02-4",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $1/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 30,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "performance-max-omspa-2026-03-02-5",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 41.95% impression share to ad rank",
+        "description": "Losing 41.95% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "Performance Max - OmSpa",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-v2-omspa-2026-03-02-6",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "adjust_budget",
+        "severity": "High",
+        "title": "Losing 57.57% impression share to budget",
+        "description": "You're losing 57.57% of impressions due to budget. $60/day isn't enough — ads stop showing partway through the day.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search V2 - Omspa",
+        "status": "pending"
+      },
+      {
+        "id": "performance-max-omspa-desktop-only-2026-03-02-7",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-02",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 44.07% impression share to ad rank",
+        "description": "Losing 44.07% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "Performance Max - OmSpa - Desktop Only",
+        "status": "pending"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "account": "MPT Engineering",
+  "customerId": "4385411329",
+  "date": "2026-03-02",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 0,
+      "totalConversions": 0,
+      "totalCampaigns": 0,
+      "criticalIssues": 0,
+      "overallVerdict": "Not Spending"
+    },
+    "campaigns": [],
+    "actionItems": []
+  }
+}

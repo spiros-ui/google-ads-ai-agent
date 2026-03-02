@@ -1,0 +1,14 @@
+{
+  "forceInclude": [
+    { "name": "Costa Rica Waterfall Tours", "customerId": "3555921105", "loginCustomerId": "8092443494" },
+    { "name": "FAA Property", "customerId": "4740564607", "loginCustomerId": "4740564607" },
+    { "name": "Infinite Roofing", "customerId": "2773583029", "loginCustomerId": "2773583029" },
+    { "name": "The Om Spa", "customerId": "6638376999", "loginCustomerId": "8092443494" },
+    { "name": "Restored Timbers", "customerId": "2974447695", "loginCustomerId": "8092443494" },
+    { "name": "Service d'agent Agustine", "customerId": "4421889978", "loginCustomerId": "4421889978" },
+    { "name": "Shanahan Family Law", "customerId": "7718562182", "loginCustomerId": "8092443494" },
+    { "name": "Skin Spa New York", "customerId": "1633111847", "loginCustomerId": "1633111847" },
+    { "name": "Stay Loyal", "customerId": "6809045675", "loginCustomerId": "8092443494" },
+    { "name": "Yandina Station", "customerId": "1705492043", "loginCustomerId": "8092443494" }
+  ]
+}
