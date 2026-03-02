@@ -36,45 +36,62 @@
 
     var html = '<div class="content">';
 
-    // Date picker — Google Ads style
+    // Google Ads-style date picker
     if (accMeta && accMeta.dates && accMeta.dates.length > 0) {
-      html += '<div class="date-picker-wrap">';
+      var dates = accMeta.dates;
+      var s = accountSlug;
 
       // Trigger button
-      html += '<button class="date-picker-btn" id="dp-btn-' + accountSlug + '" onclick="event.stopPropagation(); toggleDatePicker(\'' + accountSlug + '\')">';
+      html += '<div style="position:relative;display:inline-block">';
+      html += '<button class="gdp-trigger" id="gdp-trigger-' + s + '" onclick="gdpOpen(\'' + s + '\')">';
       html += '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
       html += '<span>' + window.fmt.dateShort(selectedDate) + '</span>';
-      html += '<svg class="dp-arrow" viewBox="0 0 10 10"><polyline points="2,3.5 5,7 8,3.5" fill="none"/></svg>';
+      html += '<svg class="gdp-arrow" viewBox="0 0 10 10"><polyline points="2,3.5 5,7 8,3.5" fill="none" stroke="currentColor"/></svg>';
       html += '</button>';
 
-      // Dropdown
-      html += '<div class="date-picker-dropdown" id="dp-dropdown-' + accountSlug + '">';
+      // Overlay (click-outside-to-close)
+      html += '<div class="gdp-overlay" id="gdp-overlay-' + s + '" onclick="gdpClose(\'' + s + '\')"></div>';
 
-      // Presets
-      var dates = accMeta.dates;
-      var latestDate = dates[dates.length - 1];
-      var firstDate = dates[0];
-      html += '<div class="dp-presets">';
-      html += '<button class="dp-preset' + (selectedDate === latestDate ? ' selected' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + latestDate + '\')">Latest (' + window.fmt.dateShort(latestDate) + ')</button>';
-      if (dates.length > 1) {
-        html += '<button class="dp-preset' + (selectedDate === firstDate ? ' selected' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + firstDate + '\')">Earliest (' + window.fmt.dateShort(firstDate) + ')</button>';
-      }
+      // Panel
+      html += '<div class="gdp-panel" id="gdp-panel-' + s + '">';
+      html += '<div class="gdp-body">';
+
+      // Left: presets
+      html += '<div class="gdp-presets">';
+      html += '<button class="gdp-preset" data-preset="latest" onclick="gdpPreset(\'' + s + '\',\'latest\')">Latest</button>';
+      html += '<button class="gdp-preset" data-preset="today" onclick="gdpPreset(\'' + s + '\',\'today\')">Today</button>';
+      html += '<button class="gdp-preset" data-preset="yesterday" onclick="gdpPreset(\'' + s + '\',\'yesterday\')">Yesterday</button>';
+      html += '<button class="gdp-preset" data-preset="last7" onclick="gdpPreset(\'' + s + '\',\'last7\')">Last 7 days</button>';
+      html += '<button class="gdp-preset" data-preset="last14" onclick="gdpPreset(\'' + s + '\',\'last14\')">Last 14 days</button>';
+      html += '<button class="gdp-preset" data-preset="last30" onclick="gdpPreset(\'' + s + '\',\'last30\')">Last 30 days</button>';
+      html += '<button class="gdp-preset" data-preset="earliest" onclick="gdpPreset(\'' + s + '\',\'earliest\')">Earliest</button>';
       html += '</div>';
 
-      // All dates list
-      html += '<div class="dp-section-label">All audit dates</div>';
-      html += '<div class="dp-dates">';
-      for (var d = dates.length - 1; d >= 0; d--) {
-        var dt = dates[d];
-        html += '<button class="dp-date' + (dt === selectedDate ? ' active' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + dt + '\')">';
-        html += '<span class="dp-day">' + window.fmt.dateShort(dt) + '</span>';
-        html += '<span class="dp-rel">' + window.fmt.dateRel(dt) + '</span>';
-        html += '</button>';
-      }
+      // Right: calendar
+      html += '<div class="gdp-calendar">';
+
+      // Date input
+      html += '<div class="gdp-inputs">';
+      html += '<div class="gdp-input-group"><div class="gdp-input-label">Audit date</div>';
+      html += '<input class="gdp-input" id="gdp-input-' + s + '" type="text" readonly value="' + window.fmt.dateShort(selectedDate) + '"/>';
+      html += '</div></div>';
+
+      // Scrollable months
+      html += '<div class="gdp-months">';
+      html += window.gdpBuildCalendar(s, dates, selectedDate);
       html += '</div>';
 
-      html += '</div>'; // dropdown
-      html += '</div>'; // wrap
+      html += '</div>'; // gdp-calendar
+      html += '</div>'; // gdp-body
+
+      // Footer
+      html += '<div class="gdp-footer">';
+      html += '<button class="gdp-btn gdp-btn-cancel" onclick="gdpClose(\'' + s + '\')">Cancel</button>';
+      html += '<button class="gdp-btn gdp-btn-apply" onclick="gdpApply(\'' + s + '\')">Apply</button>';
+      html += '</div>';
+
+      html += '</div>'; // gdp-panel
+      html += '</div>'; // wrapper
     }
 
     // Account summary bar

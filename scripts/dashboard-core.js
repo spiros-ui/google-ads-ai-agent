@@ -357,44 +357,189 @@
     return Promise.all(promises);
   }
 
-  // --------------- Date picker toggle ---------------
+  // --------------- Google Ads Date Picker ---------------
 
-  function toggleDatePicker(slug) {
-    var dropdown = document.getElementById('dp-dropdown-' + slug);
-    var btn = document.getElementById('dp-btn-' + slug);
-    if (!dropdown) return;
-    var isOpen = dropdown.classList.contains('show');
-    // Close all open pickers first
-    var allDropdowns = document.querySelectorAll('.date-picker-dropdown.show');
-    var allBtns = document.querySelectorAll('.date-picker-btn.open');
-    for (var i = 0; i < allDropdowns.length; i++) allDropdowns[i].classList.remove('show');
-    for (var j = 0; j < allBtns.length; j++) allBtns[j].classList.remove('open');
-    if (!isOpen) {
-      dropdown.classList.add('show');
-      if (btn) btn.classList.add('open');
+  var _gdpState = {}; // { slug: { pendingDate, activePreset } }
+
+  function gdpOpen(slug) {
+    var panel = document.getElementById('gdp-panel-' + slug);
+    var overlay = document.getElementById('gdp-overlay-' + slug);
+    var trigger = document.getElementById('gdp-trigger-' + slug);
+    if (!panel) return;
+    panel.classList.add('show');
+    if (overlay) overlay.classList.add('show');
+    if (trigger) trigger.classList.add('open');
+    // Init pending state
+    var data = window.appData.accounts[slug];
+    _gdpState[slug] = { pendingDate: (data && data._selectedDate) || null, activePreset: null };
+    gdpHighlight(slug);
+    // Scroll to selected month
+    setTimeout(function () { gdpScrollToSelected(slug); }, 50);
+  }
+
+  function gdpClose(slug) {
+    var panel = document.getElementById('gdp-panel-' + slug);
+    var overlay = document.getElementById('gdp-overlay-' + slug);
+    var trigger = document.getElementById('gdp-trigger-' + slug);
+    if (panel) panel.classList.remove('show');
+    if (overlay) overlay.classList.remove('show');
+    if (trigger) trigger.classList.remove('open');
+  }
+
+  function gdpApply(slug) {
+    var st = _gdpState[slug];
+    if (st && st.pendingDate) {
+      loadDate(slug, st.pendingDate);
+    }
+    gdpClose(slug);
+  }
+
+  function gdpSelectDay(slug, date) {
+    _gdpState[slug] = _gdpState[slug] || {};
+    _gdpState[slug].pendingDate = date;
+    _gdpState[slug].activePreset = null;
+    gdpHighlight(slug);
+  }
+
+  function gdpPreset(slug, presetKey) {
+    var accMeta = null;
+    var m = window.appData.manifest;
+    if (m) {
+      for (var i = 0; i < m.accounts.length; i++) {
+        if (m.accounts[i].id === slug) { accMeta = m.accounts[i]; break; }
+      }
+    }
+    if (!accMeta || !accMeta.dates.length) return;
+    var dates = accMeta.dates;
+    var today = new Date(); today.setHours(0,0,0,0);
+    var todayStr = today.toISOString().split('T')[0];
+    var target = null;
+
+    if (presetKey === 'latest') {
+      target = dates[dates.length - 1];
+    } else if (presetKey === 'today') {
+      target = dates.indexOf(todayStr) !== -1 ? todayStr : dates[dates.length - 1];
+    } else if (presetKey === 'yesterday') {
+      var yd = new Date(today); yd.setDate(yd.getDate() - 1);
+      var ydStr = yd.toISOString().split('T')[0];
+      target = dates.indexOf(ydStr) !== -1 ? ydStr : null;
+    } else if (presetKey === 'last7') {
+      var cutoff7 = new Date(today); cutoff7.setDate(cutoff7.getDate() - 7);
+      for (var j = dates.length - 1; j >= 0; j--) {
+        if (new Date(dates[j] + 'T00:00:00') >= cutoff7) { target = dates[j]; break; }
+      }
+    } else if (presetKey === 'last14') {
+      var cutoff14 = new Date(today); cutoff14.setDate(cutoff14.getDate() - 14);
+      for (var k = dates.length - 1; k >= 0; k--) {
+        if (new Date(dates[k] + 'T00:00:00') >= cutoff14) { target = dates[k]; break; }
+      }
+    } else if (presetKey === 'last30') {
+      var cutoff30 = new Date(today); cutoff30.setDate(cutoff30.getDate() - 30);
+      for (var l = dates.length - 1; l >= 0; l--) {
+        if (new Date(dates[l] + 'T00:00:00') >= cutoff30) { target = dates[l]; break; }
+      }
+    } else if (presetKey === 'earliest') {
+      target = dates[0];
+    }
+    if (!target) target = dates[dates.length - 1];
+    _gdpState[slug] = { pendingDate: target, activePreset: presetKey };
+    gdpHighlight(slug);
+  }
+
+  function gdpHighlight(slug) {
+    var st = _gdpState[slug] || {};
+    var pending = st.pendingDate;
+    // Update input
+    var inp = document.getElementById('gdp-input-' + slug);
+    if (inp) inp.value = pending ? formatDateShort(pending) : '';
+    // Highlight calendar day
+    var panel = document.getElementById('gdp-panel-' + slug);
+    if (!panel) return;
+    var days = panel.querySelectorAll('.gdp-day[data-date]');
+    for (var i = 0; i < days.length; i++) {
+      days[i].classList.toggle('selected', days[i].getAttribute('data-date') === pending);
+    }
+    // Highlight preset
+    var presets = panel.querySelectorAll('.gdp-preset');
+    for (var j = 0; j < presets.length; j++) {
+      presets[j].classList.toggle('active', presets[j].getAttribute('data-preset') === st.activePreset);
     }
   }
 
-  function selectDate(slug, date) {
-    var dropdown = document.getElementById('dp-dropdown-' + slug);
-    var btn = document.getElementById('dp-btn-' + slug);
-    if (dropdown) dropdown.classList.remove('show');
-    if (btn) btn.classList.remove('open');
-    loadDate(slug, date);
+  function gdpScrollToSelected(slug) {
+    var st = _gdpState[slug] || {};
+    var sel = document.querySelector('#gdp-panel-' + slug + ' .gdp-day.selected');
+    if (sel) {
+      var container = sel.closest('.gdp-months');
+      if (container) {
+        var monthEl = sel.closest('.gdp-month');
+        if (monthEl) container.scrollTop = monthEl.offsetTop - 8;
+      }
+    }
   }
 
-  window.toggleDatePicker = toggleDatePicker;
-  window.selectDate = selectDate;
+  // Build calendar HTML for all months between first and last available date
+  function gdpBuildCalendar(slug, availableDates, selectedDate) {
+    if (!availableDates || !availableDates.length) return '';
+    var dateSet = {};
+    availableDates.forEach(function (d) { dateSet[d] = true; });
 
-  // Close picker when clicking outside
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.date-picker-wrap')) {
-      var allDropdowns = document.querySelectorAll('.date-picker-dropdown.show');
-      var allBtns = document.querySelectorAll('.date-picker-btn.open');
-      for (var i = 0; i < allDropdowns.length; i++) allDropdowns[i].classList.remove('show');
-      for (var j = 0; j < allBtns.length; j++) allBtns[j].classList.remove('open');
+    var first = new Date(availableDates[0] + 'T00:00:00');
+    var last = new Date(availableDates[availableDates.length - 1] + 'T00:00:00');
+    var today = new Date(); today.setHours(0,0,0,0);
+    var todayStr = today.toISOString().split('T')[0];
+    var months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    var dow = ['M','T','W','T','F','S','S'];
+
+    var html = '';
+    var cur = new Date(first.getFullYear(), first.getMonth(), 1);
+    var endMonth = new Date(last.getFullYear(), last.getMonth() + 1, 0);
+
+    while (cur <= endMonth) {
+      var y = cur.getFullYear();
+      var m = cur.getMonth();
+      var daysInMonth = new Date(y, m + 1, 0).getDate();
+      // Day of week for 1st (0=Sun, convert to Mon-based: Mon=0)
+      var firstDow = new Date(y, m, 1).getDay();
+      firstDow = (firstDow + 6) % 7; // Mon=0, Sun=6
+
+      html += '<div class="gdp-month" data-month="' + y + '-' + String(m + 1).padStart(2, '0') + '">';
+      html += '<div class="gdp-month-label">' + months[m] + ' ' + y + '</div>';
+      html += '<div class="gdp-grid">';
+      for (var h = 0; h < 7; h++) html += '<div class="gdp-dow">' + dow[h] + '</div>';
+
+      // Empty cells before first day
+      for (var e = 0; e < firstDow; e++) html += '<div class="gdp-day empty"></div>';
+
+      for (var d = 1; d <= daysInMonth; d++) {
+        var dateStr = y + '-' + String(m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+        var hasData = dateSet[dateStr] || false;
+        var isSelected = dateStr === selectedDate;
+        var isToday = dateStr === todayStr;
+        var cls = 'gdp-day';
+        if (hasData) cls += ' has-data';
+        if (isSelected) cls += ' selected';
+        if (isToday) cls += ' today';
+
+        if (hasData) {
+          html += '<button class="' + cls + '" data-date="' + dateStr + '" onclick="gdpSelectDay(\'' + slug + '\',\'' + dateStr + '\')">' + d + '</button>';
+        } else {
+          html += '<div class="' + cls + '">' + d + '</div>';
+        }
+      }
+
+      html += '</div></div>';
+      cur = new Date(y, m + 1, 1);
     }
-  });
+    return html;
+  }
+
+  window.gdpBuildCalendar = gdpBuildCalendar;
+  window.gdpOpen = gdpOpen;
+  window.gdpClose = gdpClose;
+  window.gdpApply = gdpApply;
+  window.gdpSelectDay = gdpSelectDay;
+  window.gdpPreset = gdpPreset;
 
   // Start
   init();

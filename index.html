@@ -88,30 +88,72 @@
   .status-dot.red { background:var(--red); }
   .status-dot.grey { background:var(--text-dim); }
 
-  /* Date picker — Google Ads style */
-  .date-picker-wrap { position:relative; margin-bottom:24px; display:inline-block; }
-  .date-picker-btn { display:inline-flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:9px 16px; color:var(--text); font-size:14px; font-weight:500; cursor:pointer; transition:all .15s; user-select:none; }
-  .date-picker-btn:hover { border-color:var(--accent); background:var(--surface2); }
-  .date-picker-btn.open { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
-  .date-picker-btn svg { width:18px; height:18px; fill:none; stroke:var(--text-dim); stroke-width:2; flex-shrink:0; }
-  .date-picker-btn .dp-arrow { width:10px; height:10px; stroke:var(--text-dim); stroke-width:2.5; transition:transform .2s; }
-  .date-picker-btn.open .dp-arrow { transform:rotate(180deg); }
-  .date-picker-dropdown { display:none; position:absolute; top:calc(100% + 6px); left:0; background:var(--surface); border:1px solid var(--border); border-radius:10px; box-shadow:0 12px 40px rgba(0,0,0,.45); z-index:200; min-width:280px; max-height:360px; overflow:hidden; }
-  .date-picker-dropdown.show { display:block; }
-  .dp-presets { padding:8px 0; border-bottom:1px solid var(--border); }
-  .dp-preset { display:block; width:100%; padding:9px 18px; border:none; background:none; color:var(--text-dim); font-size:13px; text-align:left; cursor:pointer; transition:background .1s; }
-  .dp-preset:hover { background:var(--surface2); color:var(--text); }
-  .dp-preset.selected { color:var(--accent-light); font-weight:600; background:var(--blue-bg); }
-  .dp-dates { max-height:240px; overflow-y:auto; padding:4px 0; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
-  .dp-dates::-webkit-scrollbar { width:5px; }
-  .dp-dates::-webkit-scrollbar-track { background:transparent; }
-  .dp-dates::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
-  .dp-date { display:flex; align-items:center; justify-content:space-between; padding:9px 18px; font-size:13px; color:var(--text-dim); cursor:pointer; transition:background .1s; border:none; background:none; width:100%; text-align:left; }
-  .dp-date:hover { background:var(--surface2); color:var(--text); }
-  .dp-date.active { color:var(--accent-light); font-weight:600; background:var(--blue-bg); }
-  .dp-date .dp-day { color:var(--text); font-weight:500; }
-  .dp-date .dp-rel { font-size:11px; color:var(--text-dim); }
-  .dp-section-label { padding:8px 18px 4px; font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); font-weight:600; }
+  /* Google Ads Date Picker */
+  .gdp-trigger { display:inline-flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:9px 16px; color:var(--text); font-size:14px; font-weight:500; cursor:pointer; transition:all .15s; user-select:none; margin-bottom:24px; }
+  .gdp-trigger:hover { border-color:var(--accent); background:var(--surface2); }
+  .gdp-trigger.open { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
+  .gdp-trigger svg { width:18px; height:18px; fill:none; stroke:var(--text-dim); stroke-width:2; flex-shrink:0; }
+  .gdp-trigger .gdp-arrow { width:10px; height:10px; stroke:var(--text-dim); stroke-width:2.5; transition:transform .2s; }
+  .gdp-trigger.open .gdp-arrow { transform:rotate(180deg); }
+
+  .gdp-overlay { display:none; position:fixed; inset:0; z-index:199; }
+  .gdp-overlay.show { display:block; }
+
+  .gdp-panel { display:none; position:absolute; top:calc(100% + 6px); left:0; z-index:200; background:var(--surface); border:1px solid var(--border); border-radius:12px; box-shadow:0 16px 48px rgba(0,0,0,.5); overflow:hidden; width:620px; }
+  .gdp-panel.show { display:flex; flex-direction:column; }
+
+  .gdp-body { display:flex; min-height:380px; }
+
+  /* Left: presets */
+  .gdp-presets { width:190px; border-right:1px solid var(--border); padding:8px 0; overflow-y:auto; flex-shrink:0; }
+  .gdp-preset { display:block; width:100%; padding:10px 20px; border:none; background:none; color:var(--text-dim); font-size:13px; text-align:left; cursor:pointer; transition:all .1s; font-family:inherit; }
+  .gdp-preset:hover { background:var(--surface2); color:var(--text); }
+  .gdp-preset.active { color:var(--accent-light); font-weight:600; }
+
+  /* Right: calendar */
+  .gdp-calendar { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+
+  /* Date input row */
+  .gdp-inputs { display:flex; align-items:center; gap:10px; padding:14px 16px; border-bottom:1px solid var(--border); }
+  .gdp-input-group { flex:1; }
+  .gdp-input-label { font-size:10px; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); margin-bottom:3px; }
+  .gdp-input { width:100%; background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:7px 10px; color:var(--text); font-size:13px; font-family:inherit; }
+  .gdp-input:focus { outline:none; border-color:var(--accent); }
+  .gdp-input-sep { color:var(--text-dim); font-size:16px; padding-top:14px; }
+
+  /* Scrollable months area */
+  .gdp-months { flex:1; overflow-y:auto; padding:8px 16px 16px; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
+  .gdp-months::-webkit-scrollbar { width:5px; }
+  .gdp-months::-webkit-scrollbar-track { background:transparent; }
+  .gdp-months::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+  .gdp-month { margin-bottom:12px; }
+  .gdp-month-label { font-size:12px; font-weight:700; color:var(--text); text-transform:uppercase; letter-spacing:0.5px; padding:8px 0 6px; }
+
+  .gdp-grid { display:grid; grid-template-columns:repeat(7, 1fr); text-align:center; }
+  .gdp-dow { font-size:10px; font-weight:600; color:var(--text-dim); padding:4px 0 6px; }
+  .gdp-day { font-size:13px; padding:0; height:34px; width:34px; margin:1px auto; display:flex; align-items:center; justify-content:center; border-radius:50%; color:var(--text-dim); cursor:default; border:none; background:none; font-family:inherit; }
+  .gdp-day.has-data { color:var(--text); cursor:pointer; font-weight:500; }
+  .gdp-day.has-data:hover { background:var(--surface2); }
+  .gdp-day.selected { background:var(--accent); color:#fff; font-weight:700; }
+  .gdp-day.today { border:1px solid var(--accent-light); }
+  .gdp-day.empty { visibility:hidden; }
+
+  /* Footer */
+  .gdp-footer { display:flex; align-items:center; justify-content:flex-end; gap:10px; padding:12px 16px; border-top:1px solid var(--border); }
+  .gdp-btn { padding:8px 20px; border-radius:6px; border:none; font-size:13px; font-weight:500; cursor:pointer; font-family:inherit; }
+  .gdp-btn-cancel { background:var(--surface2); color:var(--text-dim); }
+  .gdp-btn-cancel:hover { background:var(--border); color:var(--text); }
+  .gdp-btn-apply { background:var(--accent); color:#fff; }
+  .gdp-btn-apply:hover { background:#5b4bd5; }
+
+  @media (max-width:768px) {
+    .gdp-panel { width:calc(100vw - 32px); max-width:620px; }
+    .gdp-body { flex-direction:column; min-height:auto; }
+    .gdp-presets { width:100%; border-right:none; border-bottom:1px solid var(--border); display:flex; overflow-x:auto; padding:4px; gap:4px; }
+    .gdp-preset { white-space:nowrap; padding:6px 14px; font-size:12px; border-radius:6px; }
+    .gdp-preset.active { background:var(--blue-bg); }
+  }
 
   /* Campaign table */
   table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:8px; overflow:hidden; }
