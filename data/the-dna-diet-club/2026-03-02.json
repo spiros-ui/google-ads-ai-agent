@@ -158,6 +158,404 @@
         "campaign": "CTM - DNA bottom of the funnel - search",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 42.9,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 80,
+          "clicks": 5,
+          "ctr": 6.25,
+          "avgCpc": 8.58
+        },
+        "campaigns": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 42.9,
+            "impressions": 80,
+            "clicks": 5,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 6.25,
+            "avgCpc": 8.58,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 42.9,
+              "impressions": 80,
+              "clicks": 5,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 6.25,
+              "avgCpc": 8.58,
+              "searchIS": 9.99
+            },
+            "health": "warning",
+            "meetingGoal": null,
+            "goalAssessment": "5 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$42.9 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 86.02,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 183,
+          "clicks": 10,
+          "ctr": 5.46,
+          "avgCpc": 8.6
+        },
+        "campaigns": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 86.02,
+            "impressions": 183,
+            "clicks": 10,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.46,
+            "avgCpc": 8.6,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Daily spend is 33% lower in the last 3 days ($28.67/day) vs 30-day average ($42.81/day)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 86.02,
+              "impressions": 183,
+              "clicks": 10,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.46,
+              "avgCpc": 8.6,
+              "searchIS": 9.99
+            },
+            "health": "warning",
+            "meetingGoal": null,
+            "goalAssessment": "10 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$86.02 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.46% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $28.67 vs $42.81 30d avg (-33%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 259.85,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 629,
+          "clicks": 30,
+          "ctr": 4.77,
+          "avgCpc": 8.66
+        },
+        "campaigns": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 259.85,
+            "impressions": 629,
+            "clicks": 30,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 4.77,
+            "avgCpc": 8.66,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "1 of 1 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 259.85,
+              "impressions": 629,
+              "clicks": 30,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 4.77,
+              "avgCpc": 8.66,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": null,
+            "goalAssessment": "30 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$259.85 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 555.47,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 1217,
+          "clicks": 63,
+          "ctr": 5.18,
+          "avgCpc": 8.82
+        },
+        "campaigns": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 555.47,
+            "impressions": 1217,
+            "clicks": 63,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.18,
+            "avgCpc": 8.82,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "1 of 1 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 555.47,
+              "impressions": 1217,
+              "clicks": 63,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.18,
+              "avgCpc": 8.82,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": null,
+            "goalAssessment": "63 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$555.47 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.18% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 1284.25,
+          "conversions": 3,
+          "convValue": 30,
+          "roas": 0.02,
+          "cpa": 428.08,
+          "impressions": 2720,
+          "clicks": 144,
+          "ctr": 5.29,
+          "avgCpc": 8.92
+        },
+        "campaigns": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 1284.25,
+            "impressions": 2720,
+            "clicks": 144,
+            "conversions": 3,
+            "convValue": 30,
+            "cpa": 428.08,
+            "roas": 0.02,
+            "ctr": 5.29,
+            "avgCpc": 8.92,
+            "searchIS": 10.97
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - DNA bottom of the funnel - search",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 1284.25,
+              "impressions": 2720,
+              "clicks": 144,
+              "conversions": 3,
+              "convValue": 30,
+              "cpa": 428.08,
+              "roas": 0.02,
+              "ctr": 5.29,
+              "avgCpc": 8.92,
+              "searchIS": 10.97
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "3 conversions from $1284.25 spend.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 10.97%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.29% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

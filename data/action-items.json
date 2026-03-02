@@ -42,8 +42,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "High",
-      "title": "Losing 43.04% impression share to ad rank",
-      "description": "Losing 43.04% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
+      "title": "Losing 42.88% impression share to ad rank",
+      "description": "Losing 42.88% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
       "estimatedSaving": 0,
       "campaign": "CTM- New roof",
       "status": "pending"
@@ -210,8 +210,8 @@
       "date": "2026-03-02",
       "type": "adjust_budget",
       "severity": "Medium",
-      "title": "Losing 39.71% impression share to budget",
-      "description": "You're losing 39.71% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
+      "title": "Losing 39.91% impression share to budget",
+      "description": "You're losing 39.91% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
       "estimatedSaving": 0,
       "campaign": "Sunshine Coast - Incremental Search | LS",
       "status": "pending"
@@ -234,8 +234,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "High",
-      "title": "Losing 52.93% impression share to ad rank",
-      "description": "Losing 52.93% of impressions to ad rank — bids too low or Quality Score needs work.",
+      "title": "Losing 52.75% impression share to ad rank",
+      "description": "Losing 52.75% of impressions to ad rank — bids too low or Quality Score needs work.",
       "estimatedSaving": 0,
       "campaign": "Sunshine Coast PMAX  | LS",
       "status": "pending"
@@ -402,8 +402,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "High",
-      "title": "Losing 89.51% impression share to ad rank",
-      "description": "Losing 89.51% of impressions to ad rank — bids too low or Quality Score needs work.",
+      "title": "Losing 89.58% impression share to ad rank",
+      "description": "Losing 89.58% of impressions to ad rank — bids too low or Quality Score needs work.",
       "estimatedSaving": 0,
       "campaign": "CTM - Pmax - Remarketing Aim",
       "status": "pending"
@@ -522,8 +522,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "Medium",
-      "title": "Losing 39.43% impression share to ad rank",
-      "description": "Losing 39.43% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
+      "title": "Losing 39.29% impression share to ad rank",
+      "description": "Losing 39.29% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
       "estimatedSaving": 0,
       "campaign": "CTM -Wedding Venues",
       "status": "pending"
@@ -714,8 +714,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "High",
-      "title": "Losing 59.6% impression share to ad rank",
-      "description": "Losing 59.6% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
+      "title": "Losing 58.45% impression share to ad rank",
+      "description": "Losing 58.45% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
       "estimatedSaving": 0,
       "campaign": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
       "status": "pending"
@@ -738,8 +738,8 @@
       "date": "2026-03-02",
       "type": "improve_rank",
       "severity": "High",
-      "title": "Losing 61.76% impression share to ad rank",
-      "description": "Losing 61.76% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
+      "title": "Losing 58.73% impression share to ad rank",
+      "description": "Losing 58.73% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
       "estimatedSaving": 0,
       "campaign": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
       "status": "pending"
@@ -757,5 +757,5 @@
       "status": "pending"
     }
   ],
-  "lastUpdated": "2026-03-02T15:28:24.665Z"
+  "lastUpdated": "2026-03-02T18:43:29.866Z"
 }

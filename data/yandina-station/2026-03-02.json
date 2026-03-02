@@ -27,9 +27,9 @@
           "roas": 2.72,
           "ctr": 12.57,
           "avgCpc": 3.63,
-          "searchIS": 29.71,
-          "budgetLostIS": 30.86,
-          "rankLostIS": 39.43
+          "searchIS": 29.18,
+          "budgetLostIS": 31.53,
+          "rankLostIS": 39.29
         },
         "meetingObjective": true,
         "status": "healthy",
@@ -37,10 +37,10 @@
           {
             "severity": "Medium",
             "type": "improve_rank",
-            "title": "Losing 39.43% impression share to ad rank",
-            "reasoning": "Losing 39.43% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
+            "title": "Losing 39.29% impression share to ad rank",
+            "reasoning": "Losing 39.29% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
             "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
-            "estimatedImpact": "Recovering 39.43% lost impressions from rank improvements"
+            "estimatedImpact": "Recovering 39.29% lost impressions from rank improvements"
           }
         ],
         "strengths": [
@@ -158,12 +158,489 @@
         "date": "2026-03-02",
         "type": "improve_rank",
         "severity": "Medium",
-        "title": "Losing 39.43% impression share to ad rank",
-        "description": "Losing 39.43% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
+        "title": "Losing 39.29% impression share to ad rank",
+        "description": "Losing 39.29% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.5/10, dragging down rank.",
         "estimatedSaving": 0,
         "campaign": "CTM -Wedding Venues",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 46.12,
+          "conversions": 1,
+          "convValue": 150,
+          "roas": 3.25,
+          "cpa": 46.12,
+          "impressions": 47,
+          "clicks": 10,
+          "ctr": 21.28,
+          "avgCpc": 4.61
+        },
+        "campaigns": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 45,
+            "spend": 46.12,
+            "impressions": 47,
+            "clicks": 10,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 46.12,
+            "roas": 3.25,
+            "ctr": 21.28,
+            "avgCpc": 4.61,
+            "searchIS": 15.2
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 48% higher yesterday ($46.12/day) vs 30-day average ($31.25/day)."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $46.12 vs $55.14 30d avg (-16%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 3.25x vs 2.72x 30d avg (+19%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 45,
+            "metrics": {
+              "spend": 46.12,
+              "impressions": 47,
+              "clicks": 10,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 46.12,
+              "roas": 3.25,
+              "ctr": 21.28,
+              "avgCpc": 4.61,
+              "searchIS": 15.2
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $46.12 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 15.2%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Strong ROAS",
+                "detail": "3.25x return"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $46.12 vs $55.14 30d avg (-16%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 3.25x vs 2.72x 30d avg (+19%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $46.12 vs $31.25 30d avg (+48%)"
+              },
+              {
+                "direction": "down",
+                "metric": "IS",
+                "message": "Impression share dropped 13.98pp to 15.2% from 29.18% 30d avg"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 82.98,
+          "conversions": 1,
+          "convValue": 150,
+          "roas": 1.81,
+          "cpa": 82.98,
+          "impressions": 154,
+          "clicks": 18,
+          "ctr": 11.69,
+          "avgCpc": 4.61
+        },
+        "campaigns": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 45,
+            "spend": 82.98,
+            "impressions": 154,
+            "clicks": 18,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 82.98,
+            "roas": 1.81,
+            "ctr": 11.69,
+            "avgCpc": 4.61,
+            "searchIS": 25.64
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $82.98 vs $55.14 30d avg (+50%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 1.81x vs 2.72x 30d avg (-33%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 45,
+            "metrics": {
+              "spend": 82.98,
+              "impressions": 154,
+              "clicks": 18,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 82.98,
+              "roas": 1.81,
+              "ctr": 11.69,
+              "avgCpc": 4.61,
+              "searchIS": 25.64
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $82.98 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 25.64%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "11.69% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $82.98 vs $55.14 30d avg (+50%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 1.81x vs 2.72x 30d avg (-33%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 225.26,
+          "conversions": 3,
+          "convValue": 450,
+          "roas": 2,
+          "cpa": 75.09,
+          "impressions": 326,
+          "clicks": 48,
+          "ctr": 14.72,
+          "avgCpc": 4.69
+        },
+        "campaigns": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 45,
+            "spend": 225.26,
+            "impressions": 326,
+            "clicks": 48,
+            "conversions": 3,
+            "convValue": 450,
+            "cpa": 75.09,
+            "roas": 2,
+            "ctr": 14.72,
+            "avgCpc": 4.69,
+            "searchIS": 20.33
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $75.09 vs $55.14 30d avg (+36%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 2x vs 2.72x 30d avg (-26%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 45,
+            "metrics": {
+              "spend": 225.26,
+              "impressions": 326,
+              "clicks": 48,
+              "conversions": 3,
+              "convValue": 450,
+              "cpa": 75.09,
+              "roas": 2,
+              "ctr": 14.72,
+              "avgCpc": 4.69,
+              "searchIS": 20.33
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $75.09 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 20.33%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "14.72% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $75.09 vs $55.14 30d avg (+36%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 2x vs 2.72x 30d avg (-26%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 444.1,
+          "conversions": 5,
+          "convValue": 750,
+          "roas": 1.69,
+          "cpa": 88.82,
+          "impressions": 785,
+          "clicks": 109,
+          "ctr": 13.89,
+          "avgCpc": 4.07
+        },
+        "campaigns": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 45,
+            "spend": 444.1,
+            "impressions": 785,
+            "clicks": 109,
+            "conversions": 5,
+            "convValue": 750,
+            "cpa": 88.82,
+            "roas": 1.69,
+            "ctr": 13.89,
+            "avgCpc": 4.07,
+            "searchIS": 24.8
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $88.82 vs $55.14 30d avg (+61%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 1.69x vs 2.72x 30d avg (-38%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 45,
+            "metrics": {
+              "spend": 444.1,
+              "impressions": 785,
+              "clicks": 109,
+              "conversions": 5,
+              "convValue": 750,
+              "cpa": 88.82,
+              "roas": 1.69,
+              "ctr": 13.89,
+              "avgCpc": 4.07,
+              "searchIS": 24.8
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $88.82 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 24.8%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "13.89% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $88.82 vs $55.14 30d avg (+61%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 1.69x vs 2.72x 30d avg (-38%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 937.37,
+          "conversions": 17,
+          "convValue": 2550,
+          "roas": 2.72,
+          "cpa": 55.14,
+          "impressions": 2053,
+          "clicks": 258,
+          "ctr": 12.57,
+          "avgCpc": 3.63
+        },
+        "campaigns": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 45,
+            "spend": 937.37,
+            "impressions": 2053,
+            "clicks": 258,
+            "conversions": 17,
+            "convValue": 2550,
+            "cpa": 55.14,
+            "roas": 2.72,
+            "ctr": 12.57,
+            "avgCpc": 3.63,
+            "searchIS": 29.18
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM -Wedding Venues",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 45,
+            "metrics": {
+              "spend": 937.37,
+              "impressions": 2053,
+              "clicks": 258,
+              "conversions": 17,
+              "convValue": 2550,
+              "cpa": 55.14,
+              "roas": 2.72,
+              "ctr": 12.57,
+              "avgCpc": 3.63,
+              "searchIS": 29.18
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $55.14 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 29.18%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "12.57% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

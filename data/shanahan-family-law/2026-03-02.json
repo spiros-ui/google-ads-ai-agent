@@ -27,9 +27,9 @@
           "roas": 0.45,
           "ctr": 4.75,
           "avgCpc": 17.31,
-          "searchIS": 21.42,
-          "budgetLostIS": 39.71,
-          "rankLostIS": 38.87
+          "searchIS": 21.36,
+          "budgetLostIS": 39.91,
+          "rankLostIS": 38.73
         },
         "meetingObjective": false,
         "status": "warning",
@@ -37,10 +37,10 @@
           {
             "severity": "Medium",
             "type": "adjust_budget",
-            "title": "Losing 39.71% impression share to budget",
-            "reasoning": "You're losing 39.71% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
+            "title": "Losing 39.91% impression share to budget",
+            "reasoning": "You're losing 39.91% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
             "action": "Consider a modest budget increase or pause underperforming keywords.",
-            "estimatedImpact": "Recovering 39.71% lost impressions could proportionally increase conversions"
+            "estimatedImpact": "Recovering 39.91% lost impressions could proportionally increase conversions"
           },
           {
             "severity": "High",
@@ -152,9 +152,9 @@
           "roas": 0.49,
           "ctr": 2.81,
           "avgCpc": 4.51,
-          "searchIS": 22.47,
-          "budgetLostIS": 24.6,
-          "rankLostIS": 52.93
+          "searchIS": 22.48,
+          "budgetLostIS": 24.77,
+          "rankLostIS": 52.75
         },
         "meetingObjective": false,
         "status": "critical",
@@ -162,10 +162,10 @@
           {
             "severity": "High",
             "type": "improve_rank",
-            "title": "Losing 52.93% impression share to ad rank",
-            "reasoning": "Losing 52.93% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "title": "Losing 52.75% impression share to ad rank",
+            "reasoning": "Losing 52.75% of impressions to ad rank — bids too low or Quality Score needs work.",
             "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
-            "estimatedImpact": "Recovering 52.93% lost impressions from rank improvements"
+            "estimatedImpact": "Recovering 52.75% lost impressions from rank improvements"
           },
           {
             "severity": "Critical",
@@ -295,9 +295,9 @@
           "roas": 0.76,
           "ctr": 32.29,
           "avgCpc": 3.19,
-          "searchIS": 84.33,
-          "budgetLostIS": 4.48,
-          "rankLostIS": 11.19
+          "searchIS": 84.44,
+          "budgetLostIS": 4.44,
+          "rankLostIS": 11.11
         },
         "meetingObjective": true,
         "status": "healthy",
@@ -309,7 +309,7 @@
           },
           {
             "title": "Good impression share",
-            "detail": "84.33% search IS"
+            "detail": "84.44% search IS"
           },
           {
             "title": "Top converting keywords",
@@ -397,8 +397,8 @@
         "date": "2026-03-02",
         "type": "adjust_budget",
         "severity": "Medium",
-        "title": "Losing 39.71% impression share to budget",
-        "description": "You're losing 39.71% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
+        "title": "Losing 39.91% impression share to budget",
+        "description": "You're losing 39.91% of impressions due to budget. $50/day isn't enough — ads stop showing partway through the day.",
         "estimatedSaving": 0,
         "campaign": "Sunshine Coast - Incremental Search | LS",
         "status": "pending"
@@ -421,8 +421,8 @@
         "date": "2026-03-02",
         "type": "improve_rank",
         "severity": "High",
-        "title": "Losing 52.93% impression share to ad rank",
-        "description": "Losing 52.93% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "title": "Losing 52.75% impression share to ad rank",
+        "description": "Losing 52.75% of impressions to ad rank — bids too low or Quality Score needs work.",
         "estimatedSaving": 0,
         "campaign": "Sunshine Coast PMAX  | LS",
         "status": "pending"
@@ -463,6 +463,1515 @@
         "campaign": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 169.8,
+          "conversions": 1,
+          "convValue": 105.85,
+          "roas": 0.62,
+          "cpa": 170.03,
+          "impressions": 764,
+          "clicks": 23,
+          "ctr": 3.01,
+          "avgCpc": 7.38
+        },
+        "campaigns": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 97.78,
+            "impressions": 87,
+            "clicks": 5,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.75,
+            "avgCpc": 19.56,
+            "searchIS": 27.66
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 70.76,
+            "impressions": 661,
+            "clicks": 16,
+            "conversions": 1,
+            "convValue": 105.85,
+            "cpa": 70.85,
+            "roas": 1.5,
+            "ctr": 2.42,
+            "avgCpc": 4.42,
+            "searchIS": 30.03
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 15,
+            "spend": 1.26,
+            "impressions": 16,
+            "clicks": 2,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 12.5,
+            "avgCpc": 0.63,
+            "searchIS": 100
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $170.03 vs $214.91 30d avg (-21%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.62x vs 0.49x 30d avg (+27%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 97.78,
+              "impressions": 87,
+              "clicks": 5,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.75,
+              "avgCpc": 19.56,
+              "searchIS": 27.66
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $97.78 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$97.78 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 27.66%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $97.78 vs $47.9 30d avg (+104%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 70.76,
+              "impressions": 661,
+              "clicks": 16,
+              "conversions": 1,
+              "convValue": 105.85,
+              "cpa": 70.85,
+              "roas": 1.5,
+              "ctr": 2.42,
+              "avgCpc": 4.42,
+              "searchIS": 30.03
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.5x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $70.85 vs $208.06 30d avg (-66%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.5x vs 0.49x 30d avg (+206%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $70.76 vs $131.77 30d avg (-46%)"
+              }
+            ]
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 15,
+            "metrics": {
+              "spend": 1.26,
+              "impressions": 16,
+              "clicks": 2,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 12.5,
+              "avgCpc": 0.63,
+              "searchIS": 100
+            },
+            "health": "healthy",
+            "meetingGoal": null,
+            "goalAssessment": "2 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 8% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $1.26 vs $6.59 30d avg (-81%)"
+              },
+              {
+                "direction": "up",
+                "metric": "IS",
+                "message": "Impression share improved 15.56pp to 100% from 84.44% 30d avg"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "objective": "General",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 467.23,
+          "conversions": 3,
+          "convValue": 206.14,
+          "roas": 0.44,
+          "cpa": 155.68,
+          "impressions": 4877,
+          "clicks": 134,
+          "ctr": 2.75,
+          "avgCpc": 3.49
+        },
+        "campaigns": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 112.69,
+            "impressions": 133,
+            "clicks": 7,
+            "conversions": 2,
+            "convValue": 175,
+            "cpa": 56.35,
+            "roas": 1.55,
+            "ctr": 5.26,
+            "avgCpc": 16.1,
+            "searchIS": 20.51
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 349.58,
+            "impressions": 4730,
+            "clicks": 124,
+            "conversions": 1,
+            "convValue": 31.14,
+            "cpa": 349.16,
+            "roas": 0.09,
+            "ctr": 2.62,
+            "avgCpc": 2.82,
+            "searchIS": 28.15
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 15,
+            "spend": 4.96,
+            "impressions": 14,
+            "clicks": 3,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 21.43,
+            "avgCpc": 1.65,
+            "searchIS": 80
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "3 of 5 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $155.68 vs $214.91 30d avg (-28%)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 5 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 112.69,
+              "impressions": 133,
+              "clicks": 7,
+              "conversions": 2,
+              "convValue": 175,
+              "cpa": 56.35,
+              "roas": 1.55,
+              "ctr": 5.26,
+              "avgCpc": 16.1,
+              "searchIS": 20.51
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $56.35 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 20.51%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.26% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $56.35 vs $239.48 30d avg (-76%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.55x vs 0.45x 30d avg (+244%)"
+              }
+            ]
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 15,
+            "metrics": {
+              "spend": 4.96,
+              "impressions": 14,
+              "clicks": 3,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 21.43,
+              "avgCpc": 1.65,
+              "searchIS": 80
+            },
+            "health": "healthy",
+            "meetingGoal": null,
+            "goalAssessment": "3 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 11% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "80% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $1.65 vs $6.59 30d avg (-75%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 349.58,
+              "impressions": 4730,
+              "clicks": 124,
+              "conversions": 1,
+              "convValue": 31.14,
+              "cpa": 349.16,
+              "roas": 0.09,
+              "ctr": 2.62,
+              "avgCpc": 2.82,
+              "searchIS": 28.15
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.09x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.09x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 28.15%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $349.16 vs $208.06 30d avg (+68%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.09x vs 0.49x 30d avg (-82%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "objective": "General",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 1126.48,
+          "conversions": 8,
+          "convValue": 886,
+          "roas": 0.79,
+          "cpa": 140.81,
+          "impressions": 9468,
+          "clicks": 262,
+          "ctr": 2.77,
+          "avgCpc": 4.3
+        },
+        "campaigns": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 344.33,
+            "impressions": 507,
+            "clicks": 19,
+            "conversions": 2,
+            "convValue": 175,
+            "cpa": 172.17,
+            "roas": 0.51,
+            "ctr": 3.75,
+            "avgCpc": 18.12,
+            "searchIS": 23.41
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 745.98,
+            "impressions": 8917,
+            "clicks": 233,
+            "conversions": 6,
+            "convValue": 711,
+            "cpa": 124.33,
+            "roas": 0.95,
+            "ctr": 2.61,
+            "avgCpc": 3.2,
+            "searchIS": 26.3
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 15,
+            "spend": 36.17,
+            "impressions": 44,
+            "clicks": 10,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 22.73,
+            "avgCpc": 3.62,
+            "searchIS": 86.21
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $140.81 vs $214.91 30d avg (-34%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.79x vs 0.49x 30d avg (+61%)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 344.33,
+              "impressions": 507,
+              "clicks": 19,
+              "conversions": 2,
+              "convValue": 175,
+              "cpa": 172.17,
+              "roas": 0.51,
+              "ctr": 3.75,
+              "avgCpc": 18.12,
+              "searchIS": 23.41
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $172.17 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.41%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $172.17 vs $239.48 30d avg (-28%)"
+              }
+            ]
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 15,
+            "metrics": {
+              "spend": 36.17,
+              "impressions": 44,
+              "clicks": 10,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 22.73,
+              "avgCpc": 3.62,
+              "searchIS": 86.21
+            },
+            "health": "warning",
+            "meetingGoal": null,
+            "goalAssessment": "10 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$36.17 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "86.21% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 745.98,
+              "impressions": 8917,
+              "clicks": 233,
+              "conversions": 6,
+              "convValue": 711,
+              "cpa": 124.33,
+              "roas": 0.95,
+              "ctr": 2.61,
+              "avgCpc": 3.2,
+              "searchIS": 26.3
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.95x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.95x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 26.3%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $124.33 vs $208.06 30d avg (-40%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 0.95x vs 0.49x 30d avg (+94%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "objective": "General",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 2493.18,
+          "conversions": 15,
+          "convValue": 1566,
+          "roas": 0.63,
+          "cpa": 166.21,
+          "impressions": 17813,
+          "clicks": 521,
+          "ctr": 2.92,
+          "avgCpc": 4.79
+        },
+        "campaigns": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 669.51,
+            "impressions": 938,
+            "clicks": 40,
+            "conversions": 3,
+            "convValue": 325,
+            "cpa": 223.17,
+            "roas": 0.49,
+            "ctr": 4.26,
+            "avgCpc": 16.74,
+            "searchIS": 22.14
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 1738.08,
+            "impressions": 16782,
+            "clicks": 452,
+            "conversions": 11,
+            "convValue": 1091,
+            "cpa": 158.01,
+            "roas": 0.63,
+            "ctr": 2.69,
+            "avgCpc": 3.85,
+            "searchIS": 23.62
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 15,
+            "spend": 85.6,
+            "impressions": 93,
+            "clicks": 29,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 85.6,
+            "roas": 1.75,
+            "ctr": 31.18,
+            "avgCpc": 2.95,
+            "searchIS": 82.35
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $166.21 vs $214.91 30d avg (-23%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.63x vs 0.49x 30d avg (+29%)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 5 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 669.51,
+              "impressions": 938,
+              "clicks": 40,
+              "conversions": 3,
+              "convValue": 325,
+              "cpa": 223.17,
+              "roas": 0.49,
+              "ctr": 4.26,
+              "avgCpc": 16.74,
+              "searchIS": 22.14
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $223.17 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $223.17",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 22.14%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 15,
+            "metrics": {
+              "spend": 85.6,
+              "impressions": 93,
+              "clicks": 29,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 85.6,
+              "roas": 1.75,
+              "ctr": 31.18,
+              "avgCpc": 2.95,
+              "searchIS": 82.35
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "1 conversions from $85.6 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "82.35% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $85.6 vs $197.75 30d avg (-57%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.75x vs 0.76x 30d avg (+130%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 1738.08,
+              "impressions": 16782,
+              "clicks": 452,
+              "conversions": 11,
+              "convValue": 1091,
+              "cpa": 158.01,
+              "roas": 0.63,
+              "ctr": 2.69,
+              "avgCpc": 3.85,
+              "searchIS": 23.62
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.63x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.63x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.62%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $158.01 vs $208.06 30d avg (-24%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 0.63x vs 0.49x 30d avg (+29%)"
+              }
+            ]
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "objective": "General",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 5587.74,
+          "conversions": 26,
+          "convValue": 2739,
+          "roas": 0.49,
+          "cpa": 214.91,
+          "impressions": 33121,
+          "clicks": 1022,
+          "ctr": 3.09,
+          "avgCpc": 5.47
+        },
+        "campaigns": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 1436.88,
+            "impressions": 1748,
+            "clicks": 83,
+            "conversions": 6,
+            "convValue": 650,
+            "cpa": 239.48,
+            "roas": 0.45,
+            "ctr": 4.75,
+            "avgCpc": 17.31,
+            "searchIS": 21.36
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 3953.11,
+            "impressions": 31181,
+            "clicks": 877,
+            "conversions": 19,
+            "convValue": 1939,
+            "cpa": 208.06,
+            "roas": 0.49,
+            "ctr": 2.81,
+            "avgCpc": 4.51,
+            "searchIS": 22.48
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 50,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 15,
+            "spend": 197.75,
+            "impressions": 192,
+            "clicks": 62,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 197.75,
+            "roas": 0.76,
+            "ctr": 32.29,
+            "avgCpc": 3.19,
+            "searchIS": 84.44
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 5 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Sunshine Coast - Incremental Search | LS",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 1436.88,
+              "impressions": 1748,
+              "clicks": 83,
+              "conversions": 6,
+              "convValue": 650,
+              "cpa": 239.48,
+              "roas": 0.45,
+              "ctr": 4.75,
+              "avgCpc": 17.31,
+              "searchIS": 21.36
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $239.48 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $239.48",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.36%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Search Brand | LS",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 15,
+            "metrics": {
+              "spend": 197.75,
+              "impressions": 192,
+              "clicks": 62,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 197.75,
+              "roas": 0.76,
+              "ctr": 32.29,
+              "avgCpc": 3.19,
+              "searchIS": 84.44
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "1 conversions from $197.75 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "32.29% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "84.44% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast PMAX  | LS",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 3953.11,
+              "impressions": 31181,
+              "clicks": 877,
+              "conversions": 19,
+              "convValue": 1939,
+              "cpa": 208.06,
+              "roas": 0.49,
+              "ctr": 2.81,
+              "avgCpc": 4.51,
+              "searchIS": 22.48
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.49x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.49x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 22.48%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Max Converions Vs Max Impression Share",
+            "type": "SEARCH",
+            "objective": "General",
+            "bidding": "TARGET_IMPRESSION_SHARE",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Sunshine Coast - Incremental Terms | SD Broad Vs Exact Match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 50,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

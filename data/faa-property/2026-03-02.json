@@ -75,6 +75,368 @@
         "campaign": "CTM - Broad - Max click",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 0,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": null,
+          "cpa": null,
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "avgCpc": null
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 112,
+            "spend": 0,
+            "impressions": 7,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 100
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account had $0 spend yesterday — check billing and campaign status."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 112,
+            "metrics": {
+              "spend": 0,
+              "impressions": 7,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 100
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 0,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": null,
+          "cpa": null,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": 0,
+          "avgCpc": null
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 112,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account had $0 spend in the last 3 days — check billing and campaign status."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 112,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 0,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": null,
+          "cpa": null,
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "avgCpc": null
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 112,
+            "spend": 0,
+            "impressions": 7,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 100
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account had $0 spend in the last 7 days — check billing and campaign status."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 112,
+            "metrics": {
+              "spend": 0,
+              "impressions": 7,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 100
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 0,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": null,
+          "cpa": null,
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "avgCpc": null
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 112,
+            "spend": 0,
+            "impressions": 7,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 100
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account had $0 spend in the last 14 days — check billing and campaign status."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 112,
+            "metrics": {
+              "spend": 0,
+              "impressions": 7,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 100
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 0,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": null,
+          "cpa": null,
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "avgCpc": null
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 112,
+            "spend": 0,
+            "impressions": 7,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 100
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Account had $0 spend over the last 30 days — check billing and campaign status."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Broad - Max click",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 112,
+            "metrics": {
+              "spend": 0,
+              "impressions": 7,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 100
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

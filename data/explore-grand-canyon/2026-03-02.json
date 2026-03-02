@@ -158,6 +158,403 @@
         "campaign": "CTM - Grand Canyon (Branded)",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 32.59,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 36,
+          "clicks": 18,
+          "ctr": 50,
+          "avgCpc": 1.81
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 30,
+            "spend": 32.59,
+            "impressions": 36,
+            "clicks": 18,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 50,
+            "avgCpc": 1.81,
+            "searchIS": 48.33
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 435% higher yesterday ($32.59/day) vs 30-day average ($6.09/day)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 30,
+            "metrics": {
+              "spend": 32.59,
+              "impressions": 36,
+              "clicks": 18,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 50,
+              "avgCpc": 1.81,
+              "searchIS": 48.33
+            },
+            "health": "warning",
+            "meetingGoal": null,
+            "goalAssessment": "18 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$32.59 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $32.59 vs $6.09 30d avg (+435%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 88.38,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 100,
+          "clicks": 39,
+          "ctr": 39,
+          "avgCpc": 2.27
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 30,
+            "spend": 88.38,
+            "impressions": 100,
+            "clicks": 39,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 39,
+            "avgCpc": 2.27,
+            "searchIS": 31.23
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 384% higher in the last 3 days ($29.46/day) vs 30-day average ($6.09/day)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 30,
+            "metrics": {
+              "spend": 88.38,
+              "impressions": 100,
+              "clicks": 39,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 39,
+              "avgCpc": 2.27,
+              "searchIS": 31.23
+            },
+            "health": "warning",
+            "meetingGoal": null,
+            "goalAssessment": "39 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$88.38 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $29.46 vs $6.09 30d avg (+384%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 182.6,
+          "conversions": 2,
+          "convValue": 136.32,
+          "roas": 0.75,
+          "cpa": 91.3,
+          "impressions": 251,
+          "clicks": 91,
+          "ctr": 36.25,
+          "avgCpc": 2.01
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 30,
+            "spend": 182.6,
+            "impressions": 251,
+            "clicks": 91,
+            "conversions": 2,
+            "convValue": 136.32,
+            "cpa": 91.3,
+            "roas": 0.75,
+            "ctr": 36.25,
+            "avgCpc": 2.01,
+            "searchIS": 39.86
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 329% higher in the last 7 days ($26.09/day) vs 30-day average ($6.09/day)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 30,
+            "metrics": {
+              "spend": 182.6,
+              "impressions": 251,
+              "clicks": 91,
+              "conversions": 2,
+              "convValue": 136.32,
+              "cpa": 91.3,
+              "roas": 0.75,
+              "ctr": 36.25,
+              "avgCpc": 2.01,
+              "searchIS": 39.86
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "2 conversions from $182.6 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "36.25% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $26.09 vs $6.09 30d avg (+329%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 182.6,
+          "conversions": 2,
+          "convValue": 136.32,
+          "roas": 0.75,
+          "cpa": 91.3,
+          "impressions": 251,
+          "clicks": 91,
+          "ctr": 36.25,
+          "avgCpc": 2.01
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 30,
+            "spend": 182.6,
+            "impressions": 251,
+            "clicks": 91,
+            "conversions": 2,
+            "convValue": 136.32,
+            "cpa": 91.3,
+            "roas": 0.75,
+            "ctr": 36.25,
+            "avgCpc": 2.01,
+            "searchIS": 39.86
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 114% higher in the last 14 days ($13.04/day) vs 30-day average ($6.09/day)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 30,
+            "metrics": {
+              "spend": 182.6,
+              "impressions": 251,
+              "clicks": 91,
+              "conversions": 2,
+              "convValue": 136.32,
+              "cpa": 91.3,
+              "roas": 0.75,
+              "ctr": 36.25,
+              "avgCpc": 2.01,
+              "searchIS": 39.86
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "2 conversions from $182.6 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "36.25% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $13.04 vs $6.09 30d avg (+114%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 182.6,
+          "conversions": 2,
+          "convValue": 136.32,
+          "roas": 0.75,
+          "cpa": 91.3,
+          "impressions": 251,
+          "clicks": 91,
+          "ctr": 36.25,
+          "avgCpc": 2.01
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 30,
+            "spend": 182.6,
+            "impressions": 251,
+            "clicks": 91,
+            "conversions": 2,
+            "convValue": 136.32,
+            "cpa": 91.3,
+            "roas": 0.75,
+            "ctr": 36.25,
+            "avgCpc": 2.01,
+            "searchIS": 39.86
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Grand Canyon (Branded)",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 30,
+            "metrics": {
+              "spend": 182.6,
+              "impressions": 251,
+              "clicks": 91,
+              "conversions": 2,
+              "convValue": 136.32,
+              "cpa": 91.3,
+              "roas": 0.75,
+              "ctr": 36.25,
+              "avgCpc": 2.01,
+              "searchIS": 39.86
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "2 conversions from $182.6 spend.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 20% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "36.25% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

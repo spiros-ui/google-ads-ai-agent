@@ -27,9 +27,9 @@
           "roas": 0.27,
           "ctr": 1.63,
           "avgCpc": 9.64,
-          "searchIS": 17.74,
-          "budgetLostIS": 22.66,
-          "rankLostIS": 59.6
+          "searchIS": 17.41,
+          "budgetLostIS": 24.14,
+          "rankLostIS": 58.45
         },
         "meetingObjective": true,
         "status": "warning",
@@ -37,10 +37,10 @@
           {
             "severity": "High",
             "type": "improve_rank",
-            "title": "Losing 59.6% impression share to ad rank",
-            "reasoning": "Losing 59.6% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
+            "title": "Losing 58.45% impression share to ad rank",
+            "reasoning": "Losing 58.45% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
             "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
-            "estimatedImpact": "Recovering 59.6% lost impressions from rank improvements"
+            "estimatedImpact": "Recovering 58.45% lost impressions from rank improvements"
           },
           {
             "severity": "Medium",
@@ -146,9 +146,9 @@
           "roas": 0.77,
           "ctr": 3.32,
           "avgCpc": 7.35,
-          "searchIS": 16.94,
-          "budgetLostIS": 21.3,
-          "rankLostIS": 61.76
+          "searchIS": 16.17,
+          "budgetLostIS": 25.1,
+          "rankLostIS": 58.73
         },
         "meetingObjective": true,
         "status": "warning",
@@ -156,10 +156,10 @@
           {
             "severity": "High",
             "type": "improve_rank",
-            "title": "Losing 61.76% impression share to ad rank",
-            "reasoning": "Losing 61.76% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
+            "title": "Losing 58.73% impression share to ad rank",
+            "reasoning": "Losing 58.73% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
             "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
-            "estimatedImpact": "Recovering 61.76% lost impressions from rank improvements"
+            "estimatedImpact": "Recovering 58.73% lost impressions from rank improvements"
           }
         ],
         "strengths": [
@@ -247,8 +247,8 @@
         "date": "2026-03-02",
         "type": "improve_rank",
         "severity": "High",
-        "title": "Losing 59.6% impression share to ad rank",
-        "description": "Losing 59.6% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
+        "title": "Losing 58.45% impression share to ad rank",
+        "description": "Losing 58.45% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.44/10, dragging down rank.",
         "estimatedSaving": 0,
         "campaign": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
         "status": "pending"
@@ -271,12 +271,797 @@
         "date": "2026-03-02",
         "type": "improve_rank",
         "severity": "High",
-        "title": "Losing 61.76% impression share to ad rank",
-        "description": "Losing 61.76% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
+        "title": "Losing 58.73% impression share to ad rank",
+        "description": "Losing 58.73% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3/10, dragging down rank.",
         "estimatedSaving": 0,
         "campaign": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 99.53,
+          "conversions": 1,
+          "convValue": 30,
+          "roas": 0.3,
+          "cpa": 99.53,
+          "impressions": 356,
+          "clicks": 8,
+          "ctr": 2.25,
+          "avgCpc": 12.44
+        },
+        "campaigns": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 40,
+            "spend": 78.68,
+            "impressions": 290,
+            "clicks": 6,
+            "conversions": 1,
+            "convValue": 30,
+            "cpa": 78.68,
+            "roas": 0.38,
+            "ctr": 2.07,
+            "avgCpc": 13.11,
+            "searchIS": 21.72
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 15,
+            "spend": 20.85,
+            "impressions": 66,
+            "clicks": 2,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 3.03,
+            "avgCpc": 10.42,
+            "searchIS": 13.7
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 341% higher yesterday ($99.53/day) vs 30-day average ($22.56/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 2 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $99.53 vs $84.6 30d avg (+18%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 2 campaigns are meeting their goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 15,
+            "metrics": {
+              "spend": 20.85,
+              "impressions": 66,
+              "clicks": 2,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 3.03,
+              "avgCpc": 10.42,
+              "searchIS": 13.7
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $20.85 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$20.85 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 13.7%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $20.85 vs $3.92 30d avg (+432%)"
+              }
+            ]
+          },
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 40,
+            "metrics": {
+              "spend": 78.68,
+              "impressions": 290,
+              "clicks": 6,
+              "conversions": 1,
+              "convValue": 30,
+              "cpa": 78.68,
+              "roas": 0.38,
+              "ctr": 2.07,
+              "avgCpc": 13.11,
+              "searchIS": 21.72
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $78.68 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.72%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $78.68 vs $111.85 30d avg (-30%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 0.38x vs 0.27x 30d avg (+41%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $78.68 vs $18.64 30d avg (+322%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 121.95,
+          "conversions": 2,
+          "convValue": 60,
+          "roas": 0.49,
+          "cpa": 60.98,
+          "impressions": 945,
+          "clicks": 17,
+          "ctr": 1.8,
+          "avgCpc": 7.17
+        },
+        "campaigns": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 40,
+            "spend": 72.47,
+            "impressions": 729,
+            "clicks": 12,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 1.65,
+            "avgCpc": 6.04,
+            "searchIS": 24.4
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 15,
+            "spend": 49.48,
+            "impressions": 216,
+            "clicks": 5,
+            "conversions": 2,
+            "convValue": 60,
+            "cpa": 24.74,
+            "roas": 1.21,
+            "ctr": 2.31,
+            "avgCpc": 9.9,
+            "searchIS": 17.9
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 80% higher in the last 3 days ($40.65/day) vs 30-day average ($22.56/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 2 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $60.98 vs $84.6 30d avg (-28%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.49x vs 0.35x 30d avg (+40%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 2 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 40,
+            "metrics": {
+              "spend": 72.47,
+              "impressions": 729,
+              "clicks": 12,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 1.65,
+              "avgCpc": 6.04,
+              "searchIS": 24.4
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $72.47 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$72.47 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low CTR: 1.65%",
+                "action": "Improve ad copy — make headlines more specific and include keywords. Add responsive search ad variations. Ensure 2+ ads per ad group."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 24.4%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 15,
+            "metrics": {
+              "spend": 49.48,
+              "impressions": 216,
+              "clicks": 5,
+              "conversions": 2,
+              "convValue": 60,
+              "cpa": 24.74,
+              "roas": 1.21,
+              "ctr": 2.31,
+              "avgCpc": 9.9,
+              "searchIS": 17.9
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $24.74 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 17.9%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Efficient CPA",
+                "detail": "$24.74 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $24.74 vs $39.18 30d avg (-37%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.21x vs 0.77x 30d avg (+57%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $16.49 vs $3.92 30d avg (+321%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 356.04,
+          "conversions": 4,
+          "convValue": 120,
+          "roas": 0.34,
+          "cpa": 89.01,
+          "impressions": 1868,
+          "clicks": 39,
+          "ctr": 2.09,
+          "avgCpc": 9.13
+        },
+        "campaigns": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 40,
+            "spend": 238.8,
+            "impressions": 1397,
+            "clicks": 24,
+            "conversions": 1,
+            "convValue": 30,
+            "cpa": 238.8,
+            "roas": 0.13,
+            "ctr": 1.72,
+            "avgCpc": 9.95,
+            "searchIS": 21.15
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 15,
+            "spend": 117.23,
+            "impressions": 471,
+            "clicks": 15,
+            "conversions": 3,
+            "convValue": 90,
+            "cpa": 39.08,
+            "roas": 0.77,
+            "ctr": 3.18,
+            "avgCpc": 7.82,
+            "searchIS": 16.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 125% higher in the last 7 days ($50.86/day) vs 30-day average ($22.56/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 2 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 2 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 40,
+            "metrics": {
+              "spend": 238.8,
+              "impressions": 1397,
+              "clicks": 24,
+              "conversions": 1,
+              "convValue": 30,
+              "cpa": 238.8,
+              "roas": 0.13,
+              "ctr": 1.72,
+              "avgCpc": 9.95,
+              "searchIS": 21.15
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $238.8 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $238.8",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low CTR: 1.72%",
+                "action": "Improve ad copy — make headlines more specific and include keywords. Add responsive search ad variations. Ensure 2+ ads per ad group."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.15%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $238.8 vs $111.85 30d avg (+114%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.13x vs 0.27x 30d avg (-52%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $34.11 vs $18.64 30d avg (+83%)"
+              }
+            ]
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 15,
+            "metrics": {
+              "spend": 117.23,
+              "impressions": 471,
+              "clicks": 15,
+              "conversions": 3,
+              "convValue": 90,
+              "cpa": 39.08,
+              "roas": 0.77,
+              "ctr": 3.18,
+              "avgCpc": 7.82,
+              "searchIS": 16.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $39.08 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 16.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $16.75 vs $3.92 30d avg (+327%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 587.78,
+          "conversions": 5,
+          "convValue": 150,
+          "roas": 0.26,
+          "cpa": 117.56,
+          "impressions": 3446,
+          "clicks": 60,
+          "ctr": 1.74,
+          "avgCpc": 9.8
+        },
+        "campaigns": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 40,
+            "spend": 470.55,
+            "impressions": 2967,
+            "clicks": 45,
+            "conversions": 2,
+            "convValue": 60,
+            "cpa": 235.27,
+            "roas": 0.13,
+            "ctr": 1.52,
+            "avgCpc": 10.46,
+            "searchIS": 20.69
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 15,
+            "spend": 117.23,
+            "impressions": 479,
+            "clicks": 15,
+            "conversions": 3,
+            "convValue": 90,
+            "cpa": 39.08,
+            "roas": 0.77,
+            "ctr": 3.13,
+            "avgCpc": 7.82,
+            "searchIS": 16.34
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 86% higher in the last 14 days ($41.98/day) vs 30-day average ($22.56/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 2 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $117.56 vs $84.6 30d avg (+39%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.26x vs 0.35x 30d avg (-26%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 2 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 40,
+            "metrics": {
+              "spend": 470.55,
+              "impressions": 2967,
+              "clicks": 45,
+              "conversions": 2,
+              "convValue": 60,
+              "cpa": 235.27,
+              "roas": 0.13,
+              "ctr": 1.52,
+              "avgCpc": 10.46,
+              "searchIS": 20.69
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $235.27 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $235.27",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low CTR: 1.52%",
+                "action": "Improve ad copy — make headlines more specific and include keywords. Add responsive search ad variations. Ensure 2+ ads per ad group."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 20.69%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $235.27 vs $111.85 30d avg (+110%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.13x vs 0.27x 30d avg (-52%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $33.61 vs $18.64 30d avg (+80%)"
+              }
+            ]
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 15,
+            "metrics": {
+              "spend": 117.23,
+              "impressions": 479,
+              "clicks": 15,
+              "conversions": 3,
+              "convValue": 90,
+              "cpa": 39.08,
+              "roas": 0.77,
+              "ctr": 3.13,
+              "avgCpc": 7.82,
+              "searchIS": 16.34
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $39.08 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 16.34%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $8.37 vs $3.92 30d avg (+114%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 676.79,
+          "conversions": 8,
+          "convValue": 240,
+          "roas": 0.35,
+          "cpa": 84.6,
+          "impressions": 4031,
+          "clicks": 74,
+          "ctr": 1.84,
+          "avgCpc": 9.15
+        },
+        "campaigns": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 40,
+            "spend": 559.25,
+            "impressions": 3549,
+            "clicks": 58,
+            "conversions": 5,
+            "convValue": 150,
+            "cpa": 111.85,
+            "roas": 0.27,
+            "ctr": 1.63,
+            "avgCpc": 9.64,
+            "searchIS": 17.41
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 15,
+            "spend": 117.54,
+            "impressions": 482,
+            "clicks": 16,
+            "conversions": 3,
+            "convValue": 90,
+            "cpa": 39.18,
+            "roas": 0.77,
+            "ctr": 3.32,
+            "avgCpc": 7.35,
+            "searchIS": 16.17
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 2 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 2 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "[February 3] [Search] [Search Partners] [AI MAX] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 40,
+            "metrics": {
+              "spend": 559.25,
+              "impressions": 3549,
+              "clicks": 58,
+              "conversions": 5,
+              "convValue": 150,
+              "cpa": 111.85,
+              "roas": 0.27,
+              "ctr": 1.63,
+              "avgCpc": 9.64,
+              "searchIS": 17.41
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $111.85 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low CTR: 1.63%",
+                "action": "Improve ad copy — make headlines more specific and include keywords. Add responsive search ad variations. Ensure 2+ ads per ad group."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 17.41%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "[February 3] [Search] [NO SP] [NO AI] Tree Removal",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 15,
+            "metrics": {
+              "spend": 117.54,
+              "impressions": 482,
+              "clicks": 16,
+              "conversions": 3,
+              "convValue": 90,
+              "cpa": 39.18,
+              "roas": 0.77,
+              "ctr": 3.32,
+              "avgCpc": 7.35,
+              "searchIS": 16.17
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $39.18 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 16.17%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 26% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

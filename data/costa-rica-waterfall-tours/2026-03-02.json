@@ -178,6 +178,445 @@
         "campaign": "CTM - exact match",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 145.57,
+          "conversions": 1,
+          "convValue": 324,
+          "roas": 2.23,
+          "cpa": 145.57,
+          "impressions": 943,
+          "clicks": 69,
+          "ctr": 7.32,
+          "avgCpc": 2.11
+        },
+        "campaigns": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 160,
+            "spend": 145.57,
+            "impressions": 943,
+            "clicks": 69,
+            "conversions": 1,
+            "convValue": 324,
+            "cpa": 145.57,
+            "roas": 2.23,
+            "ctr": 7.32,
+            "avgCpc": 2.11,
+            "searchIS": 23.89
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $145.57 vs $98.08 30d avg (+48%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 2.23x vs 1.49x 30d avg (+50%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 160,
+            "metrics": {
+              "spend": 145.57,
+              "impressions": 943,
+              "clicks": 69,
+              "conversions": 1,
+              "convValue": 324,
+              "cpa": 145.57,
+              "roas": 2.23,
+              "ctr": 7.32,
+              "avgCpc": 2.11,
+              "searchIS": 23.89
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $145.57 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.89%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.32% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $145.57 vs $98.08 30d avg (+48%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 2.23x vs 1.49x 30d avg (+50%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 420.48,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 3134,
+          "clicks": 192,
+          "ctr": 6.13,
+          "avgCpc": 2.19
+        },
+        "campaigns": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 160,
+            "spend": 420.48,
+            "impressions": 3134,
+            "clicks": 192,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 6.13,
+            "avgCpc": 2.19,
+            "searchIS": 29.03
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "1 of 1 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 160,
+            "metrics": {
+              "spend": 420.48,
+              "impressions": 3134,
+              "clicks": 192,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 6.13,
+              "avgCpc": 2.19,
+              "searchIS": 29.03
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $420.48 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$420.48 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 29.03%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.13% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 1061.92,
+          "conversions": 3,
+          "convValue": 686.88,
+          "roas": 0.65,
+          "cpa": 353.97,
+          "impressions": 6919,
+          "clicks": 459,
+          "ctr": 6.63,
+          "avgCpc": 2.31
+        },
+        "campaigns": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 160,
+            "spend": 1061.92,
+            "impressions": 6919,
+            "clicks": 459,
+            "conversions": 3,
+            "convValue": 686.88,
+            "cpa": 353.97,
+            "roas": 0.65,
+            "ctr": 6.63,
+            "avgCpc": 2.31,
+            "searchIS": 28.67
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $353.97 vs $98.08 30d avg (+261%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.65x vs 1.49x 30d avg (-56%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 160,
+            "metrics": {
+              "spend": 1061.92,
+              "impressions": 6919,
+              "clicks": 459,
+              "conversions": 3,
+              "convValue": 686.88,
+              "cpa": 353.97,
+              "roas": 0.65,
+              "ctr": 6.63,
+              "avgCpc": 2.31,
+              "searchIS": 28.67
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $353.97 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $353.97",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 28.67%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.63% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $353.97 vs $98.08 30d avg (+261%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.65x vs 1.49x 30d avg (-56%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 2079.41,
+          "conversions": 17,
+          "convValue": 3102.12,
+          "roas": 1.49,
+          "cpa": 122.32,
+          "impressions": 12707,
+          "clicks": 921,
+          "ctr": 7.25,
+          "avgCpc": 2.26
+        },
+        "campaigns": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 160,
+            "spend": 2079.41,
+            "impressions": 12707,
+            "clicks": 921,
+            "conversions": 17,
+            "convValue": 3102.12,
+            "cpa": 122.32,
+            "roas": 1.49,
+            "ctr": 7.25,
+            "avgCpc": 2.26,
+            "searchIS": 27.23
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $122.32 vs $98.08 30d avg (+25%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 160,
+            "metrics": {
+              "spend": 2079.41,
+              "impressions": 12707,
+              "clicks": 921,
+              "conversions": 17,
+              "convValue": 3102.12,
+              "cpa": 122.32,
+              "roas": 1.49,
+              "ctr": 7.25,
+              "avgCpc": 2.26,
+              "searchIS": 27.23
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $122.32 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 27.23%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.25% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $122.32 vs $98.08 30d avg (+25%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 4021.41,
+          "conversions": 41,
+          "convValue": 5987.76,
+          "roas": 1.49,
+          "cpa": 98.08,
+          "impressions": 20396,
+          "clicks": 1534,
+          "ctr": 7.52,
+          "avgCpc": 2.62
+        },
+        "campaigns": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 160,
+            "spend": 4021.41,
+            "impressions": 20396,
+            "clicks": 1534,
+            "conversions": 41,
+            "convValue": 5987.76,
+            "cpa": 98.08,
+            "roas": 1.49,
+            "ctr": 7.52,
+            "avgCpc": 2.62,
+            "searchIS": 30
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - exact match",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 160,
+            "metrics": {
+              "spend": 4021.41,
+              "impressions": 20396,
+              "clicks": 1534,
+              "conversions": 41,
+              "convValue": 5987.76,
+              "cpa": 98.08,
+              "roas": 1.49,
+              "ctr": 7.52,
+              "avgCpc": 2.62,
+              "searchIS": 30
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $98.08 CPA.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.52% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }

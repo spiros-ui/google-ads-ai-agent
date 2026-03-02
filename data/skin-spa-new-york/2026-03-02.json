@@ -548,6 +548,1594 @@
         "campaign": "CTM - PMAX - All Stations",
         "status": "pending"
       }
-    ]
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-02-28",
+        "account": {
+          "spend": 325.79,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 1254,
+          "clicks": 77,
+          "ctr": 6.14,
+          "avgCpc": 4.23
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 4.37,
+            "impressions": 64,
+            "clicks": 4,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 6.25,
+            "avgCpc": 1.09,
+            "searchIS": 100
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 25,
+            "spend": 3.19,
+            "impressions": 9,
+            "clicks": 1,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 11.11,
+            "avgCpc": 3.19,
+            "searchIS": 100
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 30,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 78.83,
+            "impressions": 83,
+            "clicks": 17,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 20.48,
+            "avgCpc": 4.64,
+            "searchIS": 97.83
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 375,
+            "spend": 239.4,
+            "impressions": 1098,
+            "clicks": 55,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.01,
+            "avgCpc": 4.35,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "5 of 5 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Daily spend is 52% lower yesterday ($325.79/day) vs 30-day average ($685.61/day)."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 5 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 25,
+            "metrics": {
+              "spend": 3.19,
+              "impressions": 9,
+              "clicks": 1,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 11.11,
+              "avgCpc": 3.19,
+              "searchIS": 100
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $3.19 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 13% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $3.19 vs $11.66 30d avg (-73%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 4.37,
+              "impressions": 64,
+              "clicks": 4,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 6.25,
+              "avgCpc": 1.09,
+              "searchIS": 100
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 4% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $4.37 vs $73.71 30d avg (-94%)"
+              }
+            ]
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 30,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 78.83,
+              "impressions": 83,
+              "clicks": 17,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 20.48,
+              "avgCpc": 4.64,
+              "searchIS": 97.83
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$78.83 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "97.83% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 375,
+            "metrics": {
+              "spend": 239.4,
+              "impressions": 1098,
+              "clicks": 55,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.01,
+              "avgCpc": 4.35,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$239.4 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.01% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $239.4 vs $526.67 30d avg (-55%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-26 to 2026-02-28",
+        "account": {
+          "spend": 1536.97,
+          "conversions": 8.59,
+          "convValue": 1973.22,
+          "roas": 1.28,
+          "cpa": 178.84,
+          "impressions": 3910,
+          "clicks": 321,
+          "ctr": 8.21,
+          "avgCpc": 4.79
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 183.09,
+            "impressions": 194,
+            "clicks": 39,
+            "conversions": 2,
+            "convValue": 60,
+            "cpa": 91.55,
+            "roas": 0.33,
+            "ctr": 20.1,
+            "avgCpc": 4.69,
+            "searchIS": 98.04
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 25,
+            "spend": 11.77,
+            "impressions": 14,
+            "clicks": 1,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.14,
+            "avgCpc": 11.77,
+            "searchIS": 100
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 30,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 198.59,
+            "impressions": 193,
+            "clicks": 53,
+            "conversions": 3.59,
+            "convValue": 1420.72,
+            "cpa": 55.25,
+            "roas": 7.15,
+            "ctr": 27.46,
+            "avgCpc": 3.75,
+            "searchIS": 86.49
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 375,
+            "spend": 1143.52,
+            "impressions": 3509,
+            "clicks": 228,
+            "conversions": 3,
+            "convValue": 492.5,
+            "cpa": 381.17,
+            "roas": 0.43,
+            "ctr": 6.5,
+            "avgCpc": 5.02,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $178.84 vs $212.94 30d avg (-16%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 1.28x vs 0.88x 30d avg (+45%)."
+          },
+          {
+            "type": "alert",
+            "message": "2 of 5 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 5 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 25,
+            "metrics": {
+              "spend": 11.77,
+              "impressions": 14,
+              "clicks": 1,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.14,
+              "avgCpc": 11.77,
+              "searchIS": 100
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $11.77 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 16% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $3.92 vs $11.66 30d avg (-66%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 198.59,
+              "impressions": 193,
+              "clicks": 53,
+              "conversions": 3.59,
+              "convValue": 1420.72,
+              "cpa": 55.25,
+              "roas": 7.15,
+              "ctr": 27.46,
+              "avgCpc": 3.75,
+              "searchIS": 86.49
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 7.15x ROAS — profitable.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "27.46% — well above benchmark"
+              },
+              {
+                "title": "Outstanding ROAS",
+                "detail": "7.15x return on ad spend"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "86.49% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $55.25 vs $71.34 30d avg (-23%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 7.15x vs 1.52x 30d avg (+370%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 183.09,
+              "impressions": 194,
+              "clicks": 39,
+              "conversions": 2,
+              "convValue": 60,
+              "cpa": 91.55,
+              "roas": 0.33,
+              "ctr": 20.1,
+              "avgCpc": 4.69,
+              "searchIS": 98.04
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.33x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.33x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "20.1% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "98.04% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $91.55 vs $120.76 30d avg (-24%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.33x vs 0.84x 30d avg (-61%)"
+              }
+            ]
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 30,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 375,
+            "metrics": {
+              "spend": 1143.52,
+              "impressions": 3509,
+              "clicks": 228,
+              "conversions": 3,
+              "convValue": 492.5,
+              "cpa": 381.17,
+              "roas": 0.43,
+              "ctr": 6.5,
+              "avgCpc": 5.02,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.43x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.43x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.5% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.43x vs 0.82x 30d avg (-48%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-22 to 2026-02-28",
+        "account": {
+          "spend": 3677.71,
+          "conversions": 18.59,
+          "convValue": 3683.72,
+          "roas": 1,
+          "cpa": 197.79,
+          "impressions": 10035,
+          "clicks": 743,
+          "ctr": 7.4,
+          "avgCpc": 4.95
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 397.87,
+            "impressions": 463,
+            "clicks": 98,
+            "conversions": 6,
+            "convValue": 592.5,
+            "cpa": 66.31,
+            "roas": 1.49,
+            "ctr": 21.17,
+            "avgCpc": 4.06,
+            "searchIS": 97.11
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 25,
+            "spend": 81.79,
+            "impressions": 58,
+            "clicks": 10,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 17.24,
+            "avgCpc": 8.18,
+            "searchIS": 100
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 30,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 538.81,
+            "impressions": 527,
+            "clicks": 125,
+            "conversions": 6.59,
+            "convValue": 1987.22,
+            "cpa": 81.71,
+            "roas": 3.69,
+            "ctr": 23.72,
+            "avgCpc": 4.31,
+            "searchIS": 83.54
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 375,
+            "spend": 2659.24,
+            "impressions": 8987,
+            "clicks": 510,
+            "conversions": 6,
+            "convValue": 1104,
+            "cpa": 443.21,
+            "roas": 0.42,
+            "ctr": 5.67,
+            "avgCpc": 5.21,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 5 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 5 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 397.87,
+              "impressions": 463,
+              "clicks": 98,
+              "conversions": 6,
+              "convValue": 592.5,
+              "cpa": 66.31,
+              "roas": 1.49,
+              "ctr": 21.17,
+              "avgCpc": 4.06,
+              "searchIS": 97.11
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.49x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "21.17% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "97.11% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $66.31 vs $120.76 30d avg (-45%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.49x vs 0.84x 30d avg (+77%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 25,
+            "metrics": {
+              "spend": 81.79,
+              "impressions": 58,
+              "clicks": 10,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 17.24,
+              "avgCpc": 8.18,
+              "searchIS": 100
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $81.79 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$81.79 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 538.81,
+              "impressions": 527,
+              "clicks": 125,
+              "conversions": 6.59,
+              "convValue": 1987.22,
+              "cpa": 81.71,
+              "roas": 3.69,
+              "ctr": 23.72,
+              "avgCpc": 4.31,
+              "searchIS": 83.54
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 3.69x ROAS — profitable.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "23.72% — well above benchmark"
+              },
+              {
+                "title": "Strong ROAS",
+                "detail": "3.69x return"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "83.54% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 3.69x vs 1.52x 30d avg (+143%)"
+              }
+            ]
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 30,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 375,
+            "metrics": {
+              "spend": 2659.24,
+              "impressions": 8987,
+              "clicks": 510,
+              "conversions": 6,
+              "convValue": 1104,
+              "cpa": 443.21,
+              "roas": 0.42,
+              "ctr": 5.67,
+              "avgCpc": 5.21,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.42x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.42x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.67% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $443.21 vs $348.44 30d avg (+27%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.42x vs 0.82x 30d avg (-49%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-15 to 2026-02-28",
+        "account": {
+          "spend": 8877.67,
+          "conversions": 35.5,
+          "convValue": 5660.24,
+          "roas": 0.64,
+          "cpa": 250.08,
+          "impressions": 30238,
+          "clicks": 1774,
+          "ctr": 5.87,
+          "avgCpc": 5
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 768.29,
+            "impressions": 909,
+            "clicks": 195,
+            "conversions": 10.91,
+            "convValue": 919.02,
+            "cpa": 70.45,
+            "roas": 1.2,
+            "ctr": 21.45,
+            "avgCpc": 3.94,
+            "searchIS": 96.51
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 25,
+            "spend": 175.64,
+            "impressions": 135,
+            "clicks": 26,
+            "conversions": 1,
+            "convValue": 30,
+            "cpa": 175.64,
+            "roas": 0.17,
+            "ctr": 19.26,
+            "avgCpc": 6.76,
+            "searchIS": 100
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 30,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 954,
+            "impressions": 1055,
+            "clicks": 232,
+            "conversions": 13.59,
+            "convValue": 2582.22,
+            "cpa": 70.18,
+            "roas": 2.71,
+            "ctr": 21.99,
+            "avgCpc": 4.11,
+            "searchIS": 88.34
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 375,
+            "spend": 6979.74,
+            "impressions": 28139,
+            "clicks": 1321,
+            "conversions": 10,
+            "convValue": 2129,
+            "cpa": 697.97,
+            "roas": 0.31,
+            "ctr": 4.69,
+            "avgCpc": 5.28,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "5 of 5 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $250.08 vs $212.94 30d avg (+17%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.64x vs 0.88x 30d avg (-27%)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 5 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 768.29,
+              "impressions": 909,
+              "clicks": 195,
+              "conversions": 10.91,
+              "convValue": 919.02,
+              "cpa": 70.45,
+              "roas": 1.2,
+              "ctr": 21.45,
+              "avgCpc": 3.94,
+              "searchIS": 96.51
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.2x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "21.45% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "96.51% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $70.45 vs $120.76 30d avg (-42%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.2x vs 0.84x 30d avg (+43%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 25,
+            "metrics": {
+              "spend": 175.64,
+              "impressions": 135,
+              "clicks": 26,
+              "conversions": 1,
+              "convValue": 30,
+              "cpa": 175.64,
+              "roas": 0.17,
+              "ctr": 19.26,
+              "avgCpc": 6.76,
+              "searchIS": 100
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $175.64 — needs optimization.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "19.26% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 954,
+              "impressions": 1055,
+              "clicks": 232,
+              "conversions": 13.59,
+              "convValue": 2582.22,
+              "cpa": 70.18,
+              "roas": 2.71,
+              "ctr": 21.99,
+              "avgCpc": 4.11,
+              "searchIS": 88.34
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.71x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "21.99% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "88.34% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 2.71x vs 1.52x 30d avg (+78%)"
+              }
+            ]
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 30,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 375,
+            "metrics": {
+              "spend": 6979.74,
+              "impressions": 28139,
+              "clicks": 1321,
+              "conversions": 10,
+              "convValue": 2129,
+              "cpa": 697.97,
+              "roas": 0.31,
+              "ctr": 4.69,
+              "avgCpc": 5.28,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.31x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.31x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $697.97 vs $348.44 30d avg (+100%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.31x vs 0.82x 30d avg (-62%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-30 to 2026-02-28",
+        "account": {
+          "spend": 20568.24,
+          "conversions": 96.59,
+          "convValue": 18168.89,
+          "roas": 0.88,
+          "cpa": 212.94,
+          "impressions": 65046,
+          "clicks": 3874,
+          "ctr": 5.96,
+          "avgCpc": 5.31
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 2211.16,
+            "impressions": 1840,
+            "clicks": 389,
+            "conversions": 18.31,
+            "convValue": 1867.06,
+            "cpa": 120.76,
+            "roas": 0.84,
+            "ctr": 21.14,
+            "avgCpc": 5.68,
+            "searchIS": 92.41
+          },
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 25,
+            "spend": 349.75,
+            "impressions": 211,
+            "clicks": 39,
+            "conversions": 2,
+            "convValue": 59.96,
+            "cpa": 174.99,
+            "roas": 0.17,
+            "ctr": 18.48,
+            "avgCpc": 8.97,
+            "searchIS": 100
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 30,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 100,
+            "spend": 2207.22,
+            "impressions": 2475,
+            "clicks": 498,
+            "conversions": 30.94,
+            "convValue": 3352.14,
+            "cpa": 71.34,
+            "roas": 1.52,
+            "ctr": 20.12,
+            "avgCpc": 4.43,
+            "searchIS": 90.3
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 375,
+            "spend": 15800.11,
+            "impressions": 60520,
+            "clicks": 2948,
+            "conversions": 45.35,
+            "convValue": 12889.73,
+            "cpa": 348.44,
+            "roas": 0.82,
+            "ctr": 4.87,
+            "avgCpc": 5.36,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "5 of 5 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "alert",
+            "message": "2 of 5 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Search - Miami Branded",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 25,
+            "metrics": {
+              "spend": 349.75,
+              "impressions": 211,
+              "clicks": 39,
+              "conversions": 2,
+              "convValue": 59.96,
+              "cpa": 174.99,
+              "roas": 0.17,
+              "ctr": 18.48,
+              "avgCpc": 8.97,
+              "searchIS": 100
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $174.99 — needs optimization.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "18.48% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "100% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Search - New York Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 2207.22,
+              "impressions": 2475,
+              "clicks": 498,
+              "conversions": 30.94,
+              "convValue": 3352.14,
+              "cpa": 71.34,
+              "roas": 1.52,
+              "ctr": 20.12,
+              "avgCpc": 4.43,
+              "searchIS": 90.3
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.52x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "20.12% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "90.3% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Search Boston Branded",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 100,
+            "metrics": {
+              "spend": 2211.16,
+              "impressions": 1840,
+              "clicks": 389,
+              "conversions": 18.31,
+              "convValue": 1867.06,
+              "cpa": 120.76,
+              "roas": 0.84,
+              "ctr": 21.14,
+              "avgCpc": 5.68,
+              "searchIS": 92.41
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.84x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.84x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "21.14% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "92.41% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "BWM | Search | NY | Brand | HVEM tROAS Bidding Exp",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 30,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - PMAX - All Stations",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 375,
+            "metrics": {
+              "spend": 15800.11,
+              "impressions": 60520,
+              "clicks": 2948,
+              "conversions": 45.35,
+              "convValue": 12889.73,
+              "cpa": 348.44,
+              "roas": 0.82,
+              "ctr": 4.87,
+              "avgCpc": 5.36,
+              "searchIS": 9.99
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.82x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.82x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
   }
 }
