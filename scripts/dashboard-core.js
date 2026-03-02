@@ -644,6 +644,23 @@
 
   // --------------- Sort campaigns ---------------
 
+  // --------------- Period switching ---------------
+
+  window.currentPeriod = {}; // keyed by account slug, default 'last30d'
+
+  window.switchPeriod = function (accountSlug, periodKey) {
+    window.currentPeriod[accountSlug] = periodKey;
+    if (typeof window.renderAccount === 'function') {
+      window.renderAccount(accountSlug);
+    }
+  };
+
+  window.getActivePeriod = function (accountSlug) {
+    return window.currentPeriod[accountSlug] || 'last30d';
+  };
+
+  // --------------- Sort campaigns ---------------
+
   window.currentSort = { slug: null, col: null, dir: 'asc' };
 
   window.sortCampaigns = function (accountSlug, column, direction) {

@@ -35,14 +35,11 @@
   .header h1 span { color:var(--accent-light); }
   .header .updated { font-size:12px; color:var(--text-dim); }
 
-  /* Tabs */
-  .tabs { display:flex; background:var(--surface); border-bottom:1px solid var(--border); padding:0 32px; overflow-x:auto; position:sticky; top:57px; z-index:99; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
-  .tabs::-webkit-scrollbar { height:4px; }
-  .tabs::-webkit-scrollbar-track { background:transparent; }
-  .tabs::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
-  .tab { padding:12px 20px; font-size:13px; font-weight:500; color:var(--text-dim); cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; white-space:nowrap; user-select:none; max-width:180px; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; }
-  .tab:hover { color:var(--text); background:var(--surface2); }
-  .tab.active { color:var(--accent-light); border-bottom-color:var(--accent); }
+  /* Tabs — wrapping layout */
+  .tabs { display:flex; flex-wrap:wrap; background:var(--surface); border-bottom:1px solid var(--border); padding:8px 32px 4px; position:sticky; top:57px; z-index:99; gap:4px; }
+  .tab { padding:8px 16px; font-size:13px; font-weight:500; color:var(--text-dim); cursor:pointer; border:1px solid var(--border); border-radius:8px; transition:all .2s; white-space:nowrap; user-select:none; max-width:200px; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; margin-bottom:4px; background:var(--bg); }
+  .tab:hover { color:var(--text); background:var(--surface2); border-color:var(--text-dim); }
+  .tab.active { color:#fff; background:var(--accent); border-color:var(--accent); }
 
   /* Content */
   .content { max-width:1400px; margin:0 auto; padding:24px 32px; }
@@ -375,6 +372,92 @@
   .ux-search-input { width:100%; max-width:400px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 16px; color:var(--text); font-size:14px; font-family:inherit; }
   .ux-search-input::placeholder { color:var(--text-dim); }
   .ux-search-input:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
+
+  /* Period selector bar */
+  .period-bar { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .period-btn { padding:7px 18px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--text-dim); font-size:13px; font-weight:500; cursor:pointer; transition:all .15s; font-family:inherit; }
+  .period-btn:hover { background:var(--surface2); color:var(--text); border-color:var(--text-dim); }
+  .period-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+
+  /* Insights panel */
+  .insights-panel { margin-bottom:24px; }
+  .insights-title { font-size:13px; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:10px; }
+  .insight-card { display:flex; align-items:flex-start; gap:10px; padding:12px 16px; border-radius:8px; margin-bottom:8px; font-size:13px; line-height:1.5; border:1px solid; }
+  .insight-card.insight-alert { background:var(--red-bg); border-color:rgba(214,48,49,0.25); color:var(--text); }
+  .insight-card.insight-trend { background:var(--blue-bg); border-color:rgba(108,92,231,0.25); color:var(--text); }
+  .insight-card.insight-positive { background:var(--green-bg); border-color:rgba(0,184,148,0.25); color:var(--text); }
+  .insight-icon { flex-shrink:0; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; margin-top:1px; }
+  .insight-alert .insight-icon { background:var(--red); color:#fff; }
+  .insight-trend .insight-icon { background:var(--accent); color:#fff; }
+  .insight-positive .insight-icon { background:var(--green); color:#fff; }
+
+  /* Period campaign table */
+  .period-summary-bar { display:flex; gap:12px; margin-bottom:20px; flex-wrap:wrap; }
+  .period-stat { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:12px 18px; flex:1; min-width:120px; }
+  .period-stat .p-label { font-size:10px; text-transform:uppercase; letter-spacing:0.8px; color:var(--text-dim); margin-bottom:2px; }
+  .period-stat .p-value { font-size:22px; font-weight:700; }
+  .period-stat.p-spend { border-top:3px solid var(--accent); }
+  .period-stat.p-conv { border-top:3px solid var(--green); }
+  .period-stat.p-roas { border-top:3px solid var(--yellow); }
+  .period-stat.p-cpa { border-top:3px solid var(--orange); }
+  .period-stat.p-ctr { border-top:3px solid var(--accent-light); }
+
+  /* Doctor campaign health cards */
+  .doctor-cards { display:flex; flex-direction:column; gap:12px; margin-bottom:24px; }
+  .doctor-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+  .doctor-card-header { display:flex; align-items:center; gap:12px; padding:16px 20px; cursor:pointer; transition:background .15s; }
+  .doctor-card-header:hover { background:var(--surface2); }
+  .doctor-card .dc-health { width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+  .doctor-card .dc-health-healthy { background:var(--green); box-shadow:0 0 6px rgba(0,184,148,0.4); }
+  .doctor-card .dc-health-warning { background:var(--yellow); box-shadow:0 0 6px rgba(253,203,110,0.4); }
+  .doctor-card .dc-health-critical { background:var(--red); box-shadow:0 0 6px rgba(214,48,49,0.4); }
+  .doctor-card .dc-health-not_spending { background:var(--text-dim); }
+  .doctor-card .dc-name { font-weight:600; font-size:14px; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .doctor-card .dc-goal-badge { padding:3px 12px; border-radius:12px; font-size:11px; font-weight:600; flex-shrink:0; }
+  .dc-goal-yes { background:var(--green-bg); color:var(--green); }
+  .dc-goal-no { background:var(--red-bg); color:var(--red); }
+  .dc-goal-unknown { background:var(--surface2); color:var(--text-dim); }
+  .doctor-card .dc-expand { color:var(--text-dim); font-size:12px; flex-shrink:0; transition:transform .2s; }
+  .doctor-card.open .dc-expand { transform:rotate(90deg); }
+  .doctor-card .dc-metrics { display:flex; gap:16px; flex-wrap:wrap; margin-left:24px; }
+  .doctor-card .dc-metric { font-size:12px; color:var(--text-dim); }
+  .doctor-card .dc-metric strong { color:var(--text); font-size:14px; }
+
+  .doctor-card-body { display:none; padding:0 20px 16px 44px; }
+  .doctor-card.open .doctor-card-body { display:block; }
+
+  .dc-assessment { font-size:13px; padding:10px 14px; border-radius:8px; margin-bottom:12px; font-weight:500; }
+  .dc-assessment-healthy { background:var(--green-bg); color:var(--green); border:1px solid rgba(0,184,148,0.2); }
+  .dc-assessment-warning { background:var(--yellow-bg); color:var(--yellow); border:1px solid rgba(253,203,110,0.2); }
+  .dc-assessment-critical { background:var(--red-bg); color:var(--red); border:1px solid rgba(214,48,49,0.2); }
+  .dc-assessment-not_spending { background:var(--surface2); color:var(--text-dim); border:1px solid var(--border); }
+
+  .dc-section-title { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); margin:12px 0 6px; }
+
+  .dc-issue { display:flex; gap:8px; padding:8px 12px; background:var(--surface2); border-radius:6px; margin-bottom:6px; font-size:13px; }
+  .dc-issue-sev { font-size:10px; font-weight:700; padding:2px 8px; border-radius:8px; flex-shrink:0; align-self:flex-start; margin-top:1px; }
+  .dc-issue-sev-Critical { background:var(--red-bg); color:var(--red); }
+  .dc-issue-sev-High { background:var(--orange-bg); color:var(--orange); }
+  .dc-issue-sev-Medium { background:var(--yellow-bg); color:var(--yellow); }
+  .dc-issue-body { flex:1; }
+  .dc-issue-title { font-weight:600; margin-bottom:2px; }
+  .dc-issue-action { color:var(--text-dim); font-size:12px; }
+
+  .dc-positive { display:flex; gap:8px; padding:6px 0; font-size:13px; }
+  .dc-positive::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--green); margin-top:6px; flex-shrink:0; }
+  .dc-positive-title { font-weight:500; color:var(--green); }
+  .dc-positive-detail { color:var(--text-dim); }
+
+  .dc-trend { display:flex; gap:6px; font-size:12px; padding:4px 0; color:var(--text-dim); }
+  .dc-trend-up { color:var(--green); }
+  .dc-trend-down { color:var(--red); }
+  .dc-trend-icon { font-weight:700; width:16px; text-align:center; }
+
+  /* Doctor summary strip */
+  .doctor-summary { display:flex; gap:16px; align-items:center; padding:14px 20px; background:var(--surface); border:1px solid var(--border); border-radius:10px; margin-bottom:16px; flex-wrap:wrap; }
+  .doctor-summary .ds-item { font-size:13px; color:var(--text-dim); display:flex; align-items:center; gap:6px; }
+  .doctor-summary .ds-dot { width:10px; height:10px; border-radius:50%; }
+  .doctor-summary .ds-count { font-weight:700; font-size:15px; color:var(--text); }
 </style>
 </head>
 <body>

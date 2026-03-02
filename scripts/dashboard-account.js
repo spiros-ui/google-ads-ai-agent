@@ -100,7 +100,36 @@
       html += '</div>'; // wrapper
     }
 
-    // Account summary bar
+    // Period selector bar
+    var activePeriod = window.getActivePeriod ? window.getActivePeriod(accountSlug) : 'last30d';
+    var hasPeriodData = diag.periodMetrics && Object.keys(diag.periodMetrics).length > 0;
+
+    if (hasPeriodData) {
+      var periodKeys = ['yesterday', 'last3d', 'last7d', 'last14d', 'last30d'];
+      var periodLabels = { yesterday: 'Yesterday', last3d: 'Last 3d', last7d: 'Last 7d', last14d: 'Last 14d', last30d: 'Last 30d' };
+      html += '<div class="period-bar">';
+      for (var pi = 0; pi < periodKeys.length; pi++) {
+        var pk = periodKeys[pi];
+        if (!diag.periodMetrics[pk]) continue;
+        var isActive = pk === activePeriod;
+        html += '<button class="period-btn' + (isActive ? ' active' : '') + '" onclick="switchPeriod(\'' + accountSlug + '\',\'' + pk + '\')">' + periodLabels[pk] + '</button>';
+      }
+      html += '</div>';
+    }
+
+    // If viewing a non-30d period with period data, show period view
+    var showPeriodView = hasPeriodData && activePeriod !== 'last30d' && diag.periodMetrics[activePeriod];
+
+    if (showPeriodView) {
+      html += buildDoctorView(diag.periodMetrics[activePeriod], activePeriod);
+      html += '</div>';
+      container.innerHTML = html;
+      return;
+    }
+
+    // ===== Default 30d full diagnosis view =====
+
+    // Account summary bar (30d)
     html += '<div class="summary-bar">';
     html += buildStat('Account', data.account || accMeta.name, summary.overallVerdict ? window.ui.verdictPill(summary.overallVerdict) : '', 'stat-account');
     html += buildStat('30d Spend', window.fmt.currency(summary.totalSpend), '', 'stat-spend');
@@ -108,6 +137,11 @@
     html += buildStat('Campaigns', String(summary.totalCampaigns || campaigns.length), '', 'stat-campaigns');
     html += buildStat('Critical Issues', '<span style="color:var(--red)">' + (summary.criticalIssues || 0) + '</span>', '', 'stat-critical');
     html += '</div>';
+
+    // Show doctor view (insights + campaign health cards) for 30d if available
+    if (hasPeriodData && diag.periodMetrics.last30d) {
+      html += buildDoctorView(diag.periodMetrics.last30d, 'last30d');
+    }
 
     // Campaign table
     if (campaigns.length === 0) {
@@ -162,6 +196,181 @@
     html += '</div>';
     container.innerHTML = html;
   }
+
+  // --------------- Doctor View ---------------
+
+  function buildDoctorView(pData, periodKey) {
+    var pAcct = pData.account || {};
+    var pInsights = pData.insights || [];
+    var campDiags = pData.campaignDiagnoses || [];
+    var html = '';
+
+    // Summary metric cards
+    html += '<div class="period-summary-bar">';
+    html += '<div class="period-stat p-spend"><div class="p-label">Spend</div><div class="p-value">' + window.fmt.currency(pAcct.spend) + '</div></div>';
+    html += '<div class="period-stat p-conv"><div class="p-label">Conversions</div><div class="p-value">' + window.fmt.number(pAcct.conversions) + '</div></div>';
+    html += '<div class="period-stat p-roas"><div class="p-label">ROAS</div><div class="p-value">' + (pAcct.roas != null ? window.fmt.roas(pAcct.roas) : '--') + '</div></div>';
+    html += '<div class="period-stat p-cpa"><div class="p-label">CPA</div><div class="p-value">' + (pAcct.cpa != null ? window.fmt.currencyDec(pAcct.cpa) : '--') + '</div></div>';
+    html += '<div class="period-stat p-ctr"><div class="p-label">CTR</div><div class="p-value">' + window.fmt.pct(pAcct.ctr) + '</div></div>';
+    html += '<div class="period-stat"><div class="p-label">Avg CPC</div><div class="p-value">' + (pAcct.avgCpc != null ? window.fmt.currencyDec(pAcct.avgCpc) : '--') + '</div></div>';
+    html += '</div>';
+
+    // Account-level AI insights
+    if (pInsights.length > 0) {
+      html += '<div class="insights-panel">';
+      html += '<div class="insights-title">Account Insights</div>';
+      for (var ii = 0; ii < pInsights.length; ii++) {
+        var ins = pInsights[ii];
+        var insType = ins.type || 'trend';
+        var insIcon = insType === 'alert' ? '!' : insType === 'positive' ? '\u2713' : '\u2192';
+        html += '<div class="insight-card insight-' + insType + '">';
+        html += '<div class="insight-icon">' + insIcon + '</div>';
+        html += '<div>' + escapeHtml(ins.message) + '</div>';
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+
+    // Doctor summary strip (how many healthy/warning/critical)
+    if (campDiags.length > 0) {
+      var hCount = 0, wCount = 0, cCount = 0, nCount = 0;
+      for (var si = 0; si < campDiags.length; si++) {
+        var h = campDiags[si].health;
+        if (h === 'healthy') hCount++;
+        else if (h === 'warning') wCount++;
+        else if (h === 'critical') cCount++;
+        else nCount++;
+      }
+      html += '<div class="doctor-summary">';
+      html += '<div class="ds-item"><strong style="font-size:15px">' + campDiags.length + ' Campaigns</strong></div>';
+      if (cCount > 0) html += '<div class="ds-item"><div class="ds-dot" style="background:var(--red)"></div><span class="ds-count">' + cCount + '</span> Critical</div>';
+      if (wCount > 0) html += '<div class="ds-item"><div class="ds-dot" style="background:var(--yellow)"></div><span class="ds-count">' + wCount + '</span> Warning</div>';
+      if (hCount > 0) html += '<div class="ds-item"><div class="ds-dot" style="background:var(--green)"></div><span class="ds-count">' + hCount + '</span> Healthy</div>';
+      if (nCount > 0) html += '<div class="ds-item"><div class="ds-dot" style="background:var(--text-dim)"></div><span class="ds-count">' + nCount + '</span> Not Spending</div>';
+      html += '</div>';
+
+      // Campaign health cards
+      html += '<div class="doctor-cards">';
+      for (var di = 0; di < campDiags.length; di++) {
+        html += buildDoctorCard(campDiags[di], di, periodKey);
+      }
+      html += '</div>';
+    }
+
+    return html;
+  }
+
+  // Track which doctor cards are open
+  var expandedDoctorCards = {};
+
+  function buildDoctorCard(cd, idx, periodKey) {
+    var cardKey = periodKey + '-' + idx;
+    var isOpen = expandedDoctorCards[cardKey];
+    var m = cd.metrics || {};
+
+    var html = '<div class="doctor-card' + (isOpen ? ' open' : '') + '" id="dc-' + cardKey + '">';
+
+    // Header
+    html += '<div class="doctor-card-header" onclick="toggleDoctorCard(\'' + cardKey + '\')">';
+    html += '<div class="dc-health dc-health-' + cd.health + '"></div>';
+    html += '<div class="dc-name">' + escapeHtml(cd.name) + '</div>';
+
+    // Inline metrics
+    html += '<div class="dc-metrics">';
+    html += '<div class="dc-metric"><strong>' + window.fmt.currency(m.spend) + '</strong> spend</div>';
+    html += '<div class="dc-metric"><strong>' + window.fmt.number(m.conversions) + '</strong> conv</div>';
+    if (m.cpa != null) html += '<div class="dc-metric"><strong>' + window.fmt.currencyDec(m.cpa) + '</strong> CPA</div>';
+    if (m.roas != null) html += '<div class="dc-metric"><strong>' + window.fmt.roas(m.roas) + '</strong> ROAS</div>';
+    html += '</div>';
+
+    // Goal badge
+    if (cd.meetingGoal === true) {
+      html += '<div class="dc-goal-badge dc-goal-yes">Meeting Goal</div>';
+    } else if (cd.meetingGoal === false) {
+      html += '<div class="dc-goal-badge dc-goal-no">Not Meeting Goal</div>';
+    } else {
+      html += '<div class="dc-goal-badge dc-goal-unknown">Unknown</div>';
+    }
+    html += '<div class="dc-expand">\u25B8</div>';
+    html += '</div>';
+
+    // Body (expandable)
+    html += '<div class="doctor-card-body">';
+
+    // Goal assessment
+    html += '<div class="dc-assessment dc-assessment-' + cd.health + '">';
+    html += '<strong>' + escapeHtml(cd.objective || 'General') + ' campaign</strong> (' + escapeHtml(cd.bidding) + ')';
+    if (cd.budget) html += ' &middot; $' + cd.budget + '/day';
+    html += '<br>' + escapeHtml(cd.goalAssessment);
+    html += '</div>';
+
+    // Full metrics row
+    html += '<div style="display:flex;gap:12px;flex-wrap:wrap;margin:12px 0;font-size:12px;color:var(--text-dim)">';
+    html += '<span>Impr: <strong style="color:var(--text)">' + window.fmt.number(m.impressions) + '</strong></span>';
+    html += '<span>Clicks: <strong style="color:var(--text)">' + window.fmt.number(m.clicks) + '</strong></span>';
+    html += '<span>CTR: <strong style="color:var(--text)">' + window.fmt.pct(m.ctr) + '</strong></span>';
+    html += '<span>Avg CPC: <strong style="color:var(--text)">' + (m.avgCpc != null ? window.fmt.currencyDec(m.avgCpc) : '--') + '</strong></span>';
+    html += '<span>Conv Value: <strong style="color:var(--text)">' + window.fmt.currency(m.convValue) + '</strong></span>';
+    if (m.searchIS != null) html += '<span>IS: <strong style="color:var(--text)">' + window.fmt.pct(m.searchIS) + '</strong></span>';
+    html += '</div>';
+
+    // Issues
+    var issues = cd.issues || [];
+    if (issues.length > 0) {
+      html += '<div class="dc-section-title">Issues (' + issues.length + ')</div>';
+      for (var i = 0; i < issues.length; i++) {
+        var iss = issues[i];
+        html += '<div class="dc-issue">';
+        html += '<span class="dc-issue-sev dc-issue-sev-' + iss.severity + '">' + iss.severity + '</span>';
+        html += '<div class="dc-issue-body">';
+        html += '<div class="dc-issue-title">' + escapeHtml(iss.title) + '</div>';
+        html += '<div class="dc-issue-action">' + escapeHtml(iss.action) + '</div>';
+        html += '</div></div>';
+      }
+    }
+
+    // Positives
+    var positives = cd.positives || [];
+    if (positives.length > 0) {
+      html += '<div class="dc-section-title">Strengths</div>';
+      for (var pi = 0; pi < positives.length; pi++) {
+        html += '<div class="dc-positive"><div><span class="dc-positive-title">' + escapeHtml(positives[pi].title) + '</span>';
+        if (positives[pi].detail) html += ' <span class="dc-positive-detail">' + escapeHtml(positives[pi].detail) + '</span>';
+        html += '</div></div>';
+      }
+    }
+
+    // Trends
+    var trends = cd.trends || [];
+    if (trends.length > 0) {
+      html += '<div class="dc-section-title">Trends vs 30-Day</div>';
+      for (var ti = 0; ti < trends.length; ti++) {
+        var tr = trends[ti];
+        var trCls = tr.direction === 'up' ? 'dc-trend-up' : tr.direction === 'down' ? 'dc-trend-down' : '';
+        var trIcon = tr.direction === 'up' ? '\u2191' : tr.direction === 'down' ? '\u2193' : '\u2192';
+        html += '<div class="dc-trend ' + trCls + '">';
+        html += '<span class="dc-trend-icon">' + trIcon + '</span>';
+        html += '<span>' + escapeHtml(tr.message) + '</span>';
+        html += '</div>';
+      }
+    }
+
+    html += '</div>'; // doctor-card-body
+    html += '</div>'; // doctor-card
+    return html;
+  }
+
+  function toggleDoctorCard(cardKey) {
+    expandedDoctorCards[cardKey] = !expandedDoctorCards[cardKey];
+    var card = document.getElementById('dc-' + cardKey);
+    if (card) {
+      card.classList.toggle('open', expandedDoctorCards[cardKey]);
+    }
+  }
+
+  window.toggleDoctorCard = toggleDoctorCard;
+
+  // --------------- Stat helper ---------------
 
   function buildStat(label, value, sub, accentClass) {
     return '<div class="summary-stat' + (accentClass ? ' ' + accentClass : '') + '">' +

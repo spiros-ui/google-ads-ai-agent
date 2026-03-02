@@ -12,6 +12,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 import { homedir } from 'os';
 import { diagnoseCampaigns } from './lib/campaign-diagnosis.js';
+import { generatePeriodInsights } from './lib/period-insights.js';
 
 // ===== CONFIGURATION =====
 const PROJECT_DIR = '/Users/spirosmaragkoudakis/google-ads-ai-agent';
@@ -95,6 +96,156 @@ const QUERIES = {
     conversion_action.category, conversion_action.include_in_conversions_metric
     FROM conversion_action WHERE conversion_action.status = 'ENABLED'`
 };
+
+// ===== PERIOD DEFINITIONS =====
+function getPeriodDateFilter(periodKey, todayStr) {
+  // todayStr = 'YYYY-MM-DD' (today, so yesterday = today - 1)
+  const d = new Date(todayStr + 'T00:00:00');
+  const fmt = (dt) => dt.toISOString().split('T')[0].replace(/-/g, '');
+  const sub = (days) => { const r = new Date(d); r.setDate(r.getDate() - days); return r; };
+  const yesterday = sub(1);
+
+  switch (periodKey) {
+    case 'yesterday':
+      return `segments.date DURING YESTERDAY`;
+    case 'last3d': {
+      const from = sub(3);
+      return `segments.date BETWEEN '${from.toISOString().split('T')[0]}' AND '${yesterday.toISOString().split('T')[0]}'`;
+    }
+    case 'last7d':
+      return `segments.date DURING LAST_7_DAYS`;
+    case 'last14d':
+      return `segments.date DURING LAST_14_DAYS`;
+    case 'last30d':
+      return `segments.date DURING LAST_30_DAYS`;
+    default:
+      return `segments.date DURING LAST_30_DAYS`;
+  }
+}
+
+function buildPeriodQuery(dateFilter) {
+  return `SELECT
+    campaign.id, campaign.name, campaign.status,
+    campaign.advertising_channel_type, campaign.bidding_strategy_type,
+    campaign_budget.amount_micros,
+    metrics.impressions, metrics.clicks, metrics.conversions,
+    metrics.conversions_value, metrics.cost_micros,
+    metrics.search_impression_share,
+    metrics.search_budget_lost_impression_share,
+    metrics.search_rank_lost_impression_share,
+    metrics.average_cpc
+    FROM campaign
+    WHERE campaign.status = 'ENABLED'
+    AND ${dateFilter}`;
+}
+
+function getPeriodLabel(periodKey, todayStr) {
+  const d = new Date(todayStr + 'T00:00:00');
+  const sub = (days) => { const r = new Date(d); r.setDate(r.getDate() - days); return r.toISOString().split('T')[0]; };
+  const labels = {
+    yesterday: sub(1),
+    last3d: `${sub(3)} to ${sub(1)}`,
+    last7d: `${sub(7)} to ${sub(1)}`,
+    last14d: `${sub(14)} to ${sub(1)}`,
+    last30d: `${sub(30)} to ${sub(1)}`
+  };
+  return labels[periodKey] || periodKey;
+}
+
+const PERIOD_KEYS = ['yesterday', 'last3d', 'last7d', 'last14d', 'last30d'];
+const PERIOD_DISPLAY = {
+  yesterday: 'Yesterday', last3d: 'Last 3 Days', last7d: 'Last 7 Days',
+  last14d: 'Last 14 Days', last30d: 'Last 30 Days'
+};
+
+function aggregatePeriodRows(rows) {
+  let totalSpend = 0, totalImpr = 0, totalClicks = 0, totalConv = 0, totalValue = 0;
+  const campaigns = [];
+
+  for (const row of rows) {
+    if ((row.campaign?.status || '').toUpperCase() !== 'ENABLED') continue;
+    const spend = microsToDollars(row.metrics?.costMicros);
+    const impressions = Number(row.metrics?.impressions || 0);
+    const clicks = Number(row.metrics?.clicks || 0);
+    const conversions = Number(row.metrics?.conversions || 0);
+    const convValue = Number(row.metrics?.conversionsValue || 0);
+    const avgCpc = microsToDollars(row.metrics?.averageCpc);
+    const budget = microsToDollars(row.campaignBudget?.amountMicros);
+    const toIS = v => v != null ? Math.round(Number(v) * 10000) / 100 : null;
+
+    totalSpend += spend; totalImpr += impressions;
+    totalClicks += clicks; totalConv += conversions; totalValue += convValue;
+
+    const cpa = conversions > 0 ? Math.round((spend / conversions) * 100) / 100 : null;
+    const roas = spend > 0 ? Math.round((convValue / spend) * 100) / 100 : null;
+    const ctr = impressions > 0 ? Math.round((clicks / impressions) * 10000) / 100 : 0;
+
+    campaigns.push({
+      name: row.campaign?.name || 'Unknown',
+      type: row.campaign?.advertisingChannelType || 'UNKNOWN',
+      bidding: row.campaign?.biddingStrategyType || '',
+      budget: Math.round(budget * 100) / 100,
+      spend: Math.round(spend * 100) / 100,
+      impressions, clicks,
+      conversions: Math.round(conversions * 100) / 100,
+      convValue: Math.round(convValue * 100) / 100,
+      cpa, roas, ctr: Math.round(ctr * 100) / 100,
+      avgCpc: Math.round(avgCpc * 100) / 100,
+      searchIS: toIS(row.metrics?.searchImpressionShare)
+    });
+  }
+
+  const acctCpa = totalConv > 0 ? Math.round((totalSpend / totalConv) * 100) / 100 : null;
+  const acctRoas = totalSpend > 0 ? Math.round((totalValue / totalSpend) * 100) / 100 : null;
+  const acctCtr = totalImpr > 0 ? Math.round((totalClicks / totalImpr) * 10000) / 100 : 0;
+  const acctAvgCpc = totalClicks > 0 ? Math.round((totalSpend / totalClicks) * 100) / 100 : null;
+
+  return {
+    account: {
+      spend: Math.round(totalSpend * 100) / 100,
+      conversions: Math.round(totalConv * 100) / 100,
+      convValue: Math.round(totalValue * 100) / 100,
+      roas: acctRoas, cpa: acctCpa,
+      impressions: totalImpr, clicks: totalClicks,
+      ctr: acctCtr, avgCpc: acctAvgCpc
+    },
+    campaigns
+  };
+}
+
+async function collectPeriodMetrics(client, customerId, loginCustomerId, todayStr) {
+  const periodMetrics = {};
+
+  for (const key of PERIOD_KEYS) {
+    const dateFilter = getPeriodDateFilter(key, todayStr);
+    const query = buildPeriodQuery(dateFilter);
+    log(`  Period query: ${key}`);
+
+    const rows = await executeQuery(client, customerId, query, loginCustomerId);
+    const agg = aggregatePeriodRows(rows);
+
+    periodMetrics[key] = {
+      label: PERIOD_DISPLAY[key],
+      dateRange: getPeriodLabel(key, todayStr),
+      account: agg.account,
+      campaigns: agg.campaigns,
+      insights: [] // filled after all periods collected
+    };
+
+    await new Promise(r => setTimeout(r, 400));
+  }
+
+  // Generate doctor-style diagnosis for each period
+  for (const key of PERIOD_KEYS) {
+    const result = generatePeriodInsights(
+      periodMetrics[key], periodMetrics, key
+    );
+    periodMetrics[key].insights = result.insights;
+    periodMetrics[key].campaignDiagnoses = result.campaignDiagnoses;
+  }
+
+  return periodMetrics;
+}
 
 // ===== MCP CONNECTION =====
 function getMCPConfig() {
@@ -257,12 +408,17 @@ async function collectAccountData(client, customerId, loginCustomerId) {
 }
 
 // ===== RUN AUDIT =====
-function runAudit(account, rawData, date) {
+function runAudit(account, rawData, date, periodMetrics) {
   const diagnosis = diagnoseCampaigns(rawData);
 
   // Fix action items to use account name (not campaign name)
   for (const item of diagnosis.actionItems || []) {
     item.account = account.name;
+  }
+
+  // Attach period metrics to diagnosis
+  if (periodMetrics) {
+    diagnosis.periodMetrics = periodMetrics;
   }
 
   return {
@@ -392,7 +548,12 @@ async function main() {
 
     try {
       const rawData = await collectAccountData(mcpClient, customerId, loginId);
-      const audit = runAudit(acct, rawData, today);
+
+      // Collect multi-period metrics (5 periods)
+      log(`  Collecting period metrics...`);
+      const periodMetrics = await collectPeriodMetrics(mcpClient, customerId, loginId, today);
+
+      const audit = runAudit(acct, rawData, today, periodMetrics);
       writeAuditFile(acct, today, audit);
       auditedAccounts.push(acct);
 
@@ -402,7 +563,8 @@ async function main() {
       }
 
       const summary = audit.diagnosis?.accountSummary;
-      log(`  Verdict: ${summary?.overallVerdict || 'N/A'} | Campaigns: ${summary?.totalCampaigns || 0} | Issues: ${summary?.criticalIssues || 0} critical`);
+      const periodCount = Object.keys(periodMetrics).length;
+      log(`  Verdict: ${summary?.overallVerdict || 'N/A'} | Campaigns: ${summary?.totalCampaigns || 0} | Issues: ${summary?.criticalIssues || 0} critical | Periods: ${periodCount}`);
     } catch (err) {
       log(`  ERROR: ${err.message}`);
     }
