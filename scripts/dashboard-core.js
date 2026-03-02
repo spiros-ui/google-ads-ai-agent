@@ -131,7 +131,8 @@
   }
 
   function statusDot(status) {
-    return '<span class="status-dot ' + getStatusColor(status) + '"></span>';
+    var label = status || 'unknown';
+    return '<span class="status-dot ' + getStatusColor(status) + '" title="' + label.charAt(0).toUpperCase() + label.slice(1) + '"></span>';
   }
 
   window.ui = {
@@ -265,6 +266,9 @@
     if (tabEl) tabEl.classList.add('active');
     if (contentEl) contentEl.classList.add('active');
 
+    // Inject breadcrumb for account tabs
+    _injectBreadcrumb(tabId);
+
     // Render tab content on demand
     if (tabId === 'overview' && typeof window.renderOverview === 'function') {
       window.renderOverview();
@@ -276,6 +280,38 @@
   }
 
   window.switchTab = switchTab;
+
+  // --------------- Breadcrumb navigation ---------------
+
+  function _injectBreadcrumb(tabId) {
+    // Remove any existing breadcrumb
+    var existing = document.getElementById('ux-breadcrumb');
+    if (existing) existing.remove();
+
+    // Only show breadcrumb for account tabs (not overview or actions)
+    if (tabId === 'overview' || tabId === 'actions') return;
+
+    var manifest = window.appData.manifest;
+    if (!manifest || !manifest.accounts) return;
+    var accountName = null;
+    for (var i = 0; i < manifest.accounts.length; i++) {
+      if (manifest.accounts[i].id === tabId) {
+        accountName = manifest.accounts[i].name;
+        break;
+      }
+    }
+    if (!accountName) return;
+
+    var bc = document.createElement('div');
+    bc.id = 'ux-breadcrumb';
+    bc.className = 'ux-breadcrumb';
+    bc.innerHTML = '<span class="ux-breadcrumb-link" onclick="switchTab(\'overview\')">Overview</span> <span class="ux-breadcrumb-sep">&rsaquo;</span> <span class="ux-breadcrumb-current">' + accountName + '</span>';
+
+    var contentEl = document.getElementById('content-' + tabId);
+    if (contentEl) {
+      contentEl.insertBefore(bc, contentEl.firstChild);
+    }
+  }
 
   // --------------- Load a specific date for an account ---------------
 
@@ -541,6 +577,310 @@
   window.gdpSelectDay = gdpSelectDay;
   window.gdpPreset = gdpPreset;
 
+  // --------------- Keyboard navigation ---------------
+
+  var _helpOverlayVisible = false;
+
+  function _initKeyboardNav() {
+    document.addEventListener('keydown', function (e) {
+      // Ignore when typing in an input
+      var tag = (e.target.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+
+      if (e.key === 'Escape') {
+        // Close any open date picker panels
+        var openPanels = document.querySelectorAll('.gdp-panel.show');
+        for (var i = 0; i < openPanels.length; i++) {
+          var panelId = openPanels[i].id || '';
+          var slug = panelId.replace('gdp-panel-', '');
+          if (slug) gdpClose(slug);
+        }
+        // Collapse all open diagnosis panels
+        var openDiags = document.querySelectorAll('.diagnosis-panel.open');
+        for (var j = 0; j < openDiags.length; j++) {
+          var prev = openDiags[j].previousElementSibling;
+          if (prev) prev.classList.remove('expanded');
+          openDiags[j].classList.remove('open');
+          var td = openDiags[j].querySelector('td');
+          if (td) td.innerHTML = '';
+        }
+        // Close help overlay if open
+        _hideHelpOverlay();
+        return;
+      }
+
+      if (e.key === '?') {
+        e.preventDefault();
+        _toggleHelpOverlay();
+      }
+    });
+  }
+
+  function _toggleHelpOverlay() {
+    _helpOverlayVisible ? _hideHelpOverlay() : _showHelpOverlay();
+  }
+
+  function _showHelpOverlay() {
+    if (document.getElementById('ux-help-overlay')) return;
+    var overlay = document.createElement('div');
+    overlay.id = 'ux-help-overlay';
+    overlay.className = 'ux-help-overlay';
+    overlay.onclick = function () { _hideHelpOverlay(); };
+    overlay.innerHTML =
+      '<div class="ux-help-panel" onclick="event.stopPropagation()">' +
+      '<div class="ux-help-title">Keyboard Shortcuts</div>' +
+      '<div class="ux-help-row"><kbd>?</kbd> Toggle this help</div>' +
+      '<div class="ux-help-row"><kbd>Esc</kbd> Close panels / collapse campaigns</div>' +
+      '</div>';
+    document.body.appendChild(overlay);
+    _helpOverlayVisible = true;
+  }
+
+  function _hideHelpOverlay() {
+    var el = document.getElementById('ux-help-overlay');
+    if (el) el.remove();
+    _helpOverlayVisible = false;
+  }
+
+  // --------------- Sort campaigns ---------------
+
+  window.currentSort = { slug: null, col: null, dir: 'asc' };
+
+  window.sortCampaigns = function (accountSlug, column, direction) {
+    var data = window.appData.accounts[accountSlug];
+    if (!data || !data.diagnosis || !data.diagnosis.campaigns) return;
+
+    window.currentSort = { slug: accountSlug, col: column, dir: direction };
+
+    var campaigns = data.diagnosis.campaigns;
+    var metricCols = ['spend', 'impressions', 'clicks', 'conversions', 'cpa', 'roas', 'searchIS'];
+    var directCols = ['name', 'objective', 'bidding', 'status'];
+    var mult = direction === 'desc' ? -1 : 1;
+
+    campaigns.sort(function (a, b) {
+      var va, vb;
+      if (column === 'budget') {
+        va = a.budget; vb = b.budget;
+      } else if (metricCols.indexOf(column) !== -1) {
+        va = a.metrics ? a.metrics[column] : null;
+        vb = b.metrics ? b.metrics[column] : null;
+      } else if (directCols.indexOf(column) !== -1) {
+        va = a[column]; vb = b[column];
+      } else {
+        return 0;
+      }
+
+      // Nulls go last regardless of direction
+      if (va == null && vb == null) return 0;
+      if (va == null) return 1;
+      if (vb == null) return -1;
+
+      if (typeof va === 'string') {
+        return mult * va.localeCompare(vb);
+      }
+      return mult * (va - vb);
+    });
+
+    if (typeof window.renderAccount === 'function') {
+      window.renderAccount(accountSlug);
+    }
+  };
+
+  // --------------- Expand all / Collapse all campaigns ---------------
+
+  window.expandAllCampaigns = function (accountSlug) {
+    var data = window.appData.accounts[accountSlug];
+    if (!data || !data.diagnosis || !data.diagnosis.campaigns) return;
+    // We need to set expansion state and re-render.
+    // The expansion state lives inside dashboard-account.js's closure,
+    // so we set flags on the panels directly and re-render.
+    var campaigns = data.diagnosis.campaigns;
+    for (var i = 0; i < campaigns.length; i++) {
+      var panel = document.getElementById('diag-' + accountSlug + '-' + i);
+      var row = panel ? panel.previousElementSibling : null;
+      if (panel) {
+        panel.classList.add('open');
+        if (data.diagnosis.campaigns[i]) {
+          var td = panel.querySelector('td');
+          // Only fill if not already populated
+          if (td && !td.innerHTML.trim()) {
+            // Trigger toggle which properly sets expansion state
+          }
+        }
+      }
+      if (row) row.classList.add('expanded');
+    }
+    // Full re-render is safest to ensure diagnosis content is built
+    if (typeof window.renderAccount === 'function') {
+      // Set a flag the account renderer can check
+      window._uxExpandAll = window._uxExpandAll || {};
+      window._uxExpandAll[accountSlug] = true;
+      window.renderAccount(accountSlug);
+      delete window._uxExpandAll[accountSlug];
+    }
+  };
+
+  window.collapseAllCampaigns = function (accountSlug) {
+    var data = window.appData.accounts[accountSlug];
+    if (!data || !data.diagnosis || !data.diagnosis.campaigns) return;
+    var campaigns = data.diagnosis.campaigns;
+    for (var i = 0; i < campaigns.length; i++) {
+      var panel = document.getElementById('diag-' + accountSlug + '-' + i);
+      var row = panel ? panel.previousElementSibling : null;
+      if (panel) {
+        panel.classList.remove('open');
+        var td = panel.querySelector('td');
+        if (td) td.innerHTML = '';
+      }
+      if (row) row.classList.remove('expanded');
+    }
+    // Also signal collapse for re-render
+    window._uxCollapseAll = window._uxCollapseAll || {};
+    window._uxCollapseAll[accountSlug] = true;
+    if (typeof window.renderAccount === 'function') {
+      window.renderAccount(accountSlug);
+      delete window._uxCollapseAll[accountSlug];
+    }
+  };
+
+  // --------------- Back to top button ---------------
+
+  function _initBackToTop() {
+    var btn = document.createElement('button');
+    btn.className = 'ux-back-to-top';
+    btn.id = 'ux-back-to-top';
+    btn.innerHTML = '&uarr;';
+    btn.title = 'Back to top';
+    btn.style.display = 'none';
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.body.appendChild(btn);
+
+    window.addEventListener('scroll', function () {
+      btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+    }, { passive: true });
+  }
+
+  // --------------- Issue count badges on tabs ---------------
+
+  function _updateTabBadges() {
+    var manifest = window.appData.manifest;
+    var accounts = window.appData.accounts;
+    if (!manifest || !manifest.accounts) return;
+
+    manifest.accounts.forEach(function (acc) {
+      var data = accounts[acc.id];
+      if (!data || !data.diagnosis || !data.diagnosis.campaigns) return;
+
+      var count = 0;
+      data.diagnosis.campaigns.forEach(function (c) {
+        if (c.issues) {
+          c.issues.forEach(function (issue) {
+            var sev = (issue.severity || '').toLowerCase();
+            if (sev === 'critical' || sev === 'high') count++;
+          });
+        }
+      });
+
+      var tabEl = document.querySelector('[data-tab="' + acc.id + '"]');
+      if (!tabEl) return;
+
+      // Remove existing badge
+      var existingBadge = tabEl.querySelector('.ux-tab-badge');
+      if (existingBadge) existingBadge.remove();
+
+      if (count > 0) {
+        var badge = document.createElement('span');
+        badge.className = 'ux-tab-badge';
+        badge.textContent = count;
+        tabEl.style.position = 'relative';
+        tabEl.appendChild(badge);
+      }
+    });
+  }
+
+  // --------------- Export campaign CSV ---------------
+
+  window.exportCampaignCSV = function (accountSlug) {
+    var data = window.appData.accounts[accountSlug];
+    if (!data || !data.diagnosis || !data.diagnosis.campaigns) return;
+
+    var campaigns = data.diagnosis.campaigns;
+    var headers = ['Campaign', 'Objective', 'Bidding', 'Budget/day', 'Spend', 'Impressions', 'Clicks', 'Conversions', 'CPA', 'ROAS', 'IS%', 'Status'];
+    var rows = [headers.join(',')];
+
+    campaigns.forEach(function (c) {
+      var m = c.metrics || {};
+      var row = [
+        '"' + (c.name || '').replace(/"/g, '""') + '"',
+        '"' + (c.objective || '').replace(/"/g, '""') + '"',
+        '"' + (c.bidding || '').replace(/"/g, '""') + '"',
+        c.budget != null ? c.budget : '',
+        m.spend != null ? m.spend : '',
+        m.impressions != null ? m.impressions : '',
+        m.clicks != null ? m.clicks : '',
+        m.conversions != null ? m.conversions : '',
+        m.cpa != null ? m.cpa : '',
+        m.roas != null ? m.roas : '',
+        m.searchIS != null ? m.searchIS : '',
+        '"' + (c.status || '').replace(/"/g, '""') + '"'
+      ];
+      rows.push(row.join(','));
+    });
+
+    var csvContent = rows.join('\n');
+    var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = accountSlug + '-campaigns-' + new Date().toISOString().slice(0, 10) + '.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  // --------------- Overview search/filter ---------------
+
+  window.overviewSearchFilter = '';
+
+  window.filterOverviewAccounts = function (query) {
+    window.overviewSearchFilter = (query || '').toLowerCase().trim();
+    if (typeof window.renderOverview === 'function') {
+      window.renderOverview();
+    }
+  };
+
   // Start
+  _initKeyboardNav();
+  _initBackToTop();
+
+  // Patch init to update tab badges after all data loads
+  var _origInit = init;
+  init = function () {
+    loadActionStates();
+
+    fetch(DATA_BASE + '/manifest.json')
+      .then(function (r) { return r.json(); })
+      .then(function (m) {
+        window.appData.manifest = m;
+        document.getElementById('lastUpdated').textContent = 'Last updated: ' + m.lastUpdated;
+        buildTabs(m);
+        buildContentShells(m);
+        return loadAllLatest(m);
+      })
+      .then(function () {
+        switchTab('overview');
+        // Update tab badges after all data is loaded
+        _updateTabBadges();
+      })
+      .catch(function (e) {
+        document.getElementById('contentContainer').innerHTML =
+          '<div class="empty-state"><h2>No data available</h2><p>Manifest file not found. Run the audit script first.</p></div>';
+        console.error(e);
+      });
+  };
+
   init();
 })();

@@ -89,6 +89,12 @@
     if (approvedCount > 0) {
       html += '<button class="btn btn-export" onclick="exportApproved()">Export Approved</button>';
     }
+
+    // Bulk action buttons
+    if (pendingCount > 0) {
+      html += '<button class="btn btn-approve" onclick="bulkApproveAll()">Approve All Pending</button>';
+      html += '<button class="btn btn-reject" onclick="bulkRejectAll()">Reject All Pending</button>';
+    }
     html += '</div>';
 
     // Items grouped by account
@@ -168,8 +174,10 @@
       html += '<button class="btn btn-reject" onclick="rejectItem(\'' + escapeAttr(item.id) + '\')">Reject</button>';
     } else if (effectiveStatus === 'approved') {
       html += '<span class="status-badge status-approved">Approved</span>';
+      html += '<button class="btn btn-undo" onclick="undoItem(\'' + escapeAttr(item.id) + '\')">Undo</button>';
     } else if (effectiveStatus === 'rejected') {
       html += '<span class="status-badge status-rejected">Rejected</span>';
+      html += '<button class="btn btn-undo" onclick="undoItem(\'' + escapeAttr(item.id) + '\')">Undo</button>';
     }
     html += '</div>';
 
@@ -212,8 +220,76 @@
     renderActionItems();
   }
 
+  function undoItem(id) {
+    delete window.appData.actionStates[id];
+    window.saveActionStates();
+    renderActionItems();
+  }
+
+  function bulkApproveAll() {
+    // Collect currently visible pending items
+    var manifest = window.appData.manifest;
+    var accounts = window.appData.accounts;
+    var states = window.appData.actionStates || {};
+    if (!manifest) return;
+
+    var pendingIds = [];
+    manifest.accounts.forEach(function (acc) {
+      var data = accounts[acc.id];
+      if (!data || !data.diagnosis || !data.diagnosis.actionItems) return;
+      data.diagnosis.actionItems.forEach(function (item) {
+        var effectiveStatus = states[item.id] ? states[item.id].status : 'pending';
+        if (effectiveStatus !== 'pending') return;
+        if (currentAccount !== 'all' && acc.id !== currentAccount) return;
+        pendingIds.push(item.id);
+      });
+    });
+
+    if (pendingIds.length === 0) return;
+    if (!confirm('Approve all ' + pendingIds.length + ' pending items?')) return;
+
+    var now = new Date().toISOString();
+    pendingIds.forEach(function (id) {
+      window.appData.actionStates[id] = { status: 'approved', timestamp: now };
+    });
+    window.saveActionStates();
+    renderActionItems();
+  }
+
+  function bulkRejectAll() {
+    var manifest = window.appData.manifest;
+    var accounts = window.appData.accounts;
+    var states = window.appData.actionStates || {};
+    if (!manifest) return;
+
+    var pendingIds = [];
+    manifest.accounts.forEach(function (acc) {
+      var data = accounts[acc.id];
+      if (!data || !data.diagnosis || !data.diagnosis.actionItems) return;
+      data.diagnosis.actionItems.forEach(function (item) {
+        var effectiveStatus = states[item.id] ? states[item.id].status : 'pending';
+        if (effectiveStatus !== 'pending') return;
+        if (currentAccount !== 'all' && acc.id !== currentAccount) return;
+        pendingIds.push(item.id);
+      });
+    });
+
+    if (pendingIds.length === 0) return;
+    if (!confirm('Reject all ' + pendingIds.length + ' pending items?')) return;
+
+    var now = new Date().toISOString();
+    pendingIds.forEach(function (id) {
+      window.appData.actionStates[id] = { status: 'rejected', timestamp: now };
+    });
+    window.saveActionStates();
+    renderActionItems();
+  }
+
   window.approveItem = approveItem;
   window.rejectItem = rejectItem;
+  window.undoItem = undoItem;
+  window.bulkApproveAll = bulkApproveAll;
+  window.bulkRejectAll = bulkRejectAll;
 
   // --------------- Export ---------------
 

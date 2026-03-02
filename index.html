@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google Ads AI Agent — Campaign Performance Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%236c5ce7'/><path d='M8 22V14l4-4v12zm6 0V10l4-4v16zm6 0V12l4-2v12z' fill='white' opacity='.9'/></svg>">
 <style>
   :root {
     --bg: #0f1117;
@@ -249,6 +250,88 @@
   .empty-state { text-align:center; padding:80px 40px; color:var(--text-dim); }
   .empty-state h2 { font-size:20px; margin-bottom:8px; color:var(--text); }
 
+  /* === UI POLISH === */
+
+  /* Global smooth scroll */
+  html { scroll-behavior:smooth; }
+
+  /* Global scrollbar styling (dark theme) */
+  ::-webkit-scrollbar { width:8px; height:8px; }
+  ::-webkit-scrollbar-track { background:var(--bg); }
+  ::-webkit-scrollbar-thumb { background:var(--border); border-radius:4px; }
+  ::-webkit-scrollbar-thumb:hover { background:var(--text-dim); }
+  * { scrollbar-width:thin; scrollbar-color:var(--border) var(--bg); }
+
+  /* 1. Header redesign — accent bar + bolder title */
+  .header { border-left:4px solid var(--accent); background:linear-gradient(90deg, rgba(108,92,231,0.06) 0%, var(--surface) 30%); }
+  .header h1 { font-size:20px; font-weight:700; letter-spacing:-0.3px; }
+
+  /* 2. Account card polish — hover shadow + verdict left border + spend bar */
+  .account-card { border-left:3px solid transparent; position:relative; overflow:hidden; }
+  .account-card:hover { box-shadow:0 8px 24px rgba(0,0,0,0.3); }
+  .account-card.verdict-border-healthy { border-left-color:var(--green); }
+  .account-card.verdict-border-attention { border-left-color:var(--yellow); }
+  .account-card.verdict-border-critical { border-left-color:var(--red); }
+  .account-card.verdict-border-inactive { border-left-color:var(--text-dim); }
+  .account-card .spend-bar { position:absolute; bottom:0; left:0; height:3px; background:var(--accent); opacity:0.4; transition:width .4s ease; border-radius:0 2px 0 0; }
+
+  /* 3. Campaign table — zebra + sticky thead + hover + expand icon */
+  thead { position:sticky; top:0; z-index:10; }
+  thead th { background:var(--surface2); }
+  tbody tr.campaign-row:nth-child(4n+1) { background:rgba(255,255,255,0.015); }
+  tbody tr.campaign-row:hover { background:var(--surface-hover); }
+  .expand-icon { display:inline-block; width:16px; font-size:12px; color:var(--text-dim); margin-right:4px; flex-shrink:0; }
+
+  /* 4. Diagnosis panel animation */
+  .diagnosis-panel td { padding:0; background:var(--bg); }
+  .diagnosis-panel.open td { padding:0; }
+  .diagnosis-inner { border-left:3px solid rgba(108,92,231,0.5); transition:opacity .25s ease, max-height .3s ease; }
+  .diagnosis-panel .diagnosis-inner { animation:diagOpen .3s ease forwards; }
+  @keyframes diagOpen {
+    from { opacity:0; transform:translateY(-8px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+
+  /* 5. Summary stat cards — top border accents + larger value */
+  .summary-stat { border-top:3px solid var(--border); }
+  .summary-stat.stat-spend { border-top-color:var(--accent); }
+  .summary-stat.stat-conversions { border-top-color:var(--green); }
+  .summary-stat.stat-issues { border-top-color:var(--red); }
+  .summary-stat.stat-attention { border-top-color:var(--yellow); }
+  .summary-stat.stat-account { border-top-color:var(--accent-light); }
+  .summary-stat.stat-campaigns { border-top-color:var(--accent); }
+  .summary-stat.stat-critical { border-top-color:var(--red); }
+  .summary-stat .value { font-size:28px; }
+
+  /* 6. Verdict/severity pills — rounder + more padding + depth */
+  .verdict-pill { padding:4px 14px; border-radius:16px; text-shadow:0 1px 2px rgba(0,0,0,0.15); }
+  .pill { padding:3px 12px; border-radius:16px; text-shadow:0 1px 2px rgba(0,0,0,0.15); }
+
+  /* 7. Loading skeleton animation */
+  @keyframes shimmer {
+    0% { background-position:-400px 0; }
+    100% { background-position:400px 0; }
+  }
+  .skeleton {
+    background:linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+    background-size:800px 100%;
+    animation:shimmer 1.5s infinite ease-in-out;
+    border-radius:6px;
+  }
+  .skeleton-text { height:14px; margin-bottom:8px; width:60%; }
+  .skeleton-value { height:28px; margin-bottom:4px; width:40%; }
+  .skeleton-card { height:140px; border-radius:10px; }
+
+  /* 8. Empty state — softer styling */
+  .empty-state { color:var(--text-dim); }
+  .empty-state svg { margin-bottom:16px; }
+  .empty-state h2 { font-size:22px; font-weight:600; margin-bottom:10px; color:var(--text); }
+  .empty-state p { font-size:14px; max-width:400px; margin:0 auto; line-height:1.6; }
+
+  /* 10. Smooth tab transitions */
+  .tab-content { opacity:0; transition:opacity .2s ease; }
+  .tab-content.active { display:block; opacity:1; }
+
   /* Responsive */
   @media (max-width:768px) {
     .header { padding:12px 16px; }
@@ -259,6 +342,39 @@
     .action-item { flex-direction:column; }
     .action-item .ai-buttons { align-self:flex-end; }
   }
+
+  /* === UX Agent Styles (prefixed with ux-) === */
+
+  /* Back to top button */
+  .ux-back-to-top { position:fixed; bottom:32px; right:32px; z-index:150; width:44px; height:44px; border-radius:50%; border:1px solid var(--border); background:var(--surface); color:var(--text); font-size:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .2s; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .ux-back-to-top:hover { background:var(--accent); border-color:var(--accent); color:#fff; transform:translateY(-2px); }
+
+  /* Tab issue badge */
+  .ux-tab-badge { position:absolute; top:6px; right:4px; min-width:16px; height:16px; border-radius:8px; background:var(--red); color:#fff; font-size:9px; font-weight:700; display:flex; align-items:center; justify-content:center; padding:0 4px; line-height:1; pointer-events:none; }
+
+  /* Breadcrumb */
+  .ux-breadcrumb { padding:12px 32px 0; font-size:13px; color:var(--text-dim); }
+  .ux-breadcrumb-link { color:var(--accent-light); cursor:pointer; transition:color .15s; }
+  .ux-breadcrumb-link:hover { color:var(--text); text-decoration:underline; }
+  .ux-breadcrumb-sep { margin:0 8px; color:var(--text-dim); }
+  .ux-breadcrumb-current { color:var(--text); font-weight:500; }
+
+  /* Help overlay */
+  .ux-help-overlay { position:fixed; inset:0; z-index:300; background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center; }
+  .ux-help-panel { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px 32px; min-width:280px; box-shadow:0 16px 48px rgba(0,0,0,.5); }
+  .ux-help-title { font-size:16px; font-weight:600; margin-bottom:16px; color:var(--text); }
+  .ux-help-row { display:flex; align-items:center; gap:12px; padding:6px 0; font-size:14px; color:var(--text-dim); }
+  .ux-help-row kbd { display:inline-block; background:var(--surface2); border:1px solid var(--border); border-radius:4px; padding:2px 8px; font-family:inherit; font-size:12px; font-weight:600; color:var(--text); min-width:28px; text-align:center; }
+
+  /* Undo button for action items */
+  .btn-undo { padding:5px 12px; border-radius:6px; border:1px solid var(--border); background:var(--surface2); color:var(--text-dim); font-size:11px; cursor:pointer; transition:all .15s; margin-left:6px; }
+  .btn-undo:hover { background:var(--surface); color:var(--text); border-color:var(--accent); }
+
+  /* Overview search input */
+  .ux-search-bar { margin-bottom:20px; }
+  .ux-search-input { width:100%; max-width:400px; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:10px 16px; color:var(--text); font-size:14px; font-family:inherit; }
+  .ux-search-input::placeholder { color:var(--text-dim); }
+  .ux-search-input:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
 </style>
 </head>
 <body>

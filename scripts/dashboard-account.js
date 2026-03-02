@@ -14,7 +14,13 @@
 
     var data = window.appData.accounts[accountSlug];
     if (!data || !data.diagnosis) {
-      container.innerHTML = '<div class="content"><div class="empty-state"><h2>No data available</h2><p>Audit data not found for this account.</p></div></div>';
+      container.innerHTML = '<div class="content"><div class="empty-state">' +
+        '<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2" opacity="0.3"/>' +
+        '<path d="M16 44L26 30L34 38L42 24L48 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>' +
+        '<circle cx="26" cy="30" r="2" fill="currentColor" opacity="0.3"/><circle cx="34" cy="38" r="2" fill="currentColor" opacity="0.3"/>' +
+        '<circle cx="42" cy="24" r="2" fill="currentColor" opacity="0.3"/></svg>' +
+        '<h2>No data available</h2><p>Audit data not found for this account.</p></div></div>';
       return;
     }
 
@@ -96,16 +102,20 @@
 
     // Account summary bar
     html += '<div class="summary-bar">';
-    html += buildStat('Account', data.account || accMeta.name, summary.overallVerdict ? window.ui.verdictPill(summary.overallVerdict) : '');
-    html += buildStat('30d Spend', window.fmt.currency(summary.totalSpend), '');
-    html += buildStat('Conversions', window.fmt.number(summary.totalConversions), '');
-    html += buildStat('Campaigns', String(summary.totalCampaigns || campaigns.length), '');
-    html += buildStat('Critical Issues', '<span style="color:var(--red)">' + (summary.criticalIssues || 0) + '</span>', '');
+    html += buildStat('Account', data.account || accMeta.name, summary.overallVerdict ? window.ui.verdictPill(summary.overallVerdict) : '', 'stat-account');
+    html += buildStat('30d Spend', window.fmt.currency(summary.totalSpend), '', 'stat-spend');
+    html += buildStat('Conversions', window.fmt.number(summary.totalConversions), '', 'stat-conversions');
+    html += buildStat('Campaigns', String(summary.totalCampaigns || campaigns.length), '', 'stat-campaigns');
+    html += buildStat('Critical Issues', '<span style="color:var(--red)">' + (summary.criticalIssues || 0) + '</span>', '', 'stat-critical');
     html += '</div>';
 
     // Campaign table
     if (campaigns.length === 0) {
-      html += '<div class="empty-state" style="padding:40px"><h2>No campaign data</h2><p>This audit does not contain per-campaign diagnosis.</p></div>';
+      html += '<div class="empty-state" style="padding:40px">' +
+        '<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>' +
+        '<path d="M12 32L18 22L24 28L30 18L36 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/></svg>' +
+        '<h2>No campaign data</h2><p>This audit does not contain per-campaign diagnosis.</p></div>';
     } else {
       html += '<table id="campaign-table-' + accountSlug + '">';
       html += '<thead><tr>';
@@ -123,7 +133,7 @@
 
         // Campaign row
         html += '<tr class="campaign-row' + (isExpanded ? ' expanded' : '') + '" onclick="toggleCampaign(\'' + accountSlug + '\',' + ci + ')">';
-        html += '<td style="font-weight:500" title="' + escapeAttr(camp.name) + '">' + escapeHtml(camp.name) + '</td>';
+        html += '<td style="font-weight:500" title="' + escapeAttr(camp.name) + '"><span class="expand-icon">' + (isExpanded ? '\u25BE' : '\u25B8') + '</span>' + escapeHtml(camp.name) + '</td>';
         html += '<td title="' + escapeAttr(camp.objective || '') + '">' + escapeHtml(camp.objective || '--') + '</td>';
         html += '<td style="font-size:12px" title="' + escapeAttr(camp.bidding || '') + '">' + escapeHtml(camp.bidding || '--') + '</td>';
         html += '<td class="num">' + (camp.budget != null ? window.fmt.currency(camp.budget) : '--') + '</td>';
@@ -153,8 +163,8 @@
     container.innerHTML = html;
   }
 
-  function buildStat(label, value, sub) {
-    return '<div class="summary-stat">' +
+  function buildStat(label, value, sub, accentClass) {
+    return '<div class="summary-stat' + (accentClass ? ' ' + accentClass : '') + '">' +
       '<div class="label">' + label + '</div>' +
       '<div class="value">' + value + '</div>' +
       (sub ? '<div class="sub">' + sub + '</div>' : '') +
@@ -170,9 +180,13 @@
     var panel = document.getElementById('diag-' + accountSlug + '-' + campIndex);
     var row = panel ? panel.previousElementSibling : null;
 
+    // Update expand icon
+    var icon = row ? row.querySelector('.expand-icon') : null;
+
     if (expandedCampaigns[key]) {
       // Expand
       if (row) row.classList.add('expanded');
+      if (icon) icon.textContent = '\u25BE';
       if (panel) {
         panel.classList.add('open');
         var data = window.appData.accounts[accountSlug];
@@ -183,6 +197,7 @@
     } else {
       // Collapse
       if (row) row.classList.remove('expanded');
+      if (icon) icon.textContent = '\u25B8';
       if (panel) {
         panel.classList.remove('open');
         panel.querySelector('td').innerHTML = '';
