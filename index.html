@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Google Ads AI Agent — Daily Audit Dashboard</title>
+<title>Google Ads AI Agent — Campaign Performance Dashboard</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -23,85 +23,184 @@
     --yellow-bg: rgba(253,203,110,0.12);
     --green-bg: rgba(0,184,148,0.12);
     --blue-bg: rgba(108,92,231,0.12);
+    --surface-hover: #2a2e3d;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+
+  /* Header */
   .header { background:var(--surface); border-bottom:1px solid var(--border); padding:16px 32px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
   .header h1 { font-size:18px; font-weight:600; }
   .header h1 span { color:var(--accent-light); }
   .header .updated { font-size:12px; color:var(--text-dim); }
+
+  /* Tabs */
   .tabs { display:flex; background:var(--surface); border-bottom:1px solid var(--border); padding:0 32px; overflow-x:auto; position:sticky; top:57px; z-index:99; }
-  .tab { padding:12px 24px; font-size:14px; font-weight:500; color:var(--text-dim); cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; white-space:nowrap; }
+  .tab { padding:12px 24px; font-size:14px; font-weight:500; color:var(--text-dim); cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; white-space:nowrap; user-select:none; }
   .tab:hover { color:var(--text); background:var(--surface2); }
   .tab.active { color:var(--accent-light); border-bottom-color:var(--accent); }
+
+  /* Content */
   .content { max-width:1400px; margin:0 auto; padding:24px 32px; }
-  .date-nav { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
-  .date-nav label { font-size:13px; color:var(--text-dim); font-weight:500; }
-  .date-select { background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:8px 12px; color:var(--text); font-size:14px; cursor:pointer; }
-  .date-select:focus { outline:none; border-color:var(--accent); }
-  .score-hero { display:flex; gap:24px; margin-bottom:24px; flex-wrap:wrap; }
-  .score-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px; flex:1; min-width:200px; }
-  .score-card.main { min-width:300px; text-align:center; }
-  .score-ring { width:140px; height:140px; margin:0 auto 16px; position:relative; }
-  .score-ring svg { transform:rotate(-90deg); }
-  .score-ring .value { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:36px; font-weight:700; }
-  .score-ring .grade { position:absolute; top:50%; left:50%; transform:translate(-50%, 12px); font-size:14px; font-weight:600; color:var(--text-dim); }
-  .score-card h3 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); margin-bottom:8px; }
-  .score-card .metric { font-size:28px; font-weight:700; }
-  .score-card .sub { font-size:12px; color:var(--text-dim); margin-top:4px; }
-  .category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:24px; }
-  .cat-card { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:16px; }
-  .cat-card .cat-name { font-size:12px; color:var(--text-dim); font-weight:500; margin-bottom:4px; }
-  .cat-card .cat-score { font-size:24px; font-weight:700; }
-  .cat-card .cat-bar { height:4px; background:var(--surface2); border-radius:2px; margin-top:8px; overflow:hidden; }
-  .cat-card .cat-fill { height:100%; border-radius:2px; transition:width .5s; }
-  .section { margin-bottom:32px; }
-  .section-title { font-size:16px; font-weight:600; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
-  .section-title .badge { font-size:11px; padding:2px 8px; border-radius:10px; font-weight:600; }
-  table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:8px; overflow:hidden; }
-  thead th { background:var(--surface2); padding:10px 16px; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); font-weight:600; border-bottom:1px solid var(--border); }
-  tbody td { padding:10px 16px; font-size:13px; border-bottom:1px solid var(--border); vertical-align:top; }
-  tbody tr:last-child td { border-bottom:none; }
-  tbody tr:hover { background:var(--surface2); }
+  .tab-content { display:none; }
+  .tab-content.active { display:block; }
+
+  /* Summary bar */
+  .summary-bar { display:flex; gap:16px; margin-bottom:24px; flex-wrap:wrap; }
+  .summary-stat { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 24px; flex:1; min-width:180px; }
+  .summary-stat .label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--text-dim); margin-bottom:4px; }
+  .summary-stat .value { font-size:26px; font-weight:700; }
+  .summary-stat .sub { font-size:12px; color:var(--text-dim); margin-top:2px; }
+
+  /* Account cards grid */
+  .accounts-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:16px; }
+  .account-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:20px; cursor:pointer; transition:all .2s; }
+  .account-card:hover { border-color:var(--accent); background:var(--surface2); transform:translateY(-2px); }
+  .account-card .card-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; }
+  .account-card .card-name { font-size:15px; font-weight:600; line-height:1.3; }
+  .account-card .card-metrics { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .account-card .card-metric { font-size:12px; color:var(--text-dim); }
+  .account-card .card-metric strong { display:block; font-size:16px; color:var(--text); }
+  .account-card .card-issues { margin-top:12px; padding-top:12px; border-top:1px solid var(--border); font-size:12px; color:var(--text-dim); display:flex; gap:12px; flex-wrap:wrap; }
+
+  /* Verdict pills */
+  .verdict-pill { display:inline-block; padding:3px 12px; border-radius:12px; font-size:11px; font-weight:600; white-space:nowrap; }
+  .verdict-healthy { background:var(--green-bg); color:var(--green); }
+  .verdict-attention { background:var(--yellow-bg); color:var(--yellow); }
+  .verdict-critical { background:var(--red-bg); color:var(--red); }
+  .verdict-inactive { background:var(--surface2); color:var(--text-dim); }
+
+  /* Severity pills */
   .pill { display:inline-block; padding:2px 10px; border-radius:10px; font-size:11px; font-weight:600; }
-  .pill-pass { background:var(--green-bg); color:var(--green); }
-  .pill-warning { background:var(--yellow-bg); color:var(--yellow); }
-  .pill-fail { background:var(--red-bg); color:var(--red); }
-  .pill-na { background:var(--surface2); color:var(--text-dim); }
   .pill-critical { background:var(--red-bg); color:var(--red); }
   .pill-high { background:var(--orange-bg); color:var(--orange); }
   .pill-medium { background:var(--yellow-bg); color:var(--yellow); }
   .pill-low { background:var(--blue-bg); color:var(--accent-light); }
-  .quick-wins { display:grid; gap:8px; }
-  .qw-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:14px 18px; display:flex; align-items:flex-start; gap:12px; }
-  .qw-num { width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
-  .qw-body { flex:1; }
-  .qw-body .qw-action { font-size:14px; font-weight:500; }
-  .qw-body .qw-meta { font-size:12px; color:var(--text-dim); margin-top:4px; }
-  .rec-phase { margin-bottom:16px; }
-  .rec-phase h4 { font-size:14px; font-weight:600; margin-bottom:8px; color:var(--accent-light); }
-  .rec-phase ul { list-style:none; padding:0; }
-  .rec-phase li { padding:6px 0 6px 20px; position:relative; font-size:13px; }
-  .rec-phase li::before { content:''; position:absolute; left:0; top:13px; width:8px; height:8px; border-radius:50%; background:var(--accent); }
-  .product-table .wasted { color:var(--red); }
-  .product-table .star { color:var(--green); }
+  .pill-type { background:var(--surface2); color:var(--text-dim); }
+
+  /* Status dot */
+  .status-dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .status-dot.green { background:var(--green); }
+  .status-dot.yellow { background:var(--yellow); }
+  .status-dot.red { background:var(--red); }
+  .status-dot.grey { background:var(--text-dim); }
+
+  /* Date nav */
+  .date-nav { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  .date-nav label { font-size:13px; color:var(--text-dim); font-weight:500; }
+  .date-select { background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:8px 12px; color:var(--text); font-size:14px; cursor:pointer; }
+  .date-select:focus { outline:none; border-color:var(--accent); }
+
+  /* Campaign table */
+  table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:8px; overflow:hidden; }
+  thead th { background:var(--surface2); padding:10px 14px; text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-dim); font-weight:600; border-bottom:1px solid var(--border); white-space:nowrap; }
+  thead th.num { text-align:right; }
+  tbody td { padding:10px 14px; font-size:13px; border-bottom:1px solid var(--border); vertical-align:middle; }
+  tbody td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr.campaign-row { cursor:pointer; transition:background .15s; }
+  tbody tr.campaign-row:hover { background:var(--surface-hover); }
+  tbody tr.campaign-row.expanded { background:var(--surface2); }
+
+  /* Diagnosis panel */
+  .diagnosis-panel { display:none; }
+  .diagnosis-panel.open { display:table-row; }
+  .diagnosis-panel td { padding:0; background:var(--bg); }
+  .diagnosis-inner { padding:20px 24px; border-left:3px solid var(--accent); margin:0 14px 0 14px; }
+
+  /* Objective bar */
+  .obj-bar { display:flex; gap:24px; flex-wrap:wrap; padding:12px 16px; background:var(--surface2); border-radius:8px; margin-bottom:16px; font-size:13px; }
+  .obj-bar .obj-item { display:flex; gap:6px; align-items:center; }
+  .obj-bar .obj-label { color:var(--text-dim); }
+  .obj-bar .obj-value { font-weight:600; }
+  .obj-bar .obj-no { color:var(--red); font-weight:700; }
+  .obj-bar .obj-yes { color:var(--green); font-weight:700; }
+
+  /* Impression share bar */
+  .is-bar-container { margin-bottom:16px; }
+  .is-bar-label { font-size:12px; color:var(--text-dim); margin-bottom:6px; font-weight:500; }
+  .is-bar { display:flex; height:24px; border-radius:6px; overflow:hidden; background:var(--surface2); width:100%; }
+  .is-bar .is-segment { display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; white-space:nowrap; overflow:hidden; }
+  .is-bar .is-won { background:var(--accent); color:#fff; }
+  .is-bar .is-budget { background:var(--orange); color:#fff; }
+  .is-bar .is-rank { background:var(--yellow); color:#1a1d27; }
+  .is-bar .is-other { background:var(--surface2); color:var(--text-dim); }
+  .is-legend { display:flex; gap:16px; margin-top:6px; font-size:11px; color:var(--text-dim); }
+  .is-legend-dot { width:8px; height:8px; border-radius:2px; display:inline-block; margin-right:4px; vertical-align:middle; }
+
+  /* Issue cards */
+  .issues-section { margin-bottom:16px; }
+  .issues-section-title { font-size:13px; font-weight:600; margin-bottom:10px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.5px; }
+  .issue-card { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:14px 18px; margin-bottom:10px; }
+  .issue-header { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .issue-title { font-size:14px; font-weight:600; }
+  .issue-reasoning { font-size:13px; color:var(--text-dim); margin-bottom:10px; line-height:1.5; }
+  .issue-action { background:var(--blue-bg); border:1px solid rgba(108,92,231,0.25); border-radius:6px; padding:10px 14px; font-size:13px; margin-bottom:6px; }
+  .issue-action strong { color:var(--accent-light); }
+  .issue-impact { font-size:12px; color:var(--green); font-weight:500; }
+
+  /* Strengths */
+  .strengths-section { margin-bottom:16px; }
+  .strength-item { display:flex; gap:8px; padding:8px 0; font-size:13px; }
+  .strength-item::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--green); margin-top:7px; flex-shrink:0; }
+  .strength-title { font-weight:600; color:var(--green); }
+  .strength-detail { color:var(--text-dim); }
+
+  /* Keyword/search term mini-tables */
+  .mini-table { font-size:12px; margin-top:8px; }
+  .mini-table th { font-size:10px; padding:6px 10px; }
+  .mini-table td { font-size:12px; padding:6px 10px; }
+
+  /* Action items */
+  .action-filters { display:flex; gap:12px; align-items:center; margin-bottom:20px; flex-wrap:wrap; }
+  .filter-btn { padding:6px 16px; border-radius:6px; border:1px solid var(--border); background:var(--surface); color:var(--text-dim); font-size:13px; cursor:pointer; transition:all .15s; }
+  .filter-btn:hover { background:var(--surface2); color:var(--text); }
+  .filter-btn.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .filter-select { background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:6px 12px; color:var(--text); font-size:13px; cursor:pointer; }
+  .filter-select:focus { outline:none; border-color:var(--accent); }
+
+  .action-group-label { font-size:12px; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:1px; padding:12px 0 8px; border-bottom:1px solid var(--border); margin-bottom:12px; margin-top:20px; }
+  .action-group-label:first-of-type { margin-top:0; }
+
+  .action-item { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:16px 20px; margin-bottom:10px; display:flex; align-items:flex-start; gap:16px; }
+  .action-item .ai-info { flex:1; }
+  .action-item .ai-pills { display:flex; gap:6px; margin-bottom:6px; flex-wrap:wrap; }
+  .action-item .ai-title { font-size:14px; font-weight:600; margin-bottom:4px; }
+  .action-item .ai-desc { font-size:13px; color:var(--text-dim); margin-bottom:4px; }
+  .action-item .ai-meta { font-size:12px; color:var(--text-dim); }
+  .action-item .ai-meta strong { color:var(--text); }
+  .action-item .ai-buttons { display:flex; gap:8px; flex-shrink:0; align-items:center; }
+  .btn { padding:7px 18px; border-radius:6px; border:none; font-size:13px; font-weight:500; cursor:pointer; transition:all .15s; }
+  .btn-approve { background:var(--green); color:#fff; }
+  .btn-approve:hover { background:#00a884; }
+  .btn-reject { background:var(--surface2); color:var(--text-dim); border:1px solid var(--border); }
+  .btn-reject:hover { background:var(--red-bg); color:var(--red); border-color:var(--red); }
+  .btn-export { background:var(--accent); color:#fff; }
+  .btn-export:hover { background:#5b4bd5; }
+  .status-badge { padding:5px 14px; border-radius:6px; font-size:12px; font-weight:600; }
+  .status-approved { background:var(--green-bg); color:var(--green); }
+  .status-rejected { background:var(--red-bg); color:var(--red); }
+
+  /* Empty state */
   .empty-state { text-align:center; padding:80px 40px; color:var(--text-dim); }
   .empty-state h2 { font-size:20px; margin-bottom:8px; color:var(--text); }
-  .tab-content { display:none; }
-  .tab-content.active { display:block; }
+
+  /* Responsive */
   @media (max-width:768px) {
     .header { padding:12px 16px; }
     .tabs { padding:0 16px; }
     .content { padding:16px; }
-    .score-hero { flex-direction:column; }
-    .category-grid { grid-template-columns:1fr 1fr; }
+    .summary-bar { flex-direction:column; }
+    .accounts-grid { grid-template-columns:1fr; }
+    .action-item { flex-direction:column; }
+    .action-item .ai-buttons { align-self:flex-end; }
   }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Google Ads <span>AI Agent</span> — Daily Audit Dashboard</h1>
+  <h1>Google Ads <span>Performance Monitor</span></h1>
   <div class="updated" id="lastUpdated"></div>
 </div>
 
@@ -109,234 +208,9 @@
 
 <div id="contentContainer"></div>
 
-<script>
-const DATA_BASE = 'data';
-let manifest = null;
-let accountData = {};
-
-function getScoreColor(score) {
-  if (score === null || score === undefined) return 'var(--text-dim)';
-  if (score >= 90) return 'var(--green)';
-  if (score >= 75) return '#55efc4';
-  if (score >= 60) return 'var(--yellow)';
-  if (score >= 40) return 'var(--orange)';
-  return 'var(--red)';
-}
-
-function getGrade(score) {
-  if (score === null || score === undefined) return 'N/A';
-  if (score >= 90) return 'A';
-  if (score >= 75) return 'B';
-  if (score >= 60) return 'C';
-  if (score >= 40) return 'D';
-  return 'F';
-}
-
-function createScoreRing(score, size=140) {
-  const color = getScoreColor(score);
-  const grade = getGrade(score);
-  const r = (size/2) - 10;
-  const circumference = 2 * Math.PI * r;
-  const offset = circumference - (score/100) * circumference;
-  return `
-    <div class="score-ring" style="width:${size}px;height:${size}px">
-      <svg width="${size}" height="${size}">
-        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--surface2)" stroke-width="8"/>
-        <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="8"
-          stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" stroke-linecap="round"/>
-      </svg>
-      <div class="value" style="color:${color}">${score}</div>
-      <div class="grade">Grade ${grade}</div>
-    </div>`;
-}
-
-function pillResult(result) {
-  const cls = result === 'PASS' ? 'pill-pass' : result === 'WARNING' ? 'pill-warning' : result === 'FAIL' ? 'pill-fail' : 'pill-na';
-  return `<span class="pill ${cls}">${result}</span>`;
-}
-
-function pillSeverity(sev) {
-  const cls = sev === 'Critical' ? 'pill-critical' : sev === 'High' ? 'pill-high' : sev === 'Medium' ? 'pill-medium' : 'pill-low';
-  return `<span class="pill ${cls}">${sev}</span>`;
-}
-
-function renderAccount(data) {
-  const s = data.snapshot;
-  let html = '';
-
-  // Date nav
-  const acc = manifest.accounts.find(a => a.name === data.account);
-  const dates = acc ? acc.dates : [data.date];
-  html += `<div class="date-nav">
-    <label>Audit Date:</label>
-    <select class="date-select" onchange="loadDate('${acc ? acc.id : ''}', this.value)">
-      ${dates.map(d => `<option value="${d}" ${d === data.date ? 'selected' : ''}>${d}</option>`).join('')}
-    </select>
-  </div>`;
-
-  // Score hero
-  html += `<div class="score-hero">
-    <div class="score-card main">
-      <h3>Ads Health Score</h3>
-      ${createScoreRing(data.healthScore)}
-      <div class="sub">${data.verdict}</div>
-    </div>
-    <div class="score-card">
-      <h3>30-Day Spend</h3>
-      <div class="metric">$${s.spend30d.toLocaleString()}</div>
-      <div class="sub">Budget: $${s.dailyBudget}/day | Avg: $${s.avgDailySpend.toFixed(0)}/day</div>
-    </div>
-    <div class="score-card">
-      <h3>ROAS</h3>
-      <div class="metric" style="color:${s.roas >= 3.68 ? 'var(--green)' : 'var(--red)'}">${s.roas}x</div>
-      <div class="sub">Benchmark: 3.68x (e-commerce)</div>
-    </div>
-    <div class="score-card">
-      <h3>Conversions</h3>
-      <div class="metric">${s.conversions30d}</div>
-      <div class="sub">CPA: $${s.cpa.toFixed(0)} | Value: $${s.conversionValue30d.toLocaleString()}</div>
-    </div>
-    <div class="score-card">
-      <h3>Impression Share</h3>
-      <div class="metric" style="color:${s.searchImpressionShare >= 50 ? 'var(--green)' : 'var(--red)'}">${s.searchImpressionShare}%</div>
-      <div class="sub">${(100 - s.searchImpressionShare).toFixed(0)}% opportunity lost</div>
-    </div>
-  </div>`;
-
-  // Category scores
-  html += `<div class="section"><div class="section-title">Category Breakdown</div><div class="category-grid">`;
-  data.categories.forEach(cat => {
-    const score = cat.score;
-    const color = getScoreColor(score);
-    const pct = score !== null ? score : 0;
-    html += `<div class="cat-card">
-      <div class="cat-name">${cat.name} (${cat.weight})</div>
-      <div class="cat-score" style="color:${color}">${score !== null ? score.toFixed(1) + '%' : 'N/A'}</div>
-      <div class="cat-bar"><div class="cat-fill" style="width:${pct}%;background:${color}"></div></div>
-    </div>`;
-  });
-  html += `</div></div>`;
-
-  // Quick Wins
-  if (data.quickWins && data.quickWins.length) {
-    html += `<div class="section"><div class="section-title">Quick Wins <span class="badge" style="background:var(--green-bg);color:var(--green);">${data.quickWins.length} actions</span></div><div class="quick-wins">`;
-    data.quickWins.forEach((qw, i) => {
-      html += `<div class="qw-item">
-        <div class="qw-num">${i+1}</div>
-        <div class="qw-body">
-          <div class="qw-action">${qw.action}</div>
-          <div class="qw-meta">${pillSeverity(qw.impact)} &nbsp; ${qw.time} &nbsp; Check: ${qw.check}</div>
-        </div>
-      </div>`;
-    });
-    html += `</div></div>`;
-  }
-
-  // Detailed checks per category
-  data.categories.forEach(cat => {
-    html += `<div class="section">
-      <div class="section-title">${cat.name} <span class="badge" style="background:${getScoreColor(cat.score) === 'var(--text-dim)' ? 'var(--surface2)' : getScoreColor(cat.score).replace(')', ',0.15)').replace('var(', '')}; color:${getScoreColor(cat.score)}">${cat.score !== null ? cat.score.toFixed(1) + '%' : 'N/A'}</span></div>
-      <table>
-        <thead><tr><th>ID</th><th>Check</th><th>Severity</th><th>Result</th><th>Finding</th></tr></thead>
-        <tbody>`;
-    cat.checks.forEach(c => {
-      html += `<tr>
-        <td style="white-space:nowrap;font-weight:600;color:var(--text-dim)">${c.id}</td>
-        <td style="font-weight:500">${c.name}</td>
-        <td>${pillSeverity(c.severity)}</td>
-        <td>${pillResult(c.result)}</td>
-        <td style="color:var(--text-dim);max-width:500px">${c.finding}</td>
-      </tr>`;
-    });
-    html += `</tbody></table></div>`;
-  });
-
-  // Wasted spend products
-  if (data.topWastedProducts && data.topWastedProducts.length) {
-    html += `<div class="section"><div class="section-title">Top Wasted Spend — Zero-Conversion Products</div>
-      <table class="product-table"><thead><tr><th>Product</th><th>Spend</th><th>Conversions</th><th>Status</th></tr></thead><tbody>`;
-    data.topWastedProducts.forEach(p => {
-      html += `<tr><td>${p.product}</td><td class="wasted">$${p.spend.toFixed(2)}</td><td>0</td><td><span class="pill pill-fail">WASTED</span></td></tr>`;
-    });
-    html += `</tbody></table></div>`;
-  }
-
-  // Top performers
-  if (data.topPerformingProducts && data.topPerformingProducts.length) {
-    html += `<div class="section"><div class="section-title">Top Performing Products</div>
-      <table class="product-table"><thead><tr><th>Product</th><th>Spend</th><th>Conv</th><th>Value</th><th>ROAS</th></tr></thead><tbody>`;
-    data.topPerformingProducts.forEach(p => {
-      html += `<tr><td>${p.product}</td><td>$${p.spend.toFixed(2)}</td><td class="star">${p.conversions}</td><td class="star">$${p.value.toLocaleString()}</td><td class="star">${p.roas}x</td></tr>`;
-    });
-    html += `</tbody></table></div>`;
-  }
-
-  // Recommendations
-  if (data.recommendations && data.recommendations.length) {
-    html += `<div class="section"><div class="section-title">Strategic Recommendations</div>`;
-    data.recommendations.forEach(r => {
-      html += `<div class="rec-phase"><h4>${r.phase}</h4><ul>${r.items.map(i => `<li>${i}</li>`).join('')}</ul></div>`;
-    });
-    html += `</div>`;
-  }
-
-  return html;
-}
-
-async function loadDate(accountId, date) {
-  try {
-    const resp = await fetch(`${DATA_BASE}/${accountId}/${date}.json`);
-    const data = await resp.json();
-    accountData[accountId] = data;
-    document.getElementById(`content-${accountId}`).innerHTML = renderAccount(data);
-  } catch(e) {
-    console.error('Failed to load', accountId, date, e);
-  }
-}
-
-function switchTab(accountId) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-  document.querySelector(`[data-tab="${accountId}"]`).classList.add('active');
-  document.getElementById(`content-${accountId}`).classList.add('active');
-}
-
-async function init() {
-  try {
-    const resp = await fetch(`${DATA_BASE}/manifest.json`);
-    manifest = await resp.json();
-  } catch(e) {
-    document.getElementById('contentContainer').innerHTML = '<div class="empty-state"><h2>No data available</h2><p>Manifest file not found. Run the audit script first.</p></div>';
-    return;
-  }
-
-  document.getElementById('lastUpdated').textContent = `Last updated: ${manifest.lastUpdated}`;
-
-  const tabsHtml = manifest.accounts.map((a, i) =>
-    `<div class="tab ${i === 0 ? 'active' : ''}" data-tab="${a.id}" onclick="switchTab('${a.id}')">${a.name}</div>`
-  ).join('');
-  document.getElementById('tabsContainer').innerHTML = tabsHtml;
-
-  let contentHtml = '';
-  for (const acc of manifest.accounts) {
-    contentHtml += `<div class="tab-content ${manifest.accounts.indexOf(acc) === 0 ? 'active' : ''}" id="content-${acc.id}"><div class="content"><div class="empty-state"><h2>Loading...</h2></div></div></div>`;
-  }
-  document.getElementById('contentContainer').innerHTML = contentHtml;
-
-  for (const acc of manifest.accounts) {
-    const latestDate = acc.dates[acc.dates.length - 1];
-    try {
-      const resp = await fetch(`${DATA_BASE}/${acc.id}/${latestDate}.json`);
-      const data = await resp.json();
-      accountData[acc.id] = data;
-      document.getElementById(`content-${acc.id}`).innerHTML = `<div class="content">${renderAccount(data)}</div>`;
-    } catch(e) {
-      document.getElementById(`content-${acc.id}`).innerHTML = `<div class="content"><div class="empty-state"><h2>Error loading data</h2><p>${e.message}</p></div></div>`;
-    }
-  }
-}
-
-init();
-</script>
+<script src="scripts/dashboard-core.js"></script>
+<script src="scripts/dashboard-overview.js"></script>
+<script src="scripts/dashboard-account.js"></script>
+<script src="scripts/dashboard-actions.js"></script>
 </body>
 </html>
