@@ -36,17 +36,45 @@
 
     var html = '<div class="content">';
 
-    // Date nav
-    if (accMeta && accMeta.dates && accMeta.dates.length > 1) {
-      html += '<div class="date-nav">';
-      html += '<label>Audit Date:</label>';
-      html += '<select class="date-select" onchange="loadDate(\'' + accountSlug + '\', this.value)">';
-      for (var d = accMeta.dates.length - 1; d >= 0; d--) {
-        var dt = accMeta.dates[d];
-        html += '<option value="' + dt + '"' + (dt === selectedDate ? ' selected' : '') + '>' + dt + '</option>';
+    // Date picker — Google Ads style
+    if (accMeta && accMeta.dates && accMeta.dates.length > 0) {
+      html += '<div class="date-picker-wrap">';
+
+      // Trigger button
+      html += '<button class="date-picker-btn" id="dp-btn-' + accountSlug + '" onclick="event.stopPropagation(); toggleDatePicker(\'' + accountSlug + '\')">';
+      html += '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+      html += '<span>' + window.fmt.dateShort(selectedDate) + '</span>';
+      html += '<svg class="dp-arrow" viewBox="0 0 10 10"><polyline points="2,3.5 5,7 8,3.5" fill="none"/></svg>';
+      html += '</button>';
+
+      // Dropdown
+      html += '<div class="date-picker-dropdown" id="dp-dropdown-' + accountSlug + '">';
+
+      // Presets
+      var dates = accMeta.dates;
+      var latestDate = dates[dates.length - 1];
+      var firstDate = dates[0];
+      html += '<div class="dp-presets">';
+      html += '<button class="dp-preset' + (selectedDate === latestDate ? ' selected' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + latestDate + '\')">Latest (' + window.fmt.dateShort(latestDate) + ')</button>';
+      if (dates.length > 1) {
+        html += '<button class="dp-preset' + (selectedDate === firstDate ? ' selected' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + firstDate + '\')">Earliest (' + window.fmt.dateShort(firstDate) + ')</button>';
       }
-      html += '</select>';
       html += '</div>';
+
+      // All dates list
+      html += '<div class="dp-section-label">All audit dates</div>';
+      html += '<div class="dp-dates">';
+      for (var d = dates.length - 1; d >= 0; d--) {
+        var dt = dates[d];
+        html += '<button class="dp-date' + (dt === selectedDate ? ' active' : '') + '" onclick="selectDate(\'' + accountSlug + '\',\'' + dt + '\')">';
+        html += '<span class="dp-day">' + window.fmt.dateShort(dt) + '</span>';
+        html += '<span class="dp-rel">' + window.fmt.dateRel(dt) + '</span>';
+        html += '</button>';
+      }
+      html += '</div>';
+
+      html += '</div>'; // dropdown
+      html += '</div>'; // wrap
     }
 
     // Account summary bar
@@ -78,9 +106,9 @@
 
         // Campaign row
         html += '<tr class="campaign-row' + (isExpanded ? ' expanded' : '') + '" onclick="toggleCampaign(\'' + accountSlug + '\',' + ci + ')">';
-        html += '<td style="font-weight:500;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + escapeAttr(camp.name) + '">' + escapeHtml(camp.name) + '</td>';
-        html += '<td>' + escapeHtml(camp.objective || '--') + '</td>';
-        html += '<td style="font-size:12px">' + escapeHtml(camp.bidding || '--') + '</td>';
+        html += '<td style="font-weight:500" title="' + escapeAttr(camp.name) + '">' + escapeHtml(camp.name) + '</td>';
+        html += '<td title="' + escapeAttr(camp.objective || '') + '">' + escapeHtml(camp.objective || '--') + '</td>';
+        html += '<td style="font-size:12px" title="' + escapeAttr(camp.bidding || '') + '">' + escapeHtml(camp.bidding || '--') + '</td>';
         html += '<td class="num">' + (camp.budget != null ? window.fmt.currency(camp.budget) : '--') + '</td>';
         html += '<td class="num">' + window.fmt.currency(m.spend) + '</td>';
         html += '<td class="num">' + window.fmt.number(m.impressions) + '</td>';
@@ -317,7 +345,7 @@
       html += '<div class="issue-header">';
       html += window.ui.severityPill(issue.severity);
       if (issue.type) html += window.ui.typePill(issue.type);
-      html += '<span class="issue-title">' + escapeHtml(issue.title || '') + '</span>';
+      html += '<span class="issue-title" title="' + escapeAttr(issue.title || '') + '">' + escapeHtml(issue.title || '') + '</span>';
       html += '</div>';
 
       if (issue.reasoning) {

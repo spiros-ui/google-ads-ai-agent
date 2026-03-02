@@ -104,7 +104,7 @@
 
     // Header
     html += '<div class="card-header">';
-    html += '<div class="card-name">' + acc.name + '</div>';
+    html += '<div class="card-name" title="' + acc.name.replace(/"/g, '&quot;') + '">' + acc.name + '</div>';
     html += window.ui.verdictPill(verdict);
     html += '</div>';
 
@@ -134,7 +134,7 @@
   function buildNoDataCard(acc) {
     var html = '<div class="account-card" onclick="switchTab(\'' + acc.id + '\')">';
     html += '<div class="card-header">';
-    html += '<div class="card-name">' + acc.name + '</div>';
+    html += '<div class="card-name" title="' + acc.name.replace(/"/g, '&quot;') + '">' + acc.name + '</div>';
     html += '<span class="verdict-pill verdict-inactive">No Data</span>';
     html += '</div>';
     html += '<div style="font-size:13px;color:var(--text-dim);padding-top:8px;">Data could not be loaded for this account.</div>';

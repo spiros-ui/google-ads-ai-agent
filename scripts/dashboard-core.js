@@ -58,12 +58,38 @@
     return Number(n).toFixed(2) + 'x';
   }
 
+  function formatDateShort(dateStr) {
+    // "2026-03-02" → "Mar 2, 2026"
+    if (!dateStr) return '--';
+    var parts = dateStr.split('-');
+    if (parts.length !== 3) return dateStr;
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var m = parseInt(parts[1], 10) - 1;
+    var d = parseInt(parts[2], 10);
+    return months[m] + ' ' + d + ', ' + parts[0];
+  }
+
+  function formatDateRelative(dateStr) {
+    if (!dateStr) return '';
+    var now = new Date();
+    now.setHours(0,0,0,0);
+    var target = new Date(dateStr + 'T00:00:00');
+    var diff = Math.round((now - target) / 86400000);
+    if (diff === 0) return 'Today';
+    if (diff === 1) return 'Yesterday';
+    if (diff < 7) return diff + ' days ago';
+    if (diff < 30) return Math.floor(diff / 7) + 'w ago';
+    return Math.floor(diff / 30) + 'mo ago';
+  }
+
   window.fmt = {
     currency: formatCurrency,
     currencyDec: formatCurrencyDecimal,
     number: formatNumber,
     pct: formatPct,
-    roas: formatRoas
+    roas: formatRoas,
+    dateShort: formatDateShort,
+    dateRel: formatDateRelative
   };
 
   // --------------- Severity / Status helpers ---------------
@@ -298,7 +324,8 @@
     var html = '<div class="tab active" data-tab="overview" onclick="switchTab(\'overview\')">Overview</div>';
     html += '<div class="tab" data-tab="actions" onclick="switchTab(\'actions\')">Action Items</div>';
     m.accounts.forEach(function (a) {
-      html += '<div class="tab" data-tab="' + a.id + '" onclick="switchTab(\'' + a.id + '\')">' + a.name + '</div>';
+      var safe = a.name.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      html += '<div class="tab" data-tab="' + a.id + '" title="' + safe + '" onclick="switchTab(\'' + a.id + '\')">' + a.name + '</div>';
     });
     document.getElementById('tabsContainer').innerHTML = html;
   }
@@ -329,6 +356,45 @@
     });
     return Promise.all(promises);
   }
+
+  // --------------- Date picker toggle ---------------
+
+  function toggleDatePicker(slug) {
+    var dropdown = document.getElementById('dp-dropdown-' + slug);
+    var btn = document.getElementById('dp-btn-' + slug);
+    if (!dropdown) return;
+    var isOpen = dropdown.classList.contains('show');
+    // Close all open pickers first
+    var allDropdowns = document.querySelectorAll('.date-picker-dropdown.show');
+    var allBtns = document.querySelectorAll('.date-picker-btn.open');
+    for (var i = 0; i < allDropdowns.length; i++) allDropdowns[i].classList.remove('show');
+    for (var j = 0; j < allBtns.length; j++) allBtns[j].classList.remove('open');
+    if (!isOpen) {
+      dropdown.classList.add('show');
+      if (btn) btn.classList.add('open');
+    }
+  }
+
+  function selectDate(slug, date) {
+    var dropdown = document.getElementById('dp-dropdown-' + slug);
+    var btn = document.getElementById('dp-btn-' + slug);
+    if (dropdown) dropdown.classList.remove('show');
+    if (btn) btn.classList.remove('open');
+    loadDate(slug, date);
+  }
+
+  window.toggleDatePicker = toggleDatePicker;
+  window.selectDate = selectDate;
+
+  // Close picker when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.date-picker-wrap')) {
+      var allDropdowns = document.querySelectorAll('.date-picker-dropdown.show');
+      var allBtns = document.querySelectorAll('.date-picker-btn.open');
+      for (var i = 0; i < allDropdowns.length; i++) allDropdowns[i].classList.remove('show');
+      for (var j = 0; j < allBtns.length; j++) allBtns[j].classList.remove('open');
+    }
+  });
 
   // Start
   init();

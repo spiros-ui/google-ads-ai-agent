@@ -146,7 +146,7 @@
     html += '</div>';
 
     // Title
-    html += '<div class="ai-title">' + escapeHtml(item.title) + '</div>';
+    html += '<div class="ai-title" title="' + escapeAttr(item.title) + '">' + escapeHtml(item.title) + '</div>';
 
     // Description
     if (item.description) {
