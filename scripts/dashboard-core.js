@@ -873,14 +873,26 @@
   _initKeyboardNav();
   _initBackToTop();
 
-  // Patch init to update tab badges after all data loads
+  // Patch init to load config, filter excluded accounts, then update tab badges
   var _origInit = init;
   init = function () {
     loadActionStates();
 
-    fetch(DATA_BASE + '/manifest.json')
-      .then(function (r) { return r.json(); })
-      .then(function (m) {
+    // Load config (for exclude list) and manifest in parallel
+    Promise.all([
+      fetch('config/accounts.json').then(function (r) { return r.json(); }).catch(function () { return { exclude: [] }; }),
+      fetch(DATA_BASE + '/manifest.json').then(function (r) { return r.json(); })
+    ])
+      .then(function (results) {
+        var config = results[0];
+        var m = results[1];
+
+        // Filter out excluded accounts
+        var excludeSet = {};
+        (config.exclude || []).forEach(function (id) { excludeSet[id] = true; });
+        m.accounts = m.accounts.filter(function (a) { return !excludeSet[a.id]; });
+        window.appData.excludeSet = excludeSet;
+
         window.appData.manifest = m;
         document.getElementById('lastUpdated').textContent = 'Last updated: ' + m.lastUpdated;
         buildTabs(m);
@@ -889,7 +901,6 @@
       })
       .then(function () {
         switchTab('overview');
-        // Update tab badges after all data is loaded
         _updateTabBadges();
       })
       .catch(function (e) {

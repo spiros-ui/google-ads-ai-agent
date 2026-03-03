@@ -88,6 +88,12 @@
 
     var html = '<div class="content">';
 
+    // ===== Yesterday Performance Alerts =====
+    var yesterdayAlerts = buildYesterdayAlerts(manifest, accounts);
+    if (yesterdayAlerts) {
+      html += yesterdayAlerts;
+    }
+
     // Summary bar
     html += '<div class="summary-bar">';
     html += buildSummaryStat('Total Spend (30d)', window.fmt.currency(totalSpend), manifest.accounts.length + ' accounts', 'stat-spend');
@@ -175,6 +181,117 @@
     html += '<div style="font-size:13px;color:var(--text-dim);padding-top:8px;">Data could not be loaded for this account.</div>';
     html += '</div>';
     return html;
+  }
+
+  // ===== Yesterday Performance Alerts =====
+
+  function buildYesterdayAlerts(manifest, accounts) {
+    var alerts = [];
+    var totalYdSpend = 0;
+    var totalYdConv = 0;
+    var accountCount = 0;
+
+    manifest.accounts.forEach(function (acc) {
+      var data = accounts[acc.id];
+      if (!data || !data.diagnosis || !data.diagnosis.periodMetrics) return;
+      var yd = data.diagnosis.periodMetrics.yesterday;
+      if (!yd) return;
+
+      accountCount++;
+      var acct = yd.account || {};
+      totalYdSpend += acct.spend || 0;
+      totalYdConv += acct.conversions || 0;
+
+      // Account-level insights
+      var insights = yd.insights || [];
+      insights.forEach(function (ins) {
+        if (ins.type === 'alert') {
+          alerts.push({ account: acc.name, slug: acc.id, type: 'alert', message: ins.message });
+        }
+      });
+
+      // Campaign-level critical issues from doctor diagnoses
+      var diags = yd.campaignDiagnoses || [];
+      diags.forEach(function (cd) {
+        if (cd.health === 'critical') {
+          alerts.push({
+            account: acc.name, slug: acc.id, type: 'alert',
+            message: cd.name + ': ' + (cd.goalAssessment || 'Critical issues detected')
+          });
+        } else if (cd.health === 'not_spending' && cd.metrics && cd.metrics.spend === 0 && cd.budget > 0) {
+          alerts.push({
+            account: acc.name, slug: acc.id, type: 'alert',
+            message: cd.name + ': Not spending despite $' + cd.budget + '/day budget'
+          });
+        }
+      });
+
+      // Highlight top performers
+      diags.forEach(function (cd) {
+        if (cd.positives && cd.positives.length > 0 && cd.health === 'healthy' && cd.meetingGoal === true) {
+          alerts.push({
+            account: acc.name, slug: acc.id, type: 'positive',
+            message: cd.name + ': ' + (cd.goalAssessment || 'Meeting goals')
+          });
+        }
+      });
+    });
+
+    if (accountCount === 0) return '';
+
+    // Sort: alerts first, then positives
+    var priority = { alert: 0, trend: 1, positive: 2 };
+    alerts.sort(function (a, b) { return (priority[a.type] || 1) - (priority[b.type] || 1); });
+
+    // Limit to top 12 to keep it scannable
+    var shown = alerts.slice(0, 12);
+    var alertCount = shown.filter(function (a) { return a.type === 'alert'; }).length;
+    var positiveCount = shown.filter(function (a) { return a.type === 'positive'; }).length;
+
+    var html = '<div style="margin-bottom:24px">';
+
+    // Header bar
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">';
+    html += '<div style="display:flex;align-items:center;gap:10px">';
+    html += '<div style="font-size:16px;font-weight:700">Yesterday\'s Performance</div>';
+    if (alertCount > 0) {
+      html += '<span style="background:var(--red-bg);color:var(--red);padding:3px 10px;border-radius:10px;font-size:11px;font-weight:600">' + alertCount + ' alert' + (alertCount !== 1 ? 's' : '') + '</span>';
+    }
+    if (positiveCount > 0) {
+      html += '<span style="background:var(--green-bg);color:var(--green);padding:3px 10px;border-radius:10px;font-size:11px;font-weight:600">' + positiveCount + ' strong</span>';
+    }
+    html += '</div>';
+    html += '<div style="font-size:13px;color:var(--text-dim)">' + window.fmt.currency(totalYdSpend) + ' spent &middot; ' + window.fmt.number(totalYdConv) + ' conversions</div>';
+    html += '</div>';
+
+    // Alert cards
+    if (shown.length > 0) {
+      shown.forEach(function (a) {
+        var bgColor = a.type === 'alert' ? 'var(--red-bg)' : a.type === 'positive' ? 'var(--green-bg)' : 'var(--blue-bg)';
+        var borderColor = a.type === 'alert' ? 'rgba(214,48,49,0.25)' : a.type === 'positive' ? 'rgba(0,184,148,0.25)' : 'rgba(108,92,231,0.25)';
+        var dotColor = a.type === 'alert' ? 'var(--red)' : a.type === 'positive' ? 'var(--green)' : 'var(--accent)';
+
+        html += '<div style="display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:' + bgColor + ';border:1px solid ' + borderColor + ';border-radius:8px;margin-bottom:6px;cursor:pointer;transition:opacity .15s" onclick="switchTab(\'' + a.slug + '\')">';
+        html += '<div style="width:8px;height:8px;border-radius:50%;background:' + dotColor + ';margin-top:5px;flex-shrink:0"></div>';
+        html += '<div style="flex:1;font-size:13px;line-height:1.5">';
+        html += '<strong style="color:var(--text)">' + escapeHtml(a.account) + '</strong> &mdash; ';
+        html += escapeHtml(a.message);
+        html += '</div>';
+        html += '</div>';
+      });
+    } else {
+      html += '<div style="padding:12px 16px;background:var(--green-bg);border:1px solid rgba(0,184,148,0.25);border-radius:8px;font-size:13px;color:var(--green)">';
+      html += 'All accounts performed normally yesterday. No alerts.';
+      html += '</div>';
+    }
+
+    html += '</div>';
+    return html;
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   window.renderOverview = renderOverview;
