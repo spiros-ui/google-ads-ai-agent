@@ -1,0 +1,588 @@
+{
+  "account": "Infinite Roofing",
+  "customerId": "2773583029",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 2788.43,
+      "totalConversions": 29,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM- New roof",
+        "type": "SEARCH",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 133,
+        "metrics": {
+          "spend": 2788.43,
+          "impressions": 4134,
+          "clicks": 253,
+          "conversions": 29,
+          "conversionValue": 2190,
+          "cpa": 96.15,
+          "roas": 0.79,
+          "ctr": 6.12,
+          "avgCpc": 11.02,
+          "searchIS": 38.09,
+          "budgetLostIS": 19.04,
+          "rankLostIS": 42.88
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 42.88% impression share to ad rank",
+            "reasoning": "Losing 42.88% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 42.88% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "6.12% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'metal roofing installation companies near me' (1 conv, $31.73), 'roofers near me' (4 conv, $231.58), 'roofers brisbane' (16.000963 conv, $1306.32)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'roof price per m2' (2 conv, CPA $6.03), 'metal roofing near me' (1 conv, CPA $10.26), 'able roofing brisbane' (1 conv, CPA $11.15)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 180,
+          "withImpressions": 10,
+          "zeroImpressions": 170,
+          "avgQualityScore": 3.25,
+          "topWasters": [
+            {
+              "keyword": "how much does it cost to put a roof on",
+              "matchType": "PHRASE",
+              "spend": 41.75,
+              "conversions": 0
+            },
+            {
+              "keyword": "how much does a new roof cost",
+              "matchType": "PHRASE",
+              "spend": 20.17,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "roof painting brisbane",
+              "spend": 63.51,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "roofing near me",
+              "spend": 29.95,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "roof restoration near me",
+              "spend": 29.45,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "roofers brisbane",
+              "spend": 25.82,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "roof restoration brisbane cost",
+              "spend": 25.57,
+              "clicks": 2,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "roof price per m2",
+              "spend": 12.06,
+              "conversions": 2,
+              "cpa": 6.03
+            },
+            {
+              "term": "metal roofing near me",
+              "spend": 10.26,
+              "conversions": 1,
+              "cpa": 10.26
+            },
+            {
+              "term": "able roofing brisbane",
+              "spend": 11.15,
+              "conversions": 1,
+              "cpa": 11.15
+            },
+            {
+              "term": "new colorbond roof",
+              "spend": 12.57,
+              "conversions": 1,
+              "cpa": 12.57
+            },
+            {
+              "term": "metal roofing companies brisbane",
+              "spend": 12.61,
+              "conversions": 1,
+              "cpa": 12.61
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-new-roof-2026-03-03-1",
+        "account": "Infinite Roofing",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 42.88% impression share to ad rank",
+        "description": "Losing 42.88% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.25/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "CTM- New roof",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 137.63,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 95,
+          "clicks": 14,
+          "ctr": 14.74,
+          "avgCpc": 9.83
+        },
+        "campaigns": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 133,
+            "spend": 137.63,
+            "impressions": 95,
+            "clicks": 14,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 14.74,
+            "avgCpc": 9.83,
+            "searchIS": 23.71
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 48% higher yesterday ($137.63/day) vs 30-day average ($92.95/day)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 1 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 133,
+            "metrics": {
+              "spend": 137.63,
+              "impressions": 95,
+              "clicks": 14,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 14.74,
+              "avgCpc": 9.83,
+              "searchIS": 23.71
+            },
+            "health": "critical",
+            "meetingGoal": null,
+            "goalAssessment": "14 clicks but no conversions yet.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$137.63 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.71%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $137.63 vs $92.95 30d avg (+48%)"
+              },
+              {
+                "direction": "down",
+                "metric": "IS",
+                "message": "Impression share dropped 14.38pp to 23.71% from 38.09% 30d avg"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 133.39,
+          "conversions": 1,
+          "convValue": 30,
+          "roas": 0.22,
+          "cpa": 133.39,
+          "impressions": 183,
+          "clicks": 12,
+          "ctr": 6.56,
+          "avgCpc": 11.12
+        },
+        "campaigns": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 133,
+            "spend": 133.39,
+            "impressions": 183,
+            "clicks": 12,
+            "conversions": 1,
+            "convValue": 30,
+            "cpa": 133.39,
+            "roas": 0.22,
+            "ctr": 6.56,
+            "avgCpc": 11.12,
+            "searchIS": 33.48
+          }
+        ],
+        "insights": [
+          {
+            "type": "alert",
+            "message": "Daily spend is 52% lower in the last 3 days ($44.46/day) vs 30-day average ($92.95/day)."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $133.39 vs $96.15 30d avg (+39%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.22x vs 0.79x 30d avg (-72%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 133,
+            "metrics": {
+              "spend": 133.39,
+              "impressions": 183,
+              "clicks": 12,
+              "conversions": 1,
+              "convValue": 30,
+              "cpa": 133.39,
+              "roas": 0.22,
+              "ctr": 6.56,
+              "avgCpc": 11.12,
+              "searchIS": 33.48
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "1 conversions from $133.39 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.56% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $133.39 vs $96.15 30d avg (+39%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.22x vs 0.79x 30d avg (-72%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $44.46 vs $92.95 30d avg (-52%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 682.24,
+          "conversions": 9,
+          "convValue": 869.97,
+          "roas": 1.28,
+          "cpa": 75.81,
+          "impressions": 915,
+          "clicks": 65,
+          "ctr": 7.1,
+          "avgCpc": 10.5
+        },
+        "campaigns": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 133,
+            "spend": 682.24,
+            "impressions": 915,
+            "clicks": 65,
+            "conversions": 9,
+            "convValue": 869.97,
+            "cpa": 75.81,
+            "roas": 1.28,
+            "ctr": 7.1,
+            "avgCpc": 10.5,
+            "searchIS": 37.1
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $75.81 vs $96.15 30d avg (-21%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 1.28x vs 0.79x 30d avg (+62%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 133,
+            "metrics": {
+              "spend": 682.24,
+              "impressions": 915,
+              "clicks": 65,
+              "conversions": 9,
+              "convValue": 869.97,
+              "cpa": 75.81,
+              "roas": 1.28,
+              "ctr": 7.1,
+              "avgCpc": 10.5,
+              "searchIS": 37.1
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "9 conversions from $682.24 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.1% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $75.81 vs $96.15 30d avg (-21%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.28x vs 0.79x 30d avg (+62%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 1304.11,
+          "conversions": 14,
+          "convValue": 1019.97,
+          "roas": 0.78,
+          "cpa": 93.16,
+          "impressions": 1962,
+          "clicks": 118,
+          "ctr": 6.01,
+          "avgCpc": 11.05
+        },
+        "campaigns": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 133,
+            "spend": 1304.11,
+            "impressions": 1962,
+            "clicks": 118,
+            "conversions": 14,
+            "convValue": 1019.97,
+            "cpa": 93.16,
+            "roas": 0.78,
+            "ctr": 6.01,
+            "avgCpc": 11.05,
+            "searchIS": 38.26
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 133,
+            "metrics": {
+              "spend": 1304.11,
+              "impressions": 1962,
+              "clicks": 118,
+              "conversions": 14,
+              "convValue": 1019.97,
+              "cpa": 93.16,
+              "roas": 0.78,
+              "ctr": 6.01,
+              "avgCpc": 11.05,
+              "searchIS": 38.26
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "14 conversions from $1304.11 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.01% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 2788.43,
+          "conversions": 29,
+          "convValue": 2190,
+          "roas": 0.79,
+          "cpa": 96.15,
+          "impressions": 4134,
+          "clicks": 253,
+          "ctr": 6.12,
+          "avgCpc": 11.02
+        },
+        "campaigns": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "bidding": "MANUAL_CPC",
+            "budget": 133,
+            "spend": 2788.43,
+            "impressions": 4134,
+            "clicks": 253,
+            "conversions": 29,
+            "convValue": 2190,
+            "cpa": 96.15,
+            "roas": 0.79,
+            "ctr": 6.12,
+            "avgCpc": 11.02,
+            "searchIS": 38.09
+          }
+        ],
+        "insights": [
+          {
+            "type": "positive",
+            "message": "1 of 1 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM- New roof",
+            "type": "SEARCH",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 133,
+            "metrics": {
+              "spend": 2788.43,
+              "impressions": 4134,
+              "clicks": 253,
+              "conversions": 29,
+              "convValue": 2190,
+              "cpa": 96.15,
+              "roas": 0.79,
+              "ctr": 6.12,
+              "avgCpc": 11.02,
+              "searchIS": 38.09
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "29 conversions from $2788.43 spend.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "6.12% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}

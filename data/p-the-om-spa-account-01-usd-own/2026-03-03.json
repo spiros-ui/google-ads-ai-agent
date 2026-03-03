@@ -1,0 +1,1568 @@
+{
+  "account": "P / The Om Spa | Account-01 / USD [OWN]",
+  "customerId": "6638376999",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 19706.98,
+      "totalConversions": 202.7,
+      "totalCampaigns": 4,
+      "criticalIssues": 1,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "Theomspanaples - Search clicks",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 1,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 89 keywords have 0 impressions over 30 days despite a $1/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $30/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'sound' (broad match) blocks positive 'sound bath spa', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'sound', or change to exact match to stop blocking 'sound bath spa'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'miami' (broad match) blocks positive 'miami', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'miami', or change to exact match to stop blocking 'miami'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $1/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $30/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 89,
+          "withImpressions": 0,
+          "zeroImpressions": 89,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Performance Max - OmSpa",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 430,
+        "metrics": {
+          "spend": 13274.81,
+          "impressions": 67560,
+          "clicks": 3314,
+          "conversions": 149.54,
+          "conversionValue": 20118.48,
+          "cpa": 88.77,
+          "roas": 1.52,
+          "ctr": 4.91,
+          "avgCpc": 4.01,
+          "searchIS": 46.44,
+          "budgetLostIS": 11.75,
+          "rankLostIS": 41.81
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 41.81% impression share to ad rank",
+            "reasoning": "Losing 41.81% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 41.81% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Theomspanaples - Search V2 - Omspa",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 60,
+        "metrics": {
+          "spend": 1608.43,
+          "impressions": 6909,
+          "clicks": 504,
+          "conversions": 23.74,
+          "conversionValue": 1636.31,
+          "cpa": 67.74,
+          "roas": 1.02,
+          "ctr": 7.29,
+          "avgCpc": 3.19,
+          "searchIS": 35.98,
+          "budgetLostIS": 57.21,
+          "rankLostIS": 6.81
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "adjust_budget",
+            "title": "Losing 57.21% impression share to budget",
+            "reasoning": "You're losing 57.21% of impressions due to budget. $60/day isn't enough — ads stop showing partway through the day.",
+            "action": "Increase budget from $60 to $90, or narrow keywords.",
+            "estimatedImpact": "Recovering 57.21% lost impressions could proportionally increase conversions"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "7.29% — well above 3% benchmark"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'naples day spa' (1.5 conv, $31.34), 'body massage therapy near me' (11 conv, $389.64), 'spa day package' (0.833333 conv, $37.31)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'masaje thai cerca de mi' (1 conv, CPA $1.05), 'naples florida day spa' (1 conv, CPA $2.49), 'om soa' (1 conv, CPA $3.05)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 411,
+          "withImpressions": 13,
+          "zeroImpressions": 398,
+          "avgQualityScore": 5.09,
+          "topWasters": [
+            {
+              "keyword": "pregnancy massage near me",
+              "matchType": "BROAD",
+              "spend": 83.41,
+              "conversions": 0
+            },
+            {
+              "keyword": "hydrafacial near me",
+              "matchType": "BROAD",
+              "spend": 39.64,
+              "conversions": 0
+            },
+            {
+              "keyword": "head massage near me",
+              "matchType": "BROAD",
+              "spend": 14.55,
+              "conversions": 0
+            },
+            {
+              "keyword": "reiki near me",
+              "matchType": "BROAD",
+              "spend": 6.09,
+              "conversions": 0
+            },
+            {
+              "keyword": "couple spa near me",
+              "matchType": "BROAD",
+              "spend": 0.98,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "prenatal massage",
+              "spend": 70.3,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "massage naples fl",
+              "spend": 51.34,
+              "clicks": 15,
+              "conversions": 0
+            },
+            {
+              "term": "acupuncture naples fl",
+              "spend": 31.17,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "lymphatic drainage massage",
+              "spend": 24.89,
+              "clicks": 7,
+              "conversions": 0
+            },
+            {
+              "term": "stretch zone park shore",
+              "spend": 20.06,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "masaje thai cerca de mi",
+              "spend": 1.05,
+              "conversions": 1,
+              "cpa": 1.05
+            },
+            {
+              "term": "naples florida day spa",
+              "spend": 2.49,
+              "conversions": 1,
+              "cpa": 2.49
+            },
+            {
+              "term": "om soa",
+              "spend": 3.05,
+              "conversions": 1,
+              "cpa": 3.05
+            },
+            {
+              "term": "couples massage valentines day",
+              "spend": 1.78,
+              "conversions": 0.5,
+              "cpa": 3.56
+            },
+            {
+              "term": "the om spa reviews",
+              "spend": 4.23,
+              "conversions": 1,
+              "cpa": 4.23
+            }
+          ]
+        }
+      },
+      {
+        "name": "Performance Max - OmSpa - Desktop Only",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 120,
+        "metrics": {
+          "spend": 4823.74,
+          "impressions": 27634,
+          "clicks": 769,
+          "conversions": 29.42,
+          "conversionValue": 5380.39,
+          "cpa": 163.97,
+          "roas": 1.12,
+          "ctr": 2.78,
+          "avgCpc": 6.27,
+          "searchIS": 37.9,
+          "budgetLostIS": 17.46,
+          "rankLostIS": 44.64
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 44.64% impression share to ad rank",
+            "reasoning": "Losing 44.64% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 44.64% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "theomspanaples-search-clicks-2026-03-03-1",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 89 keywords have 0 impressions over 30 days despite a $1/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 30,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-03-2",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'sound' (broad match) blocks positive 'sound bath spa', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-03-3",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'miami' (broad match) blocks positive 'miami', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-clicks-2026-03-03-4",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $1/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 30,
+        "campaign": "Theomspanaples - Search clicks",
+        "status": "pending"
+      },
+      {
+        "id": "performance-max-omspa-2026-03-03-5",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 41.81% impression share to ad rank",
+        "description": "Losing 41.81% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "Performance Max - OmSpa",
+        "status": "pending"
+      },
+      {
+        "id": "theomspanaples-search-v2-omspa-2026-03-03-6",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "adjust_budget",
+        "severity": "High",
+        "title": "Losing 57.21% impression share to budget",
+        "description": "You're losing 57.21% of impressions due to budget. $60/day isn't enough — ads stop showing partway through the day.",
+        "estimatedSaving": 0,
+        "campaign": "Theomspanaples - Search V2 - Omspa",
+        "status": "pending"
+      },
+      {
+        "id": "performance-max-omspa-desktop-only-2026-03-03-7",
+        "account": "P / The Om Spa | Account-01 / USD [OWN]",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 44.64% impression share to ad rank",
+        "description": "Losing 44.64% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "Performance Max - OmSpa - Desktop Only",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 623.79,
+          "conversions": 3,
+          "convValue": 510,
+          "roas": 0.82,
+          "cpa": 207.93,
+          "impressions": 4069,
+          "clicks": 128,
+          "ctr": 3.15,
+          "avgCpc": 4.87
+        },
+        "campaigns": [
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 430,
+            "spend": 430.66,
+            "impressions": 2690,
+            "clicks": 87,
+            "conversions": 2,
+            "convValue": 400,
+            "cpa": 215.33,
+            "roas": 0.93,
+            "ctr": 3.23,
+            "avgCpc": 4.95,
+            "searchIS": 43.36
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 60,
+            "spend": 59.85,
+            "impressions": 252,
+            "clicks": 18,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.14,
+            "avgCpc": 3.33,
+            "searchIS": 32.14
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 133.28,
+            "impressions": 1127,
+            "clicks": 23,
+            "conversions": 1,
+            "convValue": 110,
+            "cpa": 133.28,
+            "roas": 0.83,
+            "ctr": 2.04,
+            "avgCpc": 5.79,
+            "searchIS": 38.97
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "4 of 4 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $207.93 vs $97.22 30d avg (+114%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.82x vs 1.38x 30d avg (-41%)."
+          },
+          {
+            "type": "alert",
+            "message": "2 of 4 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 60,
+            "metrics": {
+              "spend": 59.85,
+              "impressions": 252,
+              "clicks": 18,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.14,
+              "avgCpc": 3.33,
+              "searchIS": 32.14
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $59.85 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$59.85 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.14% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 430,
+            "metrics": {
+              "spend": 430.66,
+              "impressions": 2690,
+              "clicks": 87,
+              "conversions": 2,
+              "convValue": 400,
+              "cpa": 215.33,
+              "roas": 0.93,
+              "ctr": 3.23,
+              "avgCpc": 4.95,
+              "searchIS": 43.36
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.93x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.93x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $215.33 vs $88.77 30d avg (+143%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.93x vs 1.52x 30d avg (-39%)"
+              }
+            ]
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 133.28,
+              "impressions": 1127,
+              "clicks": 23,
+              "conversions": 1,
+              "convValue": 110,
+              "cpa": 133.28,
+              "roas": 0.83,
+              "ctr": 2.04,
+              "avgCpc": 5.79,
+              "searchIS": 38.97
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.83x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.83x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $133.28 vs $163.97 30d avg (-19%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.83x vs 1.12x 30d avg (-26%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 2033.57,
+          "conversions": 24.61,
+          "convValue": 2452.21,
+          "roas": 1.21,
+          "cpa": 82.64,
+          "impressions": 9084,
+          "clicks": 430,
+          "ctr": 4.73,
+          "avgCpc": 4.73
+        },
+        "campaigns": [
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 430,
+            "spend": 1369.48,
+            "impressions": 6650,
+            "clicks": 320,
+            "conversions": 20.61,
+            "convValue": 2292.21,
+            "cpa": 66.46,
+            "roas": 1.67,
+            "ctr": 4.81,
+            "avgCpc": 4.28,
+            "searchIS": 42.09
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 60,
+            "spend": 159.77,
+            "impressions": 499,
+            "clicks": 40,
+            "conversions": 3,
+            "convValue": 110,
+            "cpa": 53.26,
+            "roas": 0.69,
+            "ctr": 8.02,
+            "avgCpc": 3.99,
+            "searchIS": 35.88
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 504.33,
+            "impressions": 1935,
+            "clicks": 70,
+            "conversions": 1,
+            "convValue": 50,
+            "cpa": 504.33,
+            "roas": 0.1,
+            "ctr": 3.62,
+            "avgCpc": 7.2,
+            "searchIS": 33.47
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "3 of 4 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 4 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 430,
+            "metrics": {
+              "spend": 1369.48,
+              "impressions": 6650,
+              "clicks": 320,
+              "conversions": 20.61,
+              "convValue": 2292.21,
+              "cpa": 66.46,
+              "roas": 1.67,
+              "ctr": 4.81,
+              "avgCpc": 4.28,
+              "searchIS": 42.09
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.67x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $66.46 vs $88.77 30d avg (-25%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 60,
+            "metrics": {
+              "spend": 159.77,
+              "impressions": 499,
+              "clicks": 40,
+              "conversions": 3,
+              "convValue": 110,
+              "cpa": 53.26,
+              "roas": 0.69,
+              "ctr": 8.02,
+              "avgCpc": 3.99,
+              "searchIS": 35.88
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $53.26 CPA.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.02% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $53.26 vs $67.74 30d avg (-21%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.69x vs 1.02x 30d avg (-32%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 504.33,
+              "impressions": 1935,
+              "clicks": 70,
+              "conversions": 1,
+              "convValue": 50,
+              "cpa": 504.33,
+              "roas": 0.1,
+              "ctr": 3.62,
+              "avgCpc": 7.2,
+              "searchIS": 33.47
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.1x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.1x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $504.33 vs $163.97 30d avg (+208%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.1x vs 1.12x 30d avg (-91%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 4225.38,
+          "conversions": 49.13,
+          "convValue": 6972.35,
+          "roas": 1.65,
+          "cpa": 86,
+          "impressions": 23147,
+          "clicks": 958,
+          "ctr": 4.14,
+          "avgCpc": 4.41
+        },
+        "campaigns": [
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 430,
+            "spend": 2891.55,
+            "impressions": 16101,
+            "clicks": 686,
+            "conversions": 36.47,
+            "convValue": 5119.02,
+            "cpa": 79.29,
+            "roas": 1.77,
+            "ctr": 4.26,
+            "avgCpc": 4.22,
+            "searchIS": 43.26
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 60,
+            "spend": 388.8,
+            "impressions": 1423,
+            "clicks": 100,
+            "conversions": 4.67,
+            "convValue": 278.33,
+            "cpa": 83.32,
+            "roas": 0.72,
+            "ctr": 7.03,
+            "avgCpc": 3.89,
+            "searchIS": 36.93
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 945.02,
+            "impressions": 5623,
+            "clicks": 172,
+            "conversions": 8,
+            "convValue": 1575,
+            "cpa": 118.13,
+            "roas": 1.67,
+            "ctr": 3.06,
+            "avgCpc": 5.49,
+            "searchIS": 35.94
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "3 of 4 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 1.65x vs 1.38x 30d avg (+20%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 4 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 430,
+            "metrics": {
+              "spend": 2891.55,
+              "impressions": 16101,
+              "clicks": 686,
+              "conversions": 36.47,
+              "convValue": 5119.02,
+              "cpa": 79.29,
+              "roas": 1.77,
+              "ctr": 4.26,
+              "avgCpc": 4.22,
+              "searchIS": 43.26
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.77x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.77x vs 1.52x 30d avg (+16%)"
+              }
+            ]
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 945.02,
+              "impressions": 5623,
+              "clicks": 172,
+              "conversions": 8,
+              "convValue": 1575,
+              "cpa": 118.13,
+              "roas": 1.67,
+              "ctr": 3.06,
+              "avgCpc": 5.49,
+              "searchIS": 35.94
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.67x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $118.13 vs $163.97 30d avg (-28%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.67x vs 1.12x 30d avg (+49%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 60,
+            "metrics": {
+              "spend": 388.8,
+              "impressions": 1423,
+              "clicks": 100,
+              "conversions": 4.67,
+              "convValue": 278.33,
+              "cpa": 83.32,
+              "roas": 0.72,
+              "ctr": 7.03,
+              "avgCpc": 3.89,
+              "searchIS": 36.93
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $83.32 CPA.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.03% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $83.32 vs $67.74 30d avg (+23%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.72x vs 1.02x 30d avg (-29%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 8871.23,
+          "conversions": 98.02,
+          "convValue": 14493.38,
+          "roas": 1.63,
+          "cpa": 90.5,
+          "impressions": 45708,
+          "clicks": 2015,
+          "ctr": 4.41,
+          "avgCpc": 4.4
+        },
+        "campaigns": [
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 430,
+            "spend": 6086.68,
+            "impressions": 31915,
+            "clicks": 1465,
+            "conversions": 72.39,
+            "convValue": 10597.72,
+            "cpa": 84.08,
+            "roas": 1.74,
+            "ctr": 4.59,
+            "avgCpc": 4.15,
+            "searchIS": 44.25
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 60,
+            "spend": 822.22,
+            "impressions": 3101,
+            "clicks": 238,
+            "conversions": 12,
+            "convValue": 1246.67,
+            "cpa": 68.52,
+            "roas": 1.52,
+            "ctr": 7.67,
+            "avgCpc": 3.45,
+            "searchIS": 34.15
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 1962.34,
+            "impressions": 10692,
+            "clicks": 312,
+            "conversions": 13.63,
+            "convValue": 2649,
+            "cpa": 143.95,
+            "roas": 1.35,
+            "ctr": 2.92,
+            "avgCpc": 6.29,
+            "searchIS": 35.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "3 of 4 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 1.63x vs 1.38x 30d avg (+18%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 4 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 430,
+            "metrics": {
+              "spend": 6086.68,
+              "impressions": 31915,
+              "clicks": 1465,
+              "conversions": 72.39,
+              "convValue": 10597.72,
+              "cpa": 84.08,
+              "roas": 1.74,
+              "ctr": 4.59,
+              "avgCpc": 4.15,
+              "searchIS": 44.25
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.74x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 1962.34,
+              "impressions": 10692,
+              "clicks": 312,
+              "conversions": 13.63,
+              "convValue": 2649,
+              "cpa": 143.95,
+              "roas": 1.35,
+              "ctr": 2.92,
+              "avgCpc": 6.29,
+              "searchIS": 35.99
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.35x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.35x vs 1.12x 30d avg (+21%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 60,
+            "metrics": {
+              "spend": 822.22,
+              "impressions": 3101,
+              "clicks": 238,
+              "conversions": 12,
+              "convValue": 1246.67,
+              "cpa": 68.52,
+              "roas": 1.52,
+              "ctr": 7.67,
+              "avgCpc": 3.45,
+              "searchIS": 34.15
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $68.52 CPA.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.67% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.52x vs 1.02x 30d avg (+49%)"
+              }
+            ]
+          },
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 19706.98,
+          "conversions": 202.7,
+          "convValue": 27135.18,
+          "roas": 1.38,
+          "cpa": 97.22,
+          "impressions": 102103,
+          "clicks": 4587,
+          "ctr": 4.49,
+          "avgCpc": 4.3
+        },
+        "campaigns": [
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 430,
+            "spend": 13274.81,
+            "impressions": 67560,
+            "clicks": 3314,
+            "conversions": 149.54,
+            "convValue": 20118.48,
+            "cpa": 88.77,
+            "roas": 1.52,
+            "ctr": 4.91,
+            "avgCpc": 4.01,
+            "searchIS": 46.44
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 60,
+            "spend": 1608.43,
+            "impressions": 6909,
+            "clicks": 504,
+            "conversions": 23.74,
+            "convValue": 1636.31,
+            "cpa": 67.74,
+            "roas": 1.02,
+            "ctr": 7.29,
+            "avgCpc": 3.19,
+            "searchIS": 35.98
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 120,
+            "spend": 4823.74,
+            "impressions": 27634,
+            "clicks": 769,
+            "conversions": 29.42,
+            "convValue": 5380.39,
+            "cpa": 163.97,
+            "roas": 1.12,
+            "ctr": 2.78,
+            "avgCpc": 6.27,
+            "searchIS": 37.9
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "3 of 4 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 4 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "Performance Max - OmSpa",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 430,
+            "metrics": {
+              "spend": 13274.81,
+              "impressions": 67560,
+              "clicks": 3314,
+              "conversions": 149.54,
+              "convValue": 20118.48,
+              "cpa": 88.77,
+              "roas": 1.52,
+              "ctr": 4.91,
+              "avgCpc": 4.01,
+              "searchIS": 46.44
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.52x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Performance Max - OmSpa - Desktop Only",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 120,
+            "metrics": {
+              "spend": 4823.74,
+              "impressions": 27634,
+              "clicks": 769,
+              "conversions": 29.42,
+              "convValue": 5380.39,
+              "cpa": 163.97,
+              "roas": 1.12,
+              "ctr": 2.78,
+              "avgCpc": 6.27,
+              "searchIS": 37.9
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.12x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Theomspanaples - Search V2 - Omspa",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 60,
+            "metrics": {
+              "spend": 1608.43,
+              "impressions": 6909,
+              "clicks": 504,
+              "conversions": 23.74,
+              "convValue": 1636.31,
+              "cpa": 67.74,
+              "roas": 1.02,
+              "ctr": 7.29,
+              "avgCpc": 3.19,
+              "searchIS": 35.98
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $67.74 CPA.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.29% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "Theomspanaples - Search clicks",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}

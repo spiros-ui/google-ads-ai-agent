@@ -1,0 +1,558 @@
+{
+  "account": "Service d'agent Agustine MAY13",
+  "customerId": "4421889978",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 1455.61,
+      "totalConversions": 2,
+      "totalCampaigns": 1,
+      "criticalIssues": 0,
+      "overallVerdict": "Needs Attention"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Pmax new - Austin",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 65,
+        "metrics": {
+          "spend": 1455.61,
+          "impressions": 47520,
+          "clicks": 1037,
+          "conversions": 2,
+          "conversionValue": 170,
+          "cpa": 727.81,
+          "roas": 0.12,
+          "ctr": 2.18,
+          "avgCpc": 1.4,
+          "searchIS": 20.09,
+          "budgetLostIS": 9.6,
+          "rankLostIS": 70.32
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 70.32% impression share to ad rank",
+            "reasoning": "Losing 70.32% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 70.32% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "fix_bidding",
+            "title": "Very high CPA: $727.81",
+            "reasoning": "$727.81 CPA from 2 conversions / $1455.61 spend.",
+            "action": "Add negatives for non-converting terms, lower bids, tighten audience targeting.",
+            "estimatedImpact": "Reducing CPA frees budget for more conversions"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-pmax-new-austin-2026-03-03-1",
+        "account": "Service d'agent Agustine MAY13",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 70.32% impression share to ad rank",
+        "description": "Losing 70.32% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax new - Austin",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-new-austin-2026-03-03-2",
+        "account": "Service d'agent Agustine MAY13",
+        "date": "2026-03-03",
+        "type": "fix_bidding",
+        "severity": "High",
+        "title": "Very high CPA: $727.81",
+        "description": "$727.81 CPA from 2 conversions / $1455.61 spend.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax new - Austin",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 67.65,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 530,
+          "clicks": 17,
+          "ctr": 3.21,
+          "avgCpc": 3.98
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 67.65,
+            "impressions": 530,
+            "clicks": 17,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 3.21,
+            "avgCpc": 3.98,
+            "searchIS": 16.44
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 39% higher yesterday ($67.65/day) vs 30-day average ($48.52/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 67.65,
+              "impressions": 530,
+              "clicks": 17,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 3.21,
+              "avgCpc": 3.98,
+              "searchIS": 16.44
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $67.65 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$67.65 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 16.44%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $67.65 vs $48.52 30d avg (+39%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 217.26,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 10372,
+          "clicks": 140,
+          "ctr": 1.35,
+          "avgCpc": 1.55
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 217.26,
+            "impressions": 10372,
+            "clicks": 140,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 1.35,
+            "avgCpc": 1.55,
+            "searchIS": 28.79
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 49% higher in the last 3 days ($72.42/day) vs 30-day average ($48.52/day)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 1 campaigns have critical issues requiring immediate attention."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 217.26,
+              "impressions": 10372,
+              "clicks": 140,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 1.35,
+              "avgCpc": 1.55,
+              "searchIS": 28.79
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $217.26 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$217.26 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 28.79%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $72.42 vs $48.52 30d avg (+49%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 502.18,
+          "conversions": 1,
+          "convValue": 150,
+          "roas": 0.3,
+          "cpa": 502.18,
+          "impressions": 16998,
+          "clicks": 261,
+          "ctr": 1.54,
+          "avgCpc": 1.92
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 502.18,
+            "impressions": 16998,
+            "clicks": 261,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 502.18,
+            "roas": 0.3,
+            "ctr": 1.54,
+            "avgCpc": 1.92,
+            "searchIS": 23.69
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 48% higher in the last 7 days ($71.74/day) vs 30-day average ($48.52/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $502.18 vs $727.81 30d avg (-31%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.3x vs 0.12x 30d avg (+150%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 502.18,
+              "impressions": 16998,
+              "clicks": 261,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 502.18,
+              "roas": 0.3,
+              "ctr": 1.54,
+              "avgCpc": 1.92,
+              "searchIS": 23.69
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $502.18 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $502.18",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.69%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $502.18 vs $727.81 30d avg (-31%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 0.3x vs 0.12x 30d avg (+150%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $71.74 vs $48.52 30d avg (+48%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 1021.86,
+          "conversions": 1,
+          "convValue": 150,
+          "roas": 0.15,
+          "cpa": 1021.86,
+          "impressions": 41852,
+          "clicks": 889,
+          "ctr": 2.12,
+          "avgCpc": 1.15
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 1021.86,
+            "impressions": 41852,
+            "clicks": 889,
+            "conversions": 1,
+            "convValue": 150,
+            "cpa": 1021.86,
+            "roas": 0.15,
+            "ctr": 2.12,
+            "avgCpc": 1.15,
+            "searchIS": 20.35
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 50% higher in the last 14 days ($72.99/day) vs 30-day average ($48.52/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $1021.86 vs $727.81 30d avg (+40%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 0.15x vs 0.12x 30d avg (+25%)."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 1021.86,
+              "impressions": 41852,
+              "clicks": 889,
+              "conversions": 1,
+              "convValue": 150,
+              "cpa": 1021.86,
+              "roas": 0.15,
+              "ctr": 2.12,
+              "avgCpc": 1.15,
+              "searchIS": 20.35
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $1021.86 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $1021.86",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 20.35%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $1021.86 vs $727.81 30d avg (+40%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 0.15x vs 0.12x 30d avg (+25%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $72.99 vs $48.52 30d avg (+50%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 1455.61,
+          "conversions": 2,
+          "convValue": 170,
+          "roas": 0.12,
+          "cpa": 727.81,
+          "impressions": 47520,
+          "clicks": 1037,
+          "ctr": 2.18,
+          "avgCpc": 1.4
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 1455.61,
+            "impressions": 47520,
+            "clicks": 1037,
+            "conversions": 2,
+            "convValue": 170,
+            "cpa": 727.81,
+            "roas": 0.12,
+            "ctr": 2.18,
+            "avgCpc": 1.4,
+            "searchIS": 20.09
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 1 campaigns are not meeting their conversion goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax new - Austin",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 1455.61,
+              "impressions": 47520,
+              "clicks": 1037,
+              "conversions": 2,
+              "convValue": 170,
+              "cpa": 727.81,
+              "roas": 0.12,
+              "ctr": 2.18,
+              "avgCpc": 1.4,
+              "searchIS": 20.09
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is very high at $727.81 — review targeting and keywords.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "CPA is very high: $727.81",
+                "action": "Add negatives for non-converting search terms. Lower bids. Tighten audience targeting. Consider switching to Target CPA bidding."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 20.09%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}

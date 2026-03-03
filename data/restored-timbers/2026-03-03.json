@@ -1,0 +1,1187 @@
+{
+  "account": "Restored Timbers",
+  "customerId": "2974447695",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 1516.6,
+      "totalConversions": 150,
+      "totalCampaigns": 3,
+      "criticalIssues": 2,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "RIG – Restored Timbers – Search",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 72,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 31 keywords have 0 impressions over 30 days despite a $72/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $2160/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $72/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $2160/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 31,
+          "withImpressions": 0,
+          "zeroImpressions": 31,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Display - Labor Day",
+        "type": "DISPLAY",
+        "objective": "Manual Bidding",
+        "bidding": "Manual CPC",
+        "budget": 40,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $40/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $1200/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Collection - Asset groups",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 156,
+        "metrics": {
+          "spend": 1516.6,
+          "impressions": 37332,
+          "clicks": 1531,
+          "conversions": 150,
+          "conversionValue": 60667,
+          "cpa": 10.11,
+          "roas": 40,
+          "ctr": 4.1,
+          "avgCpc": 0.99,
+          "searchIS": 9.99,
+          "budgetLostIS": 17.74,
+          "rankLostIS": 72.67
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 72.67% impression share to ad rank",
+            "reasoning": "Losing 72.67% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 72.67% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong ROAS",
+            "detail": "40x return"
+          },
+          {
+            "title": "Efficient CPA",
+            "detail": "$10.11/conversion"
+          }
+        ],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "rig-restored-timbers-search-2026-03-03-1",
+        "account": "Restored Timbers",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 31 keywords have 0 impressions over 30 days despite a $72/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 2160,
+        "campaign": "RIG – Restored Timbers – Search",
+        "status": "pending"
+      },
+      {
+        "id": "rig-restored-timbers-search-2026-03-03-2",
+        "account": "Restored Timbers",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $72/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 2160,
+        "campaign": "RIG – Restored Timbers – Search",
+        "status": "pending"
+      },
+      {
+        "id": "display-labor-day-2026-03-03-3",
+        "account": "Restored Timbers",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $40/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 1200,
+        "campaign": "Display - Labor Day",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-collection-asset-groups-2026-03-03-4",
+        "account": "Restored Timbers",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 72.67% impression share to ad rank",
+        "description": "Losing 72.67% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Collection - Asset groups",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 57.71,
+          "conversions": 1,
+          "convValue": 100,
+          "roas": 1.73,
+          "cpa": 57.71,
+          "impressions": 1965,
+          "clicks": 105,
+          "ctr": 5.34,
+          "avgCpc": 0.55
+        },
+        "campaigns": [
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 72,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 156,
+            "spend": 57.71,
+            "impressions": 1965,
+            "clicks": 105,
+            "conversions": 1,
+            "convValue": 100,
+            "cpa": 57.71,
+            "roas": 1.73,
+            "ctr": 5.34,
+            "avgCpc": 0.55,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "2 of 3 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $57.71 vs $10.11 30d avg (+471%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 1.73x vs 40x 30d avg (-96%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 3 campaigns are meeting their goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 156,
+            "metrics": {
+              "spend": 57.71,
+              "impressions": 1965,
+              "clicks": 105,
+              "conversions": 1,
+              "convValue": 100,
+              "cpa": 57.71,
+              "roas": 1.73,
+              "ctr": 5.34,
+              "avgCpc": 0.55,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $57.71 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.34% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $57.71 vs $10.11 30d avg (+471%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 1.73x vs 40x 30d avg (-96%)"
+              }
+            ]
+          },
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 72,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 482.05,
+          "conversions": 58,
+          "convValue": 5511,
+          "roas": 11.43,
+          "cpa": 8.31,
+          "impressions": 10353,
+          "clicks": 477,
+          "ctr": 4.61,
+          "avgCpc": 1.01
+        },
+        "campaigns": [
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 72,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 156,
+            "spend": 482.05,
+            "impressions": 10353,
+            "clicks": 477,
+            "conversions": 58,
+            "convValue": 5511,
+            "cpa": 8.31,
+            "roas": 11.43,
+            "ctr": 4.61,
+            "avgCpc": 1.01,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 218% higher in the last 3 days ($160.68/day) vs 30-day average ($50.55/day)."
+          },
+          {
+            "type": "trend",
+            "message": "2 of 3 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $8.31 vs $10.11 30d avg (-18%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 11.43x vs 40x 30d avg (-71%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 3 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 156,
+            "metrics": {
+              "spend": 482.05,
+              "impressions": 10353,
+              "clicks": 477,
+              "conversions": 58,
+              "convValue": 5511,
+              "cpa": 8.31,
+              "roas": 11.43,
+              "ctr": 4.61,
+              "avgCpc": 1.01,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $8.31 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "11.43x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$8.31 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $8.31 vs $10.11 30d avg (-18%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 11.43x vs 40x 30d avg (-71%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $160.68 vs $50.55 30d avg (+218%)"
+              }
+            ]
+          },
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 72,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 1063.53,
+          "conversions": 104,
+          "convValue": 13987,
+          "roas": 13.15,
+          "cpa": 10.23,
+          "impressions": 19235,
+          "clicks": 860,
+          "ctr": 4.47,
+          "avgCpc": 1.24
+        },
+        "campaigns": [
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 72,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 156,
+            "spend": 1063.53,
+            "impressions": 19235,
+            "clicks": 860,
+            "conversions": 104,
+            "convValue": 13987,
+            "cpa": 10.23,
+            "roas": 13.15,
+            "ctr": 4.47,
+            "avgCpc": 1.24,
+            "searchIS": 11.13
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 201% higher in the last 7 days ($151.93/day) vs 30-day average ($50.55/day)."
+          },
+          {
+            "type": "trend",
+            "message": "2 of 3 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 13.15x vs 40x 30d avg (-67%)."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 3 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 156,
+            "metrics": {
+              "spend": 1063.53,
+              "impressions": 19235,
+              "clicks": 860,
+              "conversions": 104,
+              "convValue": 13987,
+              "cpa": 10.23,
+              "roas": 13.15,
+              "ctr": 4.47,
+              "avgCpc": 1.24,
+              "searchIS": 11.13
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $10.23 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 11.13%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "13.15x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$10.23 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 13.15x vs 40x 30d avg (-67%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $151.93 vs $50.55 30d avg (+201%)"
+              }
+            ]
+          },
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 72,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 1516.6,
+          "conversions": 150,
+          "convValue": 60667,
+          "roas": 40,
+          "cpa": 10.11,
+          "impressions": 37332,
+          "clicks": 1531,
+          "ctr": 4.1,
+          "avgCpc": 0.99
+        },
+        "campaigns": [
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 72,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 156,
+            "spend": 1516.6,
+            "impressions": 37332,
+            "clicks": 1531,
+            "conversions": 150,
+            "convValue": 60667,
+            "cpa": 10.11,
+            "roas": 40,
+            "ctr": 4.1,
+            "avgCpc": 0.99,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 114% higher in the last 14 days ($108.33/day) vs 30-day average ($50.55/day)."
+          },
+          {
+            "type": "trend",
+            "message": "2 of 3 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 3 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 156,
+            "metrics": {
+              "spend": 1516.6,
+              "impressions": 37332,
+              "clicks": 1531,
+              "conversions": 150,
+              "convValue": 60667,
+              "cpa": 10.11,
+              "roas": 40,
+              "ctr": 4.1,
+              "avgCpc": 0.99,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $10.11 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "40x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$10.11 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $108.33 vs $50.55 30d avg (+114%)"
+              }
+            ]
+          },
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 72,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 1516.6,
+          "conversions": 150,
+          "convValue": 60667,
+          "roas": 40,
+          "cpa": 10.11,
+          "impressions": 37332,
+          "clicks": 1531,
+          "ctr": 4.1,
+          "avgCpc": 0.99
+        },
+        "campaigns": [
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 72,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "bidding": "MANUAL_CPC",
+            "budget": 40,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 156,
+            "spend": 1516.6,
+            "impressions": 37332,
+            "clicks": 1531,
+            "conversions": 150,
+            "convValue": 60667,
+            "cpa": 10.11,
+            "roas": 40,
+            "ctr": 4.1,
+            "avgCpc": 0.99,
+            "searchIS": 9.99
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "2 of 3 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 3 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Collection - Asset groups",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 156,
+            "metrics": {
+              "spend": 1516.6,
+              "impressions": 37332,
+              "clicks": 1531,
+              "conversions": 150,
+              "convValue": 60667,
+              "cpa": 10.11,
+              "roas": 40,
+              "ctr": 4.1,
+              "avgCpc": 0.99,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $10.11 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "40x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$10.11 per conversion"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "RIG – Restored Timbers – Search",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 72,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Display - Labor Day",
+            "type": "DISPLAY",
+            "objective": "Clicks",
+            "bidding": "Manual CPC",
+            "budget": 40,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}

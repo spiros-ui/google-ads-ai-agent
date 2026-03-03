@@ -1,0 +1,3127 @@
+{
+  "account": "Stay Loyal",
+  "customerId": "6809045675",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 20311.43,
+      "totalConversions": 273.33,
+      "totalCampaigns": 8,
+      "criticalIssues": 4,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 120,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 63 keywords have 0 impressions over 30 days despite a $120/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $3600/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $120/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $3600/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 63,
+          "withImpressions": 0,
+          "zeroImpressions": 63,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Target CPA Experiment - AMG - Search - Long Tail",
+        "type": "SEARCH",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 22,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 47 keywords have 0 impressions over 30 days despite a $22/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $660/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $22/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $660/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 47,
+          "withImpressions": 0,
+          "zeroImpressions": 47,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Pmax - Remarketing Aim",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 65,
+        "metrics": {
+          "spend": 2078.8,
+          "impressions": 40993,
+          "clicks": 520,
+          "conversions": 11.25,
+          "conversionValue": 1020.34,
+          "cpa": 184.78,
+          "roas": 0.49,
+          "ctr": 1.27,
+          "avgCpc": 4,
+          "searchIS": 9.99,
+          "budgetLostIS": 8.4,
+          "rankLostIS": 89.58
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 89.58% impression share to ad rank",
+            "reasoning": "Losing 89.58% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 89.58% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "Target CPA Experiment - AMG - Search - Itchy",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 25,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 36 keywords have 0 impressions over 30 days despite a $25/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $750/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $25/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $750/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 36,
+          "withImpressions": 0,
+          "zeroImpressions": 36,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "type": "SHOPPING",
+        "objective": "Sales",
+        "bidding": "Target ROAS",
+        "budget": 200,
+        "metrics": {
+          "spend": 718.3,
+          "impressions": 33419,
+          "clicks": 132,
+          "conversions": 12.5,
+          "conversionValue": 1352.2,
+          "cpa": 57.45,
+          "roas": 1.88,
+          "ctr": 0.39,
+          "avgCpc": 5.44,
+          "searchIS": 44.17,
+          "budgetLostIS": 0,
+          "rankLostIS": 55.83
+        },
+        "meetingObjective": false,
+        "status": "critical",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 48 keywords have 0 impressions over 30 days despite a $200/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $6000/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'addiction' (broad match) blocks positive 'addiction', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'addiction', or change to exact match to stop blocking 'addiction'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'bully' (broad match) blocks positive 'bully', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'bully', or change to exact match to stop blocking 'bully'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'acana' (broad match) blocks positive 'acana', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'acana', or change to exact match to stop blocking 'acana'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 55.83% impression share to ad rank",
+            "reasoning": "Losing 55.83% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 55.83% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top search terms",
+            "detail": "'loyal pet food' (1 conv, CPA $0.18), 'premium dry dog food' (2.99019 conv, CPA $3.98), 'best quality dog biscuits' (0.5 conv, CPA $5.3)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 48,
+          "withImpressions": 0,
+          "zeroImpressions": 48,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "border collie dog food",
+              "spend": 42.59,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "pet food australia dog food",
+              "spend": 36.3,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "australian made dog food",
+              "spend": 30.76,
+              "clicks": 3,
+              "conversions": 0
+            },
+            {
+              "term": "australian dog food company",
+              "spend": 17.7,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "love pet food",
+              "spend": 14.69,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "loyal pet food",
+              "spend": 0.18,
+              "conversions": 1,
+              "cpa": 0.18
+            },
+            {
+              "term": "premium dry dog food",
+              "spend": 11.91,
+              "conversions": 2.99019,
+              "cpa": 3.98
+            },
+            {
+              "term": "best quality dog biscuits",
+              "spend": 2.65,
+              "conversions": 0.5,
+              "cpa": 5.3
+            },
+            {
+              "term": "loyal dog food brand",
+              "spend": 0.11,
+              "conversions": 0.013679,
+              "cpa": 8.04
+            },
+            {
+              "term": "organic dog food australia",
+              "spend": 13.51,
+              "conversions": 1,
+              "cpa": 13.51
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - Brand Terms - Search - Stay Loyal",
+        "type": "SEARCH",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 400,
+        "metrics": {
+          "spend": 5563.63,
+          "impressions": 4993,
+          "clicks": 1034,
+          "conversions": 138.94,
+          "conversionValue": 15520.47,
+          "cpa": 40.04,
+          "roas": 2.79,
+          "ctr": 20.71,
+          "avgCpc": 5.38,
+          "searchIS": 78.09,
+          "budgetLostIS": 0.35,
+          "rankLostIS": 21.56
+        },
+        "meetingObjective": true,
+        "status": "healthy",
+        "issues": [],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "20.71% — well above 3% benchmark"
+          },
+          {
+            "title": "Good impression share",
+            "detail": "78.09% search IS"
+          },
+          {
+            "title": "Efficient CPA",
+            "detail": "$40.04/conversion"
+          },
+          {
+            "title": "Top converting keywords",
+            "detail": "'stay loyal dog food where to buy' (3 conv, $79.62), 'stay loyal dog food' (135.940181 conv, $5484.01)"
+          },
+          {
+            "title": "Top search terms",
+            "detail": "'www stayloyal com au' (1 conv, CPA $2.3), 'stay loyal chicken lamb and fish' (1 conv, CPA $2.38), 'stay loy' (1 conv, CPA $2.79)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 6,
+          "withImpressions": 3,
+          "zeroImpressions": 3,
+          "avgQualityScore": 8.33,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "stay loyal dog food reviews",
+              "spend": 511.24,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "sniffspace",
+              "spend": 241.09,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "peto annandale",
+              "spend": 210.39,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "fergusons treatos",
+              "spend": 147.4,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "dog boutique",
+              "spend": 122.59,
+              "clicks": 1,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "www stayloyal com au",
+              "spend": 2.3,
+              "conversions": 1,
+              "cpa": 2.3
+            },
+            {
+              "term": "stay loyal chicken lamb and fish",
+              "spend": 2.38,
+              "conversions": 1,
+              "cpa": 2.38
+            },
+            {
+              "term": "stay loy",
+              "spend": 2.79,
+              "conversions": 1,
+              "cpa": 2.79
+            },
+            {
+              "term": "stay loyal",
+              "spend": 81.23,
+              "conversions": 27.283419,
+              "cpa": 2.98
+            },
+            {
+              "term": "stayloyal com au",
+              "spend": 2.19,
+              "conversions": 0.527819,
+              "cpa": 4.15
+            }
+          ]
+        }
+      },
+      {
+        "name": "CTM - Performance Max  +Brand Stay Loyal",
+        "type": "PERFORMANCE_MAX",
+        "objective": "Sales",
+        "bidding": "Maximize Conversion Value",
+        "budget": 500,
+        "metrics": {
+          "spend": 11417.09,
+          "impressions": 242342,
+          "clicks": 1990,
+          "conversions": 102.8,
+          "conversionValue": 13183.48,
+          "cpa": 111.07,
+          "roas": 1.15,
+          "ctr": 0.82,
+          "avgCpc": 5.74,
+          "searchIS": 37.89,
+          "budgetLostIS": 0,
+          "rankLostIS": 62.11
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 62.11% impression share to ad rank",
+            "reasoning": "Losing 62.11% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 62.11% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 0,
+          "withImpressions": 0,
+          "zeroImpressions": 0,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+        "type": "SHOPPING",
+        "objective": "Sales",
+        "bidding": "Target ROAS",
+        "budget": 70,
+        "metrics": {
+          "spend": 533.61,
+          "impressions": 27594,
+          "clicks": 155,
+          "conversions": 7.84,
+          "conversionValue": 947.59,
+          "cpa": 68.1,
+          "roas": 1.78,
+          "ctr": 0.56,
+          "avgCpc": 3.44,
+          "searchIS": 49.01,
+          "budgetLostIS": 0,
+          "rankLostIS": 50.99
+        },
+        "meetingObjective": false,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 50.99% impression share to ad rank",
+            "reasoning": "Losing 50.99% of impressions to ad rank — bids too low or Quality Score needs work.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 50.99% lost impressions from rank improvements"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Top search terms",
+            "detail": "'best dog food for dry flaky skin' (0.492029 conv, CPA $2.34), 'dog food delivered' (1 conv, CPA $5.15), 'best quality dog biscuits' (0.5 conv, CPA $5.46)"
+          }
+        ],
+        "keywordSummary": {
+          "total": 48,
+          "withImpressions": 0,
+          "zeroImpressions": 48,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "best dog food for hip dysplasia",
+              "spend": 19.44,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "best dog food for weight management",
+              "spend": 15.67,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "best natural dog food australia",
+              "spend": 11.71,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "premium dog food australia",
+              "spend": 10.88,
+              "clicks": 1,
+              "conversions": 0
+            },
+            {
+              "term": "best dog food for skin allergies australia",
+              "spend": 9.62,
+              "clicks": 3,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": [
+            {
+              "term": "best dog food for dry flaky skin",
+              "spend": 1.15,
+              "conversions": 0.492029,
+              "cpa": 2.34
+            },
+            {
+              "term": "dog food delivered",
+              "spend": 5.15,
+              "conversions": 1,
+              "cpa": 5.15
+            },
+            {
+              "term": "best quality dog biscuits",
+              "spend": 2.73,
+              "conversions": 0.5,
+              "cpa": 5.46
+            },
+            {
+              "term": "delicate care skin and stomach",
+              "spend": 3.65,
+              "conversions": 0.653441,
+              "cpa": 5.59
+            },
+            {
+              "term": "best dog food older dogs",
+              "spend": 6.55,
+              "conversions": 0.498331,
+              "cpa": 13.14
+            }
+          ]
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "target-cpa-experiment-amg-search-buy-desktop-tablet-2026-03-03-1",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 63 keywords have 0 impressions over 30 days despite a $120/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 3600,
+        "campaign": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-buy-desktop-tablet-2026-03-03-2",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $120/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 3600,
+        "campaign": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-long-tail-2026-03-03-3",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 47 keywords have 0 impressions over 30 days despite a $22/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 660,
+        "campaign": "Target CPA Experiment - AMG - Search - Long Tail",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-long-tail-2026-03-03-4",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $22/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 660,
+        "campaign": "Target CPA Experiment - AMG - Search - Long Tail",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-pmax-remarketing-aim-2026-03-03-5",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 89.58% impression share to ad rank",
+        "description": "Losing 89.58% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Pmax - Remarketing Aim",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-itchy-2026-03-03-6",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 36 keywords have 0 impressions over 30 days despite a $25/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 750,
+        "campaign": "Target CPA Experiment - AMG - Search - Itchy",
+        "status": "pending"
+      },
+      {
+        "id": "target-cpa-experiment-amg-search-itchy-2026-03-03-7",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $25/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 750,
+        "campaign": "Target CPA Experiment - AMG - Search - Itchy",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-03-8",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 48 keywords have 0 impressions over 30 days despite a $200/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 6000,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-03-9",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'addiction' (broad match) blocks positive 'addiction', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-03-10",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'bully' (broad match) blocks positive 'bully', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-03-11",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'acana' (broad match) blocks positive 'acana', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-chicken-lamb-2026-03-03-12",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 55.83% impression share to ad rank",
+        "description": "Losing 55.83% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-performance-max-brand-stay-loyal-2026-03-03-13",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 62.11% impression share to ad rank",
+        "description": "Losing 62.11% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Performance Max  +Brand Stay Loyal",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-non-brand-shopping-stay-loyal-salmon-only-2026-03-03-14",
+        "account": "Stay Loyal",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 50.99% impression share to ad rank",
+        "description": "Losing 50.99% of impressions to ad rank — bids too low or Quality Score needs work.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 847.37,
+          "conversions": 7.99,
+          "convValue": 733.21,
+          "roas": 0.87,
+          "cpa": 106.11,
+          "impressions": 10545,
+          "clicks": 132,
+          "ctr": 1.25,
+          "avgCpc": 6.42
+        },
+        "campaigns": [
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 120,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 22,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 45.8,
+            "impressions": 595,
+            "clicks": 18,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 3.03,
+            "avgCpc": 2.54,
+            "searchIS": 9.99
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 25,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 200,
+            "spend": 17.34,
+            "impressions": 1225,
+            "clicks": 6,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 0.49,
+            "avgCpc": 2.89,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 400,
+            "spend": 180.64,
+            "impressions": 202,
+            "clicks": 31,
+            "conversions": 2,
+            "convValue": 122,
+            "cpa": 90.32,
+            "roas": 0.68,
+            "ctr": 15.35,
+            "avgCpc": 5.83,
+            "searchIS": 69.05
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 500,
+            "spend": 579.57,
+            "impressions": 7327,
+            "clicks": 66,
+            "conversions": 3.99,
+            "convValue": 312.21,
+            "cpa": 145.41,
+            "roas": 0.54,
+            "ctr": 0.9,
+            "avgCpc": 8.78,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 70,
+            "spend": 24.02,
+            "impressions": 1196,
+            "clicks": 11,
+            "conversions": 2,
+            "convValue": 299,
+            "cpa": 12.01,
+            "roas": 12.45,
+            "ctr": 0.92,
+            "avgCpc": 2.18,
+            "searchIS": 0
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "7 of 8 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "Account CPA worsened to $106.11 vs $74.31 30d avg (+43%)."
+          },
+          {
+            "type": "alert",
+            "message": "Account ROAS declined to 0.87x vs 1.58x 30d avg (-45%)."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 8 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 8 campaigns are meeting their goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 45.8,
+              "impressions": 595,
+              "clicks": 18,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 3.03,
+              "avgCpc": 2.54,
+              "searchIS": 9.99
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "Zero conversions from $45.8 spend — not meeting conversion goal.",
+            "issues": [
+              {
+                "severity": "High",
+                "title": "$45.8 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $45.8 vs $69.29 30d avg (-34%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 70,
+            "metrics": {
+              "spend": 24.02,
+              "impressions": 1196,
+              "clicks": 11,
+              "conversions": 2,
+              "convValue": 299,
+              "cpa": 12.01,
+              "roas": 12.45,
+              "ctr": 0.92,
+              "avgCpc": 2.18,
+              "searchIS": 0
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 12.45x ROAS — profitable.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 0%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "12.45x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$12.01 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $12.01 vs $68.1 30d avg (-82%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 12.45x vs 1.78x 30d avg (+599%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $24.02 vs $17.79 30d avg (+35%)"
+              },
+              {
+                "direction": "down",
+                "metric": "IS",
+                "message": "Impression share dropped 49.01pp to 0% from 49.01% 30d avg"
+              }
+            ]
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 120,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 22,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 25,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 200,
+            "metrics": {
+              "spend": 17.34,
+              "impressions": 1225,
+              "clicks": 6,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 0.49,
+              "avgCpc": 2.89,
+              "searchIS": 0
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 0%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 9% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "IS",
+                "message": "Impression share dropped 44.17pp to 0% from 44.17% 30d avg"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 400,
+            "metrics": {
+              "spend": 180.64,
+              "impressions": 202,
+              "clicks": 31,
+              "conversions": 2,
+              "convValue": 122,
+              "cpa": 90.32,
+              "roas": 0.68,
+              "ctr": 15.35,
+              "avgCpc": 5.83,
+              "searchIS": 69.05
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.68x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.68x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "15.35% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $90.32 vs $40.04 30d avg (+126%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.68x vs 2.79x 30d avg (-76%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 500,
+            "metrics": {
+              "spend": 579.57,
+              "impressions": 7327,
+              "clicks": 66,
+              "conversions": 3.99,
+              "convValue": 312.21,
+              "cpa": 145.41,
+              "roas": 0.54,
+              "ctr": 0.9,
+              "avgCpc": 8.78,
+              "searchIS": 0
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.54x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.54x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 0%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $145.41 vs $111.07 30d avg (+31%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.54x vs 1.15x 30d avg (-53%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $579.57 vs $380.57 30d avg (+52%)"
+              },
+              {
+                "direction": "down",
+                "metric": "IS",
+                "message": "Impression share dropped 37.89pp to 0% from 37.89% 30d avg"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 1652.16,
+          "conversions": 32.99,
+          "convValue": 4138.39,
+          "roas": 2.5,
+          "cpa": 50.08,
+          "impressions": 27500,
+          "clicks": 314,
+          "ctr": 1.14,
+          "avgCpc": 5.26
+        },
+        "campaigns": [
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 120,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 22,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 183.45,
+            "impressions": 2286,
+            "clicks": 40,
+            "conversions": 3,
+            "convValue": 524,
+            "cpa": 61.15,
+            "roas": 2.86,
+            "ctr": 1.75,
+            "avgCpc": 4.59,
+            "searchIS": 9.99
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 25,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 200,
+            "spend": 32.65,
+            "impressions": 2155,
+            "clicks": 10,
+            "conversions": 3.99,
+            "convValue": 482.45,
+            "cpa": 8.18,
+            "roas": 14.78,
+            "ctr": 0.46,
+            "avgCpc": 3.27,
+            "searchIS": 36.54
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 400,
+            "spend": 610.32,
+            "impressions": 508,
+            "clicks": 97,
+            "conversions": 16,
+            "convValue": 1588,
+            "cpa": 38.14,
+            "roas": 2.6,
+            "ctr": 19.09,
+            "avgCpc": 6.29,
+            "searchIS": 69.45
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 500,
+            "spend": 741.15,
+            "impressions": 19764,
+            "clicks": 145,
+            "conversions": 9.98,
+            "convValue": 1542.91,
+            "cpa": 74.27,
+            "roas": 2.08,
+            "ctr": 0.73,
+            "avgCpc": 5.11,
+            "searchIS": 38.9
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 70,
+            "spend": 84.6,
+            "impressions": 2787,
+            "clicks": 22,
+            "conversions": 0.02,
+            "convValue": 1.03,
+            "cpa": 4263.68,
+            "roas": 0.01,
+            "ctr": 0.79,
+            "avgCpc": 3.85,
+            "searchIS": 53.49
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "6 of 8 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $50.08 vs $74.31 30d avg (-33%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 2.5x vs 1.58x 30d avg (+58%)."
+          },
+          {
+            "type": "alert",
+            "message": "1 of 8 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "2 of 8 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 400,
+            "metrics": {
+              "spend": 610.32,
+              "impressions": 508,
+              "clicks": 97,
+              "conversions": 16,
+              "convValue": 1588,
+              "cpa": 38.14,
+              "roas": 2.6,
+              "ctr": 19.09,
+              "avgCpc": 6.29,
+              "searchIS": 69.45
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.6x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "19.09% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 500,
+            "metrics": {
+              "spend": 741.15,
+              "impressions": 19764,
+              "clicks": 145,
+              "conversions": 9.98,
+              "convValue": 1542.91,
+              "cpa": 74.27,
+              "roas": 2.08,
+              "ctr": 0.73,
+              "avgCpc": 5.11,
+              "searchIS": 38.9
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.08x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $74.27 vs $111.07 30d avg (-33%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 2.08x vs 1.15x 30d avg (+81%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $247.05 vs $380.57 30d avg (-35%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 183.45,
+              "impressions": 2286,
+              "clicks": 40,
+              "conversions": 3,
+              "convValue": 524,
+              "cpa": 61.15,
+              "roas": 2.86,
+              "ctr": 1.75,
+              "avgCpc": 4.59,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $61.15 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $61.15 vs $184.78 30d avg (-67%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 2.86x vs 0.49x 30d avg (+484%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 200,
+            "metrics": {
+              "spend": 32.65,
+              "impressions": 2155,
+              "clicks": 10,
+              "conversions": 3.99,
+              "convValue": 482.45,
+              "cpa": 8.18,
+              "roas": 14.78,
+              "ctr": 0.46,
+              "avgCpc": 3.27,
+              "searchIS": 36.54
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 14.78x ROAS — profitable.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 5% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "14.78x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$8.18 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $8.18 vs $57.45 30d avg (-86%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 14.78x vs 1.88x 30d avg (+686%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $10.88 vs $23.94 30d avg (-55%)"
+              }
+            ]
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 120,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 22,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 25,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 70,
+            "metrics": {
+              "spend": 84.6,
+              "impressions": 2787,
+              "clicks": 22,
+              "conversions": 0.02,
+              "convValue": 1.03,
+              "cpa": 4263.68,
+              "roas": 0.01,
+              "ctr": 0.79,
+              "avgCpc": 3.85,
+              "searchIS": 53.49
+            },
+            "health": "critical",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 0.01x — losing money on this campaign.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "ROAS below breakeven: 0.01x",
+                "action": "Pause unprofitable keywords/products. Reduce bids. Review product feed and landing pages. Tighten audience targeting."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $4263.68 vs $68.1 30d avg (+6161%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 0.01x vs 1.78x 30d avg (-99%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $28.2 vs $17.79 30d avg (+59%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 4139.53,
+          "conversions": 63.55,
+          "convValue": 7165.41,
+          "roas": 1.73,
+          "cpa": 65.14,
+          "impressions": 68034,
+          "clicks": 813,
+          "ctr": 1.19,
+          "avgCpc": 5.09
+        },
+        "campaigns": [
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 120,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 22,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 448.02,
+            "impressions": 6418,
+            "clicks": 122,
+            "conversions": 4,
+            "convValue": 544,
+            "cpa": 112.01,
+            "roas": 1.21,
+            "ctr": 1.9,
+            "avgCpc": 3.67,
+            "searchIS": 9.99
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 25,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 200,
+            "spend": 89.65,
+            "impressions": 6070,
+            "clicks": 29,
+            "conversions": 4.49,
+            "convValue": 560.45,
+            "cpa": 19.97,
+            "roas": 6.25,
+            "ctr": 0.48,
+            "avgCpc": 3.09,
+            "searchIS": 41.79
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 400,
+            "spend": 1359.66,
+            "impressions": 1257,
+            "clicks": 225,
+            "conversions": 28.56,
+            "convValue": 2752.5,
+            "cpa": 47.6,
+            "roas": 2.02,
+            "ctr": 17.9,
+            "avgCpc": 6.04,
+            "searchIS": 72.03
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 500,
+            "spend": 2078.59,
+            "impressions": 47550,
+            "clicks": 389,
+            "conversions": 23.98,
+            "convValue": 2930.43,
+            "cpa": 86.69,
+            "roas": 1.41,
+            "ctr": 0.82,
+            "avgCpc": 5.34,
+            "searchIS": 39.08
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 70,
+            "spend": 163.6,
+            "impressions": 6739,
+            "clicks": 48,
+            "conversions": 2.52,
+            "convValue": 378.03,
+            "cpa": 64.92,
+            "roas": 2.31,
+            "ctr": 0.71,
+            "avgCpc": 3.41,
+            "searchIS": 54.69
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "7 of 8 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "positive",
+            "message": "1 of 8 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 448.02,
+              "impressions": 6418,
+              "clicks": 122,
+              "conversions": 4,
+              "convValue": 544,
+              "cpa": 112.01,
+              "roas": 1.21,
+              "ctr": 1.9,
+              "avgCpc": 3.67,
+              "searchIS": 9.99
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $112.01 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $112.01 vs $184.78 30d avg (-39%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.21x vs 0.49x 30d avg (+147%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 400,
+            "metrics": {
+              "spend": 1359.66,
+              "impressions": 1257,
+              "clicks": 225,
+              "conversions": 28.56,
+              "convValue": 2752.5,
+              "cpa": 47.6,
+              "roas": 2.02,
+              "ctr": 17.9,
+              "avgCpc": 6.04,
+              "searchIS": 72.03
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.02x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "17.9% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "72.03% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "CPA",
+                "message": "CPA worsened to $47.6 vs $40.04 30d avg (+19%)"
+              },
+              {
+                "direction": "down",
+                "metric": "ROAS",
+                "message": "ROAS declined to 2.02x vs 2.79x 30d avg (-28%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 500,
+            "metrics": {
+              "spend": 2078.59,
+              "impressions": 47550,
+              "clicks": 389,
+              "conversions": 23.98,
+              "convValue": 2930.43,
+              "cpa": 86.69,
+              "roas": 1.41,
+              "ctr": 0.82,
+              "avgCpc": 5.34,
+              "searchIS": 39.08
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.41x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $86.69 vs $111.07 30d avg (-22%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.41x vs 1.15x 30d avg (+23%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 70,
+            "metrics": {
+              "spend": 163.6,
+              "impressions": 6739,
+              "clicks": 48,
+              "conversions": 2.52,
+              "convValue": 378.03,
+              "cpa": 64.92,
+              "roas": 2.31,
+              "ctr": 0.71,
+              "avgCpc": 3.41,
+              "searchIS": 54.69
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.31x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 2.31x vs 1.78x 30d avg (+30%)"
+              },
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $23.37 vs $17.79 30d avg (+31%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 200,
+            "metrics": {
+              "spend": 89.65,
+              "impressions": 6070,
+              "clicks": 29,
+              "conversions": 4.49,
+              "convValue": 560.45,
+              "cpa": 19.97,
+              "roas": 6.25,
+              "ctr": 0.48,
+              "avgCpc": 3.09,
+              "searchIS": 41.79
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 6.25x ROAS — profitable.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 6% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Outstanding ROAS",
+                "detail": "6.25x return on ad spend"
+              },
+              {
+                "title": "Efficient CPA",
+                "detail": "$19.97 per conversion"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $19.97 vs $57.45 30d avg (-65%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 6.25x vs 1.88x 30d avg (+232%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $12.81 vs $23.94 30d avg (-47%)"
+              }
+            ]
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 120,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 22,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 25,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 8076.08,
+          "conversions": 133.04,
+          "convValue": 15765.51,
+          "roas": 1.95,
+          "cpa": 60.7,
+          "impressions": 138628,
+          "clicks": 1622,
+          "ctr": 1.17,
+          "avgCpc": 4.98
+        },
+        "campaigns": [
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 120,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 22,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 909.3,
+            "impressions": 14456,
+            "clicks": 232,
+            "conversions": 9.12,
+            "convValue": 938.02,
+            "cpa": 99.74,
+            "roas": 1.03,
+            "ctr": 1.6,
+            "avgCpc": 3.92,
+            "searchIS": 9.99
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 25,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 200,
+            "spend": 208.26,
+            "impressions": 13866,
+            "clicks": 58,
+            "conversions": 6.5,
+            "convValue": 783.2,
+            "cpa": 32.02,
+            "roas": 3.76,
+            "ctr": 0.42,
+            "avgCpc": 3.59,
+            "searchIS": 45.9
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 400,
+            "spend": 2422.52,
+            "impressions": 2436,
+            "clicks": 479,
+            "conversions": 69.1,
+            "convValue": 7792.13,
+            "cpa": 35.06,
+            "roas": 3.22,
+            "ctr": 19.66,
+            "avgCpc": 5.06,
+            "searchIS": 72.71
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 500,
+            "spend": 4262.72,
+            "impressions": 95601,
+            "clicks": 779,
+            "conversions": 44.13,
+            "convValue": 5707.85,
+            "cpa": 96.6,
+            "roas": 1.34,
+            "ctr": 0.81,
+            "avgCpc": 5.47,
+            "searchIS": 38.69
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 70,
+            "spend": 273.28,
+            "impressions": 12269,
+            "clicks": 74,
+            "conversions": 4.19,
+            "convValue": 544.31,
+            "cpa": 65.19,
+            "roas": 1.99,
+            "ctr": 0.6,
+            "avgCpc": 3.69,
+            "searchIS": 53.4
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "5 of 8 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "positive",
+            "message": "Account CPA improved to $60.7 vs $74.31 30d avg (-18%)."
+          },
+          {
+            "type": "positive",
+            "message": "Account ROAS improved to 1.95x vs 1.58x 30d avg (+23%)."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 8 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 500,
+            "metrics": {
+              "spend": 4262.72,
+              "impressions": 95601,
+              "clicks": 779,
+              "conversions": 44.13,
+              "convValue": 5707.85,
+              "cpa": 96.6,
+              "roas": 1.34,
+              "ctr": 0.81,
+              "avgCpc": 5.47,
+              "searchIS": 38.69
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.34x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.34x vs 1.15x 30d avg (+17%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 70,
+            "metrics": {
+              "spend": 273.28,
+              "impressions": 12269,
+              "clicks": 74,
+              "conversions": 4.19,
+              "convValue": 544.31,
+              "cpa": 65.19,
+              "roas": 1.99,
+              "ctr": 0.6,
+              "avgCpc": 3.69,
+              "searchIS": 53.4
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.99x — breaking even but below target.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 28% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 909.3,
+              "impressions": 14456,
+              "clicks": 232,
+              "conversions": 9.12,
+              "convValue": 938.02,
+              "cpa": 99.74,
+              "roas": 1.03,
+              "ctr": 1.6,
+              "avgCpc": 3.92,
+              "searchIS": 9.99
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Generating conversions at $99.74 CPA.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $99.74 vs $184.78 30d avg (-46%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 1.03x vs 0.49x 30d avg (+110%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 200,
+            "metrics": {
+              "spend": 208.26,
+              "impressions": 13866,
+              "clicks": 58,
+              "conversions": 6.5,
+              "convValue": 783.2,
+              "cpa": 32.02,
+              "roas": 3.76,
+              "ctr": 0.42,
+              "avgCpc": 3.59,
+              "searchIS": 45.9
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 3.76x ROAS — profitable.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 7% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Strong ROAS",
+                "detail": "3.76x return"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "down",
+                "metric": "CPA",
+                "message": "CPA improved to $32.02 vs $57.45 30d avg (-44%)"
+              },
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 3.76x vs 1.88x 30d avg (+100%)"
+              },
+              {
+                "direction": "down",
+                "metric": "Spend",
+                "message": "Daily spend decreased to $14.88 vs $23.94 30d avg (-38%)"
+              }
+            ]
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 400,
+            "metrics": {
+              "spend": 2422.52,
+              "impressions": 2436,
+              "clicks": 479,
+              "conversions": 69.1,
+              "convValue": 7792.13,
+              "cpa": 35.06,
+              "roas": 3.22,
+              "ctr": 19.66,
+              "avgCpc": 5.06,
+              "searchIS": 72.71
+            },
+            "health": "healthy",
+            "meetingGoal": true,
+            "goalAssessment": "Strong 3.22x ROAS — profitable.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "19.66% — well above benchmark"
+              },
+              {
+                "title": "Strong ROAS",
+                "detail": "3.22x return"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "72.71% search IS"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "ROAS",
+                "message": "ROAS improved to 3.22x vs 2.79x 30d avg (+15%)"
+              }
+            ]
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 120,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 22,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 25,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 20311.43,
+          "conversions": 273.33,
+          "convValue": 32024.08,
+          "roas": 1.58,
+          "cpa": 74.31,
+          "impressions": 349341,
+          "clicks": 3831,
+          "ctr": 1.1,
+          "avgCpc": 5.3
+        },
+        "campaigns": [
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 120,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 22,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 65,
+            "spend": 2078.8,
+            "impressions": 40993,
+            "clicks": 520,
+            "conversions": 11.25,
+            "convValue": 1020.34,
+            "cpa": 184.78,
+            "roas": 0.49,
+            "ctr": 1.27,
+            "avgCpc": 4,
+            "searchIS": 9.99
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 25,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 200,
+            "spend": 718.3,
+            "impressions": 33419,
+            "clicks": 132,
+            "conversions": 12.5,
+            "convValue": 1352.2,
+            "cpa": 57.45,
+            "roas": 1.88,
+            "ctr": 0.39,
+            "avgCpc": 5.44,
+            "searchIS": 44.17
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 400,
+            "spend": 5563.63,
+            "impressions": 4993,
+            "clicks": 1034,
+            "conversions": 138.94,
+            "convValue": 15520.47,
+            "cpa": 40.04,
+            "roas": 2.79,
+            "ctr": 20.71,
+            "avgCpc": 5.38,
+            "searchIS": 78.09
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "bidding": "MAXIMIZE_CONVERSION_VALUE",
+            "budget": 500,
+            "spend": 11417.09,
+            "impressions": 242342,
+            "clicks": 1990,
+            "conversions": 102.8,
+            "convValue": 13183.48,
+            "cpa": 111.07,
+            "roas": 1.15,
+            "ctr": 0.82,
+            "avgCpc": 5.74,
+            "searchIS": 37.89
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "bidding": "TARGET_ROAS",
+            "budget": 70,
+            "spend": 533.61,
+            "impressions": 27594,
+            "clicks": 155,
+            "conversions": 7.84,
+            "convValue": 947.59,
+            "cpa": 68.1,
+            "roas": 1.78,
+            "ctr": 0.56,
+            "avgCpc": 3.44,
+            "searchIS": 49.01
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "8 of 8 campaigns are not meeting their conversion goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Pmax - Remarketing Aim",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 65,
+            "metrics": {
+              "spend": 2078.8,
+              "impressions": 40993,
+              "clicks": 520,
+              "conversions": 11.25,
+              "convValue": 1020.34,
+              "cpa": 184.78,
+              "roas": 0.49,
+              "ctr": 1.27,
+              "avgCpc": 4,
+              "searchIS": 9.99
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "CPA is high at $184.78 — needs optimization.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 9.99%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Chicken & Lamb",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 200,
+            "metrics": {
+              "spend": 718.3,
+              "impressions": 33419,
+              "clicks": 132,
+              "conversions": 12.5,
+              "convValue": 1352.2,
+              "cpa": 57.45,
+              "roas": 1.88,
+              "ctr": 0.39,
+              "avgCpc": 5.44,
+              "searchIS": 44.17
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.88x — breaking even but below target.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 12% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Brand Terms - Search - Stay Loyal",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 400,
+            "metrics": {
+              "spend": 5563.63,
+              "impressions": 4993,
+              "clicks": 1034,
+              "conversions": 138.94,
+              "convValue": 15520.47,
+              "cpa": 40.04,
+              "roas": 2.79,
+              "ctr": 20.71,
+              "avgCpc": 5.38,
+              "searchIS": 78.09
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 2.79x — breaking even but below target.",
+            "issues": [],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "20.71% — well above benchmark"
+              },
+              {
+                "title": "Good impression share",
+                "detail": "78.09% search IS"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "CTM - Performance Max  +Brand Stay Loyal",
+            "type": "PERFORMANCE_MAX",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 500,
+            "metrics": {
+              "spend": 11417.09,
+              "impressions": 242342,
+              "clicks": 1990,
+              "conversions": 102.8,
+              "convValue": 13183.48,
+              "cpa": 111.07,
+              "roas": 1.15,
+              "ctr": 0.82,
+              "avgCpc": 5.74,
+              "searchIS": 37.89
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.15x — breaking even but below target.",
+            "issues": [],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "CTM - Non Brand - Shopping  - Stay Loyal - Salmon Only",
+            "type": "SHOPPING",
+            "objective": "Revenue",
+            "bidding": "Target ROAS",
+            "budget": 70,
+            "metrics": {
+              "spend": 533.61,
+              "impressions": 27594,
+              "clicks": 155,
+              "conversions": 7.84,
+              "convValue": 947.59,
+              "cpa": 68.1,
+              "roas": 1.78,
+              "ctr": 0.56,
+              "avgCpc": 3.44,
+              "searchIS": 49.01
+            },
+            "health": "warning",
+            "meetingGoal": false,
+            "goalAssessment": "ROAS is 1.78x — breaking even but below target.",
+            "issues": [
+              {
+                "severity": "Medium",
+                "title": "Only spending 25% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Buy - Desktop/Tablet",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 120,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Long Tail",
+            "type": "SEARCH",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 22,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "Target CPA Experiment - AMG - Search - Itchy",
+            "type": "SEARCH",
+            "objective": "Revenue",
+            "bidding": "Maximize Conversion Value",
+            "budget": 25,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}

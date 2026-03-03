@@ -1,0 +1,2025 @@
+{
+  "account": "Commercial - Madison",
+  "customerId": "7877267211",
+  "date": "2026-03-03",
+  "diagnosis": {
+    "accountSummary": {
+      "totalSpend": 12388.59,
+      "totalConversions": 0,
+      "totalCampaigns": 4,
+      "criticalIssues": 1,
+      "overallVerdict": "Critical Issues"
+    },
+    "campaigns": [
+      {
+        "name": "CTM - Leads-Display - Narrowed",
+        "type": "DISPLAY",
+        "objective": "Leads",
+        "bidding": "Maximize Conversions",
+        "budget": 100,
+        "metrics": {
+          "spend": 0,
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": null,
+          "ctr": 0,
+          "avgCpc": 0,
+          "searchIS": 0,
+          "budgetLostIS": 0,
+          "rankLostIS": 0
+        },
+        "meetingObjective": false,
+        "status": "not_spending",
+        "issues": [
+          {
+            "severity": "Critical",
+            "type": "fix_targeting",
+            "title": "All keywords have zero impressions",
+            "reasoning": "All 49 keywords have 0 impressions over 30 days despite a $100/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+            "action": "Review keyword eligibility. Replace low-volume keywords with broader alternatives. Check geo-targeting.",
+            "estimatedImpact": "Could unlock up to $3000/month in delivery"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'free' (broad match) blocks positive 'free', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'free', or change to exact match to stop blocking 'free'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'jobs' (broad match) blocks positive 'jobs', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'jobs', or change to exact match to stop blocking 'jobs'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_negatives",
+            "title": "Negative keyword blocking positive keyword",
+            "reasoning": "Negative 'rental' (broad match) blocks positive 'rental', preventing ads from showing for a keyword you want to target.",
+            "action": "Remove or narrow 'rental', or change to exact match to stop blocking 'rental'.",
+            "estimatedImpact": "Restoring delivery for blocked keywords"
+          },
+          {
+            "severity": "Critical",
+            "type": "fix_delivery",
+            "title": "Campaign has zero spend",
+            "reasoning": "Campaign has $100/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+            "action": "Check serving status, ad approval, billing, and targeting settings.",
+            "estimatedImpact": "Unlock up to $3000/month in potential delivery"
+          }
+        ],
+        "strengths": [],
+        "keywordSummary": {
+          "total": 49,
+          "withImpressions": 0,
+          "zeroImpressions": 49,
+          "avgQualityScore": null,
+          "topWasters": []
+        },
+        "searchTermSummary": {
+          "topWaste": [],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 21600,
+        "metrics": {
+          "spend": 9904.98,
+          "impressions": 23821,
+          "clicks": 1766,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 7.41,
+          "avgCpc": 5.61,
+          "searchIS": 28.29,
+          "budgetLostIS": 0,
+          "rankLostIS": 71.71
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 71.71% impression share to ad rank",
+            "reasoning": "Losing 71.71% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.82/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 71.71% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$786.74 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'bobtail insurance' ($226.52, 40 clicks), 'non trucking liability insurance' ($198.53, 35 clicks), 'ooida trucking insurance' ($153.87, 27 clicks), 'fleet insurance' ($128.61, 23 clicks), 'non cdl hotshot insurance cost' ($79.22, 14 clicks).",
+            "action": "Add as negatives: 'bobtail insurance', 'non trucking liability insurance', 'ooida trucking insurance', 'fleet insurance', 'non cdl hotshot insurance cost'.",
+            "estimatedImpact": "Save ~$786.74/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$3332.41 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'tractor trailer insurance' ($1035.02, 186 clicks), 'CDL insurance quotes' ($692.65, 125 clicks), 'hot shot trucking insurance' ($665.01, 120 clicks), 'commercial box truck insurance' ($480.27, 85 clicks), 'box truck insurance cost' ($459.47, 82 clicks).",
+            "action": "Pause: 'tractor trailer insurance', 'CDL insurance quotes', 'hot shot trucking insurance', 'commercial box truck insurance', 'box truck insurance cost'.",
+            "estimatedImpact": "Save ~$3332.41/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "7.41% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 131,
+          "withImpressions": 72,
+          "zeroImpressions": 59,
+          "avgQualityScore": 2.82,
+          "topWasters": [
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 1035.02,
+              "conversions": 0
+            },
+            {
+              "keyword": "CDL insurance quotes",
+              "matchType": "PHRASE",
+              "spend": 692.65,
+              "conversions": 0
+            },
+            {
+              "keyword": "hot shot trucking insurance",
+              "matchType": "EXACT",
+              "spend": 665.01,
+              "conversions": 0
+            },
+            {
+              "keyword": "commercial box truck insurance",
+              "matchType": "PHRASE",
+              "spend": 480.27,
+              "conversions": 0
+            },
+            {
+              "keyword": "box truck insurance cost",
+              "matchType": "PHRASE",
+              "spend": 459.47,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "bobtail insurance",
+              "spend": 226.52,
+              "clicks": 40,
+              "conversions": 0
+            },
+            {
+              "term": "non trucking liability insurance",
+              "spend": 198.53,
+              "clicks": 35,
+              "conversions": 0
+            },
+            {
+              "term": "ooida trucking insurance",
+              "spend": 153.87,
+              "clicks": 27,
+              "conversions": 0
+            },
+            {
+              "term": "fleet insurance",
+              "spend": 128.61,
+              "clicks": 23,
+              "conversions": 0
+            },
+            {
+              "term": "non cdl hotshot insurance cost",
+              "spend": 79.22,
+              "clicks": 14,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 1200,
+        "metrics": {
+          "spend": 1587.38,
+          "impressions": 3212,
+          "clicks": 278,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 8.66,
+          "avgCpc": 5.71,
+          "searchIS": 26.41,
+          "budgetLostIS": 0.09,
+          "rankLostIS": 73.49
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 73.49% impression share to ad rank",
+            "reasoning": "Losing 73.49% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.08/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 73.49% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$280.32 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'bobtail insurance' ($124.04, 23 clicks), 'bobtail insurance cost' ($46.5, 8 clicks), 'temporary bobtail insurance' ($44.48, 8 clicks), 'semi truck insurance' ($36.31, 6 clicks), 'short term bobtail insurance' ($28.99, 5 clicks).",
+            "action": "Add as negatives: 'bobtail insurance', 'bobtail insurance cost', 'temporary bobtail insurance', 'semi truck insurance', 'short term bobtail insurance'.",
+            "estimatedImpact": "Save ~$280.32/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$1046.21 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'bobtail insurance' ($338.82, 60 clicks), 'semi truck insurance quotes' ($316.06, 55 clicks), 'tractor trailer insurance' ($189.57, 34 clicks), 'bobtail insurance' ($129.4, 24 clicks), 'semi insurance cost' ($72.36, 12 clicks).",
+            "action": "Pause: 'bobtail insurance', 'semi truck insurance quotes', 'tractor trailer insurance', 'bobtail insurance', 'semi insurance cost'.",
+            "estimatedImpact": "Save ~$1046.21/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "8.66% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 178,
+          "withImpressions": 59,
+          "zeroImpressions": 119,
+          "avgQualityScore": 3.08,
+          "topWasters": [
+            {
+              "keyword": "bobtail insurance",
+              "matchType": "PHRASE",
+              "spend": 338.82,
+              "conversions": 0
+            },
+            {
+              "keyword": "semi truck insurance quotes",
+              "matchType": "PHRASE",
+              "spend": 316.06,
+              "conversions": 0
+            },
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 189.57,
+              "conversions": 0
+            },
+            {
+              "keyword": "bobtail insurance",
+              "matchType": "EXACT",
+              "spend": 129.4,
+              "conversions": 0
+            },
+            {
+              "keyword": "semi insurance cost",
+              "matchType": "EXACT",
+              "spend": 72.36,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "bobtail insurance",
+              "spend": 124.04,
+              "clicks": 23,
+              "conversions": 0
+            },
+            {
+              "term": "bobtail insurance cost",
+              "spend": 46.5,
+              "clicks": 8,
+              "conversions": 0
+            },
+            {
+              "term": "temporary bobtail insurance",
+              "spend": 44.48,
+              "clicks": 8,
+              "conversions": 0
+            },
+            {
+              "term": "semi truck insurance",
+              "spend": 36.31,
+              "clicks": 6,
+              "conversions": 0
+            },
+            {
+              "term": "short term bobtail insurance",
+              "spend": 28.99,
+              "clicks": 5,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      },
+      {
+        "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "type": "SEARCH",
+        "objective": "Traffic",
+        "bidding": "Maximize Clicks",
+        "budget": 400,
+        "metrics": {
+          "spend": 896.23,
+          "impressions": 3174,
+          "clicks": 176,
+          "conversions": 0,
+          "conversionValue": 0,
+          "cpa": null,
+          "roas": 0,
+          "ctr": 5.55,
+          "avgCpc": 5.09,
+          "searchIS": 21.23,
+          "budgetLostIS": 6.92,
+          "rankLostIS": 71.85
+        },
+        "meetingObjective": true,
+        "status": "warning",
+        "issues": [
+          {
+            "severity": "High",
+            "type": "improve_rank",
+            "title": "Losing 71.85% impression share to ad rank",
+            "reasoning": "Losing 71.85% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.11/10, dragging down rank.",
+            "action": "Improve ad relevance and landing page experience. Consider increasing bids on top keywords.",
+            "estimatedImpact": "Recovering 71.85% lost impressions from rank improvements"
+          },
+          {
+            "severity": "High",
+            "type": "add_negative",
+            "title": "$77.98 wasted on non-converting search terms",
+            "reasoning": "Top wasters: 'occupational accident insurance for truckers cost' ($25.11, 5 clicks), 'rig cover insurance' ($20.64, 4 clicks), 'risk retention group trucking insurance' ($11, 2 clicks), 'my affordable truckers insurance' ($10.78, 2 clicks), 'tractor trailer insurance cost' ($10.45, 2 clicks).",
+            "action": "Add as negatives: 'occupational accident insurance for truckers cost', 'rig cover insurance', 'risk retention group trucking insurance', 'my affordable truckers insurance', 'tractor trailer insurance cost'.",
+            "estimatedImpact": "Save ~$77.98/month"
+          },
+          {
+            "severity": "High",
+            "type": "pause_keyword",
+            "title": "$788.37 spent on zero-conversion keywords",
+            "reasoning": "Keywords with spend but 0 conversions: 'commercial truck insurance quote' ($440.31, 87 clicks), 'big rig insurance' ($113.62, 22 clicks), 'tractor trailer insurance' ($112.18, 22 clicks), 'semi truck insurance' ($75.19, 15 clicks), 'commercial trucking insurance companies' ($47.07, 9 clicks).",
+            "action": "Pause: 'commercial truck insurance quote', 'big rig insurance', 'tractor trailer insurance', 'semi truck insurance', 'commercial trucking insurance companies'.",
+            "estimatedImpact": "Save ~$788.37/month"
+          }
+        ],
+        "strengths": [
+          {
+            "title": "Strong CTR",
+            "detail": "5.55% — well above 3% benchmark"
+          }
+        ],
+        "keywordSummary": {
+          "total": 54,
+          "withImpressions": 35,
+          "zeroImpressions": 19,
+          "avgQualityScore": 2.11,
+          "topWasters": [
+            {
+              "keyword": "commercial truck insurance quote",
+              "matchType": "PHRASE",
+              "spend": 440.31,
+              "conversions": 0
+            },
+            {
+              "keyword": "big rig insurance",
+              "matchType": "PHRASE",
+              "spend": 113.62,
+              "conversions": 0
+            },
+            {
+              "keyword": "tractor trailer insurance",
+              "matchType": "PHRASE",
+              "spend": 112.18,
+              "conversions": 0
+            },
+            {
+              "keyword": "semi truck insurance",
+              "matchType": "PHRASE",
+              "spend": 75.19,
+              "conversions": 0
+            },
+            {
+              "keyword": "commercial trucking insurance companies",
+              "matchType": "EXACT",
+              "spend": 47.07,
+              "conversions": 0
+            }
+          ]
+        },
+        "searchTermSummary": {
+          "topWaste": [
+            {
+              "term": "occupational accident insurance for truckers cost",
+              "spend": 25.11,
+              "clicks": 5,
+              "conversions": 0
+            },
+            {
+              "term": "rig cover insurance",
+              "spend": 20.64,
+              "clicks": 4,
+              "conversions": 0
+            },
+            {
+              "term": "risk retention group trucking insurance",
+              "spend": 11,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "my affordable truckers insurance",
+              "spend": 10.78,
+              "clicks": 2,
+              "conversions": 0
+            },
+            {
+              "term": "tractor trailer insurance cost",
+              "spend": 10.45,
+              "clicks": 2,
+              "conversions": 0
+            }
+          ],
+          "topPerformers": []
+        }
+      }
+    ],
+    "actionItems": [
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-03-1",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "fix_targeting",
+        "severity": "Critical",
+        "title": "All keywords have zero impressions",
+        "description": "All 49 keywords have 0 impressions over 30 days despite a $100/day budget. Keywords are either not eligible, have near-zero search volume, or are blocked by policy.",
+        "estimatedSaving": 3000,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-03-2",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'free' (broad match) blocks positive 'free', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-03-3",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'jobs' (broad match) blocks positive 'jobs', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-03-4",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "fix_negatives",
+        "severity": "Critical",
+        "title": "Negative keyword blocking positive keyword",
+        "description": "Negative 'rental' (broad match) blocks positive 'rental', preventing ads from showing for a keyword you want to target.",
+        "estimatedSaving": 0,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "ctm-leads-display-narrowed-2026-03-03-5",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "fix_delivery",
+        "severity": "Critical",
+        "title": "Campaign has zero spend",
+        "description": "Campaign has $100/day budget but $0 spend in 30 days — something is fundamentally blocking delivery.",
+        "estimatedSaving": 3000,
+        "campaign": "CTM - Leads-Display - Narrowed",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-03-6",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 71.71% impression share to ad rank",
+        "description": "Losing 71.71% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.82/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-03-7",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$786.74 wasted on non-converting search terms",
+        "description": "Top wasters: 'bobtail insurance' ($226.52, 40 clicks), 'non trucking liability insurance' ($198.53, 35 clicks), 'ooida trucking insurance' ($153.87, 27 clicks), 'fleet insurance' ($128.61, 23 clicks), 'non cdl hotshot insurance cost' ($79.22, 14 clicks).",
+        "estimatedSaving": 786.74,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-2-2026-03-03-8",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$3332.41 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'tractor trailer insurance' ($1035.02, 186 clicks), 'CDL insurance quotes' ($692.65, 125 clicks), 'hot shot trucking insurance' ($665.01, 120 clicks), 'commercial box truck insurance' ($480.27, 85 clicks), 'box truck insurance cost' ($459.47, 82 clicks).",
+        "estimatedSaving": 3332.41,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #2",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-03-9",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 73.49% impression share to ad rank",
+        "description": "Losing 73.49% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 3.08/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-03-10",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$280.32 wasted on non-converting search terms",
+        "description": "Top wasters: 'bobtail insurance' ($124.04, 23 clicks), 'bobtail insurance cost' ($46.5, 8 clicks), 'temporary bobtail insurance' ($44.48, 8 clicks), 'semi truck insurance' ($36.31, 6 clicks), 'short term bobtail insurance' ($28.99, 5 clicks).",
+        "estimatedSaving": 280.32,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-3-new-audiences-and-lps-bobtail-2026-03-03-11",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$1046.21 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'bobtail insurance' ($338.82, 60 clicks), 'semi truck insurance quotes' ($316.06, 55 clicks), 'tractor trailer insurance' ($189.57, 34 clicks), 'bobtail insurance' ($129.4, 24 clicks), 'semi insurance cost' ($72.36, 12 clicks).",
+        "estimatedSaving": 1046.21,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-03-12",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "improve_rank",
+        "severity": "High",
+        "title": "Losing 71.85% impression share to ad rank",
+        "description": "Losing 71.85% of impressions to ad rank — bids too low or Quality Score needs work. Average Quality Score is 2.11/10, dragging down rank.",
+        "estimatedSaving": 0,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-03-13",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "add_negative",
+        "severity": "High",
+        "title": "$77.98 wasted on non-converting search terms",
+        "description": "Top wasters: 'occupational accident insurance for truckers cost' ($25.11, 5 clicks), 'rig cover insurance' ($20.64, 4 clicks), 'risk retention group trucking insurance' ($11, 2 clicks), 'my affordable truckers insurance' ($10.78, 2 clicks), 'tractor trailer insurance cost' ($10.45, 2 clicks).",
+        "estimatedSaving": 77.98,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      },
+      {
+        "id": "1090-search-no-partners-rel-8-cpc-4-new-audiences-and-lps-tractor-trailer-insurance-2026-03-03-14",
+        "account": "Commercial - Madison",
+        "date": "2026-03-03",
+        "type": "pause_keyword",
+        "severity": "High",
+        "title": "$788.37 spent on zero-conversion keywords",
+        "description": "Keywords with spend but 0 conversions: 'commercial truck insurance quote' ($440.31, 87 clicks), 'big rig insurance' ($113.62, 22 clicks), 'tractor trailer insurance' ($112.18, 22 clicks), 'semi truck insurance' ($75.19, 15 clicks), 'commercial trucking insurance companies' ($47.07, 9 clicks).",
+        "estimatedSaving": 788.37,
+        "campaign": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+        "status": "pending"
+      }
+    ],
+    "periodMetrics": {
+      "yesterday": {
+        "label": "Yesterday",
+        "dateRange": "2026-03-01",
+        "account": {
+          "spend": 754.49,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 2106,
+          "clicks": 143,
+          "ctr": 6.79,
+          "avgCpc": 5.28
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 100,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 21600,
+            "spend": 456.9,
+            "impressions": 1070,
+            "clicks": 85,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.94,
+            "avgCpc": 5.38,
+            "searchIS": 25.7
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1200,
+            "spend": 117.92,
+            "impressions": 275,
+            "clicks": 22,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8,
+            "avgCpc": 5.36,
+            "searchIS": 32.43
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 400,
+            "spend": 179.67,
+            "impressions": 761,
+            "clicks": 36,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 4.73,
+            "avgCpc": 4.99,
+            "searchIS": 21.85
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 83% higher yesterday ($754.49/day) vs 30-day average ($412.95/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 4 campaigns are not meeting their conversion goals yesterday."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 4 campaigns are meeting their goals yesterday."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 100,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 21600,
+            "metrics": {
+              "spend": 456.9,
+              "impressions": 1070,
+              "clicks": 85,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.94,
+              "avgCpc": 5.38,
+              "searchIS": 25.7
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "85 clicks at 7.94% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$456.9 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 25.7%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 2% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.94% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $456.9 vs $330.17 30d avg (+38%)"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1200,
+            "metrics": {
+              "spend": 117.92,
+              "impressions": 275,
+              "clicks": 22,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8,
+              "avgCpc": 5.36,
+              "searchIS": 32.43
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "22 clicks at 8% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$117.92 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 10% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $117.92 vs $52.91 30d avg (+123%)"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 400,
+            "metrics": {
+              "spend": 179.67,
+              "impressions": 761,
+              "clicks": 36,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 4.73,
+              "avgCpc": 4.99,
+              "searchIS": 21.85
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "36 clicks at 4.73% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$179.67 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.85%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $179.67 vs $29.87 30d avg (+501%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last3d": {
+        "label": "Last 3 Days",
+        "dateRange": "2026-02-27 to 2026-03-01",
+        "account": {
+          "spend": 1785.48,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 4517,
+          "clicks": 337,
+          "ctr": 7.46,
+          "avgCpc": 5.3
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 100,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 21600,
+            "spend": 1089.52,
+            "impressions": 2480,
+            "clicks": 203,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8.19,
+            "avgCpc": 5.37,
+            "searchIS": 32.85
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1200,
+            "spend": 280.75,
+            "impressions": 625,
+            "clicks": 52,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8.32,
+            "avgCpc": 5.4,
+            "searchIS": 38.66
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 400,
+            "spend": 415.22,
+            "impressions": 1412,
+            "clicks": 82,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.81,
+            "avgCpc": 5.06,
+            "searchIS": 23.37
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 44% higher in the last 3 days ($595.16/day) vs 30-day average ($412.95/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 4 campaigns are not meeting their conversion goals in the last 3 days."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 4 campaigns are meeting their goals in the last 3 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 100,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 21600,
+            "metrics": {
+              "spend": 1089.52,
+              "impressions": 2480,
+              "clicks": 203,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8.19,
+              "avgCpc": 5.37,
+              "searchIS": 32.85
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "203 clicks at 8.19% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$1089.52 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 2% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.19% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1200,
+            "metrics": {
+              "spend": 280.75,
+              "impressions": 625,
+              "clicks": 52,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8.32,
+              "avgCpc": 5.4,
+              "searchIS": 38.66
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "52 clicks at 8.32% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$280.75 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 8% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.32% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $93.58 vs $52.91 30d avg (+77%)"
+              },
+              {
+                "direction": "up",
+                "metric": "IS",
+                "message": "Impression share improved 12.25pp to 38.66% from 26.41% 30d avg"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 400,
+            "metrics": {
+              "spend": 415.22,
+              "impressions": 1412,
+              "clicks": 82,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.81,
+              "avgCpc": 5.06,
+              "searchIS": 23.37
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "82 clicks at 5.81% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$415.22 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 23.37%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.81% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $138.41 vs $29.87 30d avg (+363%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last7d": {
+        "label": "Last 7 Days",
+        "dateRange": "2026-02-23 to 2026-03-01",
+        "account": {
+          "spend": 4614.46,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 11996,
+          "clicks": 868,
+          "ctr": 7.24,
+          "avgCpc": 5.32
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 100,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 21600,
+            "spend": 2913,
+            "impressions": 7061,
+            "clicks": 542,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.68,
+            "avgCpc": 5.37,
+            "searchIS": 27.9
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1200,
+            "spend": 805.23,
+            "impressions": 1761,
+            "clicks": 150,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8.52,
+            "avgCpc": 5.37,
+            "searchIS": 29.24
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 400,
+            "spend": 896.23,
+            "impressions": 3174,
+            "clicks": 176,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.55,
+            "avgCpc": 5.09,
+            "searchIS": 21.23
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 60% higher in the last 7 days ($659.21/day) vs 30-day average ($412.95/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 4 campaigns are not meeting their conversion goals in the last 7 days."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 4 campaigns are meeting their goals in the last 7 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 100,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 21600,
+            "metrics": {
+              "spend": 2913,
+              "impressions": 7061,
+              "clicks": 542,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.68,
+              "avgCpc": 5.37,
+              "searchIS": 27.9
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "542 clicks at 7.68% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$2913 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 27.9%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 2% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.68% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1200,
+            "metrics": {
+              "spend": 805.23,
+              "impressions": 1761,
+              "clicks": 150,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8.52,
+              "avgCpc": 5.37,
+              "searchIS": 29.24
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "150 clicks at 8.52% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$805.23 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 29.24%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 10% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.52% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $115.03 vs $52.91 30d avg (+117%)"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 400,
+            "metrics": {
+              "spend": 896.23,
+              "impressions": 3174,
+              "clicks": 176,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.55,
+              "avgCpc": 5.09,
+              "searchIS": 21.23
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "176 clicks at 5.55% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$896.23 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.23%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.55% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $128.03 vs $29.87 30d avg (+329%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last14d": {
+        "label": "Last 14 Days",
+        "dateRange": "2026-02-16 to 2026-03-01",
+        "account": {
+          "spend": 9055.55,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 22387,
+          "clicks": 1648,
+          "ctr": 7.36,
+          "avgCpc": 5.49
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 100,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 21600,
+            "spend": 6571.94,
+            "impressions": 16001,
+            "clicks": 1194,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.46,
+            "avgCpc": 5.5,
+            "searchIS": 28.21
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1200,
+            "spend": 1587.38,
+            "impressions": 3212,
+            "clicks": 278,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8.66,
+            "avgCpc": 5.71,
+            "searchIS": 26.41
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 400,
+            "spend": 896.23,
+            "impressions": 3174,
+            "clicks": 176,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.55,
+            "avgCpc": 5.09,
+            "searchIS": 21.23
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "Daily spend is 57% higher in the last 14 days ($646.82/day) vs 30-day average ($412.95/day)."
+          },
+          {
+            "type": "trend",
+            "message": "1 of 4 campaigns are not meeting their conversion goals in the last 14 days."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 4 campaigns are meeting their goals in the last 14 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 100,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 21600,
+            "metrics": {
+              "spend": 6571.94,
+              "impressions": 16001,
+              "clicks": 1194,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.46,
+              "avgCpc": 5.5,
+              "searchIS": 28.21
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "1194 clicks at 7.46% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$6571.94 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 28.21%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 2% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.46% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $469.42 vs $330.17 30d avg (+42%)"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1200,
+            "metrics": {
+              "spend": 1587.38,
+              "impressions": 3212,
+              "clicks": 278,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8.66,
+              "avgCpc": 5.71,
+              "searchIS": 26.41
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "278 clicks at 8.66% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$1587.38 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 26.41%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 9% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.66% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $113.38 vs $52.91 30d avg (+114%)"
+              }
+            ]
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 400,
+            "metrics": {
+              "spend": 896.23,
+              "impressions": 3174,
+              "clicks": 176,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.55,
+              "avgCpc": 5.09,
+              "searchIS": 21.23
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "176 clicks at 5.55% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$896.23 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.23%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 16% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.55% — well above benchmark"
+              }
+            ],
+            "trends": [
+              {
+                "direction": "up",
+                "metric": "Spend",
+                "message": "Daily spend increased to $64.02 vs $29.87 30d avg (+114%)"
+              }
+            ]
+          }
+        ]
+      },
+      "last30d": {
+        "label": "Last 30 Days",
+        "dateRange": "2026-01-31 to 2026-03-01",
+        "account": {
+          "spend": 12388.59,
+          "conversions": 0,
+          "convValue": 0,
+          "roas": 0,
+          "cpa": null,
+          "impressions": 30207,
+          "clicks": 2220,
+          "ctr": 7.35,
+          "avgCpc": 5.58
+        },
+        "campaigns": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "bidding": "MAXIMIZE_CONVERSIONS",
+            "budget": 100,
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": null,
+            "ctr": 0,
+            "avgCpc": 0,
+            "searchIS": 0
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 21600,
+            "spend": 9904.98,
+            "impressions": 23821,
+            "clicks": 1766,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 7.41,
+            "avgCpc": 5.61,
+            "searchIS": 28.29
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 1200,
+            "spend": 1587.38,
+            "impressions": 3212,
+            "clicks": 278,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 8.66,
+            "avgCpc": 5.71,
+            "searchIS": 26.41
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "bidding": "TARGET_SPEND",
+            "budget": 400,
+            "spend": 896.23,
+            "impressions": 3174,
+            "clicks": 176,
+            "conversions": 0,
+            "convValue": 0,
+            "cpa": null,
+            "roas": 0,
+            "ctr": 5.55,
+            "avgCpc": 5.09,
+            "searchIS": 21.23
+          }
+        ],
+        "insights": [
+          {
+            "type": "trend",
+            "message": "1 of 4 campaigns are not meeting their conversion goals over the last 30 days."
+          },
+          {
+            "type": "alert",
+            "message": "3 of 4 campaigns have critical issues requiring immediate attention."
+          },
+          {
+            "type": "positive",
+            "message": "3 of 4 campaigns are meeting their goals over the last 30 days."
+          }
+        ],
+        "campaignDiagnoses": [
+          {
+            "name": "CTM - Leads-Display - Narrowed",
+            "type": "DISPLAY",
+            "objective": "Conversions",
+            "bidding": "Maximize Conversions",
+            "budget": 100,
+            "metrics": {
+              "spend": 0,
+              "impressions": 0,
+              "clicks": 0,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": null,
+              "ctr": 0,
+              "avgCpc": 0,
+              "searchIS": 0
+            },
+            "health": "not_spending",
+            "meetingGoal": false,
+            "goalAssessment": "Campaign is not spending despite having a budget.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "Zero spend",
+                "action": "Check campaign serving status, ad approval, billing, and targeting settings. Ads may be disapproved or keywords may have zero search volume."
+              }
+            ],
+            "positives": [],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #2",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 21600,
+            "metrics": {
+              "spend": 9904.98,
+              "impressions": 23821,
+              "clicks": 1766,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 7.41,
+              "avgCpc": 5.61,
+              "searchIS": 28.29
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "1766 clicks at 7.41% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$9904.98 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 28.29%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 2% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "7.41% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #3 - new audiences and LPs - Bobtail",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 1200,
+            "metrics": {
+              "spend": 1587.38,
+              "impressions": 3212,
+              "clicks": 278,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 8.66,
+              "avgCpc": 5.71,
+              "searchIS": 26.41
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "278 clicks at 8.66% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$1587.38 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 26.41%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 4% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "8.66% — well above benchmark"
+              }
+            ],
+            "trends": []
+          },
+          {
+            "name": "1090 | Search No Partners  | Rel 8 | CPC #4 - new audiences and LPs - Tractor Trailer Insurance",
+            "type": "SEARCH",
+            "objective": "Traffic",
+            "bidding": "Maximize Clicks",
+            "budget": 400,
+            "metrics": {
+              "spend": 896.23,
+              "impressions": 3174,
+              "clicks": 176,
+              "conversions": 0,
+              "convValue": 0,
+              "cpa": null,
+              "roas": 0,
+              "ctr": 5.55,
+              "avgCpc": 5.09,
+              "searchIS": 21.23
+            },
+            "health": "critical",
+            "meetingGoal": true,
+            "goalAssessment": "176 clicks at 5.55% CTR — good traffic flow.",
+            "issues": [
+              {
+                "severity": "Critical",
+                "title": "$896.23 spent with zero conversions",
+                "action": "Check conversion tracking is working. Review landing page. Add negative keywords for irrelevant traffic. Consider pausing if no results after fixes."
+              },
+              {
+                "severity": "Medium",
+                "title": "Low impression share: 21.23%",
+                "action": "Increase budget if budget-constrained. Improve Quality Score through better ad relevance and landing pages. Raise bids on top keywords."
+              },
+              {
+                "severity": "Medium",
+                "title": "Only spending 7% of daily budget",
+                "action": "Bids may be too low or keywords too narrow. Broaden match types, add keywords, or increase bids to use the full budget."
+              }
+            ],
+            "positives": [
+              {
+                "title": "Excellent CTR",
+                "detail": "5.55% — well above benchmark"
+              }
+            ],
+            "trends": []
+          }
+        ]
+      }
+    }
+  }
+}
